@@ -9759,3 +9759,70 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Language Switch */
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.language-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+
+/* Language Switch */
+.language-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.language-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Language Buttons */
+.language-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.language-buttons a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #FFAC00;
+  transition: all 0.3s ease;
+}
+
+.language-buttons a.active {
+  background-color: #FFAC00;
+  color: #000;
+}
+
+.language-buttons a:hover {
+  background-color: #FFAC00;
+  color: #000;
+}
+
