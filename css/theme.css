@@ -1,0 +1,401 @@
+/* =========================================
+   MONOCHROME EDITORIAL THEME
+   Inspired by clean, bold, black & white design
+   ========================================= */
+
+/* --- Base & Background --- */
+body {
+  background: #f5f5f5 !important;
+  color: #111 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111 !important;
+}
+
+p {
+  color: #333 !important;
+}
+
+a {
+  color: #111 !important;
+}
+
+a:hover {
+  color: #555 !important;
+  text-decoration: none !important;
+}
+
+strong {
+  color: #111 !important;
+}
+
+/* --- Navbar --- */
+.ftco_navbar,
+.ftco_navbar.navbar-dark,
+.ftco_navbar.bg-dark {
+  background: #f5f5f5 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: none !important;
+}
+
+.ftco_navbar .navbar-brand {
+  color: #111 !important;
+  font-weight: 900 !important;
+  font-size: 1.25rem !important;
+  letter-spacing: -0.5px !important;
+  text-transform: uppercase !important;
+}
+
+.ftco_navbar .navbar-nav .nav-link,
+.ftco_navbar .navbar-dark .navbar-nav .nav-link {
+  color: #111 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.ftco_navbar .navbar-nav .nav-link:hover,
+.ftco_navbar .navbar-nav .nav-link:focus {
+  color: #555 !important;
+}
+
+.ftco_navbar .navbar-toggler {
+  border-color: #111 !important;
+  color: #111 !important;
+}
+
+/* --- Language Buttons --- */
+.language-buttons a {
+  color: #111 !important;
+  border-color: #111 !important;
+}
+
+.language-buttons a.active {
+  background-color: #111 !important;
+  color: #f5f5f5 !important;
+}
+
+.language-buttons a:hover {
+  background-color: #111 !important;
+  color: #f5f5f5 !important;
+  text-decoration: none !important;
+}
+
+/* --- Hero Section --- */
+.hero-wrap {
+  background: #f5f5f5 !important;
+}
+
+.hero-wrap .overlay {
+  background: #ddd !important;
+  opacity: 0.2 !important;
+}
+
+.slider-text .subheading {
+  color: #555 !important;
+  letter-spacing: 5px !important;
+}
+
+.slider-text h1 {
+  color: #111 !important;
+  font-size: 72px !important;
+  font-weight: 900 !important;
+  letter-spacing: -2px !important;
+  line-height: 1 !important;
+}
+
+@media (max-width: 767.98px) {
+  .slider-text h1 {
+    font-size: 44px !important;
+    letter-spacing: -1px !important;
+  }
+}
+
+.slider-text h2 {
+  color: #333 !important;
+  font-weight: 700 !important;
+}
+
+.slider-text h2 span {
+  color: #111 !important;
+  text-decoration-color: #111 !important;
+}
+
+.slider-text p {
+  color: #444 !important;
+}
+
+/* --- Scroll Down Arrow --- */
+.scrollDown span {
+  border-color: #111 !important;
+}
+
+/* --- Sections --- */
+.ftco-section {
+  background: #f5f5f5 !important;
+}
+
+.ftco-about.img {
+  background: #fff !important;
+}
+
+#resume-section {
+  background: #f5f5f5 !important;
+}
+
+#project-section {
+  background: #fff !important;
+}
+
+.contact-section {
+  background: #f5f5f5 !important;
+}
+
+/* --- About Section --- */
+.ftco-about .img-about .img {
+  filter: grayscale(60%) !important;
+}
+
+/* --- Resume Nav --- */
+#navi li a {
+  color: #333 !important;
+}
+
+#navi li a.current {
+  color: #111 !important;
+}
+
+#navi li a.current:after {
+  background: #111 !important;
+}
+
+/* --- Resume Pages --- */
+.page .heading {
+  color: #111 !important;
+  border-bottom: 2px solid #111 !important;
+  padding-bottom: 8px !important;
+}
+
+.resume-wrap {
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.resume-wrap .icon {
+  background: #111 !important;
+}
+
+.resume-wrap .icon span {
+  color: #f5f5f5 !important;
+}
+
+.resume-wrap h2 {
+  color: #111 !important;
+}
+
+.resume-wrap .position {
+  color: #444 !important;
+}
+
+.resume-wrap .date {
+  color: #111 !important;
+}
+
+.resume-wrap p,
+.resume-wrap li {
+  color: #333 !important;
+}
+
+/* --- Skills --- */
+.page.three img {
+  filter: grayscale(80%) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.page.three img:hover {
+  filter: grayscale(0%) !important;
+}
+
+.page.three span {
+  color: #333 !important;
+}
+
+/* --- Project Cards --- */
+.services-1 {
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.services-1 .icon i {
+  color: #111 !important;
+}
+
+.services-1 .desc h3 {
+  color: #111 !important;
+}
+
+.services-1 .desc h3:after {
+  background: #111 !important;
+}
+
+.services-1 .desc h3 a {
+  color: #111 !important;
+}
+
+.services-1 .desc p {
+  color: #333 !important;
+}
+
+.services-1 .desc p strong {
+  color: #444 !important;
+}
+
+.services-1:hover {
+  background: #111 !important;
+  border-color: #111 !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15) !important;
+}
+
+.services-1:hover .icon i {
+  color: #f5f5f5 !important;
+}
+
+.services-1:hover h3,
+.services-1:hover h3 a {
+  color: #f5f5f5 !important;
+}
+
+.services-1:hover h3:after {
+  background: #f5f5f5 !important;
+}
+
+.services-1:hover .desc p {
+  color: #ccc !important;
+}
+
+.services-1:hover .desc p strong {
+  color: #bbb !important;
+}
+
+/* --- Heading Sections --- */
+.heading-section h2 {
+  color: #111 !important;
+  font-weight: 900 !important;
+}
+
+.heading-section .subheading {
+  color: #555 !important;
+}
+
+/* --- Contact Section --- */
+.contact-section .box {
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  box-shadow: none !important;
+}
+
+.contact-section .box .icon {
+  background: #111 !important;
+}
+
+.contact-section .box .icon span {
+  color: #fff !important;
+}
+
+.contact-section .box h3 {
+  color: #111 !important;
+}
+
+.contact-section .contact-info p,
+.contact-section .contact-info p a {
+  color: #111 !important;
+}
+
+.contact-info-box {
+  background: #fff !important;
+  border: 1px solid rgba(0,0,0,0.10) !important;
+  border-radius: 4px !important;
+}
+
+.contact-info-box h3 {
+  color: #111 !important;
+}
+
+.contact-info-box p {
+  color: #333 !important;
+}
+
+/* --- Buttons --- */
+.btn.btn-primary {
+  background: #111 !important;
+  border: 1px solid #111 !important;
+  color: #f5f5f5 !important;
+  border-radius: 0 !important;
+  letter-spacing: 2px !important;
+}
+
+.btn.btn-primary:hover {
+  background: #333 !important;
+  border-color: #333 !important;
+  color: #fff !important;
+}
+
+/* --- Footer --- */
+.ftco-footer {
+  background: #111 !important;
+}
+
+.ftco-footer p,
+.ftco-footer a {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+.ftco-footer a:hover {
+  color: #fff !important;
+}
+
+/* --- Progress Bars --- */
+.progress-bar {
+  background: #111 !important;
+}
+
+.progress-bar:after {
+  background: #111 !important;
+}
+
+.progress-bar span {
+  color: #111 !important;
+}
+
+.progress {
+  background: #ddd !important;
+}
+
+/* --- Bg overrides --- */
+.bg-dark {
+  background: #f5f5f5 !important;
+}
+
+.bg-primary {
+  background: #111 !important;
+}
+
+/* --- Shadow overrides (reduce on light bg) --- */
+.shadow {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08) !important;
+}
+
+/* --- ftco-animate visibility fix --- */
+.ftco-animate.ftco-animated {
+  color: inherit !important;
+}
+
+/* --- Loader --- */
+#loader {
+  background: #f5f5f5 !important;
+}
+
+#percentage-counter {
+  color: #111 !important;
+}

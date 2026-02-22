@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <style>
       body.loader-active {
         overflow: hidden;
@@ -36,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #212529;
+        background: #f5f5f5;
         z-index: 9999;
       }
       #loader-canvas {
@@ -49,7 +50,7 @@
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
-        color: #FFAC00;
+        color: #111;
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -565,7 +566,7 @@
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('loader-canvas'), antialias: true });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      renderer.setClearColor(0x212529);
+      renderer.setClearColor(0xf5f5f5);
       renderer.setSize(window.innerWidth, window.innerHeight);
 
       const ambientLight = new THREE.AmbientLight(0xffffff, 1);
@@ -613,8 +614,8 @@
       masterGroup.rotation.x = Math.PI / 24;
       scene.add(masterGroup);
 
-      const globe1 = createTextSphere('MURAT    EKER    •    PERSONAL    PORTFOLIO    •    2026    ', 1.8, 990, '#FFAC00');
-      const globe2 = createTextSphere('SOFTWARE DEVELOPMENT      •      AI & MACHINE LEARNING      •      OPEN SOURCE      •     ', 1, 300, '#FFAC00');
+      const globe1 = createTextSphere('MURAT    EKER    •    PERSONAL    PORTFOLIO    •    2026    ', 1.8, 990, '#111111');
+      const globe2 = createTextSphere('SOFTWARE DEVELOPMENT      •      AI & MACHINE LEARNING      •      OPEN SOURCE      •     ', 1, 300, '#111111');
       masterGroup.add(globe1, globe2);
 
       const mouse = { x: 0, y: 0 };
