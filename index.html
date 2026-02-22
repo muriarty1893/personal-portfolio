@@ -15,10 +15,6 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="icon" href="images/favicon.png" />
 
@@ -578,29 +574,24 @@
       function createTextTexture(text, heightScale, fontWeight, color) {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-        canvas.width = 8192; canvas.height = 4096;
+        canvas.width = 4096; canvas.height = 2048;
         context.clearRect(0, 0, canvas.width, canvas.height);
         const textToRender = text + ' ';
         let fontSize = 100;
-        context.font = `${fontWeight} ${fontSize}px 'Rajdhani', sans-serif`;
+        context.font = `${fontWeight} ${fontSize}px 'Poppins', sans-serif`;
         const metrics = context.measureText(textToRender);
         const scaleFactor = canvas.width / metrics.width;
         const finalFontSize = fontSize * scaleFactor;
-        context.font = `${fontWeight} ${finalFontSize}px 'Rajdhani', sans-serif`;
+        context.font = `${fontWeight} ${finalFontSize}px 'Poppins', sans-serif`;
+        context.fillStyle = color;
         context.textAlign = 'center'; context.textBaseline = 'middle';
         context.save();
         context.translate(canvas.width / 2, canvas.height / 2);
         context.scale(1, heightScale);
-        context.strokeStyle = '#1a1a1a';
-        context.lineWidth = finalFontSize * 0.04;
-        context.lineJoin = 'round';
-        context.strokeText(textToRender, 0, 0);
-        context.fillStyle = color;
         context.fillText(textToRender, 0, 0);
         context.restore();
         const texture = new THREE.CanvasTexture(canvas);
-        texture.generateMipmaps = false;
-        texture.minFilter = THREE.LinearFilter;
+        texture.minFilter = THREE.LinearMipmapLinearFilter;
         texture.magFilter = THREE.LinearFilter;
         texture.wrapS = THREE.RepeatWrapping; texture.wrapT = THREE.ClampToEdgeWrapping;
         texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
@@ -622,7 +613,7 @@
       masterGroup.rotation.x = Math.PI / 24;
       scene.add(masterGroup);
 
-      const globe1 = createTextSphere('MURAT    EKER    •    PORTFOLIO    MURAT    EKER    •    PORTFOLIO    ', 1.8, 990, '#FFAC00');
+      const globe1 = createTextSphere('MURAT    EKER    •    PERSONAL    PORTFOLIO    •    2026    ', 1.8, 990, '#FFAC00');
       const globe2 = createTextSphere('SOFTWARE DEVELOPMENT      •      AI & MACHINE LEARNING      •      OPEN SOURCE      •     ', 1, 300, '#FFAC00');
       masterGroup.add(globe1, globe2);
 
