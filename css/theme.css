@@ -65,20 +65,42 @@ strong {
 }
 
 /* --- Language Buttons --- */
+.language-buttons {
+  display: inline-flex !important;
+  align-items: center !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  margin-left: 10px !important;
+  background: transparent !important;
+}
+
 .language-buttons a {
   color: #111 !important;
-  border-color: #111 !important;
+  text-decoration: none !important;
+  padding: 4px 13px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
+  line-height: 1.6 !important;
+}
+
+.language-buttons a + a {
+  border-left: 1.5px solid #111 !important;
 }
 
 .language-buttons a.active {
-  background-color: #111 !important;
+  background: #111 !important;
   color: #f5f5f5 !important;
 }
 
-.language-buttons a:hover {
-  background-color: #111 !important;
-  color: #f5f5f5 !important;
-  text-decoration: none !important;
+.language-buttons a:hover:not(.active) {
+  background: rgba(0, 0, 0, 0.07) !important;
+  color: #111 !important;
 }
 
 /* --- Hero Section --- */
@@ -481,19 +503,27 @@ body.dark-mode .ftco_navbar .navbar-toggler {
 }
 
 /* Language Buttons */
-body.dark-mode .language-buttons a {
-  color: #d8d8d8 !important;
+body.dark-mode .language-buttons {
   border-color: #d8d8d8 !important;
 }
 
+body.dark-mode .language-buttons a {
+  color: #d8d8d8 !important;
+  border: none !important;
+}
+
+body.dark-mode .language-buttons a + a {
+  border-left: 1.5px solid #d8d8d8 !important;
+}
+
 body.dark-mode .language-buttons a.active {
-  background-color: #f0f0f0 !important;
+  background: #d8d8d8 !important;
   color: #111 !important;
 }
 
-body.dark-mode .language-buttons a:hover {
-  background-color: #f0f0f0 !important;
-  color: #111 !important;
+body.dark-mode .language-buttons a:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
 }
 
 /* Dark mode toggle in dark mode */
