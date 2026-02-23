@@ -57,11 +57,17 @@
         letter-spacing: 2px;
         pointer-events: none;
       }
+      body:not(.loader-active) #loader {
+        display: none;
+      }
     </style>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" class="loader-active">
-    <script>if(localStorage.getItem('darkMode')==='true'){document.body.classList.add('dark-mode');}</script>
+    <script>
+      if(localStorage.getItem('darkMode')==='true'){document.body.classList.add('dark-mode');}
+      if(sessionStorage.getItem('loaderShown')){document.body.classList.remove('loader-active');}
+    </script>
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
       id="ftco-navbar"
@@ -566,6 +572,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
+      if (!sessionStorage.getItem('loaderShown')) {
+      sessionStorage.setItem('loaderShown', 'true');
       const _isDarkLoader = document.body.classList.contains('dark-mode');
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -682,6 +690,7 @@
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
       });
+      } // end loaderShown check
     </script>
     <script>
       (function() {
