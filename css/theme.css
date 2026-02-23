@@ -450,6 +450,91 @@ strong {
   color: #f5f5f5;
 }
 
+/* --- Project Showcase (Tab #page-4) --- */
+.project-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(0,0,0,0.10);
+  border: 1px solid rgba(0,0,0,0.10);
+}
+
+@media (max-width: 767.98px) {
+  .project-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-showcase-item {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  background: #f5f5f5;
+  text-decoration: none !important;
+  transition: background 0.2s ease;
+}
+
+.project-showcase-item:hover {
+  background: #111 !important;
+}
+
+.proj-num {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #bbb;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.proj-title {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.3 !important;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.proj-tags span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid rgba(0,0,0,0.18);
+  color: #555;
+}
+
+.proj-desc {
+  font-size: 13px !important;
+  color: #555 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 16px !important;
+  flex: 1;
+}
+
+.proj-link {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+.project-showcase-item:hover .proj-num { color: #666 !important; }
+.project-showcase-item:hover .proj-title { color: #f5f5f5 !important; }
+.project-showcase-item:hover .proj-tags span { border-color: rgba(255,255,255,0.25) !important; color: #bbb !important; }
+.project-showcase-item:hover .proj-desc { color: #ccc !important; }
+.project-showcase-item:hover .proj-link { color: #f5f5f5 !important; }
+
 /* =========================================
    DARK MODE
    ========================================= */
@@ -771,6 +856,32 @@ body.dark-mode .btn.btn-primary:hover {
   border-color: #fff !important;
   color: #111 !important;
 }
+
+/* Project Showcase Dark Mode */
+body.dark-mode .project-showcase-grid {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.07);
+}
+
+body.dark-mode .project-showcase-item {
+  background: #1a1a1a;
+}
+
+body.dark-mode .project-showcase-item:hover {
+  background: #e8e8e8 !important;
+}
+
+body.dark-mode .proj-num { color: #555 !important; }
+body.dark-mode .proj-title { color: #f0f0f0 !important; }
+body.dark-mode .proj-tags span { border-color: rgba(255,255,255,0.15) !important; color: #888 !important; }
+body.dark-mode .proj-desc { color: #888 !important; }
+body.dark-mode .proj-link { color: #d8d8d8 !important; }
+
+body.dark-mode .project-showcase-item:hover .proj-num { color: #999 !important; }
+body.dark-mode .project-showcase-item:hover .proj-title { color: #111 !important; }
+body.dark-mode .project-showcase-item:hover .proj-tags span { border-color: rgba(0,0,0,0.2) !important; color: #444 !important; }
+body.dark-mode .project-showcase-item:hover .proj-desc { color: #333 !important; }
+body.dark-mode .project-showcase-item:hover .proj-link { color: #111 !important; }
 
 /* Footer */
 body.dark-mode .ftco-footer {
