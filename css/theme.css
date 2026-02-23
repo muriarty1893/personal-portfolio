@@ -399,3 +399,360 @@ strong {
 #percentage-counter {
   color: #111 !important;
 }
+
+/* --- Dark Mode Toggle Button --- */
+.dark-mode-toggle {
+  background: none;
+  border: 1.5px solid #111;
+  border-radius: 20px;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #111;
+  transition: all 0.2s ease;
+  line-height: 1.6;
+  margin-left: 6px;
+}
+
+.dark-mode-toggle:hover {
+  background: #111;
+  color: #f5f5f5;
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+body.dark-mode {
+  background: #111 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode p {
+  color: #bbb !important;
+}
+
+body.dark-mode a {
+  color: #d8d8d8 !important;
+}
+
+body.dark-mode a:hover {
+  color: #fff !important;
+}
+
+body.dark-mode strong {
+  color: #e0e0e0 !important;
+}
+
+/* Navbar */
+body.dark-mode .ftco_navbar,
+body.dark-mode .ftco_navbar.navbar-dark,
+body.dark-mode .ftco_navbar.bg-dark {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+body.dark-mode .ftco_navbar .navbar-brand {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .ftco_navbar .navbar-nav .nav-link,
+body.dark-mode .ftco_navbar .navbar-dark .navbar-nav .nav-link {
+  color: #d8d8d8 !important;
+}
+
+body.dark-mode .ftco_navbar .navbar-nav .nav-link:hover,
+body.dark-mode .ftco_navbar .navbar-nav .nav-link:focus {
+  color: #fff !important;
+}
+
+body.dark-mode .ftco_navbar .navbar-toggler {
+  border-color: #d8d8d8 !important;
+  color: #d8d8d8 !important;
+}
+
+/* Language Buttons */
+body.dark-mode .language-buttons a {
+  color: #d8d8d8 !important;
+  border-color: #d8d8d8 !important;
+}
+
+body.dark-mode .language-buttons a.active {
+  background-color: #f0f0f0 !important;
+  color: #111 !important;
+}
+
+body.dark-mode .language-buttons a:hover {
+  background-color: #f0f0f0 !important;
+  color: #111 !important;
+}
+
+/* Dark mode toggle in dark mode */
+body.dark-mode .dark-mode-toggle {
+  border-color: #d8d8d8;
+  color: #d8d8d8;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background: #d8d8d8;
+  color: #111;
+}
+
+/* Hero */
+body.dark-mode .hero-wrap {
+  background: #111 !important;
+}
+
+body.dark-mode .hero-wrap .overlay {
+  background: #333 !important;
+}
+
+body.dark-mode .slider-text .subheading {
+  color: #888 !important;
+}
+
+body.dark-mode .slider-text h1 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .slider-text h2 {
+  color: #bbb !important;
+}
+
+body.dark-mode .slider-text h2 span {
+  color: #f0f0f0 !important;
+  text-decoration-color: #f0f0f0 !important;
+}
+
+body.dark-mode .scrollDown span {
+  border-color: #d8d8d8 !important;
+}
+
+/* Sections */
+body.dark-mode .ftco-section {
+  background: #111 !important;
+}
+
+body.dark-mode .ftco-about.img {
+  background: #1a1a1a !important;
+}
+
+body.dark-mode #resume-section {
+  background: #111 !important;
+}
+
+body.dark-mode #project-section {
+  background: #1a1a1a !important;
+}
+
+body.dark-mode .contact-section {
+  background: #111 !important;
+}
+
+/* Resume Nav */
+body.dark-mode #navi li a {
+  color: #999 !important;
+}
+
+body.dark-mode #navi li a.current {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #navi li a.current:after {
+  background: #f0f0f0 !important;
+}
+
+/* Resume Pages */
+body.dark-mode .page .heading {
+  color: #f0f0f0 !important;
+  border-bottom: 2px solid #f0f0f0 !important;
+}
+
+body.dark-mode .resume-wrap {
+  border-bottom-color: rgba(255,255,255,0.08) !important;
+}
+
+body.dark-mode .resume-wrap .icon {
+  background: #e0e0e0 !important;
+}
+
+body.dark-mode .resume-wrap .icon span {
+  color: #111 !important;
+}
+
+body.dark-mode .resume-wrap h2 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .resume-wrap .position {
+  color: #aaa !important;
+}
+
+body.dark-mode .resume-wrap .date {
+  color: #d8d8d8 !important;
+}
+
+body.dark-mode .resume-wrap p,
+body.dark-mode .resume-wrap li {
+  color: #bbb !important;
+}
+
+/* Skills */
+body.dark-mode .page.three img {
+  filter: grayscale(80%) brightness(0.75) !important;
+}
+
+body.dark-mode .page.three img:hover {
+  filter: grayscale(0%) brightness(1) !important;
+}
+
+body.dark-mode .page.three span {
+  color: #bbb !important;
+}
+
+/* Project Cards */
+body.dark-mode .services-1 {
+  background: #1e1e1e !important;
+  border: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+body.dark-mode .services-1 .icon i {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .services-1 .desc h3 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .services-1 .desc h3:after {
+  background: #f0f0f0 !important;
+}
+
+body.dark-mode .services-1 .desc h3 a {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .services-1 .desc p {
+  color: #bbb !important;
+}
+
+body.dark-mode .services-1 .desc p strong {
+  color: #ccc !important;
+}
+
+body.dark-mode .services-1:hover {
+  background: #e8e8e8 !important;
+  border-color: #e8e8e8 !important;
+}
+
+body.dark-mode .services-1:hover .icon i {
+  color: #111 !important;
+}
+
+body.dark-mode .services-1:hover h3,
+body.dark-mode .services-1:hover h3 a {
+  color: #111 !important;
+}
+
+body.dark-mode .services-1:hover h3:after {
+  background: #111 !important;
+}
+
+body.dark-mode .services-1:hover .desc p {
+  color: #333 !important;
+}
+
+body.dark-mode .services-1:hover .desc p strong {
+  color: #444 !important;
+}
+
+/* Heading Sections */
+body.dark-mode .heading-section h2 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .heading-section .subheading {
+  color: #888 !important;
+}
+
+/* Contact */
+body.dark-mode .contact-section .box {
+  background: #1e1e1e !important;
+  border: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+body.dark-mode .contact-section .box .icon {
+  background: #e0e0e0 !important;
+}
+
+body.dark-mode .contact-section .box .icon span {
+  color: #111 !important;
+}
+
+body.dark-mode .contact-section .box h3 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .contact-section .contact-info p,
+body.dark-mode .contact-section .contact-info p a {
+  color: #d8d8d8 !important;
+}
+
+body.dark-mode .contact-info-box {
+  background: #1e1e1e !important;
+  border: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+body.dark-mode .contact-info-box h3 {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .contact-info-box p {
+  color: #bbb !important;
+}
+
+/* Buttons */
+body.dark-mode .btn.btn-primary {
+  background: #e0e0e0 !important;
+  border: 1px solid #e0e0e0 !important;
+  color: #111 !important;
+}
+
+body.dark-mode .btn.btn-primary:hover {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #111 !important;
+}
+
+/* Footer */
+body.dark-mode .ftco-footer {
+  background: #0a0a0a !important;
+}
+
+/* Shadow */
+body.dark-mode .shadow {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.5) !important;
+}
+
+/* Bg overrides */
+body.dark-mode .bg-dark {
+  background: #1a1a1a !important;
+}
+
+/* Loader */
+body.dark-mode #loader {
+  background: #111 !important;
+}
+
+body.dark-mode #percentage-counter {
+  color: #e0e0e0 !important;
+}

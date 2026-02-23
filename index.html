@@ -61,6 +61,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" class="loader-active">
+    <script>if(localStorage.getItem('darkMode')==='true'){document.body.classList.add('dark-mode');}</script>
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
       id="ftco-navbar"
@@ -102,6 +103,9 @@
                 <a href="index.html" class="active">EN</a>
                 <a href="index-tr.html">TR</a>
               </div>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
             </li>
           </ul>
         </div>
@@ -562,11 +566,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
+      const _isDarkLoader = document.body.classList.contains('dark-mode');
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('loader-canvas'), antialias: true });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      renderer.setClearColor(0xf5f5f5);
+      renderer.setClearColor(_isDarkLoader ? 0x111111 : 0xf5f5f5);
       renderer.setSize(window.innerWidth, window.innerHeight);
 
       const ambientLight = new THREE.AmbientLight(0xffffff, 1);
@@ -614,8 +619,9 @@
       masterGroup.rotation.x = Math.PI / 24;
       scene.add(masterGroup);
 
-      const globe1 = createTextSphere('MURAT    EKER    •    PERSONAL    PORTFOLIO    •    2026    ', 1.8, 990, '#111111');
-      const globe2 = createTextSphere('SOFTWARE DEVELOPMENT      •      AI & MACHINE LEARNING      •      OPEN SOURCE      •     ', 1, 300, '#111111');
+      const _loaderTextColor = _isDarkLoader ? '#eeeeee' : '#111111';
+      const globe1 = createTextSphere('MURAT    EKER    •    PERSONAL    PORTFOLIO    •    2026    ', 1.8, 990, _loaderTextColor);
+      const globe2 = createTextSphere('SOFTWARE DEVELOPMENT      •      AI & MACHINE LEARNING      •      OPEN SOURCE      •     ', 1, 300, _loaderTextColor);
       masterGroup.add(globe1, globe2);
 
       const mouse = { x: 0, y: 0 };
@@ -676,6 +682,19 @@
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
       });
+    </script>
+    <script>
+      (function() {
+        const btn = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        btn.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        btn.addEventListener('click', function() {
+          body.classList.toggle('dark-mode');
+          const dark = body.classList.contains('dark-mode');
+          localStorage.setItem('darkMode', dark);
+          btn.textContent = dark ? '☀️' : '🌙';
+        });
+      })();
     </script>
   </body>
 </html>
