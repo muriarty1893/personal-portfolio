@@ -535,6 +535,12 @@ strong {
 .project-showcase-item:hover .proj-desc { color: #ccc !important; }
 .project-showcase-item:hover .proj-link { color: #f5f5f5 !important; }
 
+/* --- 3D Gallery Section Header --- */
+#gallery-section-wrapper {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 /* --- 3D Gallery (Full-screen scroll-driven) --- */
 #project-section {
   position: relative;
