@@ -324,7 +324,7 @@
 
   // ============ SCROLL-DRIVEN CAMERA ============
   var scrollProgress = 0;
-  var camX = 0, camY = 1.8;
+  var camX = 0, camY = 2.7;
   var lookX = 0, lookY = 2.4, lookZ = -OFFSET;
   var currentInfoIndex = -1;
 
@@ -358,39 +358,35 @@
 
     var p = paintingData[nearest];
     // Proximity: 1 = right at painting, 0 = far away
-    var proximity = smoothstep(clamp(1 - minDist / (SPACING * 0.55), 0, 1));
+    var proximity = smoothstep(clamp(1 - minDist / (SPACING * 0.45), 0, 1));
 
-    // Camera X: shift slightly toward the painting side
+    // Camera X: very subtle shift toward the painting side
     var sideX = p.isLeft ? -1.0 : 1.0;
-    var targetCamX = sideX * proximity * 0.8;
-    camX += (targetCamX - camX) * 0.06;
-    camera.position.x = camX;
+    var targetCamX = sideX * proximity * 0.35;
+    camX += (targetCamX - camX) * 0.08;
+    camera.position.x = camX + mouseX * 0.15;
 
-    // Camera Y: slight breathing
-    camera.position.y += (camY + mouseY * 0.12 - camera.position.y) * 0.06;
+    // Camera Y: stable at eye level with subtle mouse
+    camera.position.y += (camY + mouseY * 0.08 - camera.position.y) * 0.06;
 
-    // Mouse sway on X
-    camera.position.x += mouseX * 0.25;
+    // LookAt: when near a painting, turn to face it directly
+    // When far from any painting, look straight ahead
+    var aheadZ = camera.position.z - 4;
+    // Full wall X position so camera faces the painting head-on
+    var paintLookX = p.isLeft ? -CW / 2 : CW / 2;
 
-    // LookAt target: blend between "look ahead" and "look at painting"
-    var aheadZ = camera.position.z - 5;
-    var paintLookX = (p.isLeft ? -CW / 2 + 1.5 : CW / 2 - 1.5);
+    var targetLookX = lerp(0, paintLookX, proximity);
+    var targetLookY = lerp(camY, PAINT_Y, proximity * 0.3);
+    var targetLookZ = lerp(aheadZ, p.z, proximity);
 
-    var targetLookX = lerp(0, paintLookX, proximity * 0.85);
-    var targetLookZ = lerp(aheadZ, p.z, proximity * 0.6);
-
-    lookX += (targetLookX - lookX) * 0.05;
-    lookY += (PAINT_Y - lookY) * 0.05;
-    lookZ += (targetLookZ - lookZ) * 0.07;
+    lookX += (targetLookX - lookX) * 0.07;
+    lookY += (targetLookY - lookY) * 0.07;
+    lookZ += (targetLookZ - lookZ) * 0.09;
 
     camera.lookAt(lookX, lookY, lookZ);
 
     // Update info overlay
-    if (nearest !== currentInfoIndex || proximity < 0.15) {
-      updateInfoOverlay(nearest, proximity);
-    } else {
-      updateInfoOverlay(nearest, proximity);
-    }
+    updateInfoOverlay(nearest, proximity);
   }
 
   // ============ INFO OVERLAY ============
