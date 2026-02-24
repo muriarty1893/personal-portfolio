@@ -195,7 +195,6 @@
                 <li><a href="#page-1">Education</a></li>
                 <li><a href="#page-2">Experience</a></li>
                 <li><a href="#page-3">Skills</a></li>
-                <li><a href="#page-4">Projects</a></li>
               </ul>
             </nav>
           </div>
@@ -341,77 +340,26 @@
                 </div>
               </div>
             </div>
-            <div id="page-4" class="page four">
-              <h2 class="heading">Projects</h2>
-              <div class="project-showcase-grid">
-                <a href="https://github.com/muriarty1893/rottector" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">01</span>
-                  <h3 class="proj-title">Rottector</h3>
-                  <div class="proj-tags"><span>Python</span><span>YOLOv8</span><span>FastAPI</span></div>
-                  <p class="proj-desc">AI-powered fruit detection system using a hybrid of two models to classify fruits as fresh or rotten. End-to-end with Python backend and web UI.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/lavida" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">02</span>
-                  <h3 class="proj-title">Lavida</h3>
-                  <div class="proj-tags"><span>Python</span><span>PyQt6</span><span>SQLite</span><span>BeautifulSoup4</span></div>
-                  <p class="proj-desc">Lightweight always-on-top desktop widget for managing saved video links with auto-fetched titles and global keyboard shortcuts.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/rag-tutorial-v2" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">03</span>
-                  <h3 class="proj-title">RAG Tutorial v2</h3>
-                  <div class="proj-tags"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Llama 3.2</span></div>
-                  <p class="proj-desc">Advanced RAG system with conversational memory, PDF processing, multilingual support, and interactive feedback.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/gopak.com.tr" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">04</span>
-                  <h3 class="proj-title">GOPAK E-commerce</h3>
-                  <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>HTML5</span><span>JavaScript</span></div>
-                  <p class="proj-desc">Responsive e-commerce web application for official Gopak Corporation with 3D model viewer and admin panel.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/Heart-Attack-Prediction-and-EDA" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">05</span>
-                  <h3 class="proj-title">Heart Attack Prediction & EDA</h3>
-                  <div class="proj-tags"><span>Python</span><span>Machine Learning</span><span>EDA</span></div>
-                  <p class="proj-desc">Comprehensive exploratory data analysis and machine learning model for heart attack prediction with data visualization.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="#" target="https://github.com/muriarty1893/dataPull" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">06</span>
-                  <h3 class="proj-title">Modular Data Scraper</h3>
-                  <div class="proj-tags"><span>Python</span><span>BeautifulSoup4</span><span>Pandas</span></div>
-                  <p class="proj-desc">A robust, CLI-based scraping tool built with a modular architecture. Features automated performance tracking, error handling, and structured CSV export for dataset creation.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/JustZipIt" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">07</span>
-                  <h3 class="proj-title">JustZipIt</h3>
-                  <div class="proj-tags"><span>Python</span><span>GUI</span><span>File Compression</span></div>
-                  <p class="proj-desc">File compression utility with user-friendly interface for efficient archiving and extraction.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/circling_loader" target="_blank" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">08</span>
-                  <h3 class="proj-title">Circling Loader</h3>
-                  <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                  <p class="proj-desc">Lightweight and customizable circling loader animation for web applications.</p>
-                  <span class="proj-link">GitHub →</span>
-                </a>
-                <a href="https://github.com/muriarty1893/the-elastic-project" class="project-showcase-item ftco-animate">
-                  <span class="proj-num">09</span>
-                  <h3 class="proj-title">Elasticsearch Search Integration</h3>
-                  <div class="proj-tags"><span>Elasticsearch</span><span>Python</span><span>C#</span><span>Kibana</span></div>
-                  <p class="proj-desc">Migrated SQL-based search to high-performance Elasticsearch for Cumba Kuruyemiş, integrating with C# .NET and managing indexes via Kibana.</p>
-                  <span class="proj-link">Private</span>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 3D Gallery -->
+    <section id="project-section">
+      <div id="gallery-sticky">
+        <canvas id="gallery-canvas"></canvas>
+        <div id="gallery-info">
+          <span id="gallery-info-num"></span>
+          <h3 id="gallery-info-title"></h3>
+          <p id="gallery-info-tags"></p>
+          <p id="gallery-info-desc"></p>
+          <a id="gallery-info-cta" href="#" target="_blank">View on GitHub</a>
+        </div>
+        <div id="gallery-progress">
+          <span id="gallery-progress-text">1 / 9</span>
+        </div>
+        <div id="gallery-scroll-hint">Scroll to explore</div>
       </div>
     </section>
 
@@ -520,6 +468,7 @@
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/gallery3d.js"></script>
     <script>
       if (!sessionStorage.getItem('loaderShown')) {
       sessionStorage.setItem('loaderShown', 'true');
