@@ -617,6 +617,240 @@
     };
   })();
 
+  // ============ END WALL ARCHITECTURAL DETAILS ============
+  var endWallDetailMeshes = [];
+  (function() {
+    var d = getIsDark();
+
+    // --- Pilaster columns on both sides of end wall ---
+    var pilasterColor = d ? 0x1c1c1c : 0xe0e0e0;
+    var pilasterMat = new THREE.MeshStandardMaterial({ color: pilasterColor, roughness: 0.35, metalness: 0.15 });
+
+    // Left pilaster
+    var pilL = new THREE.Mesh(new THREE.BoxGeometry(0.35, CH, 0.35), pilasterMat);
+    pilL.position.set(-CW / 2 + 0.3, CH / 2, endWallZ + 0.18);
+    pilL.castShadow = true;
+    scene.add(pilL);
+    endWallDetailMeshes.push(pilL);
+
+    // Right pilaster
+    var pilR = new THREE.Mesh(new THREE.BoxGeometry(0.35, CH, 0.35), pilasterMat.clone());
+    pilR.position.set(CW / 2 - 0.3, CH / 2, endWallZ + 0.18);
+    pilR.castShadow = true;
+    scene.add(pilR);
+    endWallDetailMeshes.push(pilR);
+
+    // Pilaster capitals (wider top block)
+    var capitalColor = d ? 0x222222 : 0xd5d5d5;
+    var capitalMat = new THREE.MeshStandardMaterial({ color: capitalColor, roughness: 0.25, metalness: 0.2 });
+
+    var capL = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.18, 0.5), capitalMat);
+    capL.position.set(-CW / 2 + 0.3, CH - 0.09, endWallZ + 0.18);
+    scene.add(capL);
+    endWallDetailMeshes.push(capL);
+
+    var capR = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.18, 0.5), capitalMat.clone());
+    capR.position.set(CW / 2 - 0.3, CH - 0.09, endWallZ + 0.18);
+    scene.add(capR);
+    endWallDetailMeshes.push(capR);
+
+    // Pilaster bases (wider bottom block)
+    var baseCapL = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.14, 0.45), capitalMat.clone());
+    baseCapL.position.set(-CW / 2 + 0.3, 0.07, endWallZ + 0.18);
+    scene.add(baseCapL);
+    endWallDetailMeshes.push(baseCapL);
+
+    var baseCapR = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.14, 0.45), capitalMat.clone());
+    baseCapR.position.set(CW / 2 - 0.3, 0.07, endWallZ + 0.18);
+    scene.add(baseCapR);
+    endWallDetailMeshes.push(baseCapR);
+
+    // --- Wall frame molding around the contact area ---
+    var frameMoldColor = d ? 0x252525 : 0xd0d0d0;
+    var frameMoldMat = new THREE.MeshStandardMaterial({ color: frameMoldColor, roughness: 0.2, metalness: 0.3 });
+
+    // Top horizontal frame
+    var frameTop = new THREE.Mesh(new THREE.BoxGeometry(7.5, 0.08, 0.1), frameMoldMat);
+    frameTop.position.set(0, CH - 0.45, endWallZ + 0.12);
+    scene.add(frameTop);
+    endWallDetailMeshes.push(frameTop);
+
+    // Bottom horizontal frame
+    var frameBot = new THREE.Mesh(new THREE.BoxGeometry(7.5, 0.08, 0.1), frameMoldMat.clone());
+    frameBot.position.set(0, 0.5, endWallZ + 0.12);
+    scene.add(frameBot);
+    endWallDetailMeshes.push(frameBot);
+
+    // Left vertical frame
+    var frameLeft = new THREE.Mesh(new THREE.BoxGeometry(0.08, CH - 1.0, 0.1), frameMoldMat.clone());
+    frameLeft.position.set(-3.75, CH / 2, endWallZ + 0.12);
+    scene.add(frameLeft);
+    endWallDetailMeshes.push(frameLeft);
+
+    // Right vertical frame
+    var frameRight = new THREE.Mesh(new THREE.BoxGeometry(0.08, CH - 1.0, 0.1), frameMoldMat.clone());
+    frameRight.position.set(3.75, CH / 2, endWallZ + 0.12);
+    scene.add(frameRight);
+    endWallDetailMeshes.push(frameRight);
+
+    // --- Console table in front of end wall ---
+    var tableColor = d ? 0x1a1a1a : 0x222222;
+    var tableMat = new THREE.MeshStandardMaterial({ color: tableColor, roughness: 0.15, metalness: 0.7 });
+
+    // Table top
+    var tableTop = new THREE.Mesh(new THREE.BoxGeometry(3.0, 0.06, 0.6), tableMat);
+    tableTop.position.set(0, 0.75, endWallZ + 1.0);
+    tableTop.castShadow = true;
+    tableTop.receiveShadow = true;
+    scene.add(tableTop);
+    endWallDetailMeshes.push(tableTop);
+
+    // Table legs (4 thin legs)
+    var legMat = new THREE.MeshStandardMaterial({ color: tableColor, roughness: 0.15, metalness: 0.8 });
+    var legPositions = [
+      [-1.35, 0.375, endWallZ + 0.75],
+      [1.35, 0.375, endWallZ + 0.75],
+      [-1.35, 0.375, endWallZ + 1.25],
+      [1.35, 0.375, endWallZ + 1.25]
+    ];
+    legPositions.forEach(function(pos) {
+      var leg = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.75, 0.04), legMat.clone());
+      leg.position.set(pos[0], pos[1], pos[2]);
+      leg.castShadow = true;
+      scene.add(leg);
+      endWallDetailMeshes.push(leg);
+    });
+
+    // --- Floor uplights (warm accent lights from floor level) ---
+    var uplightColor = d ? 0xffedcc : 0xfff0d4;
+    var uplightL = new THREE.SpotLight(uplightColor, d ? 1.2 : 0.6, 10, Math.PI / 6, 0.6, 1.5);
+    uplightL.position.set(-3.5, 0.1, endWallZ + 0.8);
+    var uplTargetL = new THREE.Object3D();
+    uplTargetL.position.set(-3.5, CH, endWallZ);
+    scene.add(uplTargetL);
+    uplightL.target = uplTargetL;
+    scene.add(uplightL);
+    endWallDetailMeshes.push(uplightL);
+
+    var uplightR = new THREE.SpotLight(uplightColor, d ? 1.2 : 0.6, 10, Math.PI / 6, 0.6, 1.5);
+    uplightR.position.set(3.5, 0.1, endWallZ + 0.8);
+    var uplTargetR = new THREE.Object3D();
+    uplTargetR.position.set(3.5, CH, endWallZ);
+    scene.add(uplTargetR);
+    uplightR.target = uplTargetR;
+    scene.add(uplightR);
+    endWallDetailMeshes.push(uplightR);
+
+    // Uplight housings (small floor fixtures)
+    var uplHousingMat = new THREE.MeshStandardMaterial({ color: d ? 0x222222 : 0x333333, roughness: 0.2, metalness: 0.7 });
+    var uplHousingL = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.1, 0.06, 8), uplHousingMat);
+    uplHousingL.position.set(-3.5, 0.03, endWallZ + 0.8);
+    scene.add(uplHousingL);
+    endWallDetailMeshes.push(uplHousingL);
+
+    var uplHousingR = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.1, 0.06, 8), uplHousingMat.clone());
+    uplHousingR.position.set(3.5, 0.03, endWallZ + 0.8);
+    scene.add(uplHousingR);
+    endWallDetailMeshes.push(uplHousingR);
+
+    // --- Location text block at bottom of wall ---
+    var locColor = d ? '#666666' : '#999999';
+    var locBg = d ? '#121212' : '#e8e8e8';
+    // Small canvas for location text
+    var locCanvas = document.createElement('canvas');
+    var locRes = 4;
+    locCanvas.width = 512 * locRes;
+    locCanvas.height = 64 * locRes;
+    var locCtx = locCanvas.getContext('2d');
+    locCtx.fillStyle = locBg;
+    locCtx.fillRect(0, 0, locCanvas.width, locCanvas.height);
+    locCtx.fillStyle = locColor;
+    locCtx.font = (16 * locRes) + 'px Poppins, sans-serif';
+    locCtx.textAlign = 'center';
+    locCtx.textBaseline = 'middle';
+    locCtx.fillText('ISTANBUL, TURKEY', locCanvas.width / 2, locCanvas.height / 2);
+
+    var locTex = new THREE.CanvasTexture(locCanvas);
+    locTex.minFilter = THREE.LinearMipmapLinearFilter;
+    locTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
+    var locPlane = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.5, 0.3),
+      new THREE.MeshStandardMaterial({ map: locTex, roughness: 0.5, metalness: 0.05 })
+    );
+    locPlane.position.set(0, 0.75, endWallZ + 0.03);
+    scene.add(locPlane);
+    endWallDetailMeshes.push(locPlane);
+
+    // --- Thin accent lines flanking the title ---
+    var accentColor = d ? 0x333333 : 0xbbbbbb;
+    var accentMat = new THREE.MeshStandardMaterial({ color: accentColor, roughness: 0.15, metalness: 0.6 });
+
+    var accentL = new THREE.Mesh(new THREE.BoxGeometry(0.03, 0.8, 0.05), accentMat);
+    accentL.position.set(-3.5, CH - 1.0, endWallZ + 0.12);
+    scene.add(accentL);
+    endWallDetailMeshes.push(accentL);
+
+    var accentR = new THREE.Mesh(new THREE.BoxGeometry(0.03, 0.8, 0.05), accentMat.clone());
+    accentR.position.set(3.5, CH - 1.0, endWallZ + 0.12);
+    scene.add(accentR);
+    endWallDetailMeshes.push(accentR);
+
+    // Store refs for dark mode
+    window._galleryEndWallDetails = {
+      pilasters: [pilL, pilR],
+      capitals: [capL, capR, baseCapL, baseCapR],
+      frameMolds: [frameTop, frameBot, frameLeft, frameRight],
+      tableParts: endWallDetailMeshes.filter(function(m) { return m.material && m.material === tableMat || m.material === legMat; }),
+      uplights: [uplightL, uplightR],
+      uplHousings: [uplHousingL, uplHousingR],
+      locPlane: locPlane,
+      accents: [accentL, accentR],
+      update: function() {
+        var d2 = getIsDark();
+        // Pilasters
+        [pilL, pilR].forEach(function(p) { p.material.color.setHex(d2 ? 0x1c1c1c : 0xe0e0e0); });
+        // Capitals
+        [capL, capR, baseCapL, baseCapR].forEach(function(c) { c.material.color.setHex(d2 ? 0x222222 : 0xd5d5d5); });
+        // Frame molding
+        [frameTop, frameBot, frameLeft, frameRight].forEach(function(f) { f.material.color.setHex(d2 ? 0x252525 : 0xd0d0d0); });
+        // Console table
+        var tc2 = d2 ? 0x1a1a1a : 0x222222;
+        tableTop.material.color.setHex(tc2);
+        endWallDetailMeshes.forEach(function(m) {
+          if (m.geometry && m.geometry.type === 'BoxGeometry' && m.material.metalness > 0.7) {
+            m.material.color.setHex(tc2);
+          }
+        });
+        // Uplights
+        uplightL.intensity = d2 ? 1.2 : 0.6;
+        uplightR.intensity = d2 ? 1.2 : 0.6;
+        [uplHousingL, uplHousingR].forEach(function(h) { h.material.color.setHex(d2 ? 0x222222 : 0x333333); });
+        // Accents
+        [accentL, accentR].forEach(function(a) { a.material.color.setHex(d2 ? 0x333333 : 0xbbbbbb); });
+        // Rebuild location text
+        var lc2 = d2 ? '#666666' : '#999999';
+        var lb2 = d2 ? '#121212' : '#e8e8e8';
+        var lc2Canvas = document.createElement('canvas');
+        lc2Canvas.width = 512 * locRes;
+        lc2Canvas.height = 64 * locRes;
+        var lc2Ctx = lc2Canvas.getContext('2d');
+        lc2Ctx.fillStyle = lb2;
+        lc2Ctx.fillRect(0, 0, lc2Canvas.width, lc2Canvas.height);
+        lc2Ctx.fillStyle = lc2;
+        lc2Ctx.font = (16 * locRes) + 'px Poppins, sans-serif';
+        lc2Ctx.textAlign = 'center';
+        lc2Ctx.textBaseline = 'middle';
+        lc2Ctx.fillText('ISTANBUL, TURKEY', lc2Canvas.width / 2, lc2Canvas.height / 2);
+        var newLocTex = new THREE.CanvasTexture(lc2Canvas);
+        newLocTex.minFilter = THREE.LinearMipmapLinearFilter;
+        newLocTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        locPlane.material.map = newLocTex;
+        locPlane.material.needsUpdate = true;
+      }
+    };
+  })();
+
   // ============ REALISTIC GALLERY DETAILS ============
 
   // --- Wall wainscoting panels (lower wall decorative rectangles) ---
@@ -1054,6 +1288,11 @@
         // Update contact wall (full rebuild for 3D blocks)
         if (window._galleryContactRefs) {
           window._galleryContactRefs.rebuild();
+        }
+
+        // Update end wall architectural details
+        if (window._galleryEndWallDetails) {
+          window._galleryEndWallDetails.update();
         }
       }, 60);
     });
