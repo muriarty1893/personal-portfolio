@@ -617,6 +617,224 @@
     };
   })();
 
+  // ============ REALISTIC GALLERY DETAILS ============
+
+  // --- Wall wainscoting panels (lower wall decorative rectangles) ---
+  var wainscotMeshes = [];
+  var wainscotMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x141414 : 0xe8e8e8,
+    roughness: 0.6,
+    metalness: 0.05
+  });
+  var wainscotTrimMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x1c1c1c : 0xdadada,
+    roughness: 0.3,
+    metalness: 0.15
+  });
+
+  // Place wainscot panels between paintings on both walls
+  for (var wi = 0; wi < Math.floor(CL / 4); wi++) {
+    var wz = -(wi * 4) + 2;
+    // Left wall panel
+    var panelL = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.8, 1.4),
+      wainscotMat.clone()
+    );
+    panelL.position.set(-CW / 2 + 0.005, 0.9, wz);
+    panelL.rotation.y = Math.PI / 2;
+    scene.add(panelL);
+    wainscotMeshes.push(panelL);
+
+    // Panel trim/frame (thin raised border)
+    var trimL = new THREE.Mesh(
+      new THREE.BoxGeometry(0.015, 1.5, 2.9),
+      wainscotTrimMat.clone()
+    );
+    trimL.position.set(-CW / 2 + 0.01, 0.9, wz);
+    scene.add(trimL);
+    wainscotMeshes.push(trimL);
+
+    // Right wall panel
+    var panelR = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.8, 1.4),
+      wainscotMat.clone()
+    );
+    panelR.position.set(CW / 2 - 0.005, 0.9, wz);
+    panelR.rotation.y = -Math.PI / 2;
+    scene.add(panelR);
+    wainscotMeshes.push(panelR);
+
+    var trimR = new THREE.Mesh(
+      new THREE.BoxGeometry(0.015, 1.5, 2.9),
+      wainscotTrimMat.clone()
+    );
+    trimR.position.set(CW / 2 - 0.01, 0.9, wz);
+    scene.add(trimR);
+    wainscotMeshes.push(trimR);
+  }
+
+  // --- Chair rail molding (horizontal strip at ~1.7m height, typical gallery detail) ---
+  var chairRailMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x1e1e1e : 0xd5d5d5,
+    roughness: 0.25,
+    metalness: 0.2
+  });
+  var chairRailMeshes = [];
+
+  var crailL = new THREE.Mesh(new THREE.BoxGeometry(0.03, 0.05, CL), chairRailMat);
+  crailL.position.set(-CW / 2 + 0.015, 1.7, -(CL / 2 - 4));
+  scene.add(crailL);
+  chairRailMeshes.push(crailL);
+
+  var crailR = new THREE.Mesh(new THREE.BoxGeometry(0.03, 0.05, CL), chairRailMat.clone());
+  crailR.position.set(CW / 2 - 0.015, 1.7, -(CL / 2 - 4));
+  scene.add(crailR);
+  chairRailMeshes.push(crailR);
+
+  // --- Ceiling recessed panels (coffered ceiling effect) ---
+  var cofferMeshes = [];
+  var cofferMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x0e0e0e : 0xd0d0d0,
+    roughness: 0.8,
+    metalness: 0.05
+  });
+  var cofferTrimMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x151515 : 0xc5c5c5,
+    roughness: 0.3,
+    metalness: 0.15
+  });
+
+  for (var ci = 0; ci < Math.floor(CL / 6); ci++) {
+    var cz = -(ci * 6) + 2;
+
+    // Left ceiling coffer
+    var cofL = new THREE.Mesh(
+      new THREE.PlaneGeometry(3.5, 4.5),
+      cofferMat.clone()
+    );
+    cofL.rotation.x = Math.PI / 2;
+    cofL.position.set(-CW / 4, CH - 0.005, cz);
+    scene.add(cofL);
+    cofferMeshes.push(cofL);
+
+    // Coffer trim
+    var cofTrimL = new THREE.Mesh(
+      new THREE.BoxGeometry(3.6, 0.03, 4.6),
+      cofferTrimMat.clone()
+    );
+    cofTrimL.position.set(-CW / 4, CH - 0.015, cz);
+    scene.add(cofTrimL);
+    cofferMeshes.push(cofTrimL);
+
+    // Right ceiling coffer
+    var cofR = new THREE.Mesh(
+      new THREE.PlaneGeometry(3.5, 4.5),
+      cofferMat.clone()
+    );
+    cofR.rotation.x = Math.PI / 2;
+    cofR.position.set(CW / 4, CH - 0.005, cz);
+    scene.add(cofR);
+    cofferMeshes.push(cofR);
+
+    var cofTrimR = new THREE.Mesh(
+      new THREE.BoxGeometry(3.6, 0.03, 4.6),
+      cofferTrimMat.clone()
+    );
+    cofTrimR.position.set(CW / 4, CH - 0.015, cz);
+    scene.add(cofTrimR);
+    cofferMeshes.push(cofTrimR);
+  }
+
+  // --- Ventilation grilles on ceiling (realistic detail) ---
+  var ventMeshes = [];
+  var ventMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x1a1a1a : 0xcccccc,
+    roughness: 0.4,
+    metalness: 0.6
+  });
+  for (var vi = 0; vi < Math.floor(CL / 12); vi++) {
+    var vz = -(vi * 12 + 6) + 4;
+    var vent = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.015, 0.3), ventMat.clone());
+    vent.position.set(0, CH - 0.008, vz);
+    scene.add(vent);
+    ventMeshes.push(vent);
+  }
+
+  // --- Floor skirting board detail (thicker baseboard with profile) ---
+  var skirtMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x151515 : 0xd8d8d8,
+    roughness: 0.35,
+    metalness: 0.1
+  });
+  var skirtMeshes = [];
+
+  // Upper edge of baseboard (thin profile strip)
+  var skirtTopL = new THREE.Mesh(new THREE.BoxGeometry(0.008, 0.02, CL), skirtMat);
+  skirtTopL.position.set(-CW / 2 + baseD + 0.004, baseH + 0.01, -(CL / 2 - 4));
+  scene.add(skirtTopL);
+  skirtMeshes.push(skirtTopL);
+
+  var skirtTopR = new THREE.Mesh(new THREE.BoxGeometry(0.008, 0.02, CL), skirtMat.clone());
+  skirtTopR.position.set(CW / 2 - baseD - 0.004, baseH + 0.01, -(CL / 2 - 4));
+  scene.add(skirtTopR);
+  skirtMeshes.push(skirtTopR);
+
+  // --- Painting wire / hanging cable detail ---
+  var wireMeshes = [];
+  var hangWireMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x333333 : 0x888888,
+    roughness: 0.2,
+    metalness: 0.8
+  });
+
+  paintingData.forEach(function(pd) {
+    // Thin vertical wire from ceiling track to painting top
+    var wireLen = CH - PAINT_Y - PH / 2 - 0.15;
+    var wire = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.004, 0.004, wireLen, 4),
+      hangWireMat.clone()
+    );
+    var wireX = pd.wallX + (pd.isLeft ? 0.16 : -0.16);
+    wire.position.set(wireX, PAINT_Y + PH / 2 + wireLen / 2 + 0.1, pd.z);
+    scene.add(wire);
+    wireMeshes.push(wire);
+
+    // Small hook at the top
+    var hook = new THREE.Mesh(
+      new THREE.SphereGeometry(0.015, 6, 6),
+      hangWireMat.clone()
+    );
+    hook.position.set(wireX, CH - 0.06, pd.z);
+    scene.add(hook);
+    wireMeshes.push(hook);
+  });
+
+  // ============ GALLERY FLOOR RUNNER (velvet carpet) ============
+  var runnerMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x1a0000 : 0x2a0505,
+    roughness: 0.85,
+    metalness: 0.05
+  });
+  var runner = new THREE.Mesh(new THREE.PlaneGeometry(1.8, CL - 2), runnerMat);
+  runner.rotation.x = -Math.PI / 2;
+  runner.position.set(0, 0.005, -(CL / 2 - 4));
+  scene.add(runner);
+
+  // Runner border strips
+  var borderMat = new THREE.MeshStandardMaterial({
+    color: getIsDark() ? 0x2a1a00 : 0x3a2510,
+    roughness: 0.3,
+    metalness: 0.5
+  });
+  var borderL = new THREE.Mesh(new THREE.PlaneGeometry(0.04, CL - 2), borderMat);
+  borderL.rotation.x = -Math.PI / 2;
+  borderL.position.set(-0.92, 0.006, -(CL / 2 - 4));
+  scene.add(borderL);
+  var borderR = new THREE.Mesh(new THREE.PlaneGeometry(0.04, CL - 2), borderMat.clone());
+  borderR.rotation.x = -Math.PI / 2;
+  borderR.position.set(0.92, 0.006, -(CL / 2 - 4));
+  scene.add(borderR);
+
   // ============ SCROLL-DRIVEN CAMERA ============
   var scrollProgress = 0;
   var camX = 0, camY = 2.7;
@@ -800,6 +1018,31 @@
           pd.painting.material.needsUpdate = true;
           pd.frame.material.color.setHex(nc.frame);
         });
+
+        // Wainscoting
+        wainscotMeshes.forEach(function(m) {
+          if (m.geometry.type === 'PlaneGeometry') m.material.color.setHex(d ? 0x141414 : 0xe8e8e8);
+          else m.material.color.setHex(d ? 0x1c1c1c : 0xdadada);
+        });
+
+        // Chair rail
+        chairRailMeshes.forEach(function(m) { m.material.color.setHex(d ? 0x1e1e1e : 0xd5d5d5); });
+
+        // Coffered ceiling
+        cofferMeshes.forEach(function(m) {
+          if (m.geometry.type === 'PlaneGeometry') m.material.color.setHex(d ? 0x0e0e0e : 0xd0d0d0);
+          else m.material.color.setHex(d ? 0x151515 : 0xc5c5c5);
+        });
+
+        // Vents
+        ventMeshes.forEach(function(m) { m.material.color.setHex(d ? 0x1a1a1a : 0xcccccc); });
+
+        // Skirting
+        skirtMeshes.forEach(function(m) { m.material.color.setHex(d ? 0x151515 : 0xd8d8d8); });
+
+        // Runner
+        runnerMat.color.setHex(d ? 0x1a0000 : 0x2a0505);
+        borderMat.color.setHex(d ? 0x2a1a00 : 0x3a2510);
 
         // Update title wall
         if (window._galleryTitleRefs) {
