@@ -1298,4 +1298,41 @@
     });
   }
 
+  // ============ WARMUP (called by loader to pre-compile GPU shaders) ============
+  window._galleryWarmup = function(onProgress, onComplete) {
+    // Sample positions along the corridor to compile all materials/shaders
+    var steps = [];
+    var numSteps = 12;
+    for (var wi = 0; wi < numSteps; wi++) {
+      var t = wi / (numSteps - 1);
+      steps.push(lerp(CAM_START_Z, CAM_END_Z, t));
+    }
+
+    var savedPos = camera.position.clone();
+    var savedTarget = new THREE.Vector3(lookX, lookY, lookZ);
+    var idx = 0;
+
+    function warmupStep() {
+      if (idx >= steps.length) {
+        // Restore camera to starting position
+        camera.position.copy(savedPos);
+        camera.lookAt(savedTarget);
+        if (onProgress) onProgress(1);
+        if (onComplete) onComplete();
+        return;
+      }
+
+      var z = steps[idx];
+      camera.position.set(0, 2.7, z);
+      camera.lookAt(0, 2.4, z - 4);
+      renderer.render(scene, camera);
+
+      idx++;
+      if (onProgress) onProgress(idx / steps.length);
+      requestAnimationFrame(warmupStep);
+    }
+
+    requestAnimationFrame(warmupStep);
+  };
+
 })();
