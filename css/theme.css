@@ -695,6 +695,232 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   }
 }
 
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+
+/* --- Tablet and below (991px) --- */
+@media (max-width: 991.98px) {
+  /* Navbar mobile menu */
+  .navbar-right-group {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-left: 0 !important;
+    padding: 10px 0 !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link {
+    padding: 8px 0 !important;
+    font-size: 0.75rem !important;
+  }
+
+  .nav-contact-btn {
+    font-size: 0.65rem !important;
+    padding: 4px 0 3px !important;
+  }
+
+  /* Resume sidebar: stack vertically */
+  #navi {
+    position: relative !important;
+    top: auto !important;
+    margin-bottom: 24px !important;
+  }
+
+  #navi ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  #navi ul li {
+    flex: 1 1 auto !important;
+  }
+
+  #navi ul li a {
+    display: block !important;
+    text-align: center !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* --- Mobile (767px) --- */
+@media (max-width: 767.98px) {
+  /* About section: full width stacking */
+  .ftco-about .col-md-6 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .ftco-about .img-about {
+    margin-bottom: 20px !important;
+  }
+
+  /* Reduce section padding */
+  .ftco-section {
+    padding: 40px 0 !important;
+  }
+
+  /* Resume text adjustments */
+  .resume-wrap h2 {
+    font-size: 16px !important;
+  }
+
+  .resume-wrap .text {
+    padding-left: 12px !important;
+  }
+
+  .resume-wrap .icon {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+  }
+
+  .resume-wrap .icon span {
+    font-size: 16px !important;
+  }
+
+  /* Contact section cards */
+  .contact-info .col-md-6 {
+    margin-bottom: 16px !important;
+  }
+
+  .contact-section .box {
+    padding: 20px !important;
+  }
+
+  .contact-info-box {
+    padding: 30px 20px !important;
+  }
+
+  /* Skills icons smaller on mobile */
+  .page.three .ftco-animate {
+    gap: 12px !important;
+  }
+
+  .page.three .ftco-animate > div {
+    min-width: 60px !important;
+  }
+
+  .page.three img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  /* Page headings */
+  .page .heading {
+    font-size: 22px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Hero adjustments */
+  .slider-text h2 {
+    font-size: 18px !important;
+  }
+
+  .slider-text .subheading {
+    font-size: 13px !important;
+    letter-spacing: 3px !important;
+  }
+
+  /* Footer */
+  .ftco-footer {
+    padding: 20px 0 !important;
+  }
+
+  .ftco-footer p {
+    font-size: 12px !important;
+  }
+}
+
+/* --- Small mobile (480px) --- */
+@media (max-width: 480px) {
+  .slider-text h1 {
+    font-size: 36px !important;
+    letter-spacing: -1px !important;
+  }
+
+  .slider-text h2 {
+    font-size: 15px !important;
+  }
+
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Project cards tighter */
+  .proj-card {
+    padding: 20px 0 !important;
+    gap: 10px !important;
+  }
+
+  .proj-idx {
+    font-size: 24px !important;
+    min-width: 30px !important;
+  }
+
+  .proj-name {
+    font-size: 14px !important;
+  }
+
+  .proj-desc {
+    font-size: 12px !important;
+  }
+
+  .proj-tech span {
+    font-size: 8px !important;
+    padding: 2px 7px !important;
+  }
+
+  /* Resume entries */
+  .resume-wrap {
+    padding: 15px 0 !important;
+  }
+
+  .resume-wrap h2 {
+    font-size: 14px !important;
+  }
+
+  .resume-wrap .position {
+    font-size: 12px !important;
+  }
+
+  .resume-wrap p,
+  .resume-wrap li {
+    font-size: 12px !important;
+  }
+
+  /* About section */
+  .ftco-about .heading-section h2 {
+    font-size: 24px !important;
+  }
+
+  .ftco-about p {
+    font-size: 13px !important;
+  }
+
+  /* Contact */
+  .contact-info-box h3 {
+    font-size: 20px !important;
+  }
+
+  .heading-section h2 {
+    font-size: 22px !important;
+  }
+
+  /* Navbar brand */
+  .ftco_navbar .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+}
+
 /* --- Dark Mode Toggle Button --- */
 .dark-mode-toggle {
   background: none;
