@@ -715,12 +715,18 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
     font-size: 0.75rem !important;
   }
 
+  /* Hide bracket pseudo-elements in collapsed mobile menu */
+  .ftco_navbar .nav-brackets .nav-link::before,
+  .ftco_navbar .nav-brackets .nav-link::after {
+    display: none !important;
+  }
+
   .nav-contact-btn {
     font-size: 0.65rem !important;
     padding: 4px 0 3px !important;
   }
 
-  /* Resume nav: fixed bottom tab bar — hidden off-screen by default */
+  /* Resume nav: fixed bottom tab bar */
   #navi {
     position: fixed !important;
     bottom: -70px !important;
@@ -735,7 +741,6 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
     transition: bottom 0.3s ease !important;
   }
 
-  /* Slide up when inside resume section */
   #navi.nav-visible {
     bottom: 0 !important;
   }
@@ -743,7 +748,6 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   #navi ul {
     display: flex !important;
     flex-wrap: nowrap !important;
-    gap: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
     list-style: none !important;
@@ -756,27 +760,56 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   #navi ul li a {
     display: block !important;
     text-align: center !important;
-    padding: 12px 8px !important;
-    font-size: 12px !important;
-    letter-spacing: 1px !important;
+    padding: 7px 4px !important;
+    font-family: 'Courier New', 'Courier', monospace !important;
+    font-size: 0.65rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
     white-space: nowrap !important;
-    border-top: 2px solid transparent !important;
-    transition: border-color 0.2s ease !important;
+    color: #888 !important;
+    transition: color 0.2s ease !important;
   }
 
-  /* Active indicator: top border (faces content above) */
-  #navi ul li a.current {
-    margin-left: 0 !important;
-    border-top-color: #111 !important;
-  }
-
-  #navi ul li a.current:after {
+  /* Kill the desktop left-dash pseudo-elements entirely */
+  #navi ul li a::before,
+  #navi ul li a::after {
     display: none !important;
+    content: '' !important;
   }
 
-  /* Pad resume section so last content isn't hidden behind the fixed bar */
+  /* Active tab */
+  #navi ul li a.current {
+    color: #111 !important;
+    margin-left: 0 !important;
+  }
+
+  #navi ul li a.current::before {
+    content: '[' !important;
+    display: inline !important;
+    font-family: 'Courier New', monospace !important;
+    font-weight: 300 !important;
+    color: #111 !important;
+    background: none !important;
+    margin-right: 1px !important;
+  }
+
+  #navi ul li a.current::after {
+    content: ']' !important;
+    display: inline !important;
+    font-family: 'Courier New', monospace !important;
+    font-weight: 300 !important;
+    color: #111 !important;
+    background: none !important;
+    width: auto !important;
+    height: auto !important;
+    position: static !important;
+    margin-left: 1px !important;
+  }
+
+  /* Pad resume section so content isn't hidden behind the fixed bar */
   #resume-section {
-    padding-bottom: 70px !important;
+    padding-bottom: 45px !important;
   }
 }
 
@@ -892,9 +925,9 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   }
 
   #navi ul li a {
-    font-size: 10px !important;
-    padding: 8px 4px !important;
-    letter-spacing: 0.5px !important;
+    font-size: 0.6rem !important;
+    padding: 10px 4px !important;
+    letter-spacing: 1px !important;
   }
 
   .proj-idx {
@@ -1138,7 +1171,7 @@ body.dark-mode #navi li a.current {
 }
 
 body.dark-mode #navi li a.current:after {
-  background: #f0f0f0 !important;
+  background: none !important;
 }
 
 body.dark-mode #navi {
@@ -1146,8 +1179,18 @@ body.dark-mode #navi {
   border-top-color: rgba(255,255,255,0.1) !important;
 }
 
+body.dark-mode #navi ul li a {
+  color: #555 !important;
+}
+
 body.dark-mode #navi ul li a.current {
-  border-top-color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #navi ul li a.current::before,
+body.dark-mode #navi ul li a.current::after {
+  color: #f0f0f0 !important;
+  background: none !important;
 }
 
 /* Resume Pages */
