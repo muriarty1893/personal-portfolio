@@ -372,7 +372,7 @@ window.onload = function() {
     e.preventDefault();
     //set the top offset animation and speed
     $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top - 180
+      scrollTop: $($(this).attr('href')).offset().top - (window.innerWidth <= 991 ? 120 : 180)
 },500);
     hash($(this).attr('href'));
   });
@@ -411,6 +411,26 @@ hash = function(h){
     location.hash = h;
   }
 }
+
+// Mobile: slide up bottom resume nav when inside the resume section
+;(function() {
+  var navi = document.getElementById('navi');
+  var resumeSection = document.getElementById('resume-section');
+  if (!navi || !resumeSection) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    if (window.innerWidth > 991) return;
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        navi.classList.add('nav-visible');
+      } else {
+        navi.classList.remove('nav-visible');
+      }
+    });
+  }, { threshold: 0.05 });
+
+  observer.observe(resumeSection);
+})();
 
 
 $(function() {
