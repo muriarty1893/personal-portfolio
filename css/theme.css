@@ -721,6 +721,11 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
     display: none !important;
   }
 
+  /* Hide empty navi column — #navi is fixed to bottom on mobile */
+  #resume-section > .container > .row > .col-md-3 {
+    display: none !important;
+  }
+
   .nav-contact-btn {
     font-size: 0.65rem !important;
     padding: 4px 0 3px !important;
@@ -849,6 +854,24 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
     font-size: 16px !important;
   }
 
+  /* Resume button: stack button and hint text vertically */
+  .counter-wrap .text p {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  .counter-wrap .text .resume-hint {
+    font-size: 14px !important;
+  }
+
+  /* About text column: reduce excessive py-5 padding on mobile */
+  .ftco-about .col-md-6.py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
   /* Contact section cards */
   .contact-info .col-md-6 {
     margin-bottom: 16px !important;
@@ -926,7 +949,7 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 
   #navi ul li a {
     font-size: 0.6rem !important;
-    padding: 10px 4px !important;
+    padding: 6px 2px !important;
     letter-spacing: 1px !important;
   }
 
