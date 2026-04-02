@@ -588,19 +588,27 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   font-size: 42px;
   font-weight: 800;
   line-height: 1;
-  color: rgba(0,0,0,0.06);
+  color: rgba(0,0,0,0.08);
   min-width: 56px;
   user-select: none;
   transition: color 0.3s ease;
 }
 
 .proj-card:hover .proj-idx {
-  color: rgba(0,0,0,0.15);
+  color: rgba(0,0,0,0.16);
 }
 
 .proj-body {
   flex: 1;
   min-width: 0;
+}
+
+.resume-hint {
+  color: #888 !important;
+}
+
+body.dark-mode .resume-hint {
+  color: #7a8494 !important;
 }
 
 .proj-name {
@@ -864,6 +872,7 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 
   .counter-wrap .text .resume-hint {
     font-size: 14px !important;
+    color: #888 !important;
   }
 
   /* About text column: reduce excessive py-5 padding on mobile */
@@ -1388,11 +1397,11 @@ body.dark-mode .proj-card:hover {
 }
 
 body.dark-mode .proj-idx {
-  color: rgba(200,220,255,0.06);
+  color: rgba(200,220,255,0.08);
 }
 
 body.dark-mode .proj-card:hover .proj-idx {
-  color: rgba(200,220,255,0.15);
+  color: rgba(200,220,255,0.16);
 }
 
 body.dark-mode .proj-name {
