@@ -43,28 +43,38 @@ strong {
 .ftco_navbar,
 .ftco_navbar.navbar-dark,
 .ftco_navbar.bg-dark {
-  background: #f5f5f5 !important;
-  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+  background: transparent !important;
+  border-bottom: none !important;
   box-shadow: none !important;
-  padding: 0.6rem 0 !important;
+  padding: 1rem 0 !important;
+  mix-blend-mode: difference !important;
 }
 
-.ftco_navbar .container {
+.ftco_navbar .container-fluid {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Override style.css's hardcoded 1110px width */
+.ftco-navbar-light .container,
+.ftco-navbar-light .container-fluid {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .ftco_navbar .navbar-brand {
-  color: #111 !important;
   font-weight: 900 !important;
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   letter-spacing: -0.5px !important;
   text-transform: uppercase !important;
   line-height: 1.1 !important;
   white-space: nowrap !important;
   font-family: 'Poppins', sans-serif !important;
   font-style: italic !important;
+  color: white !important;
 }
 
 /* Kill the base template's span:before underline + all active/scrolled color overrides */
@@ -80,46 +90,36 @@ strong {
 .ftco-navbar-light.scrolled .nav-link,
 .ftco-navbar-light.scrolled .nav-link.active,
 .ftco-navbar-light.scrolled .nav-item > .nav-link {
-  color: #111 !important;
+  color: white !important;
   background: none !important;
   opacity: 1 !important;
-}
-
-body.dark-mode .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
-body.dark-mode .ftco-navbar-light .navbar-nav > .nav-item.active > a,
-body.dark-mode .ftco-navbar-light.scrolled .nav-item.active > a,
-body.dark-mode .ftco-navbar-light.scrolled .nav-link,
-body.dark-mode .ftco-navbar-light.scrolled .nav-link.active,
-body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
-  color: #d8d8d8 !important;
 }
 
 /* Bracket-style nav links */
 .ftco_navbar .nav-brackets .nav-link,
 .ftco_navbar .navbar-dark .nav-brackets .nav-link {
-  color: #111 !important;
+  color: white !important;
   font-weight: 400 !important;
-  font-size: 0.7rem !important;
+  font-size: 0.85rem !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
   font-family: 'Courier New', 'Courier', monospace !important;
-  padding: 0.5rem 0.7rem !important;
+  padding: 0.6rem 1rem !important;
   position: relative !important;
-  overflow: hidden !important;
 }
 
-/* Brackets via pseudo-elements on the <a> itself */
+/* Brackets via pseudo-elements on the <a> itself — always visible, disappear on hover */
 .ftco_navbar .nav-brackets .nav-link::before {
   content: '[' !important;
   position: absolute !important;
   left: 0 !important;
   top: 50% !important;
-  transform: translateY(-50%) translateX(-6px) !important;
-  opacity: 0 !important;
+  transform: translateY(-50%) translateX(2px) !important;
+  opacity: 0.45 !important;
   font-weight: 300 !important;
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  color: #111 !important;
+  color: white !important;
   font-family: 'Courier New', monospace !important;
 }
 
@@ -128,12 +128,12 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   position: absolute !important;
   right: 0 !important;
   top: 50% !important;
-  transform: translateY(-50%) translateX(6px) !important;
-  opacity: 0 !important;
+  transform: translateY(-50%) translateX(-2px) !important;
+  opacity: 0.45 !important;
   font-weight: 300 !important;
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  color: #111 !important;
+  color: white !important;
   font-family: 'Courier New', monospace !important;
   background: none !important;
   width: auto !important;
@@ -142,13 +142,13 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 }
 
 .ftco_navbar .nav-brackets .nav-link:hover::before {
-  opacity: 0.6 !important;
-  transform: translateY(-50%) translateX(2px) !important;
+  opacity: 0 !important;
+  transform: translateY(-50%) translateX(-6px) !important;
 }
 
 .ftco_navbar .nav-brackets .nav-link:hover::after {
-  opacity: 0.6 !important;
-  transform: translateY(-50%) translateX(-2px) !important;
+  opacity: 0 !important;
+  transform: translateY(-50%) translateX(6px) !important;
 }
 
 .ftco_navbar .nav-brackets .nav-link span {
@@ -175,15 +175,15 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
   display: inline-flex !important;
   align-items: center !important;
   gap: 5px !important;
-  color: #111 !important;
+  color: white !important;
   font-family: 'Courier New', 'Courier', monospace !important;
   font-weight: 400 !important;
-  font-size: 0.7rem !important;
+  font-size: 0.85rem !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
   border: none !important;
-  border-bottom: 1.5px solid #111 !important;
+  border-bottom: 1.5px solid white !important;
   padding: 4px 0 3px !important;
   transition: letter-spacing 0.3s ease !important;
   white-space: nowrap !important;
@@ -191,7 +191,7 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 
 .nav-contact-btn:hover {
   text-decoration: none !important;
-  color: #111 !important;
+  color: white !important;
   letter-spacing: 3px !important;
 }
 
@@ -215,7 +215,7 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 .language-buttons {
   display: inline-flex !important;
   align-items: center !important;
-  border: 1.5px solid #111 !important;
+  border: 1.5px solid white !important;
   border-radius: 20px !important;
   overflow: hidden !important;
   margin-left: 10px !important;
@@ -223,7 +223,7 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 }
 
 .language-buttons a {
-  color: #111 !important;
+  color: white !important;
   text-decoration: none !important;
   padding: 4px 13px !important;
   margin: 0 !important;
@@ -237,66 +237,120 @@ body.dark-mode .ftco-navbar-light.scrolled .nav-item > .nav-link {
 }
 
 .language-buttons a + a {
-  border-left: 1.5px solid #111 !important;
+  border-left: 1.5px solid white !important;
 }
 
 .language-buttons a.active {
-  background: #111 !important;
-  color: #f5f5f5 !important;
+  background: white !important;
+  color: black !important;
 }
 
 .language-buttons a:hover:not(.active) {
-  background: rgba(0, 0, 0, 0.07) !important;
-  color: #111 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section — Editorial --- */
 .hero-wrap {
   background: #f5f5f5 !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.hero-wrap .overlay {
-  background: #ddd !important;
-  opacity: 0.2 !important;
+.hero-editorial {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px 80px;
 }
 
-.slider-text .subheading {
-  color: #555 !important;
-  letter-spacing: 5px !important;
+.hero-counter {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-.slider-text h1 {
-  color: #111 !important;
-  font-size: 72px !important;
+.hero-title {
+  font-size: clamp(72px, 12vw, 200px) !important;
   font-weight: 900 !important;
-  letter-spacing: -2px !important;
-  line-height: 1 !important;
+  line-height: 0.9 !important;
+  letter-spacing: -4px !important;
+  color: #111 !important;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title-line {
+  display: block;
+}
+
+.hero-photo {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(200px, 28vw, 400px);
+  z-index: 2;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+}
+
+.hero-location {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #111;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-specialties {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+}
+
+.hero-specialties li {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 1px;
+  line-height: 1.8;
 }
 
 @media (max-width: 767.98px) {
-  .slider-text h1 {
-    font-size: 44px !important;
-    letter-spacing: -1px !important;
+  .hero-editorial {
+    padding: 100px 20px 60px;
   }
-}
-
-.slider-text h2 {
-  color: #333 !important;
-  font-weight: 700 !important;
-}
-
-.slider-text h2 span {
-  color: #111 !important;
-  text-decoration-color: #111 !important;
-}
-
-.slider-text p {
-  color: #444 !important;
-}
-
-/* --- Scroll Down Arrow --- */
-.scrollDown span {
-  border-color: #111 !important;
+  .hero-title {
+    font-size: clamp(48px, 14vw, 80px) !important;
+    letter-spacing: -2px !important;
+  }
+  .hero-photo {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 60%;
+    margin: 24px auto;
+    display: block;
+  }
+  .hero-location {
+    text-align: center;
+  }
 }
 
 /* --- Sections --- */
@@ -1022,23 +1076,29 @@ body.dark-mode .resume-hint {
   }
 }
 
+/* Scrolled state — keep transparent so blend mode works through the page */
+.ftco-navbar-light.scrolled {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 /* --- Dark Mode Toggle Button --- */
 .dark-mode-toggle {
   background: none;
-  border: 1.5px solid #111;
+  border: 1.5px solid white;
   border-radius: 20px;
   padding: 2px 10px;
   cursor: pointer;
   font-size: 15px;
-  color: #111;
+  color: white;
   transition: all 0.2s ease;
   line-height: 1.6;
   margin-left: 6px;
 }
 
 .dark-mode-toggle:hover {
-  background: #111;
-  color: #f5f5f5;
+  background: white;
+  color: black;
 }
 
 /* =========================================
@@ -1075,16 +1135,12 @@ body.dark-mode strong {
   color: #d0d6de !important;
 }
 
-/* Navbar */
+/* Navbar — transparent in both modes; mix-blend-mode handles contrast */
 body.dark-mode .ftco_navbar,
 body.dark-mode .ftco_navbar.navbar-dark,
 body.dark-mode .ftco_navbar.bg-dark {
-  background: #191c24 !important;
-  border-bottom: 1px solid rgba(200,220,255,0.08) !important;
-}
-
-body.dark-mode .ftco_navbar .navbar-brand {
-  color: #e8ecf0 !important;
+  background: transparent !important;
+  border-bottom: none !important;
 }
 
 body.dark-mode .ftco_navbar .nav-brackets .nav-link,
@@ -1151,20 +1207,22 @@ body.dark-mode .hero-wrap {
   background: #12141a !important;
 }
 
-body.dark-mode .hero-wrap .overlay {
-  background: #2a2d38 !important;
-}
-
-body.dark-mode .slider-text .subheading {
-  color: #7a8494 !important;
-}
-
-body.dark-mode .slider-text h1 {
+body.dark-mode .hero-title {
   color: #e8ecf0 !important;
 }
 
-body.dark-mode .slider-text h2 {
+body.dark-mode .hero-counter,
+body.dark-mode .hero-location {
+  color: #7a8494 !important;
+}
+
+body.dark-mode .hero-specialties li {
   color: #b0b8c4 !important;
+}
+
+body.dark-mode .hero-photo img {
+  filter: grayscale(100%) brightness(0.9);
+  mix-blend-mode: lighten;
 }
 
 body.dark-mode .slider-text h2 span {
