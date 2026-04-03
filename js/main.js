@@ -460,3 +460,52 @@ $(function() {
 
 });
 
+// Hero entrance animations
+(function() {
+  var titleLines = document.querySelectorAll('.hero-title-line');
+  if (!titleLines.length || typeof gsap === 'undefined') return;
+  if (window.innerWidth <= 767) return;
+
+  // Split title lines into individual character spans for center-out stagger
+  titleLines.forEach(function(line) {
+    var text = line.textContent;
+    line.textContent = '';
+    text.split('').forEach(function(char) {
+      var span = document.createElement('span');
+      span.className = 'char';
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      line.appendChild(span);
+    });
+  });
+
+  var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  // Title: all chars across both lines animate from the global center outward
+  tl.from('.hero-title-line .char', {
+    y: 70,
+    opacity: 0,
+    duration: 1.0,
+    stagger: {
+      amount: 0.7,
+      from: 'center'
+    }
+  }, 0);
+
+  // Counter, location, specialties cascade in
+  tl.from('.hero-counter', { opacity: 0, y: 20, duration: 0.6 }, 0.2);
+  tl.from('.hero-location', { opacity: 0, y: 15, duration: 0.6 }, 0.5);
+  tl.from('.hero-specialties li', {
+    opacity: 0,
+    y: 15,
+    duration: 0.5,
+    stagger: { amount: 0.35 }
+  }, 0.75);
+
+  // Photo: overlay wipes away top-to-bottom (printed effect)
+  tl.to('.hero-photo-overlay', {
+    scaleY: 0,
+    duration: 1.3,
+    ease: 'power3.inOut'
+  }, 0.15);
+})();
+
