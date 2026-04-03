@@ -294,6 +294,10 @@ strong {
   z-index: 1;
 }
 
+html[lang="tr"] .hero-title {
+  font-size: clamp(60px, 10vw, 168px) !important;
+}
+
 .hero-title-line {
   display: block;
 }
@@ -377,6 +381,9 @@ strong {
     margin: 0 auto;
     order: 1;
     pointer-events: none;
+  }
+  .hero-photo-overlay {
+    display: none;
   }
   .hero-title {
     font-size: clamp(48px, 14vw, 80px) !important;
