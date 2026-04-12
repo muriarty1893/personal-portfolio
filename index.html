@@ -31,7 +31,12 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <script>
       if(localStorage.getItem('darkMode')==='true'){document.body.classList.add('dark-mode');}
+      if(!sessionStorage.getItem('loaderShown')){document.body.classList.add('loading');}
     </script>
+    <div id="loader" style="display:none">
+      <canvas id="loader-canvas"></canvas>
+      <div id="percentage-counter">0%</div>
+    </div>
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
       id="ftco-navbar"
@@ -476,6 +481,7 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -502,6 +508,158 @@
           btn.textContent = dark ? '☀️' : '🌙';
         });
       })();
+    </script>
+    <script>
+    (function() {
+      var loaderEl = document.getElementById('loader');
+      if (!loaderEl || !document.body.classList.contains('loading')) {
+        if (typeof window.startHeroAnimations === 'function') {
+          window.startHeroAnimations();
+        }
+        return;
+      }
+
+      loaderEl.style.display = 'block';
+
+      var isDark = document.body.classList.contains('dark-mode');
+      var textColor = isDark ? '#e8ecf0' : '#000000';
+      var bgColor = isDark ? 0x12141a : 0xffffff;
+
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      var renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('loader-canvas'), antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setClearColor(bgColor);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      scene.add(new THREE.AmbientLight(0xffffff, 1));
+
+      function createTextTexture(text, heightScale, fontWeight) {
+        var c = document.createElement('canvas');
+        var ctx = c.getContext('2d');
+        c.width = 4096; c.height = 2048;
+        ctx.clearRect(0, 0, c.width, c.height);
+        var t = text + ' ';
+        ctx.font = fontWeight + ' 100px "Poppins", sans-serif';
+        var finalSize = 100 * (c.width / ctx.measureText(t).width);
+        ctx.font = fontWeight + ' ' + finalSize + 'px "Poppins", sans-serif';
+        ctx.fillStyle = textColor;
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.save();
+        ctx.translate(c.width / 2, c.height / 2);
+        ctx.scale(1, heightScale);
+        ctx.fillText(t, 0, 0);
+        ctx.restore();
+        var tex = new THREE.CanvasTexture(c);
+        tex.minFilter = THREE.LinearMipmapLinearFilter;
+        tex.magFilter = THREE.LinearFilter;
+        tex.wrapS = THREE.RepeatWrapping;
+        tex.wrapT = THREE.ClampToEdgeWrapping;
+        tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        tex.needsUpdate = true;
+        return tex;
+      }
+
+      function createTextSphere(text, heightScale, fontWeight) {
+        var group = new THREE.Group();
+        var tex = createTextTexture(text, heightScale, fontWeight);
+        var mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide, depthWrite: false });
+        group.add(new THREE.Mesh(new THREE.SphereGeometry(1.5, 64, 64), mat));
+        group.userData.tex = tex;
+        return group;
+      }
+
+      var masterGroup = new THREE.Group();
+      masterGroup.rotation.x = Math.PI / 24;
+      scene.add(masterGroup);
+
+      // Text lengths matched to original: globe1 ~54 chars (bold), globe2 ~109 chars (light)
+      var globe1 = createTextSphere('MURAT    EKER    SOFTWARE    ENGINEER    &    AI    ', 1.8, 900);
+      var globe2 = createTextSphere('MACHINE LEARNING      •      BACKEND DEVELOPMENT      •      IT INFRASTRUCTURE      •      PORTFOLIO      •     ', 1, 300);
+      masterGroup.add(globe1, globe2);
+
+      var mouse = { x: 0, y: 0 };
+      var tgt = { x: 0, y: 0 };
+      window.addEventListener('mousemove', function(e) {
+        mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+      });
+
+      (function animateLoader() {
+        requestAnimationFrame(animateLoader);
+        globe1.userData.tex.offset.x += 0.0004;
+        globe2.userData.tex.offset.x += 0.0008;
+        tgt.x += (mouse.y * 0.4 - tgt.x) * 0.05;
+        tgt.y += (mouse.x * 0.4 - tgt.y) * 0.05;
+        var r = 6, phi = Math.PI / 2 - tgt.x - 0.2, theta = tgt.y;
+        camera.position.set(r * Math.sin(phi) * Math.cos(theta), r * Math.cos(phi), r * Math.sin(phi) * Math.sin(theta));
+        camera.lookAt(0, 0, 0);
+        renderer.render(scene, camera);
+      })();
+
+      globe1.position.set(1.5, -15, 0);
+      globe2.position.set(-1.5, -15, 0);
+
+      var introTl = gsap.timeline({ delay: 0.2 });
+      introTl.to(globe1.position, { x: 0, y: 0.35, duration: 2.5, ease: 'power4.out' });
+      introTl.to(globe2.position, { x: 0, y: -0.15, duration: 1.8, ease: 'power4.out' }, '-=2.0');
+
+      // Real loader: counter goes 0→95% over 4s, snaps to 100% on window.load, then exits
+      var counter = { value: 0 };
+      var percentageDiv = document.getElementById('percentage-counter');
+      var minDone = false, pageDone = false;
+
+      var counterAnim = gsap.to(counter, {
+        value: 95, duration: 4, ease: 'none',
+        onUpdate: function() { percentageDiv.textContent = Math.round(counter.value) + '%'; },
+        onComplete: function() { minDone = true; tryExit(); }
+      });
+
+      function tryExit() {
+        if (minDone && pageDone) {
+          // Snap counter to 100% then exit
+          gsap.to(counter, {
+            value: 100, duration: 0.3, ease: 'none',
+            onUpdate: function() { percentageDiv.textContent = Math.round(counter.value) + '%'; },
+            onComplete: runExitAnimation
+          });
+        }
+      }
+
+      if (document.readyState === 'complete') {
+        pageDone = true;
+      } else {
+        window.addEventListener('load', function() { pageDone = true; tryExit(); });
+      }
+
+      function runExitAnimation() {
+        var exitTl = gsap.timeline();
+        exitTl.to('#percentage-counter', { opacity: 0, duration: 0.3 }, 0);
+        exitTl.to(globe2.position, { x: -1.5, y: -15, duration: 1.0, ease: 'power4.in' }, 0);
+        exitTl.to(globe1.position, { x: 1.5, y: -15, duration: 1.3, ease: 'power4.in' }, 0.05);
+        // Start hero animations at the moment loader begins fading — GSAP sets opacity:0 on chars
+        // while loader still covers the screen, so hero is mid-animation when loader disappears
+        exitTl.to('#loader', {
+          opacity: 0,
+          duration: 0.8,
+          onStart: function() {
+            if (typeof window.startHeroAnimations === 'function') {
+              window.startHeroAnimations();
+            }
+          },
+          onComplete: function() {
+            loaderEl.style.display = 'none';
+            document.body.classList.remove('loading');
+            sessionStorage.setItem('loaderShown', 'true');
+          }
+        }, 0.8);
+      }
+
+      window.addEventListener('resize', function() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    })();
     </script>
   </body>
 </html>

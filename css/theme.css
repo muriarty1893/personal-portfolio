@@ -3,6 +3,38 @@
    Inspired by clean, bold, black & white design
    ========================================= */
 
+/* --- Page Loader --- */
+body.loading {
+  overflow: hidden;
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  z-index: 9999;
+}
+#loader-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#percentage-counter {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #111;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
 /* --- Hide native scrollbar --- */
 html {
   scrollbar-width: none; /* Firefox */
@@ -93,6 +125,16 @@ strong {
   color: white !important;
   background: none !important;
   opacity: 1 !important;
+}
+
+/* Hide nav-brackets links when inside the resume section (they have #navi shortcuts there) */
+.nav-brackets {
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.nav-brackets.nav-links-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Bracket-style nav links */
@@ -300,6 +342,7 @@ html[lang="tr"] .hero-title {
 
 .hero-title-line {
   display: block;
+  visibility: hidden;
 }
 
 .hero-photo {
@@ -326,7 +369,7 @@ html[lang="tr"] .hero-title {
   width: 100%;
   height: 100%;
   background: #f5f5f5;
-  transform-origin: top center;
+  transform-origin: bottom center;
   z-index: 3;
   pointer-events: none;
 }
@@ -1251,6 +1294,14 @@ body.dark-mode .dark-mode-toggle:hover {
   color: #111;
 }
 
+/* Loader dark mode */
+body.dark-mode #loader {
+  background: #12141a;
+}
+body.dark-mode #percentage-counter {
+  color: #e8ecf0;
+}
+
 /* Hero */
 body.dark-mode .hero-wrap {
   background: #12141a !important;
@@ -1276,6 +1327,7 @@ body.dark-mode .hero-photo img {
 
 body.dark-mode .hero-photo-overlay {
   background: #12141a;
+  transform-origin: bottom center;
 }
 
 body.dark-mode .slider-text h2 span {

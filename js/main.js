@@ -412,6 +412,26 @@ hash = function(h){
   }
 }
 
+// Hide top navbar links when inside the resume section (sidebar #navi covers navigation there)
+;(function() {
+  var navBrackets = document.querySelector('.nav-brackets');
+  var resumeSection = document.getElementById('resume-section');
+  if (!navBrackets || !resumeSection) return;
+
+  function updateNavLinks() {
+    var resumeTop = resumeSection.getBoundingClientRect().top;
+    // Hide when the resume section has reached (or passed) the navbar
+    if (resumeTop <= 80) {
+      navBrackets.classList.add('nav-links-hidden');
+    } else {
+      navBrackets.classList.remove('nav-links-hidden');
+    }
+  }
+
+  window.addEventListener('scroll', updateNavLinks, { passive: true });
+  updateNavLinks();
+})();
+
 // Mobile: slide up bottom resume nav when inside the resume section
 ;(function() {
   var navi = document.getElementById('navi');
@@ -460,11 +480,21 @@ $(function() {
 
 });
 
-// Hero entrance animations
-(function() {
+// Hero entrance animations — exposed as window.startHeroAnimations so the loader can call it after exit
+window.startHeroAnimations = function() {
   var titleLines = document.querySelectorAll('.hero-title-line');
-  if (!titleLines.length || typeof gsap === 'undefined') return;
-  if (window.innerWidth <= 767) return;
+  if (!titleLines.length) return;
+
+  // On mobile: just make title visible, no char animations
+  if (window.innerWidth <= 767) {
+    titleLines.forEach(function(line) { line.style.visibility = 'visible'; });
+    return;
+  }
+
+  if (typeof gsap === 'undefined') {
+    titleLines.forEach(function(line) { line.style.visibility = 'visible'; });
+    return;
+  }
 
   // Split title lines into individual character spans for center-out stagger
   titleLines.forEach(function(line) {
@@ -476,6 +506,7 @@ $(function() {
       span.textContent = char === ' ' ? '\u00A0' : char;
       line.appendChild(span);
     });
+    line.style.visibility = 'visible';
   });
 
   var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
@@ -501,11 +532,13 @@ $(function() {
     stagger: { amount: 0.35 }
   }, 0.75);
 
-  // Photo: overlay wipes away top-to-bottom (printed effect)
+  // Photo: overlay collapses from bottom anchor (transform-origin: bottom center),
+  // so top of overlay disappears first → photo revealed top-to-bottom (printing effect).
+  // power4.out = starts fast, decelerates heavily at the end.
   tl.to('.hero-photo-overlay', {
     scaleY: 0,
-    duration: 1.3,
-    ease: 'power3.inOut'
+    duration: 2.0,
+    ease: 'power4.out'
   }, 0.15);
-})();
+};
 
