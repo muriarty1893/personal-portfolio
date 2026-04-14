@@ -1,5 +1,6 @@
 circling_loader.html
 packages.microsoft.gpg
+*.gpg
 /commands/*
 /commands
 CLAUDE.md
