@@ -577,13 +577,14 @@
       // Text lengths matched to original: globe1 ~54 chars (bold), globe2 ~109 chars (light)
       var globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.8, 900);
       var globe2 = createTextSphere('MACHINE LEARNING       •       BACKEND DEVELOPMENT       •       IT INFRASTRUCTURE       •       PORTFOLIO       •      ', 1, 300);
+      globe1.userData.tex.offset.x = -25 / 64;
       masterGroup.add(globe1, globe2);
 
       var mouse = { x: 0, y: 0 };
       var tgt = { x: 0, y: 0 };
       window.addEventListener('mousemove', function(e) {
         mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+        mouse.y = (e.clientY / window.innerHeight) * 2 - 1;
       });
 
       (function animateLoader() {
