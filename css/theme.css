@@ -82,7 +82,7 @@ strong {
   background: transparent !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  padding: 1rem 0 !important;
+  padding: 1.6rem 0 !important;
   mix-blend-mode: difference !important;
 }
 
@@ -90,8 +90,8 @@ strong {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 3.25rem !important;
+  padding-right: 3.25rem !important;
 }
 
 /* Override style.css's hardcoded 1110px width */
@@ -103,13 +103,13 @@ strong {
 
 .ftco_navbar .navbar-brand {
   font-weight: 900 !important;
-  font-size: 1.6rem !important;
-  letter-spacing: -0.5px !important;
+  font-size: 2.3rem !important;
+  letter-spacing: -1px !important;
   text-transform: uppercase !important;
   line-height: 1.1 !important;
   white-space: nowrap !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-style: italic !important;
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  font-style: normal !important;
   color: white !important;
 }
 
@@ -135,6 +135,15 @@ strong {
 .nav-brackets {
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
+
+.ftco_navbar .nav-brackets {
+  gap: 0.95rem !important;
+}
+
+.ftco_navbar .nav-brackets .nav-item {
+  margin: 0 0.4rem !important;
+}
+
 .nav-brackets.nav-links-hidden {
   opacity: 0;
   visibility: hidden;
@@ -146,11 +155,11 @@ strong {
 .ftco_navbar .navbar-dark .nav-brackets .nav-link {
   color: white !important;
   font-weight: 400 !important;
-  font-size: 0.85rem !important;
-  letter-spacing: 2px !important;
+  font-size: 1.12rem !important;
+  letter-spacing: 2.7px !important;
   text-transform: uppercase !important;
-  font-family: 'Courier New', 'Courier', monospace !important;
-  padding: 0.6rem 1rem !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  padding: 0.95rem 1.35rem !important;
   position: relative !important;
 }
 
@@ -163,10 +172,10 @@ strong {
   transform: translateY(-50%) translateX(2px) !important;
   opacity: 0.45 !important;
   font-weight: 300 !important;
-  font-size: 0.9rem !important;
+  font-size: 1.18rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   color: white !important;
-  font-family: 'Courier New', monospace !important;
+  font-family: 'Spline Sans Mono', monospace !important;
 }
 
 .ftco_navbar .nav-brackets .nav-link::after {
@@ -177,10 +186,10 @@ strong {
   transform: translateY(-50%) translateX(-2px) !important;
   opacity: 0.45 !important;
   font-weight: 300 !important;
-  font-size: 0.9rem !important;
+  font-size: 1.18rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   color: white !important;
-  font-family: 'Courier New', monospace !important;
+  font-family: 'Spline Sans Mono', monospace !important;
   background: none !important;
   width: auto !important;
   height: auto !important;
@@ -211,7 +220,7 @@ strong {
 .navbar-right-group {
   display: flex !important;
   align-items: center !important;
-  gap: 14px !important;
+  gap: 22px !important;
   margin-left: auto !important;
   flex-shrink: 0 !important;
 }
@@ -220,12 +229,12 @@ strong {
 .nav-contact-btn {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 6px !important;
+  gap: 10px !important;
   color: white !important;
-  font-family: 'Courier New', 'Courier', monospace !important;
+  font-family: 'Spline Sans Mono', monospace !important;
   font-weight: 400 !important;
-  font-size: 1.3rem !important;
-  letter-spacing: 2px !important;
+  font-size: 1.72rem !important;
+  letter-spacing: 2.8px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
   border: none !important;
@@ -249,8 +258,8 @@ strong {
 }
 
 .nav-contact-btn .arrow svg {
-  width: 0.95rem !important;
-  height: 0.95rem !important;
+  width: 1.28rem !important;
+  height: 1.28rem !important;
   display: block !important;
 }
 
@@ -268,22 +277,22 @@ strong {
   display: inline-flex !important;
   align-items: center !important;
   border: 1.5px solid white !important;
-  border-radius: 20px !important;
+  border-radius: 24px !important;
   overflow: hidden !important;
-  margin-left: 10px !important;
+  margin-left: 12px !important;
   background: transparent !important;
 }
 
 .language-buttons a {
   color: white !important;
   text-decoration: none !important;
-  padding: 4px 13px !important;
+  padding: 6px 15px !important;
   margin: 0 !important;
   border-radius: 0 !important;
   border: none !important;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
-  letter-spacing: 1px !important;
+  letter-spacing: 1.3px !important;
   transition: background 0.2s ease, color 0.2s ease !important;
   line-height: 1.6 !important;
 }
@@ -306,54 +315,141 @@ strong {
 .hero-wrap {
   background: #f5f5f5 !important;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
   overflow: hidden;
   position: relative;
+  padding: 140px 0 72px;
 }
 
 .hero-editorial {
   position: relative;
-  width: 100%;
-  max-width: 1200px;
+  width: min(100%, 1840px);
   margin: 0 auto;
-  padding: 120px 40px 80px;
+  padding: 0 56px;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .hero-counter {
+  font-family: 'Spline Sans Mono', monospace !important;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #111;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+  letter-spacing: 0;
+  margin-bottom: 0;
 }
 
 .hero-title {
-  font-size: clamp(72px, 12vw, 200px) !important;
-  font-weight: 900 !important;
-  line-height: 0.9 !important;
+  font-size: clamp(74px, 12.5vw, 240px) !important;
+  font-weight: 700 !important;
+  line-height: 0.84 !important;
   letter-spacing: -4px !important;
   color: #111 !important;
   text-transform: uppercase;
-  margin: 0;
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  margin: 12px 0 0;
   position: relative;
-  z-index: 1;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+html[lang="en"] .hero-title {
+  font-size: clamp(110px, 14.8vw, 270px) !important;
+  letter-spacing: -23px !important;
+  margin-left: -4px;
 }
 
 html[lang="tr"] .hero-title {
-  font-size: clamp(60px, 10vw, 168px) !important;
+  font-size: clamp(56px, 9.3vw, 174px) !important;
 }
 
 .hero-title-line {
-  display: block;
+  display: inline-block;
   visibility: hidden;
+}
+
+.hero-title-line + .hero-title-line {
+  margin-left: 0.08em;
+}
+
+.hero-title-line .char {
+  display: inline-block;
+}
+
+.hero-location {
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 14px;
+  color: #111;
+  margin-top: 18px;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: clamp(0px, 4vw, 96px);
+  position: relative;
+  z-index: 3;
+}
+
+.hero-showcase {
+  position: relative;
+  min-height: clamp(360px, 36vw, 560px);
+  margin-top: clamp(-10px, -1vw, -18px);
+}
+
+.hero-showcase::before {
+  content: '';
+  position: absolute;
+  left: 47%;
+  bottom: -28px;
+  width: clamp(420px, 44vw, 780px);
+  height: clamp(240px, 26vw, 420px);
+  transform: translateX(-34%);
+  background: rgba(255, 255, 255, 0.52);
+  z-index: 0;
+}
+
+.hero-specialties-card {
+  position: absolute;
+  left: clamp(56px, 22.5vw, 440px);
+  bottom: 34px;
+  width: clamp(300px, 22vw, 420px);
+  padding: clamp(38px, 4vw, 54px) clamp(26px, 2.8vw, 40px);
+  background: transparent;
+  z-index: 1;
+}
+
+.hero-specialties {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-specialties li {
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  font-size: clamp(20px, 1.95vw, 36px);
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.5px;
+  line-height: 1.02;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hero-specialties li:last-child {
+  margin-bottom: 0;
 }
 
 .hero-photo {
   position: absolute;
-  right: 0;
+  left: 47%;
   bottom: 0;
-  width: clamp(200px, 22vw, 340px);
+  width: clamp(300px, 24vw, 430px);
+  transform: translateX(-2%);
+  background: #d9dad3;
   z-index: 2;
   pointer-events: none;
 }
@@ -378,66 +474,124 @@ html[lang="tr"] .hero-title {
   pointer-events: none;
 }
 
-.hero-title-line .char {
-  display: inline-block;
-}
-
-.hero-location {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #111;
-  margin-top: 16px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.hero-specialties {
-  list-style: none;
-  padding: 0;
-  margin: 40px 0 0;
-}
-
-.hero-specialties li {
-  font-size: 16px;
-  font-weight: 700;
-  color: #111;
-  letter-spacing: 1px;
-  line-height: 1.8;
-}
-
 @media (max-width: 767.98px) {
+  .ftco_navbar,
+  .ftco_navbar.navbar-dark,
+  .ftco_navbar.bg-dark {
+    padding: 0.9rem 0 !important;
+  }
+
+  .ftco_navbar .container-fluid {
+    padding-left: 0.95rem !important;
+    padding-right: 0.95rem !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.7rem !important;
+    max-width: 130px;
+    color: #111 !important;
+  }
+
+  .ftco_navbar .navbar-toggler {
+    color: #111 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  .ftco_navbar .navbar-collapse {
+    margin-top: 0.7rem !important;
+    padding: 0.85rem 0.95rem 0.75rem !important;
+  }
+
   .hero-wrap {
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    min-height: auto;
+    padding: 96px 0 34px;
   }
+
   .hero-editorial {
-    padding: 20px 20px 40px;
-    order: 2;
+    padding: 0 16px;
   }
-  .hero-photo {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    top: auto;
-    transform: none;
-    width: 55%;
-    max-width: 220px;
-    margin: 0 auto;
-    order: 1;
-    pointer-events: none;
+
+  .hero-meta {
+    margin-bottom: 6px;
   }
-  .hero-photo-overlay {
-    display: none;
-  }
+
   .hero-title {
-    font-size: clamp(48px, 14vw, 80px) !important;
-    letter-spacing: -2px !important;
+    margin: 6px 0 0;
+    font-size: clamp(48px, 14vw, 76px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1.5px !important;
+    white-space: normal;
   }
+
+  .hero-title-line {
+    display: block;
+  }
+
+  .hero-title-line + .hero-title-line {
+    margin-left: 0;
+    margin-top: 0.08em;
+  }
+
   .hero-location {
     text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    padding-right: 0;
+    margin-top: 12px;
+  }
+
+  .hero-showcase {
+    min-height: auto;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-showcase::before {
+    display: block;
+    width: min(100%, 360px);
+    height: 260px;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+  }
+
+  .hero-photo,
+  .hero-specialties-card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-photo {
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .hero-specialties-card {
+    order: 1;
+    max-width: none;
+    padding: 0;
+    background: transparent;
+  }
+
+  .hero-specialties li {
+    font-size: clamp(20px, 5.9vw, 28px);
+    line-height: 1.06;
+    margin-bottom: 8px;
+  }
+
+  .hero-photo-overlay {
+    display: block;
+  }
+
+  .hero-counter {
+    font-size: 12px;
   }
 }
 
@@ -466,6 +620,7 @@ html[lang="tr"] .hero-title {
 /* --- Resume Nav --- */
 #navi li a {
   color: #333 !important;
+  font-family: 'Spline Sans Mono', monospace !important;
 }
 
 #navi li a.current {
@@ -859,18 +1014,74 @@ body.dark-mode .resume-hint {
 
 /* --- Tablet and below (991px) --- */
 @media (max-width: 991.98px) {
-  /* Navbar mobile menu */
-  .navbar-right-group {
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 10px !important;
-    margin-left: 0 !important;
-    padding: 10px 0 !important;
+  .ftco_navbar,
+  .ftco_navbar.navbar-dark,
+  .ftco_navbar.bg-dark {
+    padding: 1.05rem 0 !important;
   }
 
-  .ftco_navbar .nav-brackets .nav-link {
-    padding: 8px 0 !important;
-    font-size: 0.75rem !important;
+  .ftco_navbar .container-fluid {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    align-items: flex-start !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.7rem !important;
+    line-height: 0.95 !important;
+    max-width: 170px;
+    white-space: normal !important;
+  }
+
+  .ftco_navbar .navbar-toggler {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 0.2rem 0 !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.18em !important;
+  }
+
+  .ftco_navbar .navbar-collapse {
+    width: 100% !important;
+    margin-top: 0.9rem !important;
+    padding: 1rem 1.1rem 0.85rem !important;
+    background: rgba(245, 245, 245, 0.96) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .ftco_navbar .nav-brackets {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-item {
+    margin: 0 !important;
+  }
+
+  /* Navbar mobile menu */
+  .navbar-right-group {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin-left: 0 !important;
+    padding: 0.9rem 0 0 !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link,
+  .ftco_navbar .navbar-dark .nav-brackets .nav-link {
+    color: #111 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0.7rem 0 !important;
+    font-size: 0.92rem !important;
+    letter-spacing: 0.16em !important;
   }
 
   /* Hide bracket pseudo-elements in collapsed mobile menu */
@@ -879,14 +1090,21 @@ body.dark-mode .resume-hint {
     display: none !important;
   }
 
+  .ftco_navbar .nav-brackets .nav-link span {
+    letter-spacing: inherit !important;
+  }
+
   /* Hide empty navi column — #navi is fixed to bottom on mobile */
   #resume-section > .container > .row > .col-md-3 {
     display: none !important;
   }
 
   .nav-contact-btn {
-    font-size: 0.65rem !important;
-    padding: 4px 0 3px !important;
+    color: #111 !important;
+    border-bottom-color: #111 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.16em !important;
+    padding: 0 0 3px !important;
   }
 
   /* Resume nav: fixed bottom tab bar */
@@ -924,7 +1142,7 @@ body.dark-mode .resume-hint {
     display: block !important;
     text-align: center !important;
     padding: 7px 4px !important;
-    font-family: 'Courier New', 'Courier', monospace !important;
+    font-family: 'Spline Sans Mono', monospace !important;
     font-size: 0.65rem !important;
     font-weight: 400 !important;
     letter-spacing: 1.5px !important;
@@ -950,7 +1168,7 @@ body.dark-mode .resume-hint {
   #navi ul li a.current::before {
     content: '[' !important;
     display: inline !important;
-    font-family: 'Courier New', monospace !important;
+    font-family: 'Spline Sans Mono', monospace !important;
     font-weight: 300 !important;
     color: #111 !important;
     background: none !important;
@@ -960,7 +1178,7 @@ body.dark-mode .resume-hint {
   #navi ul li a.current::after {
     content: ']' !important;
     display: inline !important;
-    font-family: 'Courier New', monospace !important;
+    font-family: 'Spline Sans Mono', monospace !important;
     font-weight: 300 !important;
     color: #111 !important;
     background: none !important;
@@ -978,6 +1196,32 @@ body.dark-mode .resume-hint {
 
 /* --- Mobile (767px) --- */
 @media (max-width: 767.98px) {
+  .ftco_navbar,
+  .ftco_navbar.navbar-dark,
+  .ftco_navbar.bg-dark {
+    padding: 0.9rem 0 !important;
+  }
+
+  .ftco_navbar .container-fluid {
+    padding-left: 0.95rem !important;
+    padding-right: 0.95rem !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.42rem !important;
+    max-width: 130px;
+  }
+
+  .ftco_navbar .navbar-toggler {
+    font-size: 0.78rem !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  .ftco_navbar .navbar-collapse {
+    margin-top: 0.7rem !important;
+    padding: 0.85rem 0.95rem 0.75rem !important;
+  }
+
   /* About section: full width stacking */
   .ftco-about .col-md-6 {
     padding-left: 15px !important;
@@ -1065,6 +1309,125 @@ body.dark-mode .resume-hint {
   }
 
   /* Hero adjustments */
+  .hero-wrap {
+    min-height: auto;
+    padding: 88px 0 34px;
+  }
+
+  .hero-editorial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .hero-meta {
+    order: 2;
+    margin-bottom: 6px;
+  }
+
+  .hero-counter {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    order: 3;
+    margin: 8px 0 0;
+    font-family: "Helvetica Neue", Arial, sans-serif !important;
+    font-size: clamp(36px, 11.5vw, 48px) !important;
+    font-weight: 900 !important;
+    line-height: 0.96 !important;
+    letter-spacing: 0.02em !important;
+    text-transform: uppercase;
+    white-space: normal !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    text-rendering: geometricPrecision;
+  }
+
+  .hero-title-line {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    line-height: 0.96 !important;
+    letter-spacing: inherit !important;
+  }
+
+  .hero-title-line + .hero-title-line {
+    margin-top: 0 !important;
+  }
+
+  .hero-title-line .char {
+    transform: none !important;
+  }
+
+  .hero-location {
+    order: 4;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.34em;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .hero-showcase {
+    display: contents;
+  }
+
+  .hero-showcase::before {
+    display: none;
+  }
+
+  .hero-photo,
+  .hero-specialties-card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-photo {
+    order: 1;
+    margin: 0 auto;
+    width: min(72vw, 280px);
+    align-self: center;
+    background: transparent;
+  }
+
+  .hero-specialties-card {
+    order: 5;
+    max-width: none;
+    padding: 0;
+    background: transparent;
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .hero-specialties li {
+    font-size: clamp(18px, 5.4vw, 24px);
+    line-height: 1.12;
+    letter-spacing: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .hero-photo-overlay {
+    display: none;
+  }
+
   .slider-text h2 {
     font-size: 18px !important;
   }
@@ -1086,6 +1449,64 @@ body.dark-mode .resume-hint {
 
 /* --- Small mobile (480px) --- */
 @media (max-width: 480px) {
+  .ftco_navbar .container-fluid {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.22rem !important;
+    max-width: 112px;
+  }
+
+  .ftco_navbar .navbar-toggler {
+    font-size: 0.72rem !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link,
+  .ftco_navbar .navbar-dark .nav-brackets .nav-link {
+    font-size: 0.84rem !important;
+    letter-spacing: 0.13em !important;
+  }
+
+  .nav-contact-btn {
+    font-size: 0.88rem !important;
+    letter-spacing: 0.13em !important;
+  }
+
+  .nav-contact-btn .arrow svg {
+    width: 0.95rem !important;
+    height: 0.95rem !important;
+  }
+
+  .hero-wrap {
+    padding: 82px 0 26px;
+  }
+
+  .hero-editorial {
+    padding: 0 8px;
+  }
+
+  .hero-title {
+    font-size: clamp(34px, 11.8vw, 44px) !important;
+    line-height: 0.98 !important;
+    letter-spacing: 0.015em !important;
+    gap: 6px !important;
+  }
+
+  .hero-location {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+  }
+
+  .hero-photo {
+    width: min(74vw, 260px);
+  }
+
+  .hero-specialties li {
+    font-size: clamp(16px, 5.2vw, 21px);
+  }
+
   .slider-text h1 {
     font-size: 36px !important;
     letter-spacing: -1px !important;
@@ -1322,6 +1743,18 @@ body.dark-mode .hero-location {
 
 body.dark-mode .hero-specialties li {
   color: #b0b8c4 !important;
+}
+
+body.dark-mode .hero-showcase::before {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+body.dark-mode .hero-specialties-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.dark-mode .hero-photo {
+  background: #2b3038 !important;
 }
 
 body.dark-mode .hero-photo img {
@@ -1621,3 +2054,272 @@ body.dark-mode .bg-dark {
   background: #191c24 !important;
 }
 
+/* =========================================
+   MOBILE ROLLBACK TO LAST COMMITTED LAYOUT
+   Keeps the current desktop redesign intact.
+   ========================================= */
+
+@media (max-width: 991.98px) {
+  .ftco_navbar,
+  .ftco_navbar.navbar-dark,
+  .ftco_navbar.bg-dark {
+    padding: 1rem 0 !important;
+  }
+
+  .ftco_navbar .container-fluid {
+    align-items: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: italic !important;
+    font-size: 1.6rem !important;
+    letter-spacing: -0.5px !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    max-width: none !important;
+    color: white !important;
+  }
+
+  .ftco_navbar .navbar-toggler {
+    color: white !important;
+  }
+
+  .ftco_navbar .navbar-collapse {
+    width: auto !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-right-group {
+    width: auto !important;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-left: 0 !important;
+    padding: 10px 0 !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link,
+  .ftco_navbar .navbar-dark .nav-brackets .nav-link {
+    color: white !important;
+    width: auto !important;
+    padding: 8px 0 !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link::before,
+  .ftco_navbar .nav-brackets .nav-link::after {
+    display: none !important;
+  }
+
+  .nav-contact-btn {
+    color: white !important;
+    border-bottom-color: white !important;
+    font-family: 'Courier New', 'Courier', monospace !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 2px !important;
+    gap: 6px !important;
+    padding: 4px 0 3px !important;
+  }
+
+  #navi ul li a {
+    font-family: 'Courier New', 'Courier', monospace !important;
+  }
+
+  #navi ul li a.current::before,
+  #navi ul li a.current::after {
+    font-family: 'Courier New', 'Courier', monospace !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .hero-editorial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 40px;
+  }
+
+  .hero-meta {
+    display: block;
+    order: 2;
+    margin-bottom: 8px;
+  }
+
+  .hero-counter {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .hero-title,
+  html[lang="en"] .hero-title,
+  html[lang="tr"] .hero-title {
+    order: 3;
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: clamp(48px, 14vw, 80px) !important;
+    font-weight: 900 !important;
+    line-height: 0.9 !important;
+    letter-spacing: -2px !important;
+    white-space: normal !important;
+    gap: 0 !important;
+  }
+
+  .hero-title-line {
+    display: block !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: inherit !important;
+    letter-spacing: inherit !important;
+    white-space: normal !important;
+  }
+
+  .hero-title-line + .hero-title-line {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-location {
+    order: 4;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-top: 16px;
+    padding-right: 0;
+  }
+
+  .hero-showcase {
+    display: contents;
+  }
+
+  .hero-showcase::before {
+    display: none !important;
+  }
+
+  .hero-photo,
+  .hero-specialties-card {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    max-width: none;
+  }
+
+  .hero-photo {
+    order: 1;
+    width: 55%;
+    max-width: 220px;
+    margin: 0 auto;
+    align-self: center;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .hero-photo-overlay {
+    display: none !important;
+  }
+
+  .hero-specialties-card {
+    order: 5;
+    width: 100%;
+    padding: 0;
+    margin-top: 40px;
+    background: transparent;
+  }
+
+  .hero-specialties {
+    margin: 0;
+  }
+
+  .hero-specialties li {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ftco_navbar .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+
+  .ftco_navbar .nav-brackets .nav-link,
+  .ftco_navbar .navbar-dark .nav-brackets .nav-link {
+    font-size: 0.75rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  .nav-contact-btn {
+    font-size: 0.65rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  .hero-wrap {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .hero-editorial {
+    padding: 20px 20px 40px;
+  }
+
+  .hero-title,
+  html[lang="en"] .hero-title,
+  html[lang="tr"] .hero-title {
+    font-size: clamp(48px, 14vw, 80px) !important;
+    line-height: 0.9 !important;
+    letter-spacing: -2px !important;
+  }
+
+  .hero-location {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .hero-photo {
+    width: 55%;
+    max-width: 220px;
+  }
+
+  .hero-specialties li {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

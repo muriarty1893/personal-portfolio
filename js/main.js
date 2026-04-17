@@ -520,7 +520,7 @@ window.startHeroAnimations = function() {
 
   // Title: all chars across both lines animate from the global center outward
   tl.from('.hero-title-line .char', {
-    y: 70,
+    y: -70,
     opacity: 0,
     duration: 1.0,
     stagger: {
@@ -539,13 +539,20 @@ window.startHeroAnimations = function() {
     stagger: { amount: 0.35 }
   }, 0.75);
 
-  // Photo: overlay collapses from bottom anchor (transform-origin: bottom center),
-  // so top of overlay disappears first → photo revealed top-to-bottom (printing effect).
-  // power4.out = starts fast, decelerates heavily at the end.
+  // Photo: overlay collapses from the bottom anchor so the image reveals top-to-bottom,
+  // while the image settles down from a more noticeably oversized starting scale.
+  tl.fromTo('.hero-photo img', {
+    scale: 1.34,
+    transformOrigin: 'center center'
+  }, {
+    scale: 1,
+    duration: 2.0,
+    ease: 'power4.out'
+  }, 0.15);
+
   tl.to('.hero-photo-overlay', {
     scaleY: 0,
     duration: 2.0,
     ease: 'power4.out'
   }, 0.15);
 };
-

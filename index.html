@@ -12,7 +12,7 @@
     <meta property="og:description" content="Technology enthusiast with passion for AI and machine learning" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia+Sans+Condensed:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/animate.css" />
@@ -30,7 +30,6 @@
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <script>
-      if(localStorage.getItem('darkMode')==='true'){document.body.classList.add('dark-mode');}
       if(!sessionStorage.getItem('loaderShown')){document.body.classList.add('loading');}
     </script>
     <div id="loader">
@@ -74,11 +73,6 @@
             </li>
           </ul>
           <div class="navbar-right-group">
-            <div class="language-buttons">
-              <a href="index.html" class="active">EN</a>
-              <a href="index-tr.html">TR</a>
-            </div>
-            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
             <a href="#contact-section" class="nav-contact-btn">Contact Me <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
           </div>
         </div>
@@ -87,21 +81,27 @@
 
     <section class="hero-wrap">
       <div class="hero-editorial">
-        <div class="hero-counter">1,018</div>
+        <div class="hero-meta">
+          <div class="hero-counter">1,018</div>
+        </div>
         <h1 class="hero-title">
           <span class="hero-title-line">COMPUTER</span>
           <span class="hero-title-line">ENGINEER</span>
         </h1>
         <div class="hero-location">BASED IN TURKEY</div>
-        <ul class="hero-specialties">
-          <li>/ AI &amp; MACHINE LEARNING</li>
-          <li>/ BACKEND DEVELOPMENT</li>
-          <li>/ IT INFRASTRUCTURE</li>
-        </ul>
-      </div>
-      <div class="hero-photo">
-        <img src="images/cv_foto_nobg.png" alt="Murat Eker" />
-        <div class="hero-photo-overlay"></div>
+        <div class="hero-showcase">
+          <div class="hero-specialties-card">
+            <ul class="hero-specialties">
+              <li>/ AI &amp; MACHINE LEARNING</li>
+              <li>/ BACKEND DEVELOPMENT</li>
+              <li>/ IT INFRASTRUCTURE</li>
+            </ul>
+          </div>
+          <div class="hero-photo">
+            <img src="images/cv_foto_nobg.png" alt="Murat Eker" />
+            <div class="hero-photo-overlay"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -146,10 +146,10 @@
           <div class="col-md-3">
             <nav id="navi">
               <ul>
-                <li><a href="#page-1">Education</a></li>
-                <li><a href="#page-2">Experience</a></li>
-                <li><a href="#page-3">Skills</a></li>
-                <li><a href="#page-4">Projects</a></li>
+                <li><a href="#page-1">EDUCATION</a></li>
+                <li><a href="#page-2">EXPERIENCE</a></li>
+                <li><a href="#page-3">SKILLS</a></li>
+                <li><a href="#page-4">PROJECTS</a></li>
               </ul>
             </nav>
           </div>
@@ -497,19 +497,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
     <script>
-      (function() {
-        const btn = document.getElementById('dark-mode-toggle');
-        const body = document.body;
-        btn.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
-        btn.addEventListener('click', function() {
-          body.classList.toggle('dark-mode');
-          const dark = body.classList.contains('dark-mode');
-          localStorage.setItem('darkMode', dark);
-          btn.textContent = dark ? '☀️' : '🌙';
-        });
-      })();
-    </script>
-    <script>
     (function() {
       var loaderEl = document.getElementById('loader');
       if (!loaderEl || !document.body.classList.contains('loading')) {
@@ -519,9 +506,8 @@
         return;
       }
 
-      var isDark = document.body.classList.contains('dark-mode');
-      var textColor = isDark ? '#e8ecf0' : '#000000';
-      var bgColor = isDark ? 0x12141a : 0xffffff;
+      var textColor = '#000000';
+      var bgColor = 0xffffff;
 
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -531,15 +517,16 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       scene.add(new THREE.AmbientLight(0xffffff, 1));
 
-      function createTextTexture(text, heightScale, fontWeight) {
+      function createTextTexture(text, heightScale, fontWeight, fontFamily) {
         var c = document.createElement('canvas');
         var ctx = c.getContext('2d');
         c.width = 8192; c.height = 4096;
         ctx.clearRect(0, 0, c.width, c.height);
         var t = text + ' ';
-        ctx.font = fontWeight + ' 100px "Poppins", sans-serif';
+        var family = fontFamily || 'Poppins';
+        ctx.font = fontWeight + ' 100px "' + family + '", sans-serif';
         var finalSize = 100 * (c.width / ctx.measureText(t).width);
-        ctx.font = fontWeight + ' ' + finalSize + 'px "Poppins", sans-serif';
+        ctx.font = fontWeight + ' ' + finalSize + 'px "' + family + '", sans-serif';
         ctx.fillStyle = textColor;
         ctx.strokeStyle = 'rgba(255, 255, 255, 0.18)';
         ctx.lineWidth = finalSize * 0.018;
@@ -561,9 +548,9 @@
         return tex;
       }
 
-      function createTextSphere(text, heightScale, fontWeight) {
+      function createTextSphere(text, heightScale, fontWeight, fontFamily) {
         var group = new THREE.Group();
-        var tex = createTextTexture(text, heightScale, fontWeight);
+        var tex = createTextTexture(text, heightScale, fontWeight, fontFamily);
         var mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide, depthWrite: false });
         group.add(new THREE.Mesh(new THREE.SphereGeometry(1.5, 64, 64), mat));
         group.userData.tex = tex;
