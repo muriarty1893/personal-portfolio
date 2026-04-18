@@ -163,15 +163,15 @@ strong {
   position: relative !important;
 }
 
-/* Brackets via pseudo-elements on the <a> itself — always visible, disappear on hover */
+/* Brackets via pseudo-elements on the <a> itself — stay visible, spread out on hover */
 .ftco_navbar .nav-brackets .nav-link::before {
   content: '[' !important;
   position: absolute !important;
   left: 0 !important;
   top: 50% !important;
   transform: translateY(-50%) translateX(2px) !important;
-  opacity: 0.45 !important;
-  font-weight: 300 !important;
+  opacity: 0.55 !important;
+  font-weight: 500 !important;
   font-size: 1.18rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   color: white !important;
@@ -184,8 +184,8 @@ strong {
   right: 0 !important;
   top: 50% !important;
   transform: translateY(-50%) translateX(-2px) !important;
-  opacity: 0.45 !important;
-  font-weight: 300 !important;
+  opacity: 0.55 !important;
+  font-weight: 500 !important;
   font-size: 1.18rem !important;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   color: white !important;
@@ -197,12 +197,12 @@ strong {
 }
 
 .ftco_navbar .nav-brackets .nav-link:hover::before {
-  opacity: 0 !important;
+  opacity: 0.85 !important;
   transform: translateY(-50%) translateX(-6px) !important;
 }
 
 .ftco_navbar .nav-brackets .nav-link:hover::after {
-  opacity: 0 !important;
+  opacity: 0.85 !important;
   transform: translateY(-50%) translateX(6px) !important;
 }
 
@@ -233,7 +233,7 @@ strong {
   color: white !important;
   font-family: 'Spline Sans Mono', monospace !important;
   font-weight: 400 !important;
-  font-size: 1.72rem !important;
+  font-size: 1.12rem !important;
   letter-spacing: 2.8px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
@@ -925,7 +925,7 @@ body.dark-mode .resume-hint {
 
 .proj-desc {
   font-size: 13px !important;
-  color: #666 !important;
+  color: #333 !important;
   line-height: 1.7 !important;
   margin: 0 0 12px 0 !important;
 }
@@ -944,18 +944,18 @@ body.dark-mode .resume-hint {
   text-transform: uppercase;
   padding: 3px 10px;
   border: 1px solid rgba(0,0,0,0.12);
-  color: #888;
+  color: #555;
   border-radius: 2px;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .proj-card:hover .proj-tech span {
   border-color: rgba(0,0,0,0.25);
-  color: #555;
+  color: #333;
 }
 
 .proj-arrow {
-  color: #bbb;
+  color: #888;
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
