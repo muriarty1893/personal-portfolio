@@ -600,21 +600,12 @@ html[lang="tr"] .hero-title {
   background: #f5f5f5 !important;
 }
 
-.ftco-about.img {
-  background: #fff !important;
-}
-
 #resume-section {
   background: #f5f5f5 !important;
 }
 
 .contact-section {
   background: #f5f5f5 !important;
-}
-
-/* --- About Section --- */
-.ftco-about .img-about .img {
-  filter: grayscale(60%) !important;
 }
 
 /* --- Resume Nav --- */
@@ -1222,16 +1213,6 @@ body.dark-mode .resume-hint {
     padding: 0.85rem 0.95rem 0.75rem !important;
   }
 
-  /* About section: full width stacking */
-  .ftco-about .col-md-6 {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
-  .ftco-about .img-about {
-    margin-bottom: 20px !important;
-  }
-
   /* Reduce section padding */
   .ftco-section {
     padding: 40px 0 !important;
@@ -1254,25 +1235,6 @@ body.dark-mode .resume-hint {
 
   .resume-wrap .icon span {
     font-size: 16px !important;
-  }
-
-  /* Resume button: stack button and hint text vertically */
-  .counter-wrap .text p {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 8px !important;
-  }
-
-  .counter-wrap .text .resume-hint {
-    font-size: 14px !important;
-    color: #888 !important;
-  }
-
-  /* About text column: reduce excessive py-5 padding on mobile */
-  .ftco-about .col-md-6.py-5 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
   }
 
   /* Contact section cards */
@@ -1569,15 +1531,6 @@ body.dark-mode .resume-hint {
     font-size: 12px !important;
   }
 
-  /* About section */
-  .ftco-about .heading-section h2 {
-    font-size: 24px !important;
-  }
-
-  .ftco-about p {
-    font-size: 13px !important;
-  }
-
   /* Contact */
   .contact-info-box h3 {
     font-size: 20px !important;
@@ -1616,6 +1569,180 @@ body.dark-mode .resume-hint {
 .dark-mode-toggle:hover {
   background: white;
   color: black;
+}
+
+/* --- About Section — Editorial Dossier --- */
+.about-section {
+  background: #f5f5f5 !important;
+  padding: clamp(80px, 10vw, 140px) 0 !important;
+}
+
+.about-editorial {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+}
+
+.about-meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 2px solid #111;
+  padding-bottom: 18px;
+  margin-bottom: clamp(36px, 5vw, 64px);
+}
+
+.about-idx {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0.05em;
+}
+
+.about-heading {
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  font-size: clamp(40px, 5vw, 64px) !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: -1px !important;
+  color: #111 !important;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+  margin-bottom: clamp(32px, 4vw, 48px);
+}
+
+.about-photo {
+  background: #d9dad3;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  display: block;
+}
+
+.about-facts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about-facts .fact-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about-facts dt {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.about-facts dd {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.about-bio {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #333 !important;
+  max-width: 780px;
+  margin: 0 0 36px 0 !important;
+}
+
+.about-cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #111 !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-bottom: 1.5px solid #111;
+  padding: 0 0 4px;
+  line-height: 1;
+}
+
+.about-cv-link:hover {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+
+.about-cv-link .arrow {
+  display: inline-flex;
+  transition: transform 0.35s ease;
+  transform-origin: center center;
+}
+
+.about-cv-link:hover .arrow {
+  transform: rotate(45deg);
+}
+
+.about-cv-link .arrow svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-photo {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .about-facts .fact-row {
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+  }
+
+  .about-facts dd {
+    font-size: clamp(18px, 5vw, 22px);
+  }
+
+  .about-bio {
+    font-size: 14px;
+    line-height: 1.75;
+  }
 }
 
 /* =========================================
@@ -1781,10 +1908,6 @@ body.dark-mode .ftco-section {
   background: #12141a !important;
 }
 
-body.dark-mode .ftco-about.img {
-  background: #191c24 !important;
-}
-
 body.dark-mode #resume-section {
   background: #12141a !important;
 }
@@ -1871,6 +1994,52 @@ body.dark-mode .page.three img:hover {
 
 body.dark-mode .page.three span {
   color: #b0b8c4 !important;
+}
+
+/* About Section */
+body.dark-mode .about-section {
+  background: #12141a !important;
+}
+
+body.dark-mode .about-meta {
+  border-bottom-color: #e8ecf0;
+}
+
+body.dark-mode .about-idx,
+body.dark-mode .about-heading {
+  color: #e8ecf0 !important;
+}
+
+body.dark-mode .about-facts,
+body.dark-mode .about-facts .fact-row {
+  border-color: rgba(200, 220, 255, 0.08);
+}
+
+body.dark-mode .about-facts dt {
+  color: #7a8494;
+}
+
+body.dark-mode .about-facts dd {
+  color: #e8ecf0;
+}
+
+body.dark-mode .about-bio {
+  color: #b0b8c4 !important;
+}
+
+body.dark-mode .about-cv-link,
+body.dark-mode .about-cv-link:hover {
+  color: #e8ecf0 !important;
+  border-bottom-color: #e8ecf0;
+}
+
+body.dark-mode .about-photo {
+  background: #2b3038;
+}
+
+body.dark-mode .about-photo img {
+  filter: grayscale(100%) brightness(0.9);
+  mix-blend-mode: lighten;
 }
 
 /* Project Cards */
@@ -2055,8 +2224,7 @@ body.dark-mode .bg-dark {
 }
 
 /* =========================================
-   MOBILE ROLLBACK TO LAST COMMITTED LAYOUT
-   Keeps the current desktop redesign intact.
+   MOBILE OVERRIDES
    ========================================= */
 
 @media (max-width: 991.98px) {
@@ -2064,6 +2232,7 @@ body.dark-mode .bg-dark {
   .ftco_navbar.navbar-dark,
   .ftco_navbar.bg-dark {
     padding: 1rem 0 !important;
+    mix-blend-mode: normal !important;
   }
 
   .ftco_navbar .container-fluid {
@@ -2073,70 +2242,44 @@ body.dark-mode .bg-dark {
   }
 
   .ftco_navbar .navbar-brand {
-    font-family: 'Poppins', sans-serif !important;
-    font-style: italic !important;
+    font-family: 'Sofia Sans Condensed', sans-serif !important;
+    font-style: normal !important;
     font-size: 1.6rem !important;
     letter-spacing: -0.5px !important;
     line-height: 1.1 !important;
     white-space: nowrap !important;
     max-width: none !important;
-    color: white !important;
+    color: #111 !important;
   }
 
   .ftco_navbar .navbar-toggler {
-    color: white !important;
-  }
-
-  .ftco_navbar .navbar-collapse {
-    width: auto !important;
-    margin-top: 0 !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-
-  .navbar-right-group {
-    width: auto !important;
-    justify-content: flex-start !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 10px !important;
-    margin-left: 0 !important;
-    padding: 10px 0 !important;
-  }
-
-  .ftco_navbar .nav-brackets .nav-link,
-  .ftco_navbar .navbar-dark .nav-brackets .nav-link {
-    color: white !important;
-    width: auto !important;
-    padding: 8px 0 !important;
-    font-size: 0.75rem !important;
-    letter-spacing: 2px !important;
-  }
-
-  .ftco_navbar .nav-brackets .nav-link::before,
-  .ftco_navbar .nav-brackets .nav-link::after {
     display: none !important;
   }
 
-  .nav-contact-btn {
-    color: white !important;
-    border-bottom-color: white !important;
-    font-family: 'Courier New', 'Courier', monospace !important;
-    font-size: 0.65rem !important;
-    letter-spacing: 2px !important;
-    gap: 6px !important;
-    padding: 4px 0 3px !important;
+  .ftco_navbar .navbar-collapse {
+    display: none !important;
   }
 
   #navi ul li a {
-    font-family: 'Courier New', 'Courier', monospace !important;
+    font-family: 'Spline Sans Mono', monospace !important;
   }
 
   #navi ul li a.current::before,
   #navi ul li a.current::after {
-    font-family: 'Courier New', 'Courier', monospace !important;
+    font-family: 'Spline Sans Mono', monospace !important;
+  }
+}
+
+/* Dark mode: mobile navbar brand */
+@media (max-width: 991.98px) {
+  body.dark-mode .ftco_navbar,
+  body.dark-mode .ftco_navbar.navbar-dark,
+  body.dark-mode .ftco_navbar.bg-dark {
+    mix-blend-mode: normal !important;
+  }
+
+  body.dark-mode .ftco_navbar .navbar-brand {
+    color: #e8ecf0 !important;
   }
 }
 
@@ -2164,10 +2307,10 @@ body.dark-mode .bg-dark {
   }
 
   .hero-counter {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Spline Sans Mono', monospace !important;
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 0;
     margin-bottom: 8px;
   }
 
@@ -2180,11 +2323,11 @@ body.dark-mode .bg-dark {
     max-width: none !important;
     margin: 0 !important;
     margin-left: 0 !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: clamp(48px, 14vw, 80px) !important;
+    font-family: 'Sofia Sans Condensed', sans-serif !important;
+    font-size: clamp(52px, 15vw, 86px) !important;
     font-weight: 900 !important;
     line-height: 0.9 !important;
-    letter-spacing: -2px !important;
+    letter-spacing: -1px !important;
     white-space: normal !important;
     gap: 0 !important;
   }
@@ -2206,10 +2349,10 @@ body.dark-mode .bg-dark {
 
   .hero-location {
     order: 4;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Spline Sans Mono', monospace !important;
     font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
     text-align: left;
     margin-top: 16px;
     padding-right: 0;
@@ -2261,12 +2404,12 @@ body.dark-mode .bg-dark {
   }
 
   .hero-specialties li {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px;
+    font-family: 'Sofia Sans Condensed', sans-serif !important;
+    font-size: clamp(18px, 5.4vw, 24px);
     font-weight: 700;
-    letter-spacing: 1px !important;
-    line-height: 1.8;
-    margin-bottom: 0;
+    letter-spacing: 0 !important;
+    line-height: 1.12;
+    margin-bottom: 10px;
   }
 }
 
@@ -2282,13 +2425,13 @@ body.dark-mode .bg-dark {
 
   .ftco_navbar .nav-brackets .nav-link,
   .ftco_navbar .navbar-dark .nav-brackets .nav-link {
-    font-size: 0.75rem !important;
-    letter-spacing: 2px !important;
+    font-size: 0.84rem !important;
+    letter-spacing: 0.13em !important;
   }
 
   .nav-contact-btn {
-    font-size: 0.65rem !important;
-    letter-spacing: 2px !important;
+    font-size: 0.88rem !important;
+    letter-spacing: 0.13em !important;
   }
 
   .hero-wrap {
@@ -2303,14 +2446,14 @@ body.dark-mode .bg-dark {
   .hero-title,
   html[lang="en"] .hero-title,
   html[lang="tr"] .hero-title {
-    font-size: clamp(48px, 14vw, 80px) !important;
+    font-size: clamp(44px, 14vw, 72px) !important;
     line-height: 0.9 !important;
-    letter-spacing: -2px !important;
+    letter-spacing: -1px !important;
   }
 
   .hero-location {
     font-size: 11px;
-    letter-spacing: 3px;
+    letter-spacing: 0.22em;
   }
 
   .hero-photo {
@@ -2319,7 +2462,7 @@ body.dark-mode .bg-dark {
   }
 
   .hero-specialties li {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: clamp(16px, 5.2vw, 21px);
+    line-height: 1.2;
   }
 }
