@@ -156,6 +156,28 @@ AOS.init({
     if (year) year.textContent = new Date().getFullYear();
   }
 
+  function initTextRoll() {
+    var STAGGER = 0.035;
+    var spans = document.querySelectorAll('.nav-brackets .nav-link > span');
+    spans.forEach(function(span) {
+      var text = span.textContent;
+      var len = text.length;
+      var topHtml = '';
+      var bottomHtml = '';
+      for (var i = 0; i < len; i++) {
+        var ch = text[i] === ' ' ? ' ' : text[i];
+        var delay = (STAGGER * Math.abs(i - (len - 1) / 2)).toFixed(4);
+        var charSpan = '<span class="tr-char" style="--delay:' + delay + 's">' + ch + '</span>';
+        topHtml += charSpan;
+        bottomHtml += charSpan;
+      }
+      span.innerHTML = '<span class="text-roll">'
+        + '<span class="text-roll-top">' + topHtml + '</span>'
+        + '<span class="text-roll-bottom">' + bottomHtml + '</span>'
+        + '</span>';
+    });
+  }
+
   $(function() {
     setFullHeight();
     bindMobileMenu();
@@ -166,6 +188,7 @@ AOS.init({
     bindResumeNavVisibility();
     bindMobileResumeNav();
     setFooterYear();
+    initTextRoll();
 
     $(window).on('resize', setFullHeight);
   });

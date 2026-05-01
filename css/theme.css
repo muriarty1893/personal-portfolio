@@ -208,12 +208,49 @@ strong {
 
 .ftco_navbar .nav-brackets .nav-link span {
   display: inline-block !important;
-  transition: letter-spacing 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   padding-bottom: 0 !important;
 }
 
-.ftco_navbar .nav-brackets .nav-link:hover span {
-  letter-spacing: 3px !important;
+/* TextRoll animation */
+.text-roll {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Must beat .ftco_navbar .nav-brackets .nav-link span { display: inline-block !important } (specificity 0,3,1) */
+.ftco_navbar .nav-brackets .nav-link span.text-roll-top,
+.ftco_navbar .nav-brackets .nav-link span.text-roll-bottom {
+  display: block !important;
+}
+
+.ftco_navbar .nav-brackets .nav-link span.text-roll-bottom {
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+.tr-char {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+  transition-delay: var(--delay, 0s);
+}
+
+.text-roll-top .tr-char {
+  transform: translateY(0);
+}
+
+.ftco_navbar .nav-brackets .nav-link:hover .text-roll-top .tr-char {
+  transform: translateY(-100%);
+}
+
+.text-roll-bottom .tr-char {
+  transform: translateY(100%);
+}
+
+.ftco_navbar .nav-brackets .nav-link:hover .text-roll-bottom .tr-char {
+  transform: translateY(0);
 }
 
 /* Right group: language + dark mode + contact button */
