@@ -1741,11 +1741,11 @@ body.dark-mode .resume-hint {
 }
 
 .tc-middle-text {
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
+  font-family: 'Birthstone', cursive;
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
   color: #111;
   margin: 0;
   line-height: 1;
