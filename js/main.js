@@ -189,9 +189,30 @@ AOS.init({
     bindMobileResumeNav();
     setFooterYear();
     initTextRoll();
+    initTiltCard();
 
     $(window).on('resize', setFullHeight);
   });
+
+  function initTiltCard() {
+    var cards = document.querySelectorAll('.tilt-card');
+    cards.forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width;
+        var y = (e.clientY - rect.top) / rect.height;
+        var rotX = -(y - 0.5) * 20;
+        var rotY = (x - 0.5) * 20;
+        card.style.transition = 'transform 0.06s linear';
+        card.style.transform = 'perspective(1200px) rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg) scale(1.05)';
+      });
+
+      card.addEventListener('mouseleave', function() {
+        card.style.transition = 'transform 0.5s ease';
+        card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1)';
+      });
+    });
+  }
 })(jQuery);
 
 window.startHeroAnimations = function() {
