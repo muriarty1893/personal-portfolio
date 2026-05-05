@@ -89,11 +89,6 @@
   masterGroup.rotation.x = Math.PI / 24;
   scene.add(masterGroup);
 
-  var globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.45, 900, 'Sofia Sans Condensed');
-  var globe2 = createTextSphere('MACHINE LEARNING       *       BACKEND DEVELOPMENT       *       IT INFRASTRUCTURE       *       PORTFOLIO       *      ', 1, 300, 'Spline Sans Mono');
-  globe1.userData.tex.offset.x = -25 / 64;
-  masterGroup.add(globe1, globe2);
-
   var mouse = { x: 0, y: 0 };
   var target = { x: 0, y: 0 };
 
@@ -101,6 +96,32 @@
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = (event.clientY / window.innerHeight) * 2 - 1;
   });
+
+  // globe1/globe2 declared here so runExitAnimation can close over them
+  var globe1, globe2;
+
+  function startGlobes() {
+    globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.45, 900, 'Sofia Sans Condensed');
+    globe2 = createTextSphere('MACHINE LEARNING       *       BACKEND DEVELOPMENT       *       IT INFRASTRUCTURE       *       PORTFOLIO       *      ', 1, 300, 'Spline Sans Mono');
+    globe1.userData.tex.offset.x = -25 / 64;
+    masterGroup.add(globe1, globe2);
+
+    globe1.position.set(1.5, -15, 0);
+    globe2.position.set(-1.5, -15, 0);
+
+    animateLoader();
+
+    var introTl = gsap.timeline({ delay: 0.2 });
+    introTl.to(globe1.position, { x: 0, y: 0.35, duration: 2.5, ease: 'power4.out' });
+    introTl.to(globe2.position, { x: 0, y: -0.15, duration: 1.8, ease: 'power4.out' }, '-=2.0');
+  }
+
+  // Wait for custom fonts before drawing canvas textures so first-visit
+  // font downloads don't cause a fallback-font render on the 3D globe.
+  Promise.all([
+    document.fonts.load('900 100px "Sofia Sans Condensed"'),
+    document.fonts.load('300 100px "Spline Sans Mono"')
+  ]).then(startGlobes).catch(startGlobes);
 
   function animateLoader() {
     requestAnimationFrame(animateLoader);
@@ -120,15 +141,6 @@
     camera.lookAt(0, 0, 0);
     renderer.render(scene, camera);
   }
-
-  animateLoader();
-
-  globe1.position.set(1.5, -15, 0);
-  globe2.position.set(-1.5, -15, 0);
-
-  var introTl = gsap.timeline({ delay: 0.2 });
-  introTl.to(globe1.position, { x: 0, y: 0.35, duration: 2.5, ease: 'power4.out' });
-  introTl.to(globe2.position, { x: 0, y: -0.15, duration: 1.8, ease: 'power4.out' }, '-=2.0');
 
   var counter = { value: 0 };
   var percentageDiv = document.getElementById('percentage-counter');
