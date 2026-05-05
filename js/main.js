@@ -156,6 +156,35 @@ AOS.init({
     if (year) year.textContent = new Date().getFullYear();
   }
 
+  function bindLanguageSwitcher() {
+    var switcher = document.getElementById('lang-switcher');
+    if (!switcher) return;
+
+    var pages = {
+      en: 'index.html',
+      tr: 'index-tr.html',
+      de: 'index-de.html'
+    };
+    var currentLang = document.documentElement.lang || 'en';
+    var buttons = switcher.querySelectorAll('.lang-switcher__button');
+
+    buttons.forEach(function(button) {
+      var isActive = button.dataset.lang === currentLang;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    switcher.addEventListener('click', function(event) {
+      var target = event.target;
+      if (!target.matches('.lang-switcher__button') || !pages[target.dataset.lang]) return;
+
+      localStorage.setItem('portfolio-language', target.dataset.lang);
+      if (target.dataset.lang === currentLang) return;
+
+      window.location.href = pages[target.dataset.lang] + window.location.hash;
+    });
+  }
+
   function initTextRoll() {
     var STAGGER = 0.035;
     var spans = document.querySelectorAll('.nav-brackets .nav-link > span');
@@ -188,6 +217,7 @@ AOS.init({
     bindResumeNavVisibility();
     bindMobileResumeNav();
     setFooterYear();
+    bindLanguageSwitcher();
     initTextRoll();
     initTiltCard();
 

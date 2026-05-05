@@ -4,4 +4,12 @@
     <loc>https://murateker.live/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://murateker.live/index-tr.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://murateker.live/index-de.html</loc>
+    <priority>0.9</priority>
+  </url>
 </urlset>
