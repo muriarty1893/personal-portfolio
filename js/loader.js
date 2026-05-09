@@ -102,7 +102,7 @@
 
   function startGlobes() {
     globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.45, 900, 'Sofia Sans Condensed');
-    globe2 = createTextSphere('MACHINE LEARNING       *       BACKEND DEVELOPMENT       *       IT INFRASTRUCTURE       *       PORTFOLIO       *      ', 1, 300, 'Spline Sans Mono');
+    globe2 = createTextSphere('MACHINE LEARNING       •       BACKEND DEVELOPMENT       •       IT INFRASTRUCTURE       •       PORTFOLIO       •      ', 1, 300, 'Spline Sans Mono');
     globe1.userData.tex.offset.x = -25 / 64;
     masterGroup.add(globe1, globe2);
 
