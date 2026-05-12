@@ -31,7 +31,7 @@
   renderer.setSize(window.innerWidth, window.innerHeight);
   scene.add(new THREE.AmbientLight(0xffffff, 1));
 
-  function createTextTexture(text, heightScale, fontWeight, fontFamily) {
+  function createTextTexture(text, heightScale, fontWeight, fontFamily, sepChar, sepScale) {
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
     canvas.width = 8192;
@@ -40,23 +40,58 @@
 
     var displayText = text + ' ';
     var family = fontFamily || 'Poppins';
-    ctx.font = fontWeight + ' 100px "' + family + '", sans-serif';
-
-    var finalSize = 100 * (canvas.width / ctx.measureText(displayText).width);
-    ctx.font = fontWeight + ' ' + finalSize + 'px "' + family + '", sans-serif';
     ctx.fillStyle = textColor;
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.18)';
-    ctx.lineWidth = finalSize * 0.018;
     ctx.lineJoin = 'round';
-    ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
-    ctx.save();
-    ctx.translate(canvas.width / 2, canvas.height / 2);
-    ctx.scale(1, heightScale);
-    ctx.strokeText(displayText, 0, 0);
-    ctx.fillText(displayText, 0, 0);
-    ctx.restore();
+    if (!sepChar || !displayText.includes(sepChar)) {
+      ctx.font = fontWeight + ' 100px "' + family + '", sans-serif';
+      var finalSize = 100 * (canvas.width / ctx.measureText(displayText).width);
+      ctx.font = fontWeight + ' ' + finalSize + 'px "' + family + '", sans-serif';
+      ctx.lineWidth = finalSize * 0.018;
+      ctx.textAlign = 'center';
+      ctx.save();
+      ctx.translate(canvas.width / 2, canvas.height / 2);
+      ctx.scale(1, heightScale);
+      ctx.strokeText(displayText, 0, 0);
+      ctx.fillText(displayText, 0, 0);
+      ctx.restore();
+    } else {
+      ctx.font = fontWeight + ' 100px "' + family + '", sans-serif';
+      var finalSize = 100 * (canvas.width / ctx.measureText(displayText).width);
+      var sepFinalSize = finalSize * sepScale;
+      ctx.lineWidth = finalSize * 0.018;
+      ctx.textAlign = 'left';
+
+      var parts = displayText.split(sepChar);
+      var numSeps = parts.length - 1;
+
+      ctx.save();
+      ctx.translate(0, canvas.height / 2);
+      ctx.scale(1, heightScale);
+
+      var x = 0;
+      for (var i = 0; i < parts.length; i++) {
+        if (parts[i]) {
+          ctx.font = fontWeight + ' ' + finalSize + 'px "' + family + '", sans-serif';
+          ctx.strokeText(parts[i], x, 0);
+          ctx.fillText(parts[i], x, 0);
+          x += ctx.measureText(parts[i]).width;
+        }
+        if (i < numSeps) {
+          ctx.font = fontWeight + ' ' + finalSize + 'px "' + family + '", sans-serif';
+          var fullAdvance = ctx.measureText(sepChar).width;
+          ctx.font = fontWeight + ' ' + sepFinalSize + 'px "' + family + '", sans-serif';
+          var smallAdvance = ctx.measureText(sepChar).width;
+          var offset = (fullAdvance - smallAdvance) / 2;
+          ctx.strokeText(sepChar, x + offset, 0);
+          ctx.fillText(sepChar, x + offset, 0);
+          x += fullAdvance;
+        }
+      }
+      ctx.restore();
+    }
 
     var texture = new THREE.CanvasTexture(canvas);
     texture.minFilter = THREE.LinearMipmapLinearFilter;
@@ -69,9 +104,9 @@
     return texture;
   }
 
-  function createTextSphere(text, heightScale, fontWeight, fontFamily) {
+  function createTextSphere(text, heightScale, fontWeight, fontFamily, sepChar, sepScale) {
     var group = new THREE.Group();
-    var texture = createTextTexture(text, heightScale, fontWeight, fontFamily);
+    var texture = createTextTexture(text, heightScale, fontWeight, fontFamily, sepChar, sepScale);
     var material = new THREE.MeshBasicMaterial({
       map: texture,
       transparent: true,
@@ -102,7 +137,7 @@
 
   function startGlobes() {
     globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.45, 900, 'Sofia Sans Condensed');
-    globe2 = createTextSphere('MACHINE LEARNING       •       BACKEND DEVELOPMENT       •       IT INFRASTRUCTURE       •       PORTFOLIO       •      ', 1, 300, 'Spline Sans Mono');
+    globe2 = createTextSphere('MACHINE LEARNING       ●       BACKEND DEVELOPMENT       ●       IT INFRASTRUCTURE       ●       PORTFOLIO       ●      ', 1, 300, 'Spline Sans Mono', '●', 0.65);
     globe1.userData.tex.offset.x = -25 / 64;
     masterGroup.add(globe1, globe2);
 
