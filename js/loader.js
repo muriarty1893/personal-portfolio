@@ -136,8 +136,8 @@
   var globe1, globe2;
 
   function startGlobes() {
-    globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     IT     ', 1.45, 900, 'Sofia Sans Condensed');
-    globe2 = createTextSphere('MACHINE LEARNING       ●       BACKEND DEVELOPMENT       ●       IT INFRASTRUCTURE       ●       PORTFOLIO       ●      ', 1, 300, 'Spline Sans Mono', '●', 0.65);
+    globe1 = createTextSphere('MURAT     EKER     >     COMPUTER     ENGINEER     &     SERVER-SIDE     ', 1.45, 900, 'Sofia Sans Condensed');
+    globe2 = createTextSphere('MACHINE LEARNING       ●       BACKEND DEVELOPMENT       ●       SERVER-SIDE SYSTEMS       ●       PORTFOLIO       ●      ', 1, 300, 'Spline Sans Mono', '●', 0.65);
     globe1.userData.tex.offset.x = -25 / 64;
     masterGroup.add(globe1, globe2);
 
