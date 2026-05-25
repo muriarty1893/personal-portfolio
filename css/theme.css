@@ -270,14 +270,14 @@ strong {
   color: white !important;
   font-family: 'Spline Sans Mono', monospace !important;
   font-weight: 400 !important;
-  font-size: 1.12rem !important;
+  font-size: 1.2rem !important;
   letter-spacing: 2.8px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
   border: none !important;
   border-bottom: 1.5px solid white !important;
   padding: 0 !important;
-  line-height: 1 !important;
+  line-height: 1.15 !important;
   white-space: nowrap !important;
 }
 
@@ -289,14 +289,17 @@ strong {
 .nav-contact-btn .arrow {
   display: inline-flex !important;
   align-items: center !important;
-  margin-bottom: 3px !important;
+  justify-content: center !important;
+  width: 1em !important;
+  height: 1em !important;
+  margin-bottom: 0 !important;
   transition: transform 0.35s ease !important;
   transform-origin: center center !important;
 }
 
 .nav-contact-btn .arrow svg {
-  width: 1.28rem !important;
-  height: 1.28rem !important;
+  width: 1em !important;
+  height: 1em !important;
   display: block !important;
 }
 
@@ -1504,8 +1507,8 @@ body.dark-mode .resume-hint {
   }
 
   .nav-contact-btn .arrow svg {
-    width: 0.95rem !important;
-    height: 0.95rem !important;
+    width: 1em !important;
+    height: 1em !important;
   }
 
   .hero-wrap {
@@ -1871,6 +1874,24 @@ body.dark-mode .tc-stat-value {
   margin: 0;
 }
 
+.about-facts-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: #333 !important;
+  letter-spacing: 0;
+  margin: 0;
+  max-width: 780px;
+}
+
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
 .about-bio {
   font-family: 'Poppins', sans-serif;
   font-size: 19px;
@@ -1936,6 +1957,11 @@ body.dark-mode .tc-stat-value {
 
   .about-facts dd {
     font-size: clamp(18px, 5vw, 22px);
+  }
+
+  .about-facts-text {
+    font-size: 14px;
+    line-height: 1.75;
   }
 
   .about-bio {
@@ -2220,6 +2246,10 @@ body.dark-mode .about-facts dt {
 
 body.dark-mode .about-facts dd {
   color: #e8ecf0;
+}
+
+body.dark-mode .about-facts-text {
+  color: #e8ecf0 !important;
 }
 
 body.dark-mode .about-bio {
