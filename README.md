@@ -8,4 +8,4 @@ This is a static portfolio website built with React, Three.js and Tailwind. It i
 
 ## License
 
-MIT Licence
+MIT License. See [LICENSE](LICENSE).
