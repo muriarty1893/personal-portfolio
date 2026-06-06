@@ -1,6 +1,21 @@
 (function() {
   var loaderEl = document.getElementById('loader');
 
+  function finishWithoutLoader() {
+    if (loaderEl) {
+      loaderEl.style.display = 'none';
+    }
+    document.body.classList.remove('loading');
+    if (typeof window.startHeroAnimations === 'function') {
+      window.startHeroAnimations();
+    }
+    try {
+      sessionStorage.setItem('loaderShown', 'true');
+    } catch (error) {
+      // Storage can be unavailable in some privacy modes.
+    }
+  }
+
   if (!loaderEl || !document.body.classList.contains('loading')) {
     if (typeof window.startHeroAnimations === 'function') {
       window.startHeroAnimations();
@@ -9,11 +24,7 @@
   }
 
   if (typeof THREE === 'undefined' || typeof gsap === 'undefined') {
-    loaderEl.style.display = 'none';
-    document.body.classList.remove('loading');
-    if (typeof window.startHeroAnimations === 'function') {
-      window.startHeroAnimations();
-    }
+    finishWithoutLoader();
     return;
   }
 
@@ -21,10 +32,24 @@
   var bgColor = 0xffffff;
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  var renderer = new THREE.WebGLRenderer({
-    canvas: document.getElementById('loader-canvas'),
-    antialias: true
-  });
+  var canvas = document.getElementById('loader-canvas');
+  var renderer;
+
+  if (!canvas) {
+    finishWithoutLoader();
+    return;
+  }
+
+  try {
+    renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      antialias: true
+    });
+  } catch (error) {
+    console.warn('Skipping 3D loader because WebGL is unavailable.', error);
+    finishWithoutLoader();
+    return;
+  }
 
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.setClearColor(bgColor);
