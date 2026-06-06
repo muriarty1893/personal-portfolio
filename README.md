@@ -1,6 +1,6 @@
 ## About
 
-This is a static portfolio website vibecoded with React, Three.js and Tailwind.
+Static portfolio website vibecoded by ❤︎ with React, Three.js and Tailwind.
 
 ## License
 
