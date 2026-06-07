@@ -678,96 +678,6 @@ html[lang="tr"] .hero-title {
     padding: 0.85rem 0.95rem 0.75rem !important;
   }
 
-  .hero-wrap {
-    min-height: auto;
-    padding: 96px 0 34px;
-  }
-
-  .hero-editorial {
-    padding: 0 16px;
-  }
-
-  .hero-meta {
-    margin-bottom: 6px;
-  }
-
-  .hero-title {
-    margin: 6px 0 0;
-    font-size: clamp(48px, 14vw, 76px) !important;
-    line-height: 1.08 !important;
-    letter-spacing: -1.5px !important;
-    white-space: normal;
-  }
-
-  .hero-title-line {
-    display: block;
-  }
-
-  .hero-title-line + .hero-title-line {
-    margin-left: 0;
-    margin-top: 0.08em;
-  }
-
-  .hero-location {
-    text-align: left;
-    font-size: 12px;
-    letter-spacing: 0.24em;
-    padding-right: 0;
-    margin-top: 12px;
-  }
-
-  .hero-showcase {
-    min-height: auto;
-    margin-top: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .hero-showcase::before {
-    display: block;
-    width: min(100%, 360px);
-    height: 260px;
-    left: 50%;
-    bottom: -14px;
-    transform: translateX(-50%);
-  }
-
-  .hero-photo,
-  .hero-specialties-card {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .hero-photo {
-    margin: 0 auto;
-    order: 2;
-  }
-
-  .hero-specialties-card {
-    order: 1;
-    max-width: none;
-    padding: 0;
-    background: transparent;
-  }
-
-  .hero-specialties li {
-    font-size: clamp(20px, 5.9vw, 28px);
-    line-height: 1.06;
-    margin-bottom: 8px;
-  }
-
-  .hero-photo-overlay {
-    display: block;
-  }
-
-  .hero-counter {
-    font-size: 12px;
-  }
 }
 
 /* --- Sections --- */
@@ -1475,126 +1385,6 @@ body.dark-mode .resume-hint {
     margin-bottom: 20px !important;
   }
 
-  /* Hero adjustments */
-  .hero-wrap {
-    min-height: auto;
-    padding: 88px 0 34px;
-  }
-
-  .hero-editorial {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-  }
-
-  .hero-meta {
-    order: 2;
-    margin-bottom: 6px;
-  }
-
-  .hero-counter {
-    font-size: 12px;
-  }
-
-  .hero-title {
-    order: 3;
-    margin: 8px 0 0;
-    font-family: "Helvetica Neue", Arial, sans-serif !important;
-    font-size: clamp(36px, 11.5vw, 48px) !important;
-    font-weight: 900 !important;
-    line-height: 0.96 !important;
-    letter-spacing: 0.02em !important;
-    text-transform: uppercase;
-    white-space: normal !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 8px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    word-break: keep-all !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
-    text-rendering: geometricPrecision;
-  }
-
-  .hero-title-line {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap !important;
-    word-break: keep-all !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
-    line-height: 0.96 !important;
-    letter-spacing: inherit !important;
-  }
-
-  .hero-title-line + .hero-title-line {
-    margin-top: 0 !important;
-  }
-
-  .hero-title-line .char {
-    transform: none !important;
-  }
-
-  .hero-location {
-    order: 4;
-    text-align: left;
-    font-size: 12px;
-    letter-spacing: 0.34em;
-    padding-right: 0;
-    margin-top: 10px;
-  }
-
-  .hero-showcase {
-    display: contents;
-  }
-
-  .hero-showcase::before {
-    display: none;
-  }
-
-  .hero-photo,
-  .hero-specialties-card {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    width: 100%;
-    max-width: none;
-  }
-
-  .hero-photo {
-    order: 1;
-    margin: 0 auto;
-    width: min(72vw, 280px);
-    align-self: center;
-    background: transparent;
-  }
-
-  .hero-specialties-card {
-    order: 5;
-    max-width: none;
-    padding: 0;
-    background: transparent;
-    margin-top: 32px;
-    width: 100%;
-  }
-
-  .hero-specialties li {
-    font-size: clamp(18px, 5.4vw, 24px);
-    line-height: 1.12;
-    letter-spacing: 0 !important;
-    margin-bottom: 10px;
-  }
-
-  .hero-photo-overlay {
-    display: none;
-  }
-
   .slider-text h2 {
     font-size: 18px !important;
   }
@@ -1644,34 +1434,6 @@ body.dark-mode .resume-hint {
   .nav-contact-btn .arrow svg {
     width: 1em !important;
     height: 1em !important;
-  }
-
-  .hero-wrap {
-    padding: 82px 0 26px;
-  }
-
-  .hero-editorial {
-    padding: 0 8px;
-  }
-
-  .hero-title {
-    font-size: clamp(34px, 11.8vw, 44px) !important;
-    line-height: 0.98 !important;
-    letter-spacing: 0.015em !important;
-    gap: 6px !important;
-  }
-
-  .hero-location {
-    font-size: 11px;
-    letter-spacing: 0.28em;
-  }
-
-  .hero-photo {
-    width: min(74vw, 260px);
-  }
-
-  .hero-specialties li {
-    font-size: clamp(16px, 5.2vw, 21px);
   }
 
   .slider-text h1 {
@@ -2647,6 +2409,7 @@ body.dark-mode .bg-dark {
   }
 }
 
+/* --- Consolidated Mobile Hero --- */
 @media (max-width: 767.98px) {
   .hero-wrap {
     display: flex;
@@ -2709,6 +2472,10 @@ body.dark-mode .bg-dark {
   .hero-title-line + .hero-title-line {
     margin-left: 0 !important;
     margin-top: 0 !important;
+  }
+
+  .hero-title-line .char {
+    transform: none !important;
   }
 
   .hero-location {
