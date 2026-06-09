@@ -2652,3 +2652,714 @@ body.dark-mode .lang-switcher__button[aria-pressed="true"] {
   color: #080a0d;
   border-color: #c8d0da;
 }
+
+/* =========================================
+   ENGLISH REDESIGN — DESIGNLANG / OLHA SYSTEM
+   Final layer for index.html. Keep generated
+   designlang files as reference, not runtime CSS.
+   ========================================= */
+
+html[lang="en"] {
+  --dl-bg: #f7f7f7;
+  --dl-surface: #efefef;
+  --dl-ink: #101010;
+  --dl-black: #000000;
+  --dl-muted: #606060;
+  --dl-soft: #aaaaaa;
+  --dl-line: rgba(16, 16, 16, 0.14);
+  --dl-line-strong: rgba(16, 16, 16, 0.82);
+  --dl-ease: cubic-bezier(0.11, 0.82, 0.39, 0.92);
+}
+
+html[lang="en"],
+html[lang="en"] body {
+  background: var(--dl-bg) !important;
+  color: var(--dl-ink) !important;
+}
+
+html[lang="en"] body {
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-weight: 300;
+  line-height: 1.45;
+}
+
+html[lang="en"] body.dark-mode {
+  background: var(--dl-bg) !important;
+  color: var(--dl-ink) !important;
+}
+
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] h3,
+html[lang="en"] h4,
+html[lang="en"] h5,
+html[lang="en"] h6 {
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  color: var(--dl-ink) !important;
+  letter-spacing: 0 !important;
+}
+
+html[lang="en"] p,
+html[lang="en"] li {
+  color: var(--dl-muted) !important;
+}
+
+html[lang="en"] a {
+  color: var(--dl-ink) !important;
+}
+
+html[lang="en"] .container {
+  max-width: 1320px;
+}
+
+html[lang="en"] .ftco_navbar,
+html[lang="en"] .ftco_navbar.navbar-dark,
+html[lang="en"] .ftco_navbar.bg-dark,
+html[lang="en"] body.dark-mode .ftco_navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  mix-blend-mode: normal !important;
+  padding: 24px 0 !important;
+}
+
+html[lang="en"] .ftco_navbar .container-fluid {
+  padding-left: clamp(20px, 4vw, 64px) !important;
+  padding-right: clamp(20px, 4vw, 64px) !important;
+}
+
+html[lang="en"] .ftco_navbar .navbar-brand,
+html[lang="en"] body.dark-mode .ftco_navbar .navbar-brand {
+  color: var(--dl-ink) !important;
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  font-size: clamp(28px, 3vw, 46px) !important;
+  font-weight: 900 !important;
+  line-height: 0.92 !important;
+  text-transform: uppercase !important;
+}
+
+html[lang="en"] .ftco_navbar .nav-brackets {
+  gap: 4px !important;
+}
+
+html[lang="en"] .ftco_navbar .nav-brackets .nav-link,
+html[lang="en"] .ftco_navbar .navbar-dark .nav-brackets .nav-link,
+html[lang="en"] body.dark-mode .ftco_navbar .nav-brackets .nav-link {
+  color: var(--dl-ink) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em !important;
+  padding: 10px 16px !important;
+}
+
+html[lang="en"] .ftco_navbar .nav-brackets .nav-link::before,
+html[lang="en"] .ftco_navbar .nav-brackets .nav-link::after {
+  color: var(--dl-muted) !important;
+}
+
+html[lang="en"] .navbar-right-group {
+  gap: 16px !important;
+}
+
+html[lang="en"] .lang-switcher__button,
+html[lang="en"] body.dark-mode .lang-switcher__button {
+  min-width: 38px;
+  min-height: 32px;
+  border-color: var(--dl-line) !important;
+  color: var(--dl-ink) !important;
+  background: transparent !important;
+}
+
+html[lang="en"] .lang-switcher__button:hover,
+html[lang="en"] .lang-switcher__button[aria-pressed="true"],
+html[lang="en"] body.dark-mode .lang-switcher__button:hover,
+html[lang="en"] body.dark-mode .lang-switcher__button[aria-pressed="true"] {
+  background: var(--dl-ink) !important;
+  color: var(--dl-bg) !important;
+  border-color: var(--dl-ink) !important;
+}
+
+html[lang="en"] .nav-contact-btn,
+html[lang="en"] body.dark-mode .nav-contact-btn {
+  color: var(--dl-ink) !important;
+  border-bottom-color: var(--dl-ink) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.14em !important;
+}
+
+html[lang="en"] .hero-wrap,
+html[lang="en"] body.dark-mode .hero-wrap {
+  background: var(--dl-bg) !important;
+  min-height: 100vh;
+  padding: clamp(112px, 12vw, 170px) 0 clamp(58px, 7vw, 92px);
+}
+
+html[lang="en"] .hero-editorial {
+  width: min(100%, 1880px);
+  padding: 0 clamp(18px, 4vw, 72px);
+}
+
+html[lang="en"] .hero-meta {
+  align-items: flex-start;
+  border-top: 1px solid var(--dl-line);
+  padding-top: 14px;
+  margin-bottom: 16px;
+}
+
+html[lang="en"] .hero-counter,
+html[lang="en"] .hero-availability,
+html[lang="en"] .hero-location,
+html[lang="en"] body.dark-mode .hero-counter,
+html[lang="en"] body.dark-mode .hero-location {
+  font-family: 'Spline Sans Mono', monospace !important;
+  color: var(--dl-ink) !important;
+  font-size: clamp(10px, 0.9vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+html[lang="en"] .hero-title,
+html[lang="en"] body.dark-mode .hero-title {
+  color: var(--dl-ink) !important;
+  font-size: clamp(92px, 15.8vw, 238px) !important;
+  font-weight: 900 !important;
+  line-height: 0.8 !important;
+  letter-spacing: 0 !important;
+  margin-top: 0;
+  white-space: normal;
+}
+
+html[lang="en"] .hero-title-line {
+  display: block !important;
+}
+
+html[lang="en"] .hero-title-line + .hero-title-line {
+  margin-left: 0;
+}
+
+html[lang="en"] .hero-location {
+  margin-top: 20px;
+  padding-right: 0;
+  text-align: right;
+}
+
+html[lang="en"] .hero-showcase {
+  min-height: clamp(360px, 34vw, 560px);
+  margin-top: clamp(-44px, -3vw, -16px);
+}
+
+html[lang="en"] .hero-showcase::before,
+html[lang="en"] body.dark-mode .hero-showcase::before {
+  left: 50%;
+  bottom: 4px;
+  width: clamp(360px, 38vw, 720px);
+  height: clamp(230px, 22vw, 390px);
+  background: var(--dl-surface) !important;
+  transform: translateX(-36%);
+}
+
+html[lang="en"] .hero-photo,
+html[lang="en"] body.dark-mode .hero-photo {
+  left: 55%;
+  width: clamp(290px, 23vw, 420px);
+  background: #d9dad3 !important;
+}
+
+html[lang="en"] .hero-photo img,
+html[lang="en"] body.dark-mode .hero-photo img {
+  filter: grayscale(100%) contrast(1.04) !important;
+  mix-blend-mode: multiply !important;
+}
+
+html[lang="en"] .hero-photo-overlay,
+html[lang="en"] body.dark-mode .hero-photo-overlay {
+  background: var(--dl-bg) !important;
+}
+
+html[lang="en"] .hero-specialties-card,
+html[lang="en"] body.dark-mode .hero-specialties-card {
+  left: clamp(24px, 15vw, 280px);
+  bottom: 42px;
+  width: clamp(260px, 26vw, 430px);
+  background: transparent !important;
+  padding: 0;
+}
+
+html[lang="en"] .hero-specialties li,
+html[lang="en"] body.dark-mode .hero-specialties li {
+  color: var(--dl-ink) !important;
+  font-size: clamp(26px, 2.45vw, 46px);
+  font-weight: 900;
+  letter-spacing: 0 !important;
+  line-height: 0.96;
+}
+
+html[lang="en"] .about-statement-section,
+html[lang="en"] body.dark-mode .about-statement-section {
+  background: var(--dl-ink) !important;
+  padding: clamp(94px, 10vw, 150px) 0;
+}
+
+html[lang="en"] .about-statement-title {
+  letter-spacing: 0 !important;
+}
+
+html[lang="en"] .about-section,
+html[lang="en"] #resume-section,
+html[lang="en"] .contact-section,
+html[lang="en"] .ftco-section,
+html[lang="en"] body.dark-mode .about-section,
+html[lang="en"] body.dark-mode #resume-section,
+html[lang="en"] body.dark-mode .contact-section,
+html[lang="en"] body.dark-mode .ftco-section {
+  background: var(--dl-bg) !important;
+}
+
+html[lang="en"] .about-editorial {
+  max-width: 1240px;
+}
+
+html[lang="en"] .about-meta,
+html[lang="en"] body.dark-mode .about-meta {
+  border-bottom: 1px solid var(--dl-line-strong) !important;
+}
+
+html[lang="en"] .about-heading {
+  font-size: clamp(54px, 7vw, 112px) !important;
+}
+
+html[lang="en"] .about-content {
+  grid-template-columns: minmax(240px, 340px) 1fr;
+}
+
+html[lang="en"] .about-facts-text {
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.72;
+  color: var(--dl-muted) !important;
+}
+
+html[lang="en"] .about-cv-link {
+  border-bottom-color: var(--dl-ink);
+}
+
+html[lang="en"] #resume-section {
+  padding-top: clamp(70px, 8vw, 120px) !important;
+}
+
+html[lang="en"] #navi {
+  top: 112px;
+}
+
+html[lang="en"] #navi li a,
+html[lang="en"] body.dark-mode #navi li a {
+  color: var(--dl-muted) !important;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+
+html[lang="en"] #navi li a.current,
+html[lang="en"] body.dark-mode #navi li a.current {
+  color: var(--dl-ink) !important;
+}
+
+html[lang="en"] .page {
+  padding-bottom: clamp(48px, 6vw, 88px);
+}
+
+html[lang="en"] .page .heading,
+html[lang="en"] body.dark-mode .page .heading {
+  border-bottom: 1px solid var(--dl-line-strong) !important;
+  color: var(--dl-ink) !important;
+  font-size: clamp(52px, 6vw, 96px) !important;
+  font-weight: 900 !important;
+  line-height: 0.94 !important;
+  text-transform: uppercase;
+  padding-bottom: 16px !important;
+  margin-bottom: 24px !important;
+}
+
+html[lang="en"] .resume-wrap,
+html[lang="en"] body.dark-mode .resume-wrap {
+  display: grid !important;
+  grid-template-columns: 54px 1fr;
+  gap: 24px;
+  padding: 28px 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--dl-line) !important;
+}
+
+html[lang="en"] .resume-wrap .icon,
+html[lang="en"] body.dark-mode .resume-wrap .icon {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  background: transparent !important;
+  border: 1px solid var(--dl-ink);
+}
+
+html[lang="en"] .resume-wrap .icon span,
+html[lang="en"] body.dark-mode .resume-wrap .icon span {
+  color: var(--dl-ink) !important;
+  font-size: 17px !important;
+}
+
+html[lang="en"] .resume-wrap .text {
+  padding-left: 0 !important;
+}
+
+html[lang="en"] .resume-wrap h2,
+html[lang="en"] body.dark-mode .resume-wrap h2 {
+  color: var(--dl-ink) !important;
+  font-size: clamp(28px, 3.1vw, 48px) !important;
+  font-weight: 900 !important;
+  line-height: 0.98 !important;
+  margin-bottom: 8px !important;
+}
+
+html[lang="en"] .resume-wrap .position,
+html[lang="en"] .resume-wrap .date,
+html[lang="en"] body.dark-mode .resume-wrap .position,
+html[lang="en"] body.dark-mode .resume-wrap .date {
+  color: var(--dl-ink) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[lang="en"] .resume-wrap p,
+html[lang="en"] .resume-wrap li,
+html[lang="en"] body.dark-mode .resume-wrap p,
+html[lang="en"] body.dark-mode .resume-wrap li {
+  color: var(--dl-muted) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+html[lang="en"] .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--dl-line);
+  border-left: 1px solid var(--dl-line);
+}
+
+html[lang="en"] .skill-item {
+  min-height: 164px;
+  justify-content: center;
+  border-right: 1px solid var(--dl-line);
+  border-bottom: 1px solid var(--dl-line);
+  transition: background 0.35s var(--dl-ease);
+}
+
+html[lang="en"] .skill-item:hover {
+  background: var(--dl-surface);
+}
+
+html[lang="en"] .skill-item img {
+  width: 58px;
+  height: 58px;
+  filter: grayscale(100%) contrast(1.08) !important;
+}
+
+html[lang="en"] .skill-item span {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dl-ink) !important;
+}
+
+html[lang="en"] .proj-card,
+html[lang="en"] body.dark-mode .proj-card {
+  display: grid;
+  grid-template-columns: minmax(46px, 0.12fr) 1fr auto;
+  align-items: start;
+  gap: clamp(18px, 3vw, 52px);
+  padding: clamp(24px, 3.4vw, 52px) 0;
+  border-bottom: 1px solid var(--dl-line) !important;
+  background: transparent !important;
+}
+
+html[lang="en"] .proj-card:hover {
+  padding-left: 0;
+  background: transparent !important;
+}
+
+html[lang="en"] .proj-idx,
+html[lang="en"] body.dark-mode .proj-idx {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dl-muted) !important;
+  letter-spacing: 0.12em;
+}
+
+html[lang="en"] .proj-name,
+html[lang="en"] body.dark-mode .proj-name {
+  color: var(--dl-ink) !important;
+  font-family: 'Sofia Sans Condensed', sans-serif !important;
+  font-size: clamp(34px, 4.8vw, 78px) !important;
+  font-weight: 900 !important;
+  line-height: 0.92 !important;
+  margin-bottom: 16px !important;
+  text-transform: uppercase;
+}
+
+html[lang="en"] .proj-desc,
+html[lang="en"] body.dark-mode .proj-desc {
+  max-width: 780px;
+  color: var(--dl-muted) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+html[lang="en"] .proj-tech span,
+html[lang="en"] body.dark-mode .proj-tech span {
+  border-color: var(--dl-line) !important;
+  border-radius: 0;
+  color: var(--dl-muted) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+}
+
+html[lang="en"] .proj-arrow,
+html[lang="en"] body.dark-mode .proj-arrow {
+  color: var(--dl-ink) !important;
+  margin-top: 8px;
+}
+
+html[lang="en"] .editorial-contact,
+html[lang="en"] body.dark-mode .editorial-contact {
+  background: var(--dl-ink) !important;
+  color: var(--dl-bg) !important;
+  padding: clamp(86px, 10vw, 156px) 0 !important;
+}
+
+html[lang="en"] .contact-editorial {
+  width: min(100% - 36px, 1320px);
+  margin: 0 auto;
+}
+
+html[lang="en"] .contact-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(247, 247, 247, 0.26);
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(247, 247, 247, 0.72);
+}
+
+html[lang="en"] .contact-title {
+  max-width: 1120px;
+  margin: clamp(34px, 5vw, 72px) 0;
+  color: var(--dl-bg) !important;
+  font-size: clamp(54px, 9vw, 146px) !important;
+  font-weight: 900 !important;
+  line-height: 0.9 !important;
+  text-transform: uppercase;
+}
+
+html[lang="en"] .contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(247, 247, 247, 0.2);
+  border-left: 1px solid rgba(247, 247, 247, 0.2);
+  margin-bottom: clamp(36px, 5vw, 70px);
+}
+
+html[lang="en"] .contact-links a {
+  display: flex;
+  min-height: 160px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 24px;
+  border-right: 1px solid rgba(247, 247, 247, 0.2);
+  border-bottom: 1px solid rgba(247, 247, 247, 0.2);
+  color: var(--dl-bg) !important;
+  text-decoration: none !important;
+}
+
+html[lang="en"] .contact-links span {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(247, 247, 247, 0.56);
+}
+
+html[lang="en"] .contact-links strong {
+  color: var(--dl-bg) !important;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: clamp(22px, 2.6vw, 38px);
+  font-weight: 900;
+  line-height: 0.98;
+  word-break: break-word;
+}
+
+html[lang="en"] .contact-mail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1.5px solid var(--dl-bg);
+  color: var(--dl-bg) !important;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+html[lang="en"] .contact-mail-link .arrow {
+  display: inline-flex;
+  transition: transform 0.35s var(--dl-ease);
+}
+
+html[lang="en"] .contact-mail-link:hover .arrow {
+  transform: rotate(45deg);
+}
+
+html[lang="en"] .ftco-footer,
+html[lang="en"] body.dark-mode .ftco-footer {
+  background: var(--dl-bg) !important;
+  border-top: 1px solid var(--dl-line);
+  padding: 24px 0 !important;
+}
+
+html[lang="en"] .ftco-footer p,
+html[lang="en"] .ftco-footer a,
+html[lang="en"] body.dark-mode .ftco-footer p,
+html[lang="en"] body.dark-mode .ftco-footer a {
+  color: var(--dl-muted) !important;
+  font-family: 'Spline Sans Mono', monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 991.98px) {
+  html[lang="en"] .ftco_navbar .navbar-toggler,
+  html[lang="en"] .ftco_navbar .navbar-collapse {
+    display: none !important;
+  }
+
+  html[lang="en"] .hero-title,
+  html[lang="en"] body.dark-mode .hero-title {
+    white-space: normal;
+  }
+
+  html[lang="en"] .hero-title-line {
+    display: block !important;
+  }
+
+  html[lang="en"] .hero-title-line + .hero-title-line {
+    margin-left: 0;
+  }
+
+  html[lang="en"] .skills-grid,
+  html[lang="en"] .contact-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  html[lang="en"] .hero-wrap {
+    min-height: auto;
+    padding: 88px 0 48px;
+  }
+
+  html[lang="en"] .hero-editorial {
+    padding: 0 20px 28px;
+  }
+
+  html[lang="en"] .hero-meta {
+    display: flex;
+    order: 1;
+    width: 100%;
+    gap: 18px;
+  }
+
+  html[lang="en"] .hero-title,
+  html[lang="en"] body.dark-mode .hero-title {
+    order: 2;
+    font-size: clamp(58px, 18vw, 92px) !important;
+    line-height: 0.86 !important;
+  }
+
+  html[lang="en"] .hero-location {
+    order: 3;
+    text-align: left;
+    letter-spacing: 0.16em;
+  }
+
+  html[lang="en"] .hero-photo {
+    order: 4;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: min(64vw, 260px);
+    margin: 32px auto 36px;
+  }
+
+  html[lang="en"] .hero-specialties-card {
+    order: 5;
+    margin-top: 0;
+    position: relative !important;
+    z-index: 4;
+  }
+
+  html[lang="en"] .about-statement-section {
+    padding: 78px 0;
+  }
+
+  html[lang="en"] .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  html[lang="en"] .about-photo {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  html[lang="en"] .resume-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  html[lang="en"] .resume-wrap .icon {
+    display: none !important;
+  }
+
+  html[lang="en"] .skills-grid,
+  html[lang="en"] .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  html[lang="en"] .skill-item {
+    min-height: 126px;
+  }
+
+  html[lang="en"] .proj-card {
+    grid-template-columns: 1fr auto;
+  }
+
+  html[lang="en"] .proj-idx {
+    grid-column: 1 / -1;
+  }
+
+  html[lang="en"] .contact-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

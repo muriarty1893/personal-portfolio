@@ -280,7 +280,7 @@ window.startHeroAnimations = function() {
     }
   }, 0);
 
-  tl.from('.hero-counter', { opacity: 0, y: 20, duration: 0.6 }, 0.2);
+  tl.from('.hero-counter, .hero-availability', { opacity: 0, y: 20, duration: 0.6, stagger: 0.08 }, 0.2);
   tl.from('.hero-location', { opacity: 0, y: 15, duration: 0.6 }, 0.5);
   tl.from('.hero-specialties li', {
     opacity: 0,
