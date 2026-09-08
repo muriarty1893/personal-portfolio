@@ -6,6 +6,8 @@ AOS.init({
 (function($) {
   'use strict';
 
+  var smoothScroll = null;
+
   function setFullHeight() {
     $('.js-fullheight').css('height', $(window).height());
   }
@@ -17,15 +19,35 @@ AOS.init({
     });
   }
 
+  function initSmoothScroll() {
+    if (typeof Lenis === 'undefined' || typeof gsap === 'undefined') return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    smoothScroll = new Lenis({
+      duration: 1.15,
+      smoothWheel: true,
+      syncTouch: false
+    });
+
+    gsap.ticker.add(function(time) {
+      smoothScroll.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+  }
+
   function bindTopNavScroll() {
     $(document).on('click', '#ftco-nav a[href^="#"]', function(event) {
       var target = $($.attr(this, 'href'));
       if (!target.length) return;
 
       event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top - 70
-      }, 500);
+      if (smoothScroll) {
+        smoothScroll.scrollTo(target[0], { offset: -70, duration: 1.1 });
+      } else {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 70
+        }, 500);
+      }
     });
   }
 
@@ -84,9 +106,14 @@ AOS.init({
       if (!target.length) return;
 
       event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top - (window.innerWidth <= 991 ? 120 : 180)
-      }, 500);
+      var offset = window.innerWidth <= 991 ? 120 : 180;
+      if (smoothScroll) {
+        smoothScroll.scrollTo(target[0], { offset: -offset, duration: 1.1 });
+      } else {
+        $('html, body').animate({
+          scrollTop: target.offset().top - offset
+        }, 500);
+      }
       updateHash($(this).attr('href'));
     });
 
@@ -209,6 +236,7 @@ AOS.init({
 
   $(function() {
     setFullHeight();
+    initSmoothScroll();
     bindMobileMenu();
     bindTopNavScroll();
     bindNavbarState();

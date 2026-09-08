@@ -48,6 +48,19 @@ html::-webkit-scrollbar {
   display: none; /* Chrome / Safari / Opera */
 }
 
+/* Lenis smooths input without changing the existing layout or styling. */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 /* --- Base & Background --- */
 body {
   background: #f5f5f5 !important;
