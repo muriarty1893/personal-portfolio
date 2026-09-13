@@ -662,6 +662,10 @@ html[lang="tr"] .hero-title {
   pointer-events: none;
 }
 
+.mobile-sticky-cta {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
   .ftco_navbar,
   .ftco_navbar.navbar-dark,
@@ -2554,6 +2558,47 @@ body.dark-mode .bg-dark {
     letter-spacing: 0 !important;
     line-height: 1.12;
     margin-bottom: 10px;
+  }
+
+  .mobile-sticky-cta {
+    position: fixed;
+    right: 14px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    left: 14px;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 50px;
+    padding: 10px 14px 10px 16px;
+    border: 1px solid #111;
+    background: #111;
+    color: #fff !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    font-family: 'Spline Sans Mono', monospace !important;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .mobile-sticky-cta span {
+    overflow: hidden;
+    color: #d2d2d2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-sticky-cta strong {
+    flex: 0 0 auto;
+    color: #fff !important;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  body {
+    padding-bottom: 76px;
   }
 }
 
