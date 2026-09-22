@@ -1,0 +1,32 @@
+- generic [ref=f58e3]:
+  - banner [ref=f58e4]:
+    - link [ref=f58e5] [cursor=pointer]:
+      - /url: blog.html
+      - generic [aria-hidden] [ref=f58e6]: ←
+      - text: All
+      - emphasis [ref=f58e7]: notes
+    - generic [ref=f58e8]:
+      - button "Use dark theme" [ref=f58e9] [cursor=pointer]
+      - button "Turn ambient sound on" [ref=f58e13] [cursor=pointer]
+  - main [ref=f58e17]:
+    - heading "Search is a systems problem, not a text box" [level=1] [ref=f58e18]
+    - article [ref=f58e19]:
+      - generic [aria-hidden] [ref=f58e20]:
+        - generic [ref=f58e21]: SEARCH IS A SYSTEMS PROBLEM
+        - generic [ref=f58e22]: NOT A TEXT BOX
+      - generic [ref=f58e23]:
+        - paragraph [ref=f58e24]: What changes when search becomes part of the architecture instead of a feature added at the end.
+        - paragraph [ref=f58e25]: A search box looks small in a product brief, but the moment people rely on it, it becomes a contract between data, ranking, latency, and the user interface.
+        - paragraph [ref=f58e26]: The useful work starts before the first query. Decide what a document means, which fields deserve weight, how stale data can be, and what the system should do when no result is a good result.
+        - paragraph [ref=f58e27]: Thinking about those questions as system boundaries makes the implementation calmer. Indexing, querying, and observing the search path become separate jobs with visible failure modes.
+        - heading "Work in progress" [level=2] [ref=f58e28]
+        - paragraph [ref=f58e29]: "A small unfinished experiment lives beside this note: an eye inside a button that follows the pointer. It studies how to make a state change visible without adding another status label."
+        - region "Cursor follow experiment" [ref=f58e30]:
+          - generic [ref=f58e31]:
+            - generic [ref=f58e32]: WIP / 001
+            - generic [ref=f58e33]: cursor study
+          - button "I SEE YOU" [ref=f58e34] [cursor=pointer]
+        - generic [ref=f58e39]:
+          - link "← All notes" [ref=f58e40] [cursor=pointer]:
+            - /url: blog.html
+          - generic [ref=f58e41]: 18 Sep 2026 / 6 min read

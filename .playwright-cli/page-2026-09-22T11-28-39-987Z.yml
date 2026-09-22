@@ -1,0 +1,2304 @@
+- generic [ref=f48e2]:
+  - generic:
+    - banner [ref=f48e3]:
+      - link [ref=f48e5] [cursor=pointer]:
+        - /url: /notes/
+        - generic [ref=f48e12]: Anomaly
+      - link "All posts" [ref=f48e15] [cursor=pointer]:
+        - /url: /notes/
+        - generic [aria-hidden] [ref=f48e16]: ←
+      - heading [level=1] [ref=f48e20]:
+        - link [ref=f48e21] [cursor=pointer]:
+          - /url: /notes/opencode-reloaded
+          - text: OpenCode
+          - emphasis [ref=f48e22]: Reloaded
+    - button "Switch to dark mode" [ref=f48e23] [cursor=pointer]
+    - button "Start sound effects" [pressed] [ref=f48e27] [cursor=pointer]
+  - generic [ref=f48e32]:
+    - main [ref=f48e34]:
+      - article [ref=f48e36]:
+        - generic [ref=f48e37]:
+          - heading "OpenCode Reloaded" [level=1] [ref=f48e38]
+          - img [aria-hidden] [ref=f48e42]:
+            - generic [ref=f48e45]:
+              - generic [ref=f48e46]:
+                - generic [ref=f48e57]: P
+                - generic [ref=f48e74]: "N"
+                - generic [ref=f48e81]: C
+                - generic [ref=f48e98]: D
+                - generic [ref=f48e105]: D
+                - generic [ref=f48e112]: E
+              - generic [ref=f48e119]:
+                - generic [ref=f48e120]: R
+                - generic [ref=f48e137]: L
+                - generic [ref=f48e144]: O
+                - generic [ref=f48e151]: "#"
+                - generic [ref=f48e158]: E
+                - generic [ref=f48e165]: D
+          - generic [ref=f48e183]: Click a letter, or drag across a row to select letters, then type to replace them. Arrows move between letters and rows; Shift extends a row selection. Delete erases. Alt up or down cycles characters; Alt left or right rotates a selection like a conveyor. Escape releases the cursor. Double-click empty space to replay.
+        - generic [ref=f48e185]:
+          - generic [ref=f48e187]:
+            - article [ref=f48e190]:
+              - paragraph [ref=f48e193]:
+                - generic [ref=f48e195]:
+                  - text: Let’s discuss the subtle pleasures of
+                  - emphasis [ref=f48e197]:
+                    - generic [ref=f48e198]:
+                      - generic [ref=f48e199]: hot
+                      - generic [aria-hidden]: hot
+                      - generic [aria-hidden]: hot
+                    - generic [ref=f48e200]:
+                      - generic [ref=f48e201]: reloading
+                      - generic [aria-hidden]: reloading
+                      - generic [aria-hidden]: reloading
+                  - text: . It spares us from the tedium of minor exertions, of hitting
+                  - group "Command R shortcut" [ref=f48e203]:
+                    - button "Command key" [ref=f48e204] [cursor=pointer]: ⌘
+                    - button "R key" [ref=f48e205] [cursor=pointer]: R
+                  - text: when we could have otherwise remained blissfully inert. To the human mind, the gulf between even the most negligible of impediments and
+                  - emphasis [ref=f48e206]: none whatsoever
+                  - text: is infinite.
+            - generic [ref=f48e208]:
+              - article [ref=f48e209]:
+                - paragraph [ref=f48e212]:
+                  - generic [ref=f48e214]:
+                    - text: Thus, in
+                    - link "OpenCode 2" [ref=f48e216] [cursor=pointer]:
+                      - /url: https://opencode.ai/
+                    - text: ", we’ve gone through the trouble of making all reloading as unbearably hot as possible."
+              - article [ref=f48e217]:
+                - paragraph [ref=f48e220]:
+                  - generic [ref=f48e222]:
+                    - generic [ref=f48e223]:
+                      - text: OpenCode can edit its config, connect an MCP server, or write a plugin, and any changes will immediately take effect across every session. It can make a tool for itself and invoke it the very same turn
+                      - button "About this em dash" [ref=f48e224] [cursor=pointer]: —
+                      - text: without needing to quit, type
+                    - code [ref=f48e225]: /reload
+                    - text: ", or start a new session, and certainly without"
+                    - link "busting the cache" [ref=f48e227] [cursor=pointer]:
+                      - /url: https://x.com/kitlangton/status/2075749116760457346
+                    - text: .
+              - article [ref=f48e228]:
+                - generic [ref=f48e230] [cursor=pointer]:
+                  - figure "An illustrative running session adds tools, installs a skill, and immediately uses each change" [ref=f48e231]:
+                    - generic [ref=f48e234]:
+                      - region "OpenCode" [ref=f48e235]:
+                        - generic [ref=f48e236]:
+                          - region "Available tools and skills" [ref=f48e237]:
+                            - generic [ref=f48e238]:
+                              - heading "Tools 3" [level=3] [ref=f48e239]:
+                                - generic [ref=f48e240]:
+                                  - generic [ref=f48e241]: Tools
+                                  - generic [ref=f48e242]:
+                                    - generic [ref=f48e243]: "3"
+                                    - generic [aria-hidden] [ref=f48e244]:
+                                      - generic [ref=f48e245]: "3"
+                                      - generic [ref=f48e246]: "4"
+                                      - generic [ref=f48e247]: "5"
+                              - generic [ref=f48e251]:
+                                - generic [ref=f48e252]: read
+                                - generic [ref=f48e257]: write
+                                - generic [ref=f48e263]:
+                                  - generic [ref=f48e265]: $
+                                  - generic [ref=f48e266]: shell
+                              - heading "Skills 2" [level=3] [ref=f48e267]:
+                                - generic [ref=f48e268]:
+                                  - generic [ref=f48e269]: Skills
+                                  - generic [ref=f48e270]:
+                                    - generic [ref=f48e271]: "2"
+                                    - generic [aria-hidden] [ref=f48e272]:
+                                      - generic [ref=f48e273]: "2"
+                                      - generic [ref=f48e274]: "3"
+                          - region "One continuous session turn" [ref=f48e277]:
+                            - generic [ref=f48e278]: Session
+                      - region "Project files" [ref=f48e283]:
+                        - generic [ref=f48e284]: Files
+                        - generic [ref=f48e285]:
+                          - generic [ref=f48e287]:
+                            - generic [ref=f48e288]: .opencode
+                            - generic [ref=f48e292]:
+                              - generic [ref=f48e294]:
+                                - generic [ref=f48e295]: plugins
+                                - generic: writing.ts
+                              - generic [ref=f48e302]:
+                                - generic [ref=f48e303]: skills
+                                - generic [ref=f48e309]:
+                                  - generic [ref=f48e310]: grill-me
+                                  - generic [ref=f48e314]: SKILL.md
+                          - generic [ref=f48e319]: the-post.md
+                  - button "Play" [ref=f48e323]
+          - generic [ref=f48e327]:
+            - generic [ref=f48e329]:
+              - heading "The Problem" [level=2] [ref=f48e331]
+              - article [ref=f48e334]:
+                - paragraph [ref=f48e337]:
+                  - generic [ref=f48e340]:
+                    - generic [ref=f48e341]: OpenCode’s
+                    - generic [ref=f48e342]:
+                      - generic [ref=f48e343]: envi -
+                      - generic [ref=f48e344]: ron -
+                      - text: ment
+                    - generic [ref=f48e345]: (its
+                    - generic [ref=f48e346]: models,
+                    - generic [ref=f48e347]: tools,
+                    - generic [ref=f48e348]: agents,
+                    - generic [ref=f48e349]: skills,
+                    - generic [ref=f48e350]: etc.)
+                    - generic [ref=f48e351]: is
+                    - generic [ref=f48e352]:
+                      - generic [ref=f48e353]: assem -
+                      - text: bled
+                    - generic [ref=f48e354]: by
+                    - generic [ref=f48e355]: plugins.
+                    - generic [ref=f48e356]: Much
+                    - generic [ref=f48e357]: of
+                    - generic [ref=f48e358]: its
+                    - generic [ref=f48e359]: default
+                    - generic [ref=f48e360]:
+                      - generic [ref=f48e361]: behav -
+                      - text: ior
+                    - generic [ref=f48e362]: lives
+                    - generic [ref=f48e363]: in
+                    - generic [ref=f48e364]: built-in
+                    - generic [ref=f48e365]: plugins.
+                    - generic [ref=f48e366]: And
+                    - generic [ref=f48e367]: you,
+                    - generic [ref=f48e368]: dear
+                    - generic [ref=f48e369]: reader,
+                    - generic [ref=f48e370]: can
+                    - generic [ref=f48e371]: install
+                    - generic [ref=f48e372]:
+                      - generic [ref=f48e373]: addi -
+                      - text: tional
+                    - generic [ref=f48e374]: plugins,
+                    - generic [ref=f48e375]: write
+                    - generic [ref=f48e376]: your
+                    - generic [ref=f48e377]: own,
+                    - generic [ref=f48e378]: or
+                    - generic [ref=f48e379]: ask
+                    - generic [ref=f48e380]: OpenCode
+                    - generic [ref=f48e381]: to
+                    - generic [ref=f48e382]: write
+                    - generic [ref=f48e383]: one
+                    - generic [ref=f48e384]: for
+                    - generic [ref=f48e385]: you.
+            - generic [ref=f48e387]:
+              - article [ref=f48e388]:
+                - paragraph [ref=f48e391]:
+                  - generic [ref=f48e393]:
+                    - text: For instance, a built-in plugin populates the model catalog with data from
+                    - link "models.dev" [ref=f48e395] [cursor=pointer]:
+                      - /url: https://models.dev
+                    - text: . While OpenCode is running, it periodically refreshes that data to keep up with the ever-increasing rate of model releases.
+              - article [ref=f48e397]:
+                - generic [ref=f48e399] [cursor=pointer]:
+                  - table "Illustrative model catalog refresh, grouped by provider" [ref=f48e401]:
+                    - rowgroup [ref=f48e402]:
+                      - row [ref=f48e403]:
+                        - columnheader "Model" [ref=f48e404]
+                        - columnheader "Context" [ref=f48e405]
+                        - columnheader "Output" [ref=f48e406]
+                        - columnheader "Cost" [ref=f48e407]
+                        - columnheader "State Pause catalog refresh" [ref=f48e408]:
+                          - generic [ref=f48e409]: State
+                          - button "Pause catalog refresh" [ref=f48e410]
+                    - generic [ref=f48e420]:
+                      - rowgroup [ref=f48e421]:
+                        - row [ref=f48e422]:
+                          - rowheader "OpenAI" [ref=f48e423]
+                        - row [ref=f48e425]:
+                          - generic [ref=f48e427]:
+                            - rowheader "GPT-5.6" [ref=f48e428]
+                            - cell [ref=f48e430]:
+                              - generic "1,050,000 tokens" [ref=f48e431]: 1.05M
+                            - cell [ref=f48e434]:
+                              - generic "128,000 tokens" [ref=f48e435]: 128K
+                            - 'cell "Base cost: 4 US dollars input, 20 US dollars output per million tokens" [ref=f48e438]':
+                              - generic [ref=f48e439]: "4"
+                              - generic [ref=f48e441]: /
+                              - generic [ref=f48e442]: "20"
+                            - cell [ref=f48e444]:
+                              - img "Enabled" [ref=f48e445]
+                        - row [ref=f48e453]:
+                          - generic [ref=f48e455]:
+                            - rowheader "GPT-4o" [ref=f48e456]
+                            - cell [ref=f48e458]:
+                              - generic "128,000 tokens" [ref=f48e459]: 128K
+                            - cell [ref=f48e462]:
+                              - generic "16,384 tokens" [ref=f48e463]: 16.38K
+                            - 'cell "Base cost: 2.5 US dollars input, 10 US dollars output per million tokens" [ref=f48e466]':
+                              - generic [ref=f48e467]: "2.5"
+                              - generic [ref=f48e469]: /
+                              - generic [ref=f48e470]: "10"
+                            - cell [ref=f48e472]:
+                              - img "Enabled" [ref=f48e473]
+                        - row [ref=f48e481]:
+                          - generic [ref=f48e483]:
+                            - rowheader "GPT-5.5" [ref=f48e484]
+                            - cell [ref=f48e486]:
+                              - generic "1,050,000 tokens" [ref=f48e487]: 1.05M
+                            - cell [ref=f48e490]:
+                              - generic "128,000 tokens" [ref=f48e491]: 128K
+                            - 'cell "Base cost: 5 US dollars input, 30 US dollars output per million tokens" [ref=f48e494]':
+                              - generic [ref=f48e495]: "5"
+                              - generic [ref=f48e497]: /
+                              - generic [ref=f48e498]: "30"
+                            - cell [ref=f48e500]:
+                              - img "Enabled" [ref=f48e501]
+                      - rowgroup [ref=f48e509]:
+                        - row [ref=f48e510]:
+                          - rowheader "Anthropic" [ref=f48e511]
+                        - row [ref=f48e513]:
+                          - generic [ref=f48e515]:
+                            - rowheader "Claude Opus 5" [ref=f48e516]
+                            - cell [ref=f48e518]:
+                              - generic "1,000,000 tokens" [ref=f48e519]: 1M
+                            - cell [ref=f48e522]:
+                              - generic "128,000 tokens" [ref=f48e523]: 128K
+                            - 'cell "Base cost: 5 US dollars input, 25 US dollars output per million tokens" [ref=f48e526]':
+                              - generic [ref=f48e527]: "5"
+                              - generic [ref=f48e529]: /
+                              - generic [ref=f48e530]: "25"
+                            - cell [ref=f48e532]:
+                              - img "Enabled" [ref=f48e533]
+                        - row [ref=f48e541]:
+                          - generic [ref=f48e543]:
+                            - rowheader "Claude Sonnet 4.6" [ref=f48e544]
+                            - cell [ref=f48e546]:
+                              - generic "1,000,000 tokens" [ref=f48e547]: 1M
+                            - cell [ref=f48e550]:
+                              - generic "128,000 tokens" [ref=f48e551]: 128K
+                            - 'cell "Base cost: 3 US dollars input, 15 US dollars output per million tokens" [ref=f48e554]':
+                              - generic [ref=f48e555]: "3"
+                              - generic [ref=f48e557]: /
+                              - generic [ref=f48e558]: "15"
+                            - cell [ref=f48e560]:
+                              - img "Enabled" [ref=f48e561]
+                        - row [ref=f48e569]:
+                          - generic [ref=f48e571]:
+                            - rowheader "Claude Haiku 4.5" [ref=f48e572]
+                            - cell [ref=f48e574]:
+                              - generic "200,000 tokens" [ref=f48e575]: 200K
+                            - cell [ref=f48e578]:
+                              - generic "64,000 tokens" [ref=f48e579]: 64K
+                            - 'cell "Base cost: 1 US dollars input, 5 US dollars output per million tokens" [ref=f48e582]':
+                              - generic [ref=f48e583]: "1"
+                              - generic [ref=f48e585]: /
+                              - generic [ref=f48e586]: "5"
+                            - cell [ref=f48e588]:
+                              - img "Enabled" [ref=f48e589]
+                      - rowgroup [ref=f48e597]:
+                        - row [ref=f48e598]:
+                          - rowheader "DeepSeek" [ref=f48e599]
+                        - row [ref=f48e601]:
+                          - generic [ref=f48e603]:
+                            - rowheader "DeepSeek V4 Pro" [ref=f48e604]
+                            - cell [ref=f48e606]:
+                              - generic "1,000,000 tokens" [ref=f48e607]: 1M
+                            - cell [ref=f48e610]:
+                              - generic "384,000 tokens" [ref=f48e611]: 384K
+                            - 'cell "Base cost: 0.435 US dollars input, 0.87 US dollars output per million tokens" [ref=f48e614]':
+                              - generic [ref=f48e615]: "0.435"
+                              - generic [ref=f48e617]: /
+                              - generic [ref=f48e618]: "0.87"
+                            - cell [ref=f48e620]:
+                              - img "Enabled" [ref=f48e621]
+                        - row [ref=f48e629]:
+                          - generic [ref=f48e631]:
+                            - rowheader "DeepSeek V4 Flash" [ref=f48e632]
+                            - cell [ref=f48e634]:
+                              - generic "1,000,000 tokens" [ref=f48e635]: 1M
+                            - cell [ref=f48e638]:
+                              - generic "384,000 tokens" [ref=f48e639]: 384K
+                            - 'cell "Base cost: 0.14 US dollars input, 0.28 US dollars output per million tokens" [ref=f48e642]':
+                              - generic [ref=f48e643]: "0.14"
+                              - generic [ref=f48e645]: /
+                              - generic [ref=f48e646]: "0.28"
+                            - cell [ref=f48e648]:
+                              - img "Enabled" [ref=f48e649]
+                      - rowgroup [ref=f48e657]:
+                        - row [ref=f48e658]:
+                          - rowheader "Google" [ref=f48e659]
+                        - row [ref=f48e661]:
+                          - generic [ref=f48e663]:
+                            - rowheader "Gemini 2.5 Flash" [ref=f48e664]
+                            - cell [ref=f48e666]:
+                              - generic "1,048,576 tokens" [ref=f48e667]: 1.05M
+                            - cell [ref=f48e670]:
+                              - generic "65,536 tokens" [ref=f48e671]: 65.54K
+                            - 'cell "Base cost: 0.3 US dollars input, 2.5 US dollars output per million tokens" [ref=f48e674]':
+                              - generic [ref=f48e675]: "0.3"
+                              - generic [ref=f48e677]: /
+                              - generic [ref=f48e678]: "2.5"
+                            - cell [ref=f48e680]:
+                              - img "Enabled" [ref=f48e681]
+                        - row [ref=f48e689]:
+                          - generic [ref=f48e691]:
+                            - rowheader "Gemini 2.5 Flash-Lite" [ref=f48e692]
+                            - cell [ref=f48e694]:
+                              - generic "1,048,576 tokens" [ref=f48e695]: 1.05M
+                            - cell [ref=f48e698]:
+                              - generic "65,536 tokens" [ref=f48e699]: 65.54K
+                            - 'cell "Base cost: 0.1 US dollars input, 0.4 US dollars output per million tokens" [ref=f48e702]':
+                              - generic [ref=f48e703]: "0.1"
+                              - generic [ref=f48e705]: /
+                              - generic [ref=f48e706]: "0.4"
+                            - cell [ref=f48e708]:
+                              - img "Enabled" [ref=f48e709]
+                      - rowgroup [ref=f48e717]:
+                        - row [ref=f48e718]:
+                          - rowheader "Mistral" [ref=f48e719]
+                        - row [ref=f48e721]:
+                          - generic [ref=f48e723]:
+                            - rowheader "Mistral Large" [ref=f48e724]
+                            - cell [ref=f48e726]:
+                              - generic "262,144 tokens" [ref=f48e727]: 262.14K
+                            - cell [ref=f48e730]:
+                              - generic "262,144 tokens" [ref=f48e731]: 262.14K
+                            - 'cell "Base cost: 0.5 US dollars input, 1.5 US dollars output per million tokens" [ref=f48e734]':
+                              - generic [ref=f48e735]: "0.5"
+                              - generic [ref=f48e737]: /
+                              - generic [ref=f48e738]: "1.5"
+                            - cell [ref=f48e740]:
+                              - img "Enabled" [ref=f48e741]
+                  - button "Play" [ref=f48e749]
+              - article [ref=f48e752]:
+                - paragraph [ref=f48e755]:
+                  - generic [ref=f48e758]:
+                    - generic [ref=f48e759]: How
+                    - generic [ref=f48e760]: do
+                    - generic [ref=f48e761]: several
+                    - generic [ref=f48e762]: plugins
+                    - generic [ref=f48e763]:
+                      - generic [ref=f48e764]: coor -
+                      - generic [ref=f48e765]: di -
+                      - text: nate
+                    - generic [ref=f48e766]:
+                      - generic [ref=f48e767]: mod -
+                      - generic [ref=f48e768]: i -
+                      - generic [ref=f48e769]: fy -
+                      - text: ing
+                    - generic [ref=f48e770]: the
+                    - generic [ref=f48e771]: same
+                    - generic [ref=f48e772]: catalog?
+                    - generic [ref=f48e773]: Let’s
+                    - generic [ref=f48e774]: start
+                    - generic [ref=f48e775]: with
+                    - generic [ref=f48e776]: a
+                    - generic [ref=f48e777]: naive
+                    - generic [ref=f48e778]:
+                      - generic [ref=f48e779]: imple -
+                      - generic [ref=f48e780]: men -
+                      - generic [ref=f48e781]: ta -
+                      - text: tion
+                    - generic [ref=f48e782]: and
+                    - generic [ref=f48e783]: refine
+                    - generic [ref=f48e784]: it
+                    - generic [ref=f48e785]: together
+                    - generic [ref=f48e786]: as
+                    - generic [ref=f48e787]: it
+                    - generic [ref=f48e788]: fails
+                    - generic [ref=f48e789]: us
+                    - generic [ref=f48e790]: in
+                    - generic [ref=f48e791]: one
+                    - generic [ref=f48e792]: way
+                    - generic [ref=f48e793]: or
+                    - generic [ref=f48e794]: another.
+              - article [ref=f48e795]:
+                - paragraph [ref=f48e798]:
+                  - generic [ref=f48e801]:
+                    - generic [ref=f48e802]: For
+                    - generic [ref=f48e803]: our
+                    - generic [ref=f48e804]: first
+                    - generic [ref=f48e805]: attempt,
+                    - generic [ref=f48e806]: we’ll
+                    - generic [ref=f48e807]: give
+                    - generic [ref=f48e808]: plugins
+                    - generic [ref=f48e809]: direct
+                    - generic [ref=f48e810]: access
+                    - generic [ref=f48e811]: to
+                    - generic [ref=f48e812]: a
+                    - generic [ref=f48e813]: shared
+                    - generic [ref=f48e814]: model
+                    - generic [ref=f48e815]: catalog
+                    - generic [ref=f48e816]: through
+                    - generic [ref=f48e817]: the
+                    - code [ref=f48e820]: ctx
+                    - generic [ref=f48e821]:
+                      - generic [ref=f48e822]: argu -
+                      - text: ment
+                    - generic [ref=f48e823]: every
+                    - generic [ref=f48e824]: plugin
+                    - generic [ref=f48e825]: receives.
+                    - generic [ref=f48e826]: They
+                    - generic [ref=f48e827]: can
+                    - generic [ref=f48e828]: reach
+                    - generic [ref=f48e829]: in
+                    - generic [ref=f48e830]: and
+                    - generic [ref=f48e831]:
+                      - generic [ref=f48e832]: rear -
+                      - text: range
+                    - generic [ref=f48e833]: it
+                    - generic [ref=f48e834]: as
+                    - generic [ref=f48e835]: they
+                    - generic [ref=f48e836]: see
+                    - generic [ref=f48e837]: "fit:"
+                    - generic [ref=f48e838]: adding
+                    - generic [ref=f48e839]: models,
+                    - generic [ref=f48e840]:
+                      - generic [ref=f48e841]: replac -
+                      - text: ing
+                    - generic [ref=f48e842]: them,
+                    - generic [ref=f48e843]: or
+                    - generic [ref=f48e844]:
+                      - generic [ref=f48e845]: chang -
+                      - text: ing
+                    - generic [ref=f48e846]: their
+                    - generic [ref=f48e847]:
+                      - generic [ref=f48e848]: set -
+                      - text: tings.
+              - article [ref=f48e849]:
+                - figure "models-dev.ts" [ref=f48e851]:
+                  - button "Show the Effect version of the code" [ref=f48e854] [cursor=pointer]
+                  - code [ref=f48e859]:
+                    - generic [ref=f48e860]: "export async function modelsDev(ctx) {"
+                    - generic [ref=f48e861]: "const load = async () => {"
+                    - generic [ref=f48e862]:
+                      - text: const providers = await fetchModelsDev()
+                      - generic "Step 1" [ref=f48e863]:
+                        - generic [aria-hidden] [ref=f48e864]: // 1
+                        - text: "1"
+                    - generic [ref=f48e865]: "for (const provider of Object.values(providers)) {"
+                    - generic [ref=f48e866]:
+                      - text: ctx.catalog[provider.id] = provider
+                      - generic "Step 2" [ref=f48e867]:
+                        - generic [aria-hidden] [ref=f48e868]: // 2
+                        - text: "2"
+                    - generic [ref=f48e869]: "}"
+                    - generic [ref=f48e870]: "}"
+                    - generic [ref=f48e871]: await load()
+                    - generic [ref=f48e872]:
+                      - text: setInterval(load, 60 * 60 * 1000)
+                      - generic "Step 3" [ref=f48e873]:
+                        - generic [aria-hidden] [ref=f48e874]: // 3
+                        - text: "3"
+                    - generic [ref=f48e875]: "}"
+            - generic [ref=f48e877]:
+              - article [ref=f48e878]:
+                - paragraph [ref=f48e881]:
+                  - generic [ref=f48e883]:
+                    - text: It fetches all the latest provider data from models.dev
+                    - generic "Step 1" [ref=f48e884]:
+                      - generic [aria-hidden] [ref=f48e885]: "1"
+                      - text: "1"
+                    - text: and writes it into the model catalog
+                    - generic "Step 2" [ref=f48e886]:
+                      - generic [aria-hidden] [ref=f48e887]: "2"
+                      - text: "2"
+                    - text: . This happens at startup and once an hour thereafter
+                    - generic "Step 3" [ref=f48e888]:
+                      - generic [aria-hidden] [ref=f48e889]: "3"
+                      - text: "3"
+                    - text: .
+              - article [ref=f48e890]:
+                - paragraph [ref=f48e893]:
+                  - generic [ref=f48e896]:
+                    - generic [ref=f48e897]: Alas,
+                    - generic [ref=f48e898]: there’s
+                    - generic [ref=f48e899]: already
+                    - generic [ref=f48e900]: a
+                    - generic [ref=f48e901]: bug.
+                    - generic [ref=f48e902]: If
+                    - generic [ref=f48e903]: models.dev
+                    - generic [ref=f48e904]: removes
+                    - generic [ref=f48e905]: a
+                    - generic [ref=f48e906]: provider,
+                    - generic [ref=f48e907]: it’ll
+                    - generic [ref=f48e908]: remain
+                    - generic [ref=f48e909]: in
+                    - generic [ref=f48e910]: our
+                    - generic [ref=f48e911]: catalog
+                    - generic [ref=f48e912]: forever
+                    - generic [ref=f48e913]: because
+                    - generic [ref=f48e914]: we
+                    - generic [ref=f48e915]: don’t
+                    - generic [ref=f48e916]: clean
+                    - generic [ref=f48e917]: up
+                    - generic [ref=f48e918]: missing
+                    - generic [ref=f48e919]: entries.
+                    - generic [ref=f48e920]: But
+                    - generic [ref=f48e921]: before
+                    - generic [ref=f48e922]: we
+                    - generic [ref=f48e923]: fix
+                    - generic [ref=f48e924]: this,
+                    - generic [ref=f48e925]: let’s
+                    - generic [ref=f48e926]: make
+                    - generic [ref=f48e927]: things
+                    - generic [ref=f48e928]: worse.
+              - article [ref=f48e929]:
+                - paragraph [ref=f48e932]:
+                  - generic [ref=f48e935]:
+                    - generic [ref=f48e936]: Here’s
+                    - generic [ref=f48e937]: another
+                    - generic [ref=f48e938]: plugin
+                    - generic [ref=f48e939]: that
+                    - generic [ref=f48e940]:
+                      - generic [ref=f48e941]: mod -
+                      - generic [ref=f48e942]: i -
+                      - text: fies
+                    - generic [ref=f48e943]: the
+                    - generic [ref=f48e944]: catalog.
+                    - generic [ref=f48e945]: This
+                    - generic [ref=f48e946]: one
+                    - generic [ref=f48e947]:
+                      - generic [ref=f48e948]:
+                        - text: dis
+                        - generic [aria-hidden] [ref=f48e949]: "-"
+                      - text: ables
+                    - generic [ref=f48e950]: models
+                    - generic [ref=f48e951]: from
+                    - generic [ref=f48e952]: certain
+                    - generic [ref=f48e953]: providers,
+                    - generic [ref=f48e954]: perhaps
+                    - generic [ref=f48e955]: to
+                    - generic [ref=f48e956]: align
+                    - generic [ref=f48e957]: with
+                    - generic [ref=f48e958]: some
+                    - generic [ref=f48e959]: boring
+                    - generic [ref=f48e960]:
+                      - generic [ref=f48e961]: cor -
+                      - generic [ref=f48e962]: po -
+                      - text: rate
+                    - generic [ref=f48e963]: policy.
+              - article [ref=f48e964]:
+                - figure "provider-policy.ts" [ref=f48e966]:
+                  - button "Show the Effect version of the code" [ref=f48e969] [cursor=pointer]
+                  - code [ref=f48e974]:
+                    - generic [ref=f48e975]: "export async function providerPolicy(ctx) {"
+                    - generic [ref=f48e976]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                    - generic [ref=f48e977]: "for (const provider of Object.values(ctx.catalog)) {"
+                    - generic [ref=f48e978]: if (!excludedProviders.has(provider.id)) continue
+                    - generic [ref=f48e979]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f48e980]: model.disabled = true
+                    - generic [ref=f48e981]: "}"
+                    - generic [ref=f48e982]: "}"
+                    - generic [ref=f48e983]: "}"
+              - article [ref=f48e984]:
+                - paragraph [ref=f48e987]:
+                  - generic [ref=f48e990]:
+                    - generic [ref=f48e991]: "On"
+                    - generic [ref=f48e992]: startup,
+                    - generic [ref=f48e993]: these
+                    - generic [ref=f48e994]: run
+                    - generic [ref=f48e995]: in
+                    - generic [ref=f48e996]: order.
+                    - generic [ref=f48e997]: First,
+                    - generic [ref=f48e998]: the
+                    - generic [ref=f48e999]: models.dev
+                    - generic [ref=f48e1000]: plugin
+                    - generic [ref=f48e1001]: fills
+                    - generic [ref=f48e1002]: the
+                    - generic [ref=f48e1003]: catalog;
+                    - generic [ref=f48e1004]: then
+                    - generic [ref=f48e1005]: our
+                    - generic [ref=f48e1006]: policy
+                    - generic [ref=f48e1007]: plugin
+                    - generic [ref=f48e1008]:
+                      - generic [ref=f48e1009]: dis -
+                      - text: ables
+                    - generic [ref=f48e1010]: the
+                    - generic [ref=f48e1011]: restricted
+                    - generic [ref=f48e1012]: models.
+                    - generic [ref=f48e1013]: So
+                    - generic [ref=f48e1014]: far,
+                    - generic [ref=f48e1015]: so
+                    - generic [ref=f48e1016]: good.
+              - article [ref=f48e1017]:
+                - paragraph [ref=f48e1020]:
+                  - generic [ref=f48e1023]:
+                    - generic [ref=f48e1024]: However,
+                    - generic [ref=f48e1025]: when
+                    - generic [ref=f48e1026]: the
+                    - generic [ref=f48e1027]: refresh
+                    - generic [ref=f48e1028]: timer
+                    - generic [ref=f48e1029]: fires,
+                    - generic [ref=f48e1030]: the
+                    - generic [ref=f48e1031]: models.dev
+                    - generic [ref=f48e1032]: plugin
+                    - generic [ref=f48e1033]:
+                      - generic [ref=f48e1034]:
+                        - text: com
+                        - generic [aria-hidden] [ref=f48e1035]: "-"
+                      - text: pletely
+                    - generic [ref=f48e1036]: replaces
+                    - generic [ref=f48e1037]: those
+                    - generic [ref=f48e1038]: provider
+                    - generic [ref=f48e1039]: records
+                    - generic [ref=f48e1040]: with
+                    - generic [ref=f48e1041]: fresh
+                    - generic [ref=f48e1042]: values,
+                    - generic [ref=f48e1043]:
+                      - generic [ref=f48e1044]: inad -
+                      - generic [ref=f48e1045]:
+                        - text: ver
+                        - generic [aria-hidden] [ref=f48e1046]: "-"
+                      - text: tently
+                    - generic [ref=f48e1047]: undoing
+                    - generic [ref=f48e1048]:
+                      - generic [ref=f48e1049]: every -
+                      - text: thing
+                    - generic [ref=f48e1050]: our
+                    - generic [ref=f48e1051]: policy
+                    - generic [ref=f48e1052]: plugin
+                    - generic [ref=f48e1053]: did.
+              - article [ref=f48e1054]:
+                - generic [ref=f48e1056] [cursor=pointer]:
+                  - 'figure "Two plugins modify the same catalog: the hourly refresh overwrites the provider policy" [ref=f48e1057]':
+                    - generic [ref=f48e1060]:
+                      - generic [ref=f48e1061]:
+                        - region "models.dev website" [ref=f48e1062]:
+                          - link "models.dev" [ref=f48e1063]:
+                            - /url: https://models.dev
+                        - region "models-dev.ts" [ref=f48e1066]:
+                          - generic [aria-hidden] [ref=f48e1076]:
+                            - generic [aria-hidden] [ref=f48e1077]: "60"
+                            - generic [aria-hidden] [ref=f48e1078]: ":"
+                            - generic [aria-hidden] [ref=f48e1079]: "00"
+                        - region "provider-policy.ts" [ref=f48e1081]
+                      - region "Shared model catalog" [ref=f48e1090]:
+                        - table "Illustrative model catalog, grouped by provider" [ref=f48e1091]:
+                          - rowgroup [ref=f48e1092]:
+                            - row [ref=f48e1093]:
+                              - columnheader "Model" [ref=f48e1094]
+                              - columnheader [ref=f48e1095]:
+                                - generic "0 of 0 models enabled" [ref=f48e1096]:
+                                  - generic [ref=f48e1098]: "0"
+                                  - generic [aria-hidden] [ref=f48e1099]: /
+                                  - generic [ref=f48e1101]: "0"
+                          - generic [ref=f48e1102]:
+                            - generic:
+                              - img "Empty catalog"
+                            - rowgroup [aria-hidden] [ref=f48e1103]:
+                              - rowheader [ref=f48e1106]: Perinium
+                              - generic [ref=f48e1110]:
+                                - rowheader [ref=f48e1111]:
+                                  - generic [ref=f48e1112]: Clench 4 Pro
+                                - cell [ref=f48e1113]
+                              - generic [ref=f48e1124]:
+                                - rowheader [ref=f48e1125]:
+                                  - generic [ref=f48e1126]: Clench 4 Mini
+                                - cell [ref=f48e1127]
+                            - rowgroup [aria-hidden] [ref=f48e1136]:
+                              - rowheader [ref=f48e1139]: Sphinctral
+                              - generic [ref=f48e1143]:
+                                - rowheader [ref=f48e1144]:
+                                  - generic [ref=f48e1145]: Squeeze 3.5
+                                - cell [ref=f48e1146]
+                              - generic [ref=f48e1157]:
+                                - rowheader [ref=f48e1158]:
+                                  - generic [ref=f48e1159]: Squeeze 3.5 Fast
+                                - cell [ref=f48e1160]
+                            - rowgroup [aria-hidden] [ref=f48e1169]:
+                              - rowheader [ref=f48e1172]: OpenAI
+                              - generic [ref=f48e1176]:
+                                - rowheader [ref=f48e1177]:
+                                  - generic [ref=f48e1178]: GPT-6 Astra
+                                - cell [ref=f48e1179]
+                              - generic [ref=f48e1190]:
+                                - rowheader [ref=f48e1191]:
+                                  - generic [ref=f48e1192]: GPT-5.6 Sol
+                                - cell [ref=f48e1193]
+                        - generic [ref=f48e1202]: 0 available
+                    - generic [ref=f48e1203]: An empty catalog
+                  - button "Play" [ref=f48e1204]
+              - article [ref=f48e1207]:
+                - paragraph [ref=f48e1210]:
+                  - generic [ref=f48e1213]:
+                    - generic [ref=f48e1214]: To
+                    - generic [ref=f48e1215]: deal
+                    - generic [ref=f48e1216]: with
+                    - generic [ref=f48e1217]: this,
+                    - generic [ref=f48e1218]: let’s
+                    - generic [ref=f48e1219]: have
+                    - generic [ref=f48e1220]: the
+                    - generic [ref=f48e1221]: models.dev
+                    - generic [ref=f48e1222]: plugin
+                    - generic [ref=f48e1223]: announce
+                    - generic [ref=f48e1224]: each
+                    - generic [ref=f48e1225]: refresh,
+                    - generic [ref=f48e1226]: and
+                    - generic [ref=f48e1227]: have
+                    - generic [ref=f48e1228]: our
+                    - generic [ref=f48e1229]: policy
+                    - generic [ref=f48e1230]: plugin
+                    - generic [ref=f48e1231]: listen
+                    - generic [ref=f48e1232]: for
+                    - generic [ref=f48e1233]: that
+                    - generic [ref=f48e1234]:
+                      - generic [ref=f48e1235]: announce -
+                      - text: ment
+                    - generic [ref=f48e1236]: and
+                    - generic [ref=f48e1237]: disable
+                    - generic [ref=f48e1238]: the
+                    - generic [ref=f48e1239]: models
+                    - generic [ref=f48e1240]: again
+                    - generic [ref=f48e1241]: after
+                    - generic [ref=f48e1242]: each
+                    - generic [ref=f48e1243]: one.
+              - article [ref=f48e1244]:
+                - figure "provider-policy.ts" [ref=f48e1246]:
+                  - button "Show the Effect version of the code" [ref=f48e1249] [cursor=pointer]
+                  - code [ref=f48e1254]:
+                    - generic [ref=f48e1255]: "export async function providerPolicy(ctx) {"
+                    - generic [ref=f48e1256]: "await ctx.event.on(\"catalog.updated\", () => {"
+                    - generic [ref=f48e1257]: disableProviders(ctx.catalog)
+                    - generic [ref=f48e1258]: "})"
+                    - generic [ref=f48e1259]: disableProviders(ctx.catalog)
+                    - generic [ref=f48e1260]: "}"
+                    - generic [ref=f48e1261]: "function disableProviders(catalog) {"
+                    - generic [ref=f48e1262]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                    - generic [ref=f48e1263]: "for (const provider of Object.values(catalog)) {"
+                    - generic [ref=f48e1264]: if (!excludedProviders.has(provider.id)) continue
+                    - generic [ref=f48e1265]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f48e1266]: model.disabled = true
+                    - generic [ref=f48e1267]: "}"
+                    - generic [ref=f48e1268]: "}"
+                    - generic [ref=f48e1269]: "}"
+              - article [ref=f48e1270]:
+                - paragraph [ref=f48e1273]:
+                  - generic [ref=f48e1276]:
+                    - generic [ref=f48e1277]: This
+                    - generic [ref=f48e1278]: is
+                    - generic [ref=f48e1279]: getting
+                    - generic [ref=f48e1280]:
+                      - generic [ref=f48e1281]: com -
+                      - generic [ref=f48e1282]: pli -
+                      - text: cated.
+                    - generic [ref=f48e1283]: We
+                    - generic [ref=f48e1284]: now
+                    - generic [ref=f48e1285]: have
+                    - generic [ref=f48e1286]: a
+                    - generic [ref=f48e1287]:
+                      - generic [ref=f48e1288]: back -
+                      - text: ground
+                    - generic [ref=f48e1289]: process
+                    - generic [ref=f48e1290]:
+                      - generic [ref=f48e1291]: chang -
+                      - text: ing
+                    - generic [ref=f48e1292]: the
+                    - generic [ref=f48e1293]: catalog
+                    - generic [ref=f48e1294]: and
+                    - generic [ref=f48e1295]: another
+                    - generic [ref=f48e1296]: plugin
+                    - generic [ref=f48e1297]:
+                      - generic [ref=f48e1298]: respond -
+                      - text: ing
+                    - generic [ref=f48e1299]: to
+                    - generic [ref=f48e1300]: those
+                    - generic [ref=f48e1301]: changes.
+                    - generic [ref=f48e1302]: We
+                    - generic [ref=f48e1303]: also
+                    - generic [ref=f48e1304]: have
+                    - generic [ref=f48e1305]: to
+                    - generic [ref=f48e1306]: make
+                    - generic [ref=f48e1307]: sure
+                    - generic [ref=f48e1308]: nobody
+                    - generic [ref=f48e1309]: reads
+                    - generic [ref=f48e1310]: the
+                    - generic [ref=f48e1311]: fresh
+                    - generic [ref=f48e1312]: catalog
+                    - generic [ref=f48e1313]: before
+                    - generic [ref=f48e1314]: our
+                    - generic [ref=f48e1315]: policy
+                    - generic [ref=f48e1316]: has
+                    - generic [ref=f48e1317]: run.
+            - generic [ref=f48e1319]:
+              - article [ref=f48e1320]:
+                - paragraph [ref=f48e1323]:
+                  - generic [ref=f48e1326]:
+                    - generic [ref=f48e1327]: Even
+                    - generic [ref=f48e1328]: if
+                    - generic [ref=f48e1329]: we
+                    - generic [ref=f48e1330]: sort
+                    - generic [ref=f48e1331]: all
+                    - generic [ref=f48e1332]: that
+                    - generic [ref=f48e1333]: out,
+                    - generic [ref=f48e1334]: we
+                    - generic [ref=f48e1335]: only
+                    - generic [ref=f48e1336]: got
+                    - generic [ref=f48e1337]: away
+                    - generic [ref=f48e1338]: with
+                    - generic [ref=f48e1339]: re-running
+                    - generic [ref=f48e1340]: our
+                    - generic [ref=f48e1341]: policy
+                    - generic [ref=f48e1342]: because
+                    - generic [ref=f48e1343]:
+                      - generic [ref=f48e1344]: dis -
+                      - text: abling
+                    - generic [ref=f48e1345]: an
+                    - generic [ref=f48e1346]: already-disabled
+                    - generic [ref=f48e1347]: model
+                    - generic [ref=f48e1348]: does
+                    - generic [ref=f48e1349]: nothing.
+                    - generic [ref=f48e1350]: It’s
+                    - button "Mark idempotent on your vocabulary bingo card" [ref=f48e1351]:
+                      - generic [ref=f48e1352]: idem -
+                      - generic [ref=f48e1353]: po -
+                      - text: tent.
+                    - generic [ref=f48e1354]:
+                      - generic [ref=f48e1355]: Con -
+                      - text: sider
+                    - generic [ref=f48e1356]: instead
+                    - generic [ref=f48e1357]: a
+                    - generic [ref=f48e1358]: plugin
+                    - generic [ref=f48e1359]: which
+                    - emphasis [ref=f48e1362]: halves
+                    - generic [ref=f48e1363]: each
+                    - generic [ref=f48e1364]: model’s
+                    - generic [ref=f48e1365]: output
+                    - generic [ref=f48e1366]: limit,
+                    - generic [ref=f48e1367]: the
+                    - generic [ref=f48e1368]: maximum
+                    - generic [ref=f48e1369]: number
+                    - generic [ref=f48e1370]: of
+                    - generic [ref=f48e1371]: tokens
+                    - generic [ref=f48e1372]: a
+                    - generic [ref=f48e1373]: model
+                    - generic [ref=f48e1374]: may
+                    - generic [ref=f48e1375]: produce
+                    - generic [ref=f48e1376]: in
+                    - generic [ref=f48e1377]: one
+                    - generic [ref=f48e1378]: reply.
+              - article [ref=f48e1379]:
+                - figure "limits.ts" [ref=f48e1381]:
+                  - button "Show the Effect version of the code" [ref=f48e1384] [cursor=pointer]
+                  - code [ref=f48e1389]:
+                    - generic [ref=f48e1390]: "export async function limits(ctx) {"
+                    - generic [ref=f48e1391]: "await ctx.event.on(\"catalog.updated\", () => {"
+                    - generic [ref=f48e1392]: halveLimits(ctx.catalog)
+                    - generic [ref=f48e1393]: "})"
+                    - generic [ref=f48e1394]: halveLimits(ctx.catalog)
+                    - generic [ref=f48e1395]: "}"
+                    - generic [ref=f48e1396]: "function halveLimits(catalog) {"
+                    - generic [ref=f48e1397]: "for (const provider of Object.values(catalog)) {"
+                    - generic [ref=f48e1398]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f48e1399]: model.limit.output /= 2
+                    - generic [ref=f48e1400]: "}"
+                    - generic [ref=f48e1401]: "}"
+                    - generic [ref=f48e1402]: "}"
+              - article [ref=f48e1403]:
+                - paragraph [ref=f48e1406]:
+                  - generic [ref=f48e1409]:
+                    - generic [ref=f48e1410]: Suppose
+                    - generic [ref=f48e1411]: another
+                    - generic [ref=f48e1412]: plugin,
+                    - generic [ref=f48e1414]:
+                      - code [ref=f48e1415]: local-model.ts
+                      - text: ","
+                    - generic [ref=f48e1416]: adds
+                    - generic [ref=f48e1417]: a
+                    - generic [ref=f48e1418]: couple
+                    - generic [ref=f48e1419]: of
+                    - generic [ref=f48e1420]: models
+                    - generic [ref=f48e1421]: that
+                    - generic [ref=f48e1422]: run
+                    - generic [ref=f48e1423]: "on"
+                    - generic [ref=f48e1424]: your
+                    - generic [ref=f48e1425]: own
+                    - generic [ref=f48e1426]: machine.
+                    - generic [ref=f48e1427]:
+                      - generic [ref=f48e1428]: Fol -
+                      - generic [ref=f48e1429]: low -
+                      - text: ing
+                    - generic [ref=f48e1430]: our
+                    - generic [ref=f48e1431]: policy
+                    - generic [ref=f48e1432]: plugin’s
+                    - generic [ref=f48e1433]: lead,
+                    - generic [ref=f48e1434]: we
+                    - generic [ref=f48e1435]: re-run
+                    - code [ref=f48e1438]: halveLimits
+                    - generic [ref=f48e1439]: after
+                    - generic [ref=f48e1440]: each
+                    - generic [ref=f48e1441]: catalog
+                    - generic [ref=f48e1442]: update
+                    - generic [ref=f48e1443]: to
+                    - generic [ref=f48e1444]: catch
+                    - generic [ref=f48e1445]: the
+                    - generic [ref=f48e1446]:
+                      - generic [ref=f48e1447]:
+                        - text: addi
+                        - generic [aria-hidden] [ref=f48e1448]: "-"
+                      - text: tions,
+                    - generic [ref=f48e1449]: but
+                    - generic [ref=f48e1450]: it
+                    - generic [ref=f48e1451]: also
+                    - generic [ref=f48e1452]: halves
+                    - generic [ref=f48e1453]: the
+                    - generic [ref=f48e1454]: models
+                    - generic [ref=f48e1455]: we’ve
+                    - generic [ref=f48e1456]: already
+                    - generic [ref=f48e1457]: handled.
+                    - generic [ref=f48e1458]: Their
+                    - generic [ref=f48e1459]: limits
+                    - generic [ref=f48e1460]: are
+                    - generic [ref=f48e1461]: now
+                    - generic [ref=f48e1462]: a
+                    - generic [ref=f48e1463]: quarter
+                    - generic [ref=f48e1464]: of
+                    - generic [ref=f48e1465]: what
+                    - generic [ref=f48e1466]: they
+                    - generic [ref=f48e1467]: started
+                    - generic [ref=f48e1468]: with.
+              - article [ref=f48e1469]:
+                - generic [ref=f48e1471] [cursor=pointer]:
+                  - 'figure "Adding models reruns the limits plugin: existing output limits fall from 128K to 64K to 32K, while the new models fall from 128K to 64K." [ref=f48e1472]':
+                    - generic [ref=f48e1475]:
+                      - generic [ref=f48e1476]:
+                        - region "models-dev.ts" [ref=f48e1478]
+                        - region "limits.ts" [ref=f48e1485]
+                        - region "local-model.ts" [ref=f48e1492]
+                      - region "Illustrative output limits, not actual model specifications" [ref=f48e1498]:
+                        - table "Model output limits" [ref=f48e1499]:
+                          - rowgroup [ref=f48e1500]:
+                            - row [ref=f48e1501]:
+                              - columnheader "Model" [ref=f48e1502]
+                              - columnheader "Output" [ref=f48e1503]
+                          - generic [ref=f48e1504]:
+                            - generic:
+                              - img "Empty catalog"
+                            - rowgroup [ref=f48e1505]:
+                              - rowheader [ref=f48e1507]: OpenAI
+                              - generic [ref=f48e1510]:
+                                - rowheader [ref=f48e1511]:
+                                  - generic [ref=f48e1512]: GPT-6 Astra
+                                - cell [ref=f48e1513]:
+                                  - generic [ref=f48e1514]:
+                                    - generic [ref=f48e1515]: "128"
+                                    - generic [ref=f48e1516]: K
+                              - generic [ref=f48e1518]:
+                                - rowheader [ref=f48e1519]:
+                                  - generic [ref=f48e1520]: GPT-5.6 Sol
+                                - cell [ref=f48e1521]:
+                                  - generic [ref=f48e1522]:
+                                    - generic [ref=f48e1523]: "128"
+                                    - generic [ref=f48e1524]: K
+                            - rowgroup [ref=f48e1525]:
+                              - rowheader [ref=f48e1527]: Local
+                              - generic [ref=f48e1530]:
+                                - rowheader [ref=f48e1531]:
+                                  - generic [ref=f48e1532]: Couch Potato 8B
+                                - cell [ref=f48e1533]:
+                                  - generic [ref=f48e1534]:
+                                    - generic [ref=f48e1535]: "128"
+                                    - generic [ref=f48e1536]: K
+                              - generic [ref=f48e1538]:
+                                - rowheader [ref=f48e1539]:
+                                  - generic [ref=f48e1540]: Pocket Goblin 14B
+                                - cell [ref=f48e1541]:
+                                  - generic [ref=f48e1542]:
+                                    - generic [ref=f48e1543]: "128"
+                                    - generic [ref=f48e1544]: K
+                  - button "Play" [ref=f48e1545]
+              - article [ref=f48e1548]:
+                - paragraph [ref=f48e1551]:
+                  - generic [ref=f48e1554]:
+                    - generic [ref=f48e1555]: If
+                    - generic [ref=f48e1556]: we
+                    - generic [ref=f48e1557]:
+                      - generic [ref=f48e1558]: con -
+                      - text: tinue
+                    - generic [ref=f48e1559]: down
+                    - generic [ref=f48e1560]: this
+                    - generic [ref=f48e1561]: path,
+                    - generic [ref=f48e1562]: every
+                    - generic [ref=f48e1563]: plugin
+                    - generic [ref=f48e1564]: has
+                    - generic [ref=f48e1565]: to
+                    - generic [ref=f48e1566]: keep
+                    - generic [ref=f48e1567]: track
+                    - generic [ref=f48e1568]: of
+                    - generic [ref=f48e1569]: what
+                    - generic [ref=f48e1570]: every
+                    - generic [ref=f48e1571]: other
+                    - generic [ref=f48e1572]: plugin
+                    - generic [ref=f48e1573]: has
+                    - generic [ref=f48e1574]: done.
+                    - generic [ref=f48e1575]: It
+                    - generic [ref=f48e1576]: would
+                    - generic [ref=f48e1577]: become
+                    - generic [ref=f48e1578]: an
+                    - generic [ref=f48e1579]:
+                      - generic [ref=f48e1580]:
+                        - text: inex
+                        - generic [aria-hidden] [ref=f48e1581]: "-"
+                      - generic [ref=f48e1582]: tri -
+                      - generic [ref=f48e1583]: ca -
+                      - text: ble
+                    - generic [ref=f48e1584]:
+                      - generic [ref=f48e1585]: clus -
+                      - generic [ref=f48e1586]: ter -
+                      - text: fuck.
+              - article [ref=f48e1587]:
+                - paragraph [ref=f48e1590]:
+                  - generic [ref=f48e1593]:
+                    - generic [ref=f48e1594]: These
+                    - generic [ref=f48e1595]: bugs
+                    - generic [ref=f48e1596]: have
+                    - generic [ref=f48e1597]: the
+                    - generic [ref=f48e1598]: same
+                    - generic [ref=f48e1599]: cause.
+                    - generic [ref=f48e1600]: Plugins
+                    - generic [ref=f48e1601]: are
+                    - generic [ref=f48e1602]:
+                      - generic [ref=f48e1603]: mutat -
+                      - text: ing
+                    - generic [ref=f48e1604]: a
+                    - generic [ref=f48e1605]: shared
+                    - generic [ref=f48e1606]: catalog
+                    - generic [ref=f48e1607]: in
+                    - generic [ref=f48e1608]: place,
+                    - generic [ref=f48e1609]: so
+                    - generic [ref=f48e1610]: the
+                    - generic [ref=f48e1611]: result
+                    - generic [ref=f48e1612]: depends
+                    - generic [ref=f48e1613]: "on"
+                    - generic [ref=f48e1614]: how
+                    - generic [ref=f48e1615]: many
+                    - generic [ref=f48e1616]: times
+                    - generic [ref=f48e1617]: each
+                    - generic [ref=f48e1618]: one
+                    - generic [ref=f48e1619]: has
+                    - generic [ref=f48e1620]: run
+                    - generic [ref=f48e1621]: and
+                    - generic [ref=f48e1622]: in
+                    - generic [ref=f48e1623]: what
+                    - generic [ref=f48e1624]: order.
+                    - generic [ref=f48e1625]: Let’s
+                    - generic [ref=f48e1626]: see
+                    - generic [ref=f48e1627]: how
+                    - generic [ref=f48e1628]: we
+                    - generic [ref=f48e1629]: addressed
+                    - generic [ref=f48e1630]: that
+                    - generic [ref=f48e1631]: in
+                    - generic [ref=f48e1632]: OpenCode.
+          - generic [ref=f48e1636]:
+            - heading "The Solution" [level=2] [ref=f48e1638]
+            - article [ref=f48e1641]:
+              - paragraph [ref=f48e1644]:
+                - generic [ref=f48e1647]:
+                  - generic [ref=f48e1648]: Instead
+                  - generic [ref=f48e1649]: of
+                  - generic [ref=f48e1650]: wrestling
+                  - generic [ref=f48e1651]: with
+                  - generic [ref=f48e1652]: this
+                  - generic [ref=f48e1653]: tangled
+                  - generic [ref=f48e1654]: mass
+                  - generic [ref=f48e1655]: of
+                  - generic [ref=f48e1656]:
+                    - generic [ref=f48e1657]: imper -
+                    - generic [ref=f48e1658]: a -
+                    - generic [ref=f48e1659]: tiv -
+                    - text: ity,
+                  - generic [ref=f48e1660]: wouldn’t
+                  - generic [ref=f48e1661]: it
+                  - generic [ref=f48e1662]: be
+                  - generic [ref=f48e1663]: lovely
+                  - generic [ref=f48e1664]: if
+                  - generic [ref=f48e1665]: a
+                  - generic [ref=f48e1666]: plugin
+                  - generic [ref=f48e1667]: could
+                  - generic [ref=f48e1668]: describe
+                  - generic [ref=f48e1669]: its
+                  - generic [ref=f48e1670]: change,
+                  - generic [ref=f48e1671]: and
+                  - generic [ref=f48e1672]: let
+                  - generic [ref=f48e1673]: OpenCode
+                  - generic [ref=f48e1674]: decide
+                  - generic [ref=f48e1675]: when
+                  - generic [ref=f48e1676]: to
+                  - generic [ref=f48e1677]: apply
+                  - generic [ref=f48e1678]: it?
+            - article [ref=f48e1679]:
+              - paragraph [ref=f48e1682]:
+                - generic [ref=f48e1685]:
+                  - generic [ref=f48e1686]: That’s
+                  - generic [ref=f48e1687]: what
+                  - generic [ref=f48e1688]: we
+                  - generic [ref=f48e1689]: did.
+                  - generic [ref=f48e1690]: Each
+                  - generic [ref=f48e1691]: plugin
+                  - generic [ref=f48e1692]: hands
+                  - generic [ref=f48e1693]: OpenCode
+                  - generic [ref=f48e1694]: a
+                  - generic [ref=f48e1695]: catalog
+                  - generic [ref=f48e1696]:
+                    - generic [ref=f48e1697]:
+                      - text: trans
+                      - generic [aria-hidden] [ref=f48e1698]: "-"
+                    - generic [ref=f48e1699]: for -
+                    - generic [ref=f48e1700]: ma -
+                    - text: tion
+                  - generic [ref=f48e1701]:
+                    - generic [ref=f48e1702]: func -
+                    - text: tion;
+                  - generic [ref=f48e1703]: OpenCode
+                  - generic [ref=f48e1704]: keeps
+                  - generic [ref=f48e1705]: them
+                  - generic [ref=f48e1706]: in
+                  - generic [ref=f48e1707]: order
+                  - generic [ref=f48e1708]: and
+                  - generic [ref=f48e1709]: threads
+                  - generic [ref=f48e1710]: an
+                  - generic [ref=f48e1711]: empty
+                  - generic [ref=f48e1712]: catalog
+                  - generic [ref=f48e1713]: through
+                  - generic [ref=f48e1714]: each
+                  - generic [ref=f48e1715]: one
+                  - generic [ref=f48e1716]: in
+                  - generic [ref=f48e1717]: turn.
+            - article [ref=f48e1718]:
+              - generic [ref=f48e1720] [cursor=pointer]:
+                - 'figure "Rebuilding the catalog: an empty object is threaded through each registered transformation in order, each card checking off as its turn lands, and again when models-dev''s hourly timer calls reload, giving the same 64K result." [ref=f48e1721]':
+                  - generic [ref=f48e1724]:
+                    - generic [ref=f48e1726]:
+                      - region "models-dev.ts" [ref=f48e1728]:
+                        - generic [ref=f48e1729]:
+                          - generic [ref=f48e1730]: "1"
+                          - generic [ref=f48e1733]: models-dev.ts
+                        - 'button "Jump to step 1: models-dev.ts" [ref=f48e1734]':
+                          - generic "Step 1" [ref=f48e1735]:
+                            - generic [aria-hidden] [ref=f48e1736]: "1"
+                            - text: "1"
+                      - region "local-model.ts" [ref=f48e1741]:
+                        - generic [ref=f48e1742]:
+                          - generic [ref=f48e1743]: "2"
+                          - generic [ref=f48e1746]: local-model.ts
+                        - 'button "Jump to step 2: local-model.ts" [ref=f48e1747]':
+                          - generic "Step 2" [ref=f48e1748]:
+                            - generic [aria-hidden] [ref=f48e1749]: "2"
+                            - text: "2"
+                      - region "provider-policy.ts" [ref=f48e1754]:
+                        - generic [ref=f48e1755]:
+                          - generic [ref=f48e1756]: "3"
+                          - generic [ref=f48e1759]: provider-policy.ts
+                        - 'button "Jump to step 3: provider-policy.ts" [ref=f48e1760]':
+                          - generic "Step 3" [ref=f48e1761]:
+                            - generic [aria-hidden] [ref=f48e1762]: "3"
+                            - text: "3"
+                      - region "limits.ts" [ref=f48e1767]:
+                        - generic [ref=f48e1768]:
+                          - generic [ref=f48e1769]: "4"
+                          - generic [ref=f48e1772]: limits.ts
+                        - 'button "Jump to step 4: limits.ts" [ref=f48e1773]':
+                          - generic "Step 4" [ref=f48e1774]:
+                            - generic [aria-hidden] [ref=f48e1775]: "4"
+                            - text: "4"
+                    - region "Illustrative output limits, not actual model specifications" [ref=f48e1779]:
+                      - table "Model output limits" [ref=f48e1780]:
+                        - rowgroup [ref=f48e1781]:
+                          - row [ref=f48e1782]:
+                            - columnheader "Model" [ref=f48e1783]
+                            - columnheader "Output" [ref=f48e1784]
+                        - generic [ref=f48e1785]:
+                          - generic:
+                            - img "Empty catalog"
+                          - rowgroup:
+                            - rowheader "OpenAI" [ref=f48e1787]
+                            - row "GPT-6 Astra 128 K Enabled":
+                              - generic [ref=f48e1791]:
+                                - rowheader "GPT-6 Astra" [ref=f48e1792]
+                                - cell "128 K Enabled" [ref=f48e1794]:
+                                  - generic [ref=f48e1795]:
+                                    - generic [ref=f48e1796]: "128"
+                                    - generic [ref=f48e1797]: K
+                                  - img "Enabled" [ref=f48e1798]
+                            - row "GPT-5.6 Sol 128 K Enabled":
+                              - generic [ref=f48e1808]:
+                                - rowheader "GPT-5.6 Sol" [ref=f48e1809]
+                                - cell "128 K Enabled" [ref=f48e1811]:
+                                  - generic [ref=f48e1812]:
+                                    - generic [ref=f48e1813]: "128"
+                                    - generic [ref=f48e1814]: K
+                                  - img "Enabled" [ref=f48e1815]
+                          - rowgroup:
+                            - rowheader "Sphinctral" [ref=f48e1826]
+                            - row "Squeeze 3.5 128 K Enabled":
+                              - generic [ref=f48e1830]:
+                                - rowheader "Squeeze 3.5" [ref=f48e1831]
+                                - cell "128 K Enabled" [ref=f48e1833]:
+                                  - generic [ref=f48e1834]:
+                                    - generic [ref=f48e1835]: "128"
+                                    - generic [ref=f48e1836]: K
+                                  - img "Enabled" [ref=f48e1837]
+                            - row "Squeeze 3.5 Fast 128 K Enabled":
+                              - generic [ref=f48e1847]:
+                                - rowheader "Squeeze 3.5 Fast" [ref=f48e1848]
+                                - cell "128 K Enabled" [ref=f48e1850]:
+                                  - generic [ref=f48e1851]:
+                                    - generic [ref=f48e1852]: "128"
+                                    - generic [ref=f48e1853]: K
+                                  - img "Enabled" [ref=f48e1854]
+                          - rowgroup:
+                            - rowheader "Local" [ref=f48e1865]
+                            - row "Couch Potato 8B 128 K Enabled":
+                              - generic [ref=f48e1869]:
+                                - rowheader "Couch Potato 8B" [ref=f48e1870]
+                                - cell "128 K Enabled" [ref=f48e1872]:
+                                  - generic [ref=f48e1873]:
+                                    - generic [ref=f48e1874]: "128"
+                                    - generic [ref=f48e1875]: K
+                                  - img "Enabled" [ref=f48e1876]
+                            - row "Pocket Goblin 14B 128 K Enabled":
+                              - generic [ref=f48e1886]:
+                                - rowheader "Pocket Goblin 14B" [ref=f48e1887]
+                                - cell "128 K Enabled" [ref=f48e1889]:
+                                  - generic [ref=f48e1890]:
+                                    - generic [ref=f48e1891]: "128"
+                                    - generic [ref=f48e1892]: K
+                                  - img "Enabled" [ref=f48e1893]
+                          - rowgroup:
+                            - rowheader "OpenAI" [ref=f48e1904]
+                            - row "GPT-6 Astra 128 K Enabled":
+                              - generic [ref=f48e1908]:
+                                - rowheader "GPT-6 Astra" [ref=f48e1909]
+                                - cell "128 K Enabled" [ref=f48e1911]:
+                                  - generic [ref=f48e1912]:
+                                    - generic [ref=f48e1913]: "128"
+                                    - generic [ref=f48e1914]: K
+                                  - img "Enabled" [ref=f48e1915]
+                            - row "GPT-5.6 Sol 128 K Enabled":
+                              - generic [ref=f48e1925]:
+                                - rowheader "GPT-5.6 Sol" [ref=f48e1926]
+                                - cell "128 K Enabled" [ref=f48e1928]:
+                                  - generic [ref=f48e1929]:
+                                    - generic [ref=f48e1930]: "128"
+                                    - generic [ref=f48e1931]: K
+                                  - img "Enabled" [ref=f48e1932]
+                          - rowgroup:
+                            - rowheader "Sphinctral" [ref=f48e1943]
+                            - row "Squeeze 3.5 128 K Enabled":
+                              - generic [ref=f48e1947]:
+                                - rowheader "Squeeze 3.5" [ref=f48e1948]
+                                - cell "128 K Enabled" [ref=f48e1950]:
+                                  - generic [ref=f48e1951]:
+                                    - generic [ref=f48e1952]: "128"
+                                    - generic [ref=f48e1953]: K
+                                  - img "Enabled" [ref=f48e1954]
+                            - row "Squeeze 3.5 Fast 128 K Enabled":
+                              - generic [ref=f48e1964]:
+                                - rowheader "Squeeze 3.5 Fast" [ref=f48e1965]
+                                - cell "128 K Enabled" [ref=f48e1967]:
+                                  - generic [ref=f48e1968]:
+                                    - generic [ref=f48e1969]: "128"
+                                    - generic [ref=f48e1970]: K
+                                  - img "Enabled" [ref=f48e1971]
+                          - rowgroup:
+                            - rowheader "Local" [ref=f48e1982]
+                            - row "Couch Potato 8B 128 K Enabled":
+                              - generic [ref=f48e1986]:
+                                - rowheader "Couch Potato 8B" [ref=f48e1987]
+                                - cell "128 K Enabled" [ref=f48e1989]:
+                                  - generic [ref=f48e1990]:
+                                    - generic [ref=f48e1991]: "128"
+                                    - generic [ref=f48e1992]: K
+                                  - img "Enabled" [ref=f48e1993]
+                            - row "Pocket Goblin 14B 128 K Enabled":
+                              - generic [ref=f48e2003]:
+                                - rowheader "Pocket Goblin 14B" [ref=f48e2004]
+                                - cell "128 K Enabled" [ref=f48e2006]:
+                                  - generic [ref=f48e2007]:
+                                    - generic [ref=f48e2008]: "128"
+                                    - generic [ref=f48e2009]: K
+                                  - img "Enabled" [ref=f48e2010]
+                - button "Play" [ref=f48e2020]
+            - article [ref=f48e2023]:
+              - paragraph [ref=f48e2026]:
+                - generic [ref=f48e2028]:
+                  - text: The catalog starts empty.
+                  - generic "Step 1" [ref=f48e2029]:
+                    - generic [aria-hidden] [ref=f48e2030]: "1"
+                    - text: "1"
+                  - code [ref=f48e2031]: models-dev.ts
+                  - text: fills in OpenAI and Sphinctral,
+                  - generic "Step 2" [ref=f48e2032]:
+                    - generic [aria-hidden] [ref=f48e2033]: "2"
+                    - text: "2"
+                  - code [ref=f48e2034]: local-model.ts
+                  - text: adds our two local models,
+                  - generic "Step 3" [ref=f48e2035]:
+                    - generic [aria-hidden] [ref=f48e2036]: "3"
+                    - text: "3"
+                  - code [ref=f48e2037]: provider-policy.ts
+                  - text: disables Sphinctral, and
+                  - generic "Step 4" [ref=f48e2038]:
+                    - generic [aria-hidden] [ref=f48e2039]: "4"
+                    - text: "4"
+                  - code [ref=f48e2040]: limits.ts
+                  - text: halves every output limit, 128K to 64K. And out pops the final catalog.
+            - article [ref=f48e2041]:
+              - paragraph [ref=f48e2044]:
+                - generic [ref=f48e2047]:
+                  - generic [ref=f48e2048]: Each
+                  - generic [ref=f48e2049]: plugin
+                  - generic [ref=f48e2050]: is
+                  - generic [ref=f48e2051]: now
+                  - generic [ref=f48e2052]: only
+                  - generic [ref=f48e2053]:
+                    - generic [ref=f48e2054]: respon -
+                    - generic [ref=f48e2055]: si -
+                    - text: ble
+                  - generic [ref=f48e2056]: for
+                  - generic [ref=f48e2057]: its
+                  - generic [ref=f48e2058]: own
+                  - generic [ref=f48e2059]: changes,
+                  - generic [ref=f48e2060]: while
+                  - generic [ref=f48e2061]: OpenCode
+                  - generic [ref=f48e2062]: takes
+                  - generic [ref=f48e2063]: care
+                  - generic [ref=f48e2064]: of
+                  - generic [ref=f48e2065]: when
+                  - generic [ref=f48e2066]: and
+                  - generic [ref=f48e2067]: in
+                  - generic [ref=f48e2068]: what
+                  - generic [ref=f48e2069]: order
+                  - generic [ref=f48e2070]: to
+                  - generic [ref=f48e2071]: run
+                  - generic [ref=f48e2072]: them.
+                  - generic [ref=f48e2073]: Here
+                  - generic [ref=f48e2074]: is
+                  - generic [ref=f48e2075]: the
+                  - generic [ref=f48e2076]: reworked
+                  - generic [ref=f48e2078]:
+                    - code [ref=f48e2079]: provider-policy.ts
+                    - text: .
+                  - generic [ref=f48e2080]: Notice
+                  - generic [ref=f48e2081]: that
+                  - code [ref=f48e2084]: ctx.catalog
+                  - generic [ref=f48e2085]: is
+                  - generic [ref=f48e2086]: "no"
+                  - generic [ref=f48e2087]: longer
+                  - generic [ref=f48e2088]: the
+                  - generic [ref=f48e2089]: catalog
+                  - generic [ref=f48e2090]: itself
+                  - generic [ref=f48e2091]: but
+                  - generic [ref=f48e2092]: a
+                  - generic [ref=f48e2093]: handle
+                  - generic [ref=f48e2094]: to
+                  - generic [ref=f48e2095]: it,
+                  - generic [ref=f48e2096]: and
+                  - generic [ref=f48e2097]: the
+                  - generic [ref=f48e2098]: plugin
+                  - generic [ref=f48e2099]:
+                    - generic [ref=f48e2100]: reg -
+                    - generic [ref=f48e2101]: is -
+                    - text: ters
+                  - generic [ref=f48e2102]: its
+                  - generic [ref=f48e2103]: model-disabling
+                  - generic [ref=f48e2104]:
+                    - generic [ref=f48e2105]: oper -
+                    - generic [ref=f48e2106]: a -
+                    - text: tion
+                  - generic [ref=f48e2107]: as
+                  - generic [ref=f48e2108]: a
+                  - generic [ref=f48e2109]:
+                    - generic [ref=f48e2110]: trans -
+                    - generic [ref=f48e2111]: for -
+                    - generic [ref=f48e2112]: ma -
+                    - text: "tion:"
+            - article [ref=f48e2113]:
+              - figure "provider-policy.ts" [ref=f48e2115]:
+                - button "Show the Effect version of the code" [ref=f48e2118] [cursor=pointer]
+                - code [ref=f48e2123]:
+                  - generic [ref=f48e2124]: "export async function providerPolicy(ctx) {"
+                  - generic [ref=f48e2125]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                  - generic [ref=f48e2126]: "await ctx.catalog.transform(catalog => {"
+                  - generic [ref=f48e2127]: "for (const provider of Object.values(catalog)) {"
+                  - generic [ref=f48e2128]: if (!excludedProviders.has(provider.id)) continue
+                  - generic [ref=f48e2129]: "for (const model of Object.values(provider.models)) {"
+                  - generic [ref=f48e2130]: model.disabled = true
+                  - generic [ref=f48e2131]: "}"
+                  - generic [ref=f48e2132]: "}"
+                  - generic [ref=f48e2133]: "})"
+                  - generic [ref=f48e2134]: "}"
+          - generic [ref=f48e2138]:
+            - heading "Reloading" [level=2] [ref=f48e2140]
+            - article [ref=f48e2143]:
+              - paragraph [ref=f48e2146]:
+                - generic [ref=f48e2149]:
+                  - generic [ref=f48e2150]: Before,
+                  - generic [ref=f48e2151]: plugins
+                  - generic [ref=f48e2152]: had
+                  - generic [ref=f48e2153]: free
+                  - generic [ref=f48e2154]: rein
+                  - generic [ref=f48e2155]: to
+                  - generic [ref=f48e2156]: mutate
+                  - generic [ref=f48e2157]: the
+                  - generic [ref=f48e2158]: catalog
+                  - generic [ref=f48e2159]:
+                    - generic [ref=f48e2160]: when -
+                    - text: ever
+                  - generic [ref=f48e2161]: and
+                  - generic [ref=f48e2162]: however
+                  - generic [ref=f48e2163]: they
+                  - generic [ref=f48e2164]: pleased.
+                  - generic [ref=f48e2165]: Now
+                  - generic [ref=f48e2166]: they
+                  - generic [ref=f48e2167]:
+                    - generic [ref=f48e2168]: reg -
+                    - generic [ref=f48e2169]: is -
+                    - text: ter
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f48e2170]:
+                    - generic [ref=f48e2171]: trans -
+                    - generic [ref=f48e2172]: for -
+                    - generic [ref=f48e2173]: ma -
+                    - text: tions
+                  - generic [ref=f48e2174]: up
+                  - generic [ref=f48e2175]: front.
+                  - generic [ref=f48e2176]: But
+                  - generic [ref=f48e2177]: with
+                  - generic [ref=f48e2178]: this
+                  - generic [ref=f48e2179]:
+                    - generic [ref=f48e2180]: archi -
+                    - generic [ref=f48e2181]: tec -
+                    - text: ture,
+                  - generic [ref=f48e2182]: how
+                  - generic [ref=f48e2183]: would
+                  - generic [ref=f48e2184]: the
+                  - generic [ref=f48e2185]: models.dev
+                  - generic [ref=f48e2186]: plugin
+                  - generic [ref=f48e2187]: update
+                  - generic [ref=f48e2188]: the
+                  - generic [ref=f48e2189]: catalog
+                  - generic [ref=f48e2190]: "on"
+                  - generic [ref=f48e2191]: its
+                  - generic [ref=f48e2192]: hourly
+                  - generic [ref=f48e2193]: cadence?
+            - article [ref=f48e2194]:
+              - paragraph [ref=f48e2197]:
+                - generic [ref=f48e2199]:
+                  - text: It calls
+                  - code [ref=f48e2200]: ctx.catalog.reload()
+                  - text: ", which creates a new empty catalog, pipes it through the various"
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f48e2201]: transformations,
+                  - text: and then publishes the result. Behold
+                  - generic [aria-hidden] [ref=f48e2203] [cursor=pointer]
+            - article [ref=f48e2216]:
+              - figure "models-dev.ts" [ref=f48e2218]:
+                - button "Show the Effect version of the code" [ref=f48e2221] [cursor=pointer]
+                - code [ref=f48e2226]:
+                  - generic [ref=f48e2227]: "export async function modelsDev(ctx) {"
+                  - generic [ref=f48e2228]:
+                    - text: let providers = await fetchModelsDev()
+                    - generic "Step 1" [ref=f48e2229]:
+                      - generic [aria-hidden] [ref=f48e2230]: // 1
+                      - text: "1"
+                  - generic [ref=f48e2231]:
+                    - text: "await ctx.catalog.transform(catalog => {"
+                    - generic "Step 2" [ref=f48e2232]:
+                      - generic [aria-hidden] [ref=f48e2233]: // 2
+                      - text: "2"
+                  - generic [ref=f48e2234]: "for (const provider of Object.values(providers)) {"
+                  - generic [ref=f48e2235]: catalog[provider.id] = structuredClone(provider)
+                  - generic [ref=f48e2236]: "}"
+                  - generic [ref=f48e2237]: "})"
+                  - generic [ref=f48e2238]: "setInterval(async () => {"
+                  - generic [ref=f48e2239]:
+                    - text: providers = await fetchModelsDev()
+                    - generic "Step 3" [ref=f48e2240]:
+                      - generic [aria-hidden] [ref=f48e2241]: // 3
+                      - text: "3"
+                  - generic [ref=f48e2242]:
+                    - text: await ctx.catalog.reload()
+                    - generic "Step 4" [ref=f48e2243]:
+                      - generic [aria-hidden] [ref=f48e2244]: // 4
+                      - text: "4"
+                  - generic [ref=f48e2245]: "}, 60 * 60 * 1000)"
+                  - generic [ref=f48e2246]: "}"
+            - article [ref=f48e2247]:
+              - paragraph [ref=f48e2250]:
+                - generic [ref=f48e2252]:
+                  - text: The plugin fetches the provider data
+                  - generic "Step 1" [ref=f48e2253]:
+                    - generic [aria-hidden] [ref=f48e2254]: "1"
+                    - text: "1"
+                  - text: and registers a transformation that closes over it
+                  - generic "Step 2" [ref=f48e2255]:
+                    - generic [aria-hidden] [ref=f48e2256]: "2"
+                    - text: "2"
+                  - text: . Every hour it fetches again, replacing the variable
+                  - generic "Step 3" [ref=f48e2257]:
+                    - generic [aria-hidden] [ref=f48e2258]: "3"
+                    - text: "3"
+                  - text: ", and calls"
+                  - code [ref=f48e2259]: ctx.catalog.reload()
+                  - generic "Step 4" [ref=f48e2260]:
+                    - generic [aria-hidden] [ref=f48e2261]: "4"
+                    - text: "4"
+                  - text: . The transformation itself never changes, but it reads
+                  - code [ref=f48e2262]: providers
+                  - text: when it runs, so the next rebuild picks up whatever was fetched last.
+            - article [ref=f48e2263]:
+              - generic [ref=f48e2265] [cursor=pointer]:
+                - 'figure "Rebuilding the catalog: an empty object is threaded through each registered transformation in order, each card checking off as its turn lands, and again when models-dev''s hourly timer calls reload, giving the same 64K result." [ref=f48e2266]':
+                  - generic [ref=f48e2269]:
+                    - generic [ref=f48e2271]:
+                      - region "models-dev.ts" [ref=f48e2273]:
+                        - generic [aria-hidden] [ref=f48e2280]:
+                          - generic [ref=f48e2281]:
+                            - generic [ref=f48e2282]: "60"
+                            - generic [ref=f48e2283]: ":"
+                            - generic [ref=f48e2284]: "00"
+                          - generic [ref=f48e2285]: reload()
+                      - region "local-model.ts" [ref=f48e2290]
+                      - region "provider-policy.ts" [ref=f48e2301]
+                      - region "limits.ts" [ref=f48e2312]
+                    - region "Illustrative output limits, not actual model specifications" [ref=f48e2322]:
+                      - table "Model output limits" [ref=f48e2323]:
+                        - rowgroup [ref=f48e2324]:
+                          - row [ref=f48e2325]:
+                            - columnheader "Model" [ref=f48e2326]
+                            - columnheader "Output" [ref=f48e2327]
+                        - generic [ref=f48e2328]:
+                          - generic:
+                            - img "Empty catalog"
+                          - rowgroup:
+                            - rowheader "OpenAI" [ref=f48e2330]
+                            - row "GPT-6 Astra 64 K Enabled":
+                              - generic [ref=f48e2334]:
+                                - rowheader "GPT-6 Astra" [ref=f48e2335]
+                                - cell "64 K Enabled" [ref=f48e2337]:
+                                  - generic [ref=f48e2338]:
+                                    - generic [ref=f48e2339]: "64"
+                                    - generic [ref=f48e2340]: K
+                                  - img "Enabled" [ref=f48e2341]
+                            - row "GPT-5.6 Sol 64 K Enabled":
+                              - generic [ref=f48e2351]:
+                                - rowheader "GPT-5.6 Sol" [ref=f48e2352]
+                                - cell "64 K Enabled" [ref=f48e2354]:
+                                  - generic [ref=f48e2355]:
+                                    - generic [ref=f48e2356]: "64"
+                                    - generic [ref=f48e2357]: K
+                                  - img "Enabled" [ref=f48e2358]
+                          - rowgroup:
+                            - rowheader "Sphinctral" [ref=f48e2369]
+                            - row "Squeeze 3.5 64 K Disabled":
+                              - generic [ref=f48e2373]:
+                                - rowheader "Squeeze 3.5" [ref=f48e2374]
+                                - cell "64 K Disabled" [ref=f48e2376]:
+                                  - generic [ref=f48e2377]:
+                                    - generic [ref=f48e2378]: "64"
+                                    - generic [ref=f48e2379]: K
+                                  - img "Disabled" [ref=f48e2380]
+                            - row "Squeeze 3.5 Fast 64 K Disabled":
+                              - generic [ref=f48e2390]:
+                                - rowheader "Squeeze 3.5 Fast" [ref=f48e2391]
+                                - cell "64 K Disabled" [ref=f48e2393]:
+                                  - generic [ref=f48e2394]:
+                                    - generic [ref=f48e2395]: "64"
+                                    - generic [ref=f48e2396]: K
+                                  - img "Disabled" [ref=f48e2397]
+                          - rowgroup:
+                            - rowheader "Local" [ref=f48e2408]
+                            - row "Couch Potato 8B 64 K Enabled":
+                              - generic [ref=f48e2412]:
+                                - rowheader "Couch Potato 8B" [ref=f48e2413]
+                                - cell "64 K Enabled" [ref=f48e2415]:
+                                  - generic [ref=f48e2416]:
+                                    - generic [ref=f48e2417]: "64"
+                                    - generic [ref=f48e2418]: K
+                                  - img "Enabled" [ref=f48e2419]
+                            - row "Pocket Goblin 14B 64 K Enabled":
+                              - generic [ref=f48e2429]:
+                                - rowheader "Pocket Goblin 14B" [ref=f48e2430]
+                                - cell "64 K Enabled" [ref=f48e2432]:
+                                  - generic [ref=f48e2433]:
+                                    - generic [ref=f48e2434]: "64"
+                                    - generic [ref=f48e2435]: K
+                                  - img "Enabled" [ref=f48e2436]
+                          - rowgroup:
+                            - rowheader "OpenAI" [ref=f48e2447]
+                            - row "GPT-6 Astra 128 K Enabled":
+                              - generic [ref=f48e2451]:
+                                - rowheader "GPT-6 Astra" [ref=f48e2452]
+                                - cell "128 K Enabled" [ref=f48e2454]:
+                                  - generic [ref=f48e2455]:
+                                    - generic [ref=f48e2456]: "128"
+                                    - generic [ref=f48e2457]: K
+                                  - img "Enabled" [ref=f48e2458]
+                            - row "GPT-5.6 Sol 128 K Enabled":
+                              - generic [ref=f48e2468]:
+                                - rowheader "GPT-5.6 Sol" [ref=f48e2469]
+                                - cell "128 K Enabled" [ref=f48e2471]:
+                                  - generic [ref=f48e2472]:
+                                    - generic [ref=f48e2473]: "128"
+                                    - generic [ref=f48e2474]: K
+                                  - img "Enabled" [ref=f48e2475]
+                          - rowgroup:
+                            - rowheader "Sphinctral" [ref=f48e2486]
+                            - row "Squeeze 3.5 128 K Enabled":
+                              - generic [ref=f48e2490]:
+                                - rowheader "Squeeze 3.5" [ref=f48e2491]
+                                - cell "128 K Enabled" [ref=f48e2493]:
+                                  - generic [ref=f48e2494]:
+                                    - generic [ref=f48e2495]: "128"
+                                    - generic [ref=f48e2496]: K
+                                  - img "Enabled" [ref=f48e2497]
+                            - row "Squeeze 3.5 Fast 128 K Enabled":
+                              - generic [ref=f48e2507]:
+                                - rowheader "Squeeze 3.5 Fast" [ref=f48e2508]
+                                - cell "128 K Enabled" [ref=f48e2510]:
+                                  - generic [ref=f48e2511]:
+                                    - generic [ref=f48e2512]: "128"
+                                    - generic [ref=f48e2513]: K
+                                  - img "Enabled" [ref=f48e2514]
+                          - rowgroup:
+                            - rowheader "Local" [ref=f48e2525]
+                            - row "Couch Potato 8B 128 K Enabled":
+                              - generic [ref=f48e2529]:
+                                - rowheader "Couch Potato 8B" [ref=f48e2530]
+                                - cell "128 K Enabled" [ref=f48e2532]:
+                                  - generic [ref=f48e2533]:
+                                    - generic [ref=f48e2534]: "128"
+                                    - generic [ref=f48e2535]: K
+                                  - img "Enabled" [ref=f48e2536]
+                            - row "Pocket Goblin 14B 128 K Enabled":
+                              - generic [ref=f48e2546]:
+                                - rowheader "Pocket Goblin 14B" [ref=f48e2547]
+                                - cell "128 K Enabled" [ref=f48e2549]:
+                                  - generic [ref=f48e2550]:
+                                    - generic [ref=f48e2551]: "128"
+                                    - generic [ref=f48e2552]: K
+                                  - img "Enabled" [ref=f48e2553]
+                - button "Play" [ref=f48e2563]
+            - article [ref=f48e2566]:
+              - paragraph [ref=f48e2569]:
+                - generic [ref=f48e2572]:
+                  - generic [ref=f48e2573]: Because
+                  - generic [ref=f48e2574]: every
+                  - generic [ref=f48e2575]: rebuild
+                  - generic [ref=f48e2576]: starts
+                  - generic [ref=f48e2577]: from
+                  - generic [ref=f48e2578]: an
+                  - generic [ref=f48e2579]: empty
+                  - generic [ref=f48e2580]: catalog
+                  - generic [ref=f48e2581]: and
+                  - generic [ref=f48e2582]: runs
+                  - generic [ref=f48e2583]: every
+                  - generic [ref=f48e2584]:
+                    - generic [ref=f48e2585]: trans -
+                    - generic [ref=f48e2586]: for -
+                    - generic [ref=f48e2587]: ma -
+                    - text: tion
+                  - generic [ref=f48e2588]: exactly
+                  - generic [ref=f48e2589]: once,
+                  - generic [ref=f48e2590]: in
+                  - generic [ref=f48e2591]: order,
+                  - generic [ref=f48e2592]: the
+                  - generic [ref=f48e2593]: refresh
+                  - generic [ref=f48e2594]: can
+                  - generic [ref=f48e2595]: "no"
+                  - generic [ref=f48e2596]: longer
+                  - generic [ref=f48e2597]: undo
+                  - generic [ref=f48e2598]: the
+                  - generic [ref=f48e2599]: policy,
+                  - generic [ref=f48e2600]: a
+                  - generic [ref=f48e2601]: provider
+                  - generic [ref=f48e2602]: that
+                  - generic [ref=f48e2603]:
+                    - generic [ref=f48e2604]: dis -
+                    - generic [ref=f48e2605]: ap -
+                    - text: pears
+                  - generic [ref=f48e2606]: from
+                  - generic [ref=f48e2607]: models.dev
+                  - generic [ref=f48e2608]:
+                    - generic [ref=f48e2609]: dis -
+                    - generic [ref=f48e2610]: ap -
+                    - text: pears
+                  - generic [ref=f48e2611]: from
+                  - generic [ref=f48e2612]: the
+                  - generic [ref=f48e2613]: catalog
+                  - generic [ref=f48e2614]: with
+                  - generic [ref=f48e2615]: it,
+                  - generic [ref=f48e2616]: and
+                  - generic [ref=f48e2617]: halving
+                  - generic [ref=f48e2618]: a
+                  - generic [ref=f48e2619]: limit
+                  - generic [ref=f48e2620]: halves
+                  - generic [ref=f48e2621]: it
+                  - generic [ref=f48e2622]: once.
+          - complementary "State" [ref=f48e2625]:
+            - generic [ref=f48e2627]:
+              - heading "State" [level=3] [ref=f48e2628]
+              - article [ref=f48e2632]:
+                - paragraph [ref=f48e2635]:
+                  - generic [ref=f48e2638]:
+                    - generic [ref=f48e2639]: The
+                    - generic [ref=f48e2640]: catalog
+                    - generic [ref=f48e2641]: is
+                    - generic [ref=f48e2642]: not
+                    - generic [ref=f48e2643]: special.
+                    - generic [ref=f48e2644]: It
+                    - generic [ref=f48e2645]: is
+                    - generic [ref=f48e2646]: one
+                    - generic [ref=f48e2647]: instance
+                    - generic [ref=f48e2648]: of
+                    - generic [ref=f48e2649]: a
+                    - generic [ref=f48e2650]: small
+                    - code [ref=f48e2653]: State
+                    - generic [ref=f48e2654]:
+                      - generic [ref=f48e2655]: abstrac -
+                      - text: tion
+                    - generic [ref=f48e2656]: that
+                    - generic [ref=f48e2657]: every
+                    - generic [ref=f48e2658]:
+                      - generic [ref=f48e2659]: reg -
+                      - text: istry
+                    - generic [ref=f48e2660]: in
+                    - generic [ref=f48e2661]: OpenCode
+                    - generic [ref=f48e2662]: is
+                    - generic [ref=f48e2663]: built
+                    - generic [ref=f48e2664]: "on:"
+                    - generic [ref=f48e2665]: skills,
+                    - generic [ref=f48e2666]:
+                      - generic [ref=f48e2667]: com -
+                      - text: mands,
+                    - generic [ref=f48e2668]: agents,
+                    - generic [ref=f48e2669]: tools,
+                    - generic [ref=f48e2670]: MCP
+                    - generic [ref=f48e2671]: servers,
+                    - generic [ref=f48e2672]:
+                      - generic [ref=f48e2673]: for -
+                      - generic [ref=f48e2674]: mat -
+                      - text: ters.
+              - article [ref=f48e2675]:
+                - figure "state.ts" [ref=f48e2677]:
+                  - button "Show the Effect version of the code" [ref=f48e2680] [cursor=pointer]
+                  - code [ref=f48e2685]:
+                    - generic [ref=f48e2686]: "const skills = State.create({"
+                    - generic [ref=f48e2687]: "initial: () => new Map(),"
+                    - generic [ref=f48e2688]: "notify: () => bus.publish(Skill.Updated),"
+                    - generic [ref=f48e2689]: "})"
+                    - generic [ref=f48e2690]: await skills.transform(skills => skills.set(mySkill.id, mySkill)) // replayed on every rebuild
+                    - generic [ref=f48e2691]: await skills.reload() // rebuild now, notify every listener
+              - article [ref=f48e2692]:
+                - paragraph [ref=f48e2695]:
+                  - generic [ref=f48e2698]:
+                    - generic [ref=f48e2699]: A
+                    - code [ref=f48e2702]: State
+                    - generic [ref=f48e2703]: has
+                    - generic [ref=f48e2704]: two
+                    - generic [ref=f48e2705]: "methods:"
+                    - generic [ref=f48e2707]:
+                      - code [ref=f48e2708]: transform
+                      - text: ","
+                    - generic [ref=f48e2709]: which
+                    - generic [ref=f48e2710]:
+                      - generic [ref=f48e2711]: reg -
+                      - generic [ref=f48e2712]: is -
+                      - text: ters
+                    - generic [ref=f48e2713]: a
+                    - generic [ref=f48e2714]:
+                      - generic [ref=f48e2715]: trans -
+                      - generic [ref=f48e2716]: for -
+                      - generic [ref=f48e2717]: ma -
+                      - text: tion,
+                    - generic [ref=f48e2718]: and
+                    - generic [ref=f48e2720]:
+                      - code [ref=f48e2721]: reload
+                      - text: ","
+                    - generic [ref=f48e2722]: which
+                    - generic [ref=f48e2723]: rebuilds
+                    - generic [ref=f48e2724]: the
+                    - generic [ref=f48e2725]: value
+                    - generic [ref=f48e2726]: from
+                    - generic [ref=f48e2727]: scratch.
+          - generic [ref=f48e2731]:
+            - heading "Adding, editing and removing plugins" [level=2] [ref=f48e2733]
+            - article [ref=f48e2736]:
+              - paragraph [ref=f48e2739]:
+                - generic [ref=f48e2742]:
+                  - generic [ref=f48e2743]: Beyond
+                  - generic [ref=f48e2744]:
+                    - generic [ref=f48e2745]: reload -
+                    - text: ing
+                  - emphasis [ref=f48e2748]: within
+                  - generic [ref=f48e2749]: plugins,
+                  - generic [ref=f48e2750]: such
+                  - generic [ref=f48e2751]: as
+                  - generic [ref=f48e2752]: our
+                  - emphasis [ref=f48e2755]: catalog
+                  - emphasis [ref=f48e2758]: refresh
+                  - generic [ref=f48e2759]: example,
+                  - generic [ref=f48e2760]: we
+                  - generic [ref=f48e2761]: must
+                  - generic [ref=f48e2762]: also
+                  - generic [ref=f48e2763]: respond
+                  - generic [ref=f48e2764]:
+                    - generic [ref=f48e2765]: imme -
+                    - generic [ref=f48e2766]: di -
+                    - text: ately
+                  - generic [ref=f48e2767]: to
+                  - generic [ref=f48e2768]: plugin
+                  - generic [ref=f48e2769]: files
+                  - generic [ref=f48e2770]:
+                    - generic [ref=f48e2771]: them -
+                    - text: selves
+                  - generic [ref=f48e2772]: being
+                  - generic [ref=f48e2773]: created,
+                  - generic [ref=f48e2774]: edited,
+                  - generic [ref=f48e2775]: or
+                  - generic [ref=f48e2776]: deleted.
+                  - generic [ref=f48e2777]: This
+                  - generic [ref=f48e2778]: is
+                  - generic [ref=f48e2779]: but
+                  - generic [ref=f48e2780]: a
+                  - generic [ref=f48e2781]: thin
+                  - generic [ref=f48e2782]: layer
+                  - generic [ref=f48e2783]: atop
+                  - generic [ref=f48e2784]: the
+                  - code [ref=f48e2787]: State
+                  - generic [ref=f48e2788]:
+                    - generic [ref=f48e2789]: abstrac -
+                    - text: tion.
+            - article [ref=f48e2790]:
+              - paragraph [ref=f48e2793]:
+                - generic [ref=f48e2796]:
+                  - generic [ref=f48e2797]: When
+                  - generic [ref=f48e2798]: a
+                  - generic [ref=f48e2799]: new
+                  - generic [ref=f48e2800]: plugin
+                  - generic [ref=f48e2801]: is
+                  - generic [ref=f48e2802]: written
+                  - generic [ref=f48e2803]: to
+                  - generic [ref=f48e2804]: the
+                  - generic [ref=f48e2805]:
+                    - generic [ref=f48e2806]: filesys -
+                    - text: tem,
+                  - generic [ref=f48e2807]: OpenCode
+                  - generic [ref=f48e2808]: runs
+                  - generic [ref=f48e2809]: it
+                  - generic [ref=f48e2810]: and
+                  - generic [ref=f48e2811]: keeps
+                  - generic [ref=f48e2812]: track
+                  - generic [ref=f48e2813]: of
+                  - generic [ref=f48e2814]: each
+                  - generic [ref=f48e2815]:
+                    - generic [ref=f48e2816]: reg -
+                    - generic [ref=f48e2817]: is -
+                    - text: tered
+                  - generic [ref=f48e2818]:
+                    - generic [ref=f48e2819]: trans -
+                    - generic [ref=f48e2820]: for -
+                    - generic [ref=f48e2821]: ma -
+                    - text: tion,
+                  - generic [ref=f48e2822]:
+                    - generic [ref=f48e2823]: asso -
+                    - generic [ref=f48e2824]: ci -
+                    - generic [ref=f48e2825]: at -
+                    - text: ing
+                  - generic [ref=f48e2826]: it
+                  - generic [ref=f48e2827]: with
+                  - generic [ref=f48e2828]: that
+                  - generic [ref=f48e2829]: plugin.
+                  - generic [ref=f48e2830]: The
+                  - generic [ref=f48e2831]: file
+                  - generic [ref=f48e2832]:
+                    - generic [ref=f48e2833]: watch -
+                    - text: ing
+                  - generic [ref=f48e2834]: is
+                  - generic [ref=f48e2835]: done
+                  - generic [ref=f48e2836]: by
+                  - generic [ref=f48e2837]: another
+                  - generic [ref=f48e2838]: built-in
+                  - generic [ref=f48e2839]: plugin.
+            - article [ref=f48e2840]:
+              - paragraph [ref=f48e2843]:
+                - generic [ref=f48e2846]:
+                  - generic [ref=f48e2847]: Later,
+                  - generic [ref=f48e2848]: if
+                  - generic [ref=f48e2849]: that
+                  - generic [ref=f48e2850]: file
+                  - generic [ref=f48e2851]: is
+                  - generic [ref=f48e2852]: deleted,
+                  - generic [ref=f48e2853]:
+                    - generic [ref=f48e2854]: every -
+                    - text: thing
+                  - generic [ref=f48e2855]: it
+                  - generic [ref=f48e2856]:
+                    - generic [ref=f48e2857]: reg -
+                    - generic [ref=f48e2858]: is -
+                    - text: tered
+                  - generic [ref=f48e2859]: is
+                  - generic [ref=f48e2860]: dropped,
+                  - generic [ref=f48e2861]: and
+                  - generic [ref=f48e2862]: the
+                  - generic [ref=f48e2863]: affected
+                  - code [ref=f48e2866]: State
+                  - generic [ref=f48e2867]: is
+                  - generic [ref=f48e2868]: rebuilt
+                  - generic [ref=f48e2869]: without
+                  - generic [ref=f48e2870]: it.
+                  - generic [ref=f48e2871]: Editing
+                  - generic [ref=f48e2872]: a
+                  - generic [ref=f48e2873]: plugin
+                  - generic [ref=f48e2874]: is
+                  - generic [ref=f48e2875]:
+                    - generic [ref=f48e2876]:
+                      - text: dele
+                      - generic [aria-hidden] [ref=f48e2877]: "-"
+                    - text: tion
+                  - generic [ref=f48e2878]:
+                    - generic [ref=f48e2879]: fol -
+                    - text: lowed
+                  - generic [ref=f48e2880]: by
+                  - generic [ref=f48e2881]: a
+                  - generic [ref=f48e2882]: fresh
+                  - generic [ref=f48e2883]: "run:"
+                  - generic [ref=f48e2884]: the
+                  - generic [ref=f48e2885]: old
+                  - generic [ref=f48e2886]: version’s
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f48e2887]:
+                    - generic [ref=f48e2888]: trans -
+                    - generic [ref=f48e2889]: for -
+                    - generic [ref=f48e2890]: ma -
+                    - text: tions
+                  - generic [ref=f48e2891]: are
+                  - generic [ref=f48e2892]: dropped,
+                  - generic [ref=f48e2893]: the
+                  - generic [ref=f48e2894]: new
+                  - generic [ref=f48e2895]: version
+                  - generic [ref=f48e2896]: runs
+                  - generic [ref=f48e2897]: and
+                  - generic [ref=f48e2898]:
+                    - generic [ref=f48e2899]: reg -
+                    - generic [ref=f48e2900]: is -
+                    - text: ters
+                  - generic [ref=f48e2901]: its
+                  - generic [ref=f48e2902]: own,
+                  - generic [ref=f48e2903]: and
+                  - generic [ref=f48e2904]: the
+                  - generic [ref=f48e2905]: rebuild
+                  - generic [ref=f48e2906]: picks
+                  - generic [ref=f48e2907]: those
+                  - generic [ref=f48e2908]: up
+                  - generic [ref=f48e2909]: instead.
+                  - generic [ref=f48e2910]: Either
+                  - generic [ref=f48e2911]: way,
+                  - generic [ref=f48e2912]: every
+                  - generic [ref=f48e2913]: session
+                  - generic [ref=f48e2914]: sees
+                  - generic [ref=f48e2915]: the
+                  - generic [ref=f48e2916]: result.
+            - article [ref=f48e2917]:
+              - generic [ref=f48e2919] [cursor=pointer]:
+                - figure "Two loaded plugins each register a tool, then a new plugin card appears in the column, connects, registers a transformation with the tools state, and the value is rebuilt once; when its file is deleted the card leaves, its registration leaves the list and the tools are rebuilt without it." [ref=f48e2920]:
+                  - generic [ref=f48e2923]:
+                    - generic [ref=f48e2925]:
+                      - region "git-tools.ts" [ref=f48e2927]
+                      - region "search.ts" [ref=f48e2937]
+                    - 'region "Tools state: its transformation list and current value" [ref=f48e2947]':
+                      - table "Registered tools" [ref=f48e2948]:
+                        - rowgroup [ref=f48e2949]:
+                          - columnheader "Tool" [ref=f48e2950]
+                          - columnheader "Source" [ref=f48e2951]
+                        - generic [ref=f48e2952]:
+                          - generic:
+                            - img "Empty catalog"
+                          - row "read core":
+                            - generic [ref=f48e2954]:
+                              - rowheader "read" [ref=f48e2955]
+                              - cell "core" [ref=f48e2960]
+                          - row "write core":
+                            - generic [ref=f48e2963]:
+                              - rowheader "write" [ref=f48e2964]
+                              - cell "core" [ref=f48e2969]
+                          - row "shell core":
+                            - generic [ref=f48e2972]:
+                              - rowheader [ref=f48e2973]:
+                                - generic [ref=f48e2975]:
+                                  - generic [ref=f48e2977]: $
+                                  - text: shell
+                              - cell "core" [ref=f48e2978]
+                          - row "git git-tools":
+                            - generic [ref=f48e2981]:
+                              - rowheader "git" [ref=f48e2982]
+                              - cell "git-tools" [ref=f48e2987]
+                          - row "search search":
+                            - generic [ref=f48e2990]:
+                              - rowheader "search" [ref=f48e2991]
+                              - cell "search" [ref=f48e2996]
+                          - row "read core":
+                            - generic [ref=f48e2999]:
+                              - rowheader "read" [ref=f48e3000]
+                              - cell "core" [ref=f48e3005]
+                          - row "write core":
+                            - generic [ref=f48e3008]:
+                              - rowheader "write" [ref=f48e3009]
+                              - cell "core" [ref=f48e3014]
+                          - row "shell core":
+                            - generic [ref=f48e3017]:
+                              - rowheader [ref=f48e3018]:
+                                - generic [ref=f48e3020]:
+                                  - generic [ref=f48e3022]: $
+                                  - text: shell
+                              - cell "core" [ref=f48e3023]
+                          - row "git git-tools":
+                            - generic [ref=f48e3026]:
+                              - rowheader "git" [ref=f48e3027]
+                              - cell "git-tools" [ref=f48e3032]
+                          - row "search search":
+                            - generic [ref=f48e3035]:
+                              - rowheader "search" [ref=f48e3036]
+                              - cell "search" [ref=f48e3041]
+                          - row "weather weather":
+                            - generic [ref=f48e3044]:
+                              - rowheader "weather" [ref=f48e3045]
+                              - cell "weather" [ref=f48e3050]
+                          - row "read core":
+                            - generic [ref=f48e3053]:
+                              - rowheader "read" [ref=f48e3054]
+                              - cell "core" [ref=f48e3059]
+                          - row "write core":
+                            - generic [ref=f48e3062]:
+                              - rowheader "write" [ref=f48e3063]
+                              - cell "core" [ref=f48e3068]
+                          - row "shell core":
+                            - generic [ref=f48e3071]:
+                              - rowheader [ref=f48e3072]:
+                                - generic [ref=f48e3074]:
+                                  - generic [ref=f48e3076]: $
+                                  - text: shell
+                              - cell "core" [ref=f48e3077]
+                          - row "git git-tools":
+                            - generic [ref=f48e3080]:
+                              - rowheader "git" [ref=f48e3081]
+                              - cell "git-tools" [ref=f48e3086]
+                          - row "search search":
+                            - generic [ref=f48e3089]:
+                              - rowheader "search" [ref=f48e3090]
+                              - cell "search" [ref=f48e3095]
+                - button "Play" [ref=f48e3097]
+          - generic [ref=f48e3103]:
+            - heading "The End" [level=2] [ref=f48e3105]
+            - article [ref=f48e3108]:
+              - paragraph [ref=f48e3111]:
+                - generic [ref=f48e3114]:
+                  - generic [ref=f48e3115]: So,
+                  - generic [ref=f48e3116]: that’s
+                  - generic [ref=f48e3117]: it.
+                  - generic [ref=f48e3118]: The
+                  - generic [ref=f48e3119]: core
+                  - generic [ref=f48e3120]: idea
+                  - generic [ref=f48e3121]: is
+                  - generic [ref=f48e3122]: to
+                  - generic [ref=f48e3123]:
+                    - generic [ref=f48e3124]: reg -
+                    - generic [ref=f48e3125]: is -
+                    - text: ter
+                  - generic [ref=f48e3126]: and
+                  - generic [ref=f48e3127]: play
+                  - generic [ref=f48e3128]: back
+                  - generic [ref=f48e3129]:
+                    - generic [ref=f48e3130]: trans -
+                    - generic [ref=f48e3131]: for -
+                    - generic [ref=f48e3132]: ma -
+                    - text: tion
+                  - generic [ref=f48e3133]:
+                    - generic [ref=f48e3134]: func -
+                    - text: tions.
+                  - generic [ref=f48e3135]: It’s
+                  - generic [ref=f48e3136]: simple
+                  - generic [ref=f48e3137]: and
+                  - generic [ref=f48e3138]:
+                    - generic [ref=f48e3139]: reli -
+                    - text: able
+                  - generic [ref=f48e3140]: because,
+                  - generic [ref=f48e3141]: given
+                  - generic [ref=f48e3142]: the
+                  - generic [ref=f48e3143]: same
+                  - generic [ref=f48e3144]:
+                    - generic [ref=f48e3145]: start -
+                    - text: ing
+                  - generic [ref=f48e3146]: state
+                  - generic [ref=f48e3147]: and
+                  - generic [ref=f48e3148]: the
+                  - generic [ref=f48e3149]: same
+                  - generic [ref=f48e3150]: data,
+                  - generic [ref=f48e3151]: running
+                  - generic [ref=f48e3152]: the
+                  - generic [ref=f48e3153]: same
+                  - generic [ref=f48e3154]: sequence
+                  - generic [ref=f48e3155]: of
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f48e3156]:
+                    - generic [ref=f48e3157]: trans -
+                    - generic [ref=f48e3158]: for -
+                    - generic [ref=f48e3159]:
+                      - text: ma
+                      - generic [aria-hidden] [ref=f48e3160]: "-"
+                    - text: tions
+                  - generic [ref=f48e3161]: always
+                  - generic [ref=f48e3162]:
+                    - generic [ref=f48e3163]: pro -
+                    - text: duces
+                  - generic [ref=f48e3164]: the
+                  - generic [ref=f48e3165]: same
+                  - generic [ref=f48e3166]: result.
+                  - generic [ref=f48e3167]: Config,
+                  - generic [ref=f48e3168]: MCP
+                  - generic [ref=f48e3169]: servers,
+                  - generic [ref=f48e3170]: and
+                  - generic [ref=f48e3171]: plugins
+                  - generic [ref=f48e3172]: all
+                  - generic [ref=f48e3173]: reload
+                  - generic [ref=f48e3174]: the
+                  - generic [ref=f48e3175]: same
+                  - generic [ref=f48e3176]: way,
+                  - generic [ref=f48e3177]: because
+                  - generic [ref=f48e3178]: they’re
+                  - generic [ref=f48e3179]: all
+                  - generic [ref=f48e3181]:
+                    - code [ref=f48e3182]: State
+                    - text: s.
+            - article [ref=f48e3183]:
+              - paragraph [ref=f48e3186]:
+                - generic [ref=f48e3188]:
+                  - text: That’s how it all works, with a few details elided. OpenCode is, of course, fully
+                  - link "open source" [ref=f48e3190] [cursor=pointer]:
+                    - /url: https://github.com/anomalyco/opencode
+                  - text: ", if you want the rest."
+          - complementary "Postscript" [ref=f48e3196]:
+            - generic [ref=f48e3198]:
+              - heading "Postscript" [level=3] [ref=f48e3199]
+              - article [ref=f48e3203]:
+                - paragraph [ref=f48e3206]:
+                  - generic [ref=f48e3209]:
+                    - generic [ref=f48e3210]: If
+                    - generic [ref=f48e3211]: you’ve
+                    - generic [ref=f48e3212]: made
+                    - generic [ref=f48e3213]: it
+                    - generic [ref=f48e3214]: this
+                    - generic [ref=f48e3215]: far,
+                    - generic [ref=f48e3216]: I’d
+                    - generic [ref=f48e3217]: like
+                    - generic [ref=f48e3218]: to
+                    - generic [ref=f48e3219]: get
+                    - generic [ref=f48e3220]:
+                      - generic [ref=f48e3221]: some -
+                      - text: thing
+                    - generic [ref=f48e3222]: "off"
+                    - generic [ref=f48e3223]: my
+                    - generic [ref=f48e3224]: chest.
+                    - generic [ref=f48e3225]: I
+                    - generic [ref=f48e3226]: have,
+                    - generic [ref=f48e3227]: for
+                    - generic [ref=f48e3228]: the
+                    - generic [ref=f48e3229]: most
+                    - generic [ref=f48e3230]: part,
+                    - generic [ref=f48e3231]: resisted
+                    - generic [ref=f48e3232]:
+                      - generic [ref=f48e3233]: func -
+                      - text: tional
+                    - generic [ref=f48e3234]:
+                      - generic [ref=f48e3235]: pro -
+                      - generic [ref=f48e3236]: gram -
+                      - text: ming
+                    - generic [ref=f48e3237]: terms
+                    - generic [ref=f48e3238]: in
+                    - generic [ref=f48e3239]: the
+                    - generic [ref=f48e3240]: course
+                    - generic [ref=f48e3241]: of
+                    - generic [ref=f48e3242]: this
+                    - generic [ref=f48e3243]: post.
+                    - generic [ref=f48e3244]: But
+                    - generic [ref=f48e3245]: it
+                    - generic [ref=f48e3246]: struck
+                    - generic [ref=f48e3247]: me,
+                    - generic [ref=f48e3248]: when
+                    - generic [ref=f48e3249]: we
+                    - generic [ref=f48e3250]: first
+                    - generic [ref=f48e3251]:
+                      - generic [ref=f48e3252]: con -
+                      - generic [ref=f48e3253]: sid -
+                      - text: ered
+                    - generic [ref=f48e3254]: this
+                    - generic [ref=f48e3255]: design,
+                    - generic [ref=f48e3256]: that
+                    - generic [ref=f48e3257]:
+                      - emphasis [ref=f48e3259]: endo -
+                      - emphasis [ref=f48e3261]: mor -
+                      - emphasis [ref=f48e3263]: phisms
+                    - emphasis [ref=f48e3266]: are
+                    - generic [ref=f48e3267]:
+                      - emphasis [ref=f48e3269]: inher -
+                      - emphasis [ref=f48e3271]: ently
+                    - generic [ref=f48e3273]:
+                      - emphasis [ref=f48e3274]: monoidal
+                      - text: .
+              - article [ref=f48e3275]:
+                - paragraph [ref=f48e3278]:
+                  - generic [ref=f48e3281]:
+                    - generic [ref=f48e3282]: In
+                    - generic [ref=f48e3283]: fact,
+                    - generic [ref=f48e3284]: I
+                    - generic [ref=f48e3285]: shouted
+                    - generic [ref=f48e3286]: this
+                    - generic [ref=f48e3287]: at
+                    - generic [ref=f48e3288]: anyone
+                    - generic [ref=f48e3289]: who
+                    - generic [ref=f48e3290]: would
+                    - generic [ref=f48e3291]: listen.
+                    - generic [ref=f48e3292]:
+                      - emphasis [ref=f48e3294]: Endo -
+                      - emphasis [ref=f48e3296]: mor -
+                      - emphasis [ref=f48e3298]: phisms
+                    - emphasis [ref=f48e3301]: are
+                    - generic [ref=f48e3302]:
+                      - emphasis [ref=f48e3304]: inher -
+                      - emphasis [ref=f48e3306]: ently
+                    - generic [ref=f48e3308]:
+                      - emphasis [ref=f48e3309]: monoidal
+                      - text: ","
+                    - generic [ref=f48e3310]: I
+                    - generic [ref=f48e3311]: would
+                    - generic [ref=f48e3312]: shriek,
+                    - generic [ref=f48e3313]: at
+                    - generic [ref=f48e3314]: the
+                    - generic [ref=f48e3315]: grocery
+                    - generic [ref=f48e3316]: store,
+                    - generic [ref=f48e3317]: to
+                    - generic [ref=f48e3318]: the
+                    - generic [ref=f48e3319]: cashier,
+                    - generic [ref=f48e3320]: to
+                    - generic [ref=f48e3321]: the
+                    - generic [ref=f48e3322]: dog
+                    - generic [ref=f48e3323]: tied
+                    - generic [ref=f48e3324]: up
+                    - generic [ref=f48e3325]: outside,
+                    - generic [ref=f48e3326]: to
+                    - generic [ref=f48e3327]: Dax
+                    - generic [ref=f48e3328]: in
+                    - generic [ref=f48e3329]: too
+                    - generic [ref=f48e3330]: many,
+                    - generic [ref=f48e3331]: too
+                    - generic [ref=f48e3332]: long
+                    - generic [ref=f48e3333]: huddles.
+                    - generic [ref=f48e3334]: And
+                    - generic [ref=f48e3335]: it’s
+                    - generic [ref=f48e3336]: so
+                    - generic [ref=f48e3337]: true,
+                    - generic [ref=f48e3338]: isn’t
+                    - generic [ref=f48e3339]: it?
+                    - generic [ref=f48e3340]: That
+                    - generic [ref=f48e3341]:
+                      - generic [ref=f48e3342]: endo -
+                      - generic [ref=f48e3343]: mor -
+                      - text: phisms
+                    - generic [ref=f48e3344]: are
+                    - generic [ref=f48e3345]:
+                      - generic [ref=f48e3346]: inher -
+                      - text: ently
+                    - generic [ref=f48e3347]: monoidal?
+            - generic "The postscript, continued" [ref=f48e3348]
+      - generic:
+        - status
+    - status

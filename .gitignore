@@ -11,3 +11,5 @@ loader-standalone.html
 AGENTS.md
 /designlang-output
 /designlang-output-base
+node_modules/
+dist/

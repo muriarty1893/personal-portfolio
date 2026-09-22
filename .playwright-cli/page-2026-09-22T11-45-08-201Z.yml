@@ -1,0 +1,45 @@
+- generic [ref=f60e3]:
+  - banner [ref=f60e4]:
+    - link "Back to Murat Eker portfolio" [ref=f60e5] [cursor=pointer]:
+      - /url: index.html
+      - text: Murat
+    - generic [ref=f60e6]:
+      - button "Use dark theme" [ref=f60e7] [cursor=pointer]
+      - button "Turn ambient sound on" [ref=f60e11] [cursor=pointer]
+  - main "All notes" [ref=f60e15]:
+    - list [ref=f60e16]:
+      - listitem [ref=f60e17]:
+        - link [ref=f60e18] [cursor=pointer]:
+          - /url: blog-post.html
+          - heading [level=1] [ref=f60e19]:
+            - text: Search is a systems problem,
+            - emphasis [ref=f60e20]: not a text box
+          - time [ref=f60e21]: 18 Sep 2026
+      - listitem [ref=f60e22]:
+        - link [ref=f60e23] [cursor=pointer]:
+          - /url: blog-post.html?post=small-go-services
+          - heading [level=1] [ref=f60e24]:
+            - text: The case for small
+            - emphasis [ref=f60e25]: Go services
+          - time [ref=f60e26]: 05 Sep 2026
+      - listitem [ref=f60e27]:
+        - link [ref=f60e28] [cursor=pointer]:
+          - /url: blog-post.html?post=linux-as-a-workbench
+          - heading [level=1] [ref=f60e29]:
+            - text: Linux is a workbench,
+            - emphasis [ref=f60e30]: not a badge
+          - time [ref=f60e31]: 22 Aug 2026
+      - listitem [ref=f60e32]:
+        - link [ref=f60e33] [cursor=pointer]:
+          - /url: blog-post.html?post=measure-before-optimizing
+          - heading [level=1] [ref=f60e34]:
+            - text: Measure before optimizing the
+            - emphasis [ref=f60e35]: request path
+          - time [ref=f60e36]: 09 Aug 2026
+      - listitem [ref=f60e37]:
+        - link [ref=f60e38] [cursor=pointer]:
+          - /url: blog-post.html?post=learning-in-public
+          - heading [level=1] [ref=f60e39]:
+            - text: Learning in public without turning work
+            - emphasis [ref=f60e40]: into content
+          - time [ref=f60e41]: 27 Jul 2026

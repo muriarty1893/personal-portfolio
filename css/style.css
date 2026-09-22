@@ -4704,7 +4704,7 @@ a.close.disabled {
   padding: 0.25rem 0.75rem;
   color: #6c757d;
   background-color: rgba(255, 255, 255, 0.85);
-  background-clip: padding-box;`
+  background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .toast-body {
@@ -9782,6 +9782,7 @@ textarea.form-control {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+}
 
 /* Language Switch */
 .language-switch {
@@ -9825,5 +9826,3 @@ textarea.form-control {
   background-color: #FFAC00;
   color: #000;
 }
-
-

@@ -1,0 +1,31 @@
+- generic [ref=f61e3]:
+  - banner [ref=f61e4]:
+    - link [ref=f61e5] [cursor=pointer]:
+      - /url: blog.html
+      - generic [aria-hidden] [ref=f61e6]: ←
+      - text: All
+      - emphasis [ref=f61e7]: notes
+    - generic [ref=f61e8]:
+      - button "Use dark theme" [ref=f61e9] [cursor=pointer]
+      - button "Turn ambient sound on" [ref=f61e13] [cursor=pointer]
+  - main [ref=f61e17]:
+    - heading "The case for small Go services" [level=1] [ref=f61e18]
+    - article [ref=f61e19]:
+      - generic [aria-hidden] [ref=f61e20]:
+        - generic [ref=f61e21]:
+          - text: TH
+          - generic [ref=f61e22]: "3"
+          - text: CAS
+          - generic [ref=f61e23]: "3"
+        - generic [ref=f61e24]:
+          - text: SMALL G
+          - generic [ref=f61e25]: Ø
+      - generic [ref=f61e26]:
+        - paragraph [ref=f61e27]: A practical checklist for deciding when a small service is clearer than another layer in a larger application.
+        - paragraph [ref=f61e28]: A service should earn its process boundary. If it does not own a clear responsibility, its own data, or a useful deployment rhythm, it may only be adding ceremony.
+        - paragraph [ref=f61e29]: "When the boundary is real, Go makes the boring parts pleasant: a small binary, explicit dependencies, straightforward concurrency, and a standard library that keeps the surface area readable."
+        - paragraph [ref=f61e30]: The goal is not more services. The goal is fewer places where a future change has to be explained twice.
+        - generic [ref=f61e31]:
+          - link "← All notes" [ref=f61e32] [cursor=pointer]:
+            - /url: blog.html
+          - generic [ref=f61e33]: 05 Sep 2026 / 5 min read

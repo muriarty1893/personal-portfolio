@@ -1,0 +1,20 @@
+- generic [ref=f55e2]:
+  - generic:
+    - banner [ref=f55e3]:
+      - link "Anomaly" [ref=f55e6] [cursor=pointer]:
+        - /url: /notes/
+      - link [ref=f55e10] [cursor=pointer]:
+        - /url: /notes/
+        - generic [aria-hidden] [ref=f55e11]: ←
+    - button "Switch to light mode" [ref=f55e12] [cursor=pointer]
+    - button "Enable sound effects" [ref=f55e15] [cursor=pointer]
+  - main "All posts" [ref=f55e20]:
+    - article [ref=f55e21]:
+      - list [ref=f55e22]:
+        - listitem [ref=f55e23]:
+          - link [ref=f55e24] [cursor=pointer]:
+            - /url: /notes/opencode-reloaded
+            - generic [ref=f55e25]:
+              - text: OpenCode
+              - emphasis [ref=f55e26]: Reloaded
+            - time [ref=f55e27]: September 21, 2026

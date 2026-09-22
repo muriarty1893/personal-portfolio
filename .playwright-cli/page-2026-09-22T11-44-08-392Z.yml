@@ -1,0 +1,38 @@
+- generic [ref=f59e3]:
+  - banner [ref=f59e4]:
+    - link [ref=f59e5] [cursor=pointer]:
+      - /url: blog.html
+      - generic [aria-hidden] [ref=f59e6]: ←
+      - text: All
+      - emphasis [ref=f59e7]: notes
+    - generic [ref=f59e8]:
+      - button "Use dark theme" [ref=f59e9] [cursor=pointer]
+      - button "Turn ambient sound on" [ref=f59e13] [cursor=pointer]
+  - main [ref=f59e17]:
+    - heading "Search is a systems problem, not a text box" [level=1] [ref=f59e18]
+    - article [ref=f59e19]:
+      - generic [aria-hidden] [ref=f59e20]:
+        - generic [ref=f59e21]:
+          - text: S
+          - generic [ref=f59e22]: "3"
+          - text: ARCH IS
+        - generic [ref=f59e23]:
+          - text: A SYST
+          - generic [ref=f59e24]: "3"
+          - text: M
+      - generic [ref=f59e25]:
+        - paragraph [ref=f59e26]: What changes when search becomes part of the architecture instead of a feature added at the end.
+        - paragraph [ref=f59e27]: A search box looks small in a product brief, but the moment people rely on it, it becomes a contract between data, ranking, latency, and the user interface.
+        - paragraph [ref=f59e28]: The useful work starts before the first query. Decide what a document means, which fields deserve weight, how stale data can be, and what the system should do when no result is a good result.
+        - paragraph [ref=f59e29]: Thinking about those questions as system boundaries makes the implementation calmer. Indexing, querying, and observing the search path become separate jobs with visible failure modes.
+        - heading "Work in progress" [level=2] [ref=f59e30]
+        - paragraph [ref=f59e31]: "A small unfinished experiment lives beside this note: an eye inside a button that follows the pointer. It studies how to make a state change visible without adding another status label."
+        - region "Cursor follow experiment" [ref=f59e32]:
+          - generic [ref=f59e33]:
+            - generic [ref=f59e34]: WIP / 001
+            - generic [ref=f59e35]: cursor study
+          - button "I SEE YOU" [ref=f59e36] [cursor=pointer]
+        - generic [ref=f59e41]:
+          - link "← All notes" [ref=f59e42] [cursor=pointer]:
+            - /url: blog.html
+          - generic [ref=f59e43]: 18 Sep 2026 / 6 min read

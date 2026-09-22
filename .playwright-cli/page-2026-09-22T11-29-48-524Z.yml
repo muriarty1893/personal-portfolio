@@ -1,0 +1,1657 @@
+- generic [ref=f52e2]:
+  - generic:
+    - banner [ref=f52e3]:
+      - link [ref=f52e5] [cursor=pointer]:
+        - /url: /notes/
+        - generic [ref=f52e12]: Anomaly
+      - link "All posts" [ref=f52e15] [cursor=pointer]:
+        - /url: /notes/
+        - generic [aria-hidden] [ref=f52e16]: ←
+      - heading [level=1] [ref=f52e20]:
+        - link [ref=f52e21] [cursor=pointer]:
+          - /url: /notes/opencode-reloaded
+          - text: OpenCode
+          - emphasis [ref=f52e22]: Reloaded
+    - button "Switch to dark mode" [ref=f52e23] [cursor=pointer]
+    - button "Start sound effects" [pressed] [ref=f52e27] [cursor=pointer]
+  - generic [ref=f52e32]:
+    - main [ref=f52e34]:
+      - article [ref=f52e36]:
+        - generic [ref=f52e37]:
+          - heading "OpenCode Reloaded" [level=1] [ref=f52e38]
+          - img [aria-hidden] [ref=f52e42]:
+            - generic [ref=f52e45]:
+              - generic [ref=f52e46]:
+                - generic [ref=f52e57]: P
+                - generic [ref=f52e74]: "N"
+                - generic [ref=f52e81]: C
+                - generic [ref=f52e98]: D
+                - generic [ref=f52e105]: D
+                - generic [ref=f52e112]: E
+              - generic [ref=f52e119]:
+                - generic [ref=f52e120]: R
+                - generic [ref=f52e137]: L
+                - generic [ref=f52e144]: O
+                - generic [ref=f52e151]: "#"
+                - generic [ref=f52e158]: E
+                - generic [ref=f52e165]: D
+          - generic [ref=f52e183]: Click a letter, or drag across a row to select letters, then type to replace them. Arrows move between letters and rows; Shift extends a row selection. Delete erases. Alt up or down cycles characters; Alt left or right rotates a selection like a conveyor. Escape releases the cursor. Double-click empty space to replay.
+        - generic [ref=f52e185]:
+          - generic [ref=f52e187]:
+            - article [ref=f52e190]:
+              - paragraph [ref=f52e193]:
+                - generic [ref=f52e195]:
+                  - text: Let’s discuss the subtle pleasures of
+                  - emphasis [ref=f52e197]:
+                    - generic [ref=f52e198]:
+                      - generic [ref=f52e199]: hot
+                      - generic [aria-hidden]: hot
+                      - generic [aria-hidden]: hot
+                    - generic [ref=f52e200]:
+                      - generic [ref=f52e201]: reloading
+                      - generic [aria-hidden]: reloading
+                      - generic [aria-hidden]: reloading
+                  - text: . It spares us from the tedium of minor exertions, of hitting
+                  - group "Command R shortcut" [ref=f52e203]:
+                    - button "Command key" [ref=f52e204] [cursor=pointer]: ⌘
+                    - button "R key" [ref=f52e205] [cursor=pointer]: R
+                  - text: when we could have otherwise remained blissfully inert. To the human mind, the gulf between even the most negligible of impediments and
+                  - emphasis [ref=f52e206]: none whatsoever
+                  - text: is infinite.
+            - generic [ref=f52e208]:
+              - article [ref=f52e209]:
+                - paragraph [ref=f52e212]:
+                  - generic [ref=f52e214]:
+                    - text: Thus, in
+                    - link "OpenCode 2" [ref=f52e216] [cursor=pointer]:
+                      - /url: https://opencode.ai/
+                    - text: ", we’ve gone through the trouble of making all reloading as unbearably hot as possible."
+              - article [ref=f52e217]:
+                - paragraph [ref=f52e220]:
+                  - generic [ref=f52e222]:
+                    - generic [ref=f52e223]:
+                      - text: OpenCode can edit its config, connect an MCP server, or write a plugin, and any changes will immediately take effect across every session. It can make a tool for itself and invoke it the very same turn
+                      - button "About this em dash" [ref=f52e224] [cursor=pointer]: —
+                      - text: without needing to quit, type
+                    - code [ref=f52e225]: /reload
+                    - text: ", or start a new session, and certainly without"
+                    - link "busting the cache" [ref=f52e227] [cursor=pointer]:
+                      - /url: https://x.com/kitlangton/status/2075749116760457346
+                    - text: .
+              - article [ref=f52e228]:
+                - generic [ref=f52e230] [cursor=pointer]:
+                  - figure "An illustrative running session adds tools, installs a skill, and immediately uses each change" [ref=f52e231]:
+                    - generic [ref=f52e234]:
+                      - region "OpenCode" [ref=f52e235]:
+                        - generic [ref=f52e236]:
+                          - region "Available tools and skills" [ref=f52e237]:
+                            - generic [ref=f52e238]:
+                              - heading "Tools 3" [level=3] [ref=f52e239]:
+                                - generic [ref=f52e240]:
+                                  - generic [ref=f52e241]: Tools
+                                  - generic [ref=f52e242]:
+                                    - generic [ref=f52e243]: "3"
+                                    - generic [aria-hidden] [ref=f52e244]:
+                                      - generic [ref=f52e245]: "3"
+                                      - generic [ref=f52e246]: "4"
+                                      - generic [ref=f52e247]: "5"
+                              - generic [ref=f52e251]:
+                                - generic [ref=f52e252]: read
+                                - generic [ref=f52e257]: write
+                                - generic [ref=f52e263]:
+                                  - generic [ref=f52e265]: $
+                                  - generic [ref=f52e266]: shell
+                              - heading "Skills 2" [level=3] [ref=f52e267]:
+                                - generic [ref=f52e268]:
+                                  - generic [ref=f52e269]: Skills
+                                  - generic [ref=f52e270]:
+                                    - generic [ref=f52e271]: "2"
+                                    - generic [aria-hidden] [ref=f52e272]:
+                                      - generic [ref=f52e273]: "2"
+                                      - generic [ref=f52e274]: "3"
+                          - region "One continuous session turn" [ref=f52e277]:
+                            - generic [ref=f52e278]: Session
+                      - region "Project files" [ref=f52e283]:
+                        - generic [ref=f52e284]: Files
+                        - generic [ref=f52e285]:
+                          - generic [ref=f52e287]:
+                            - generic [ref=f52e288]: .opencode
+                            - generic [ref=f52e292]:
+                              - generic [ref=f52e294]:
+                                - generic [ref=f52e295]: plugins
+                                - generic: writing.ts
+                              - generic [ref=f52e302]:
+                                - generic [ref=f52e303]: skills
+                                - generic [ref=f52e309]:
+                                  - generic [ref=f52e310]: grill-me
+                                  - generic [ref=f52e314]: SKILL.md
+                          - generic [ref=f52e319]: the-post.md
+                  - button "Play" [ref=f52e323]
+          - generic [ref=f52e327]:
+            - generic [ref=f52e329]:
+              - heading "The Problem" [level=2] [ref=f52e331]
+              - article [ref=f52e334]:
+                - paragraph [ref=f52e337]:
+                  - generic [ref=f52e340]:
+                    - generic [ref=f52e341]: OpenCode’s
+                    - generic [ref=f52e342]:
+                      - generic [ref=f52e343]: envi -
+                      - generic [ref=f52e344]: ron -
+                      - text: ment
+                    - generic [ref=f52e345]: (its
+                    - generic [ref=f52e346]: models,
+                    - generic [ref=f52e347]: tools,
+                    - generic [ref=f52e348]: agents,
+                    - generic [ref=f52e349]: skills,
+                    - generic [ref=f52e350]: etc.)
+                    - generic [ref=f52e351]: is
+                    - generic [ref=f52e352]:
+                      - generic [ref=f52e353]: assem -
+                      - text: bled
+                    - generic [ref=f52e354]: by
+                    - generic [ref=f52e355]: plugins.
+                    - generic [ref=f52e356]: Much
+                    - generic [ref=f52e357]: of
+                    - generic [ref=f52e358]: its
+                    - generic [ref=f52e359]: default
+                    - generic [ref=f52e360]:
+                      - generic [ref=f52e361]: behav -
+                      - text: ior
+                    - generic [ref=f52e362]: lives
+                    - generic [ref=f52e363]: in
+                    - generic [ref=f52e364]: built-in
+                    - generic [ref=f52e365]: plugins.
+                    - generic [ref=f52e366]: And
+                    - generic [ref=f52e367]: you,
+                    - generic [ref=f52e368]: dear
+                    - generic [ref=f52e369]: reader,
+                    - generic [ref=f52e370]: can
+                    - generic [ref=f52e371]: install
+                    - generic [ref=f52e372]:
+                      - generic [ref=f52e373]: addi -
+                      - text: tional
+                    - generic [ref=f52e374]: plugins,
+                    - generic [ref=f52e375]: write
+                    - generic [ref=f52e376]: your
+                    - generic [ref=f52e377]: own,
+                    - generic [ref=f52e378]: or
+                    - generic [ref=f52e379]: ask
+                    - generic [ref=f52e380]: OpenCode
+                    - generic [ref=f52e381]: to
+                    - generic [ref=f52e382]: write
+                    - generic [ref=f52e383]: one
+                    - generic [ref=f52e384]: for
+                    - generic [ref=f52e385]: you.
+            - generic [ref=f52e387]:
+              - article [ref=f52e388]:
+                - paragraph [ref=f52e391]:
+                  - generic [ref=f52e393]:
+                    - text: For instance, a built-in plugin populates the model catalog with data from
+                    - link "models.dev" [ref=f52e395] [cursor=pointer]:
+                      - /url: https://models.dev
+                    - text: . While OpenCode is running, it periodically refreshes that data to keep up with the ever-increasing rate of model releases.
+              - article:
+                - button "Play" [ref=f52e397] [cursor=pointer]
+              - article [ref=f52e400]:
+                - paragraph [ref=f52e403]:
+                  - generic [ref=f52e406]:
+                    - generic [ref=f52e407]: How
+                    - generic [ref=f52e408]: do
+                    - generic [ref=f52e409]: several
+                    - generic [ref=f52e410]: plugins
+                    - generic [ref=f52e411]:
+                      - generic [ref=f52e412]: coor -
+                      - generic [ref=f52e413]: di -
+                      - text: nate
+                    - generic [ref=f52e414]:
+                      - generic [ref=f52e415]: mod -
+                      - generic [ref=f52e416]: i -
+                      - generic [ref=f52e417]: fy -
+                      - text: ing
+                    - generic [ref=f52e418]: the
+                    - generic [ref=f52e419]: same
+                    - generic [ref=f52e420]: catalog?
+                    - generic [ref=f52e421]: Let’s
+                    - generic [ref=f52e422]: start
+                    - generic [ref=f52e423]: with
+                    - generic [ref=f52e424]: a
+                    - generic [ref=f52e425]: naive
+                    - generic [ref=f52e426]:
+                      - generic [ref=f52e427]: imple -
+                      - generic [ref=f52e428]: men -
+                      - generic [ref=f52e429]: ta -
+                      - text: tion
+                    - generic [ref=f52e430]: and
+                    - generic [ref=f52e431]: refine
+                    - generic [ref=f52e432]: it
+                    - generic [ref=f52e433]: together
+                    - generic [ref=f52e434]: as
+                    - generic [ref=f52e435]: it
+                    - generic [ref=f52e436]: fails
+                    - generic [ref=f52e437]: us
+                    - generic [ref=f52e438]: in
+                    - generic [ref=f52e439]: one
+                    - generic [ref=f52e440]: way
+                    - generic [ref=f52e441]: or
+                    - generic [ref=f52e442]: another.
+              - article [ref=f52e443]:
+                - paragraph [ref=f52e446]:
+                  - generic [ref=f52e449]:
+                    - generic [ref=f52e450]: For
+                    - generic [ref=f52e451]: our
+                    - generic [ref=f52e452]: first
+                    - generic [ref=f52e453]: attempt,
+                    - generic [ref=f52e454]: we’ll
+                    - generic [ref=f52e455]: give
+                    - generic [ref=f52e456]: plugins
+                    - generic [ref=f52e457]: direct
+                    - generic [ref=f52e458]: access
+                    - generic [ref=f52e459]: to
+                    - generic [ref=f52e460]: a
+                    - generic [ref=f52e461]: shared
+                    - generic [ref=f52e462]: model
+                    - generic [ref=f52e463]: catalog
+                    - generic [ref=f52e464]: through
+                    - generic [ref=f52e465]: the
+                    - code [ref=f52e468]: ctx
+                    - generic [ref=f52e469]:
+                      - generic [ref=f52e470]: argu -
+                      - text: ment
+                    - generic [ref=f52e471]: every
+                    - generic [ref=f52e472]: plugin
+                    - generic [ref=f52e473]: receives.
+                    - generic [ref=f52e474]: They
+                    - generic [ref=f52e475]: can
+                    - generic [ref=f52e476]: reach
+                    - generic [ref=f52e477]: in
+                    - generic [ref=f52e478]: and
+                    - generic [ref=f52e479]:
+                      - generic [ref=f52e480]: rear -
+                      - text: range
+                    - generic [ref=f52e481]: it
+                    - generic [ref=f52e482]: as
+                    - generic [ref=f52e483]: they
+                    - generic [ref=f52e484]: see
+                    - generic [ref=f52e485]: "fit:"
+                    - generic [ref=f52e486]: adding
+                    - generic [ref=f52e487]: models,
+                    - generic [ref=f52e488]:
+                      - generic [ref=f52e489]: replac -
+                      - text: ing
+                    - generic [ref=f52e490]: them,
+                    - generic [ref=f52e491]: or
+                    - generic [ref=f52e492]:
+                      - generic [ref=f52e493]: chang -
+                      - text: ing
+                    - generic [ref=f52e494]: their
+                    - generic [ref=f52e495]:
+                      - generic [ref=f52e496]: set -
+                      - text: tings.
+              - article [ref=f52e497]:
+                - figure "models-dev.ts" [ref=f52e499]:
+                  - button "Show the Effect version of the code" [ref=f52e502] [cursor=pointer]
+                  - code [ref=f52e507]:
+                    - generic [ref=f52e508]: "export async function modelsDev(ctx) {"
+                    - generic [ref=f52e509]: "const load = async () => {"
+                    - generic [ref=f52e510]:
+                      - text: const providers = await fetchModelsDev()
+                      - generic "Step 1" [ref=f52e511]:
+                        - generic [aria-hidden] [ref=f52e512]: // 1
+                        - text: "1"
+                    - generic [ref=f52e513]: "for (const provider of Object.values(providers)) {"
+                    - generic [ref=f52e514]:
+                      - text: ctx.catalog[provider.id] = provider
+                      - generic "Step 2" [ref=f52e515]:
+                        - generic [aria-hidden] [ref=f52e516]: // 2
+                        - text: "2"
+                    - generic [ref=f52e517]: "}"
+                    - generic [ref=f52e518]: "}"
+                    - generic [ref=f52e519]: await load()
+                    - generic [ref=f52e520]:
+                      - text: setInterval(load, 60 * 60 * 1000)
+                      - generic "Step 3" [ref=f52e521]:
+                        - generic [aria-hidden] [ref=f52e522]: // 3
+                        - text: "3"
+                    - generic [ref=f52e523]: "}"
+            - generic [ref=f52e525]:
+              - article [ref=f52e526]:
+                - paragraph [ref=f52e529]:
+                  - generic [ref=f52e531]:
+                    - text: It fetches all the latest provider data from models.dev
+                    - generic "Step 1" [ref=f52e532]:
+                      - generic [aria-hidden] [ref=f52e533]: "1"
+                      - text: "1"
+                    - text: and writes it into the model catalog
+                    - generic "Step 2" [ref=f52e534]:
+                      - generic [aria-hidden] [ref=f52e535]: "2"
+                      - text: "2"
+                    - text: . This happens at startup and once an hour thereafter
+                    - generic "Step 3" [ref=f52e536]:
+                      - generic [aria-hidden] [ref=f52e537]: "3"
+                      - text: "3"
+                    - text: .
+              - article [ref=f52e538]:
+                - paragraph [ref=f52e541]:
+                  - generic [ref=f52e544]:
+                    - generic [ref=f52e545]: Alas,
+                    - generic [ref=f52e546]: there’s
+                    - generic [ref=f52e547]: already
+                    - generic [ref=f52e548]: a
+                    - generic [ref=f52e549]: bug.
+                    - generic [ref=f52e550]: If
+                    - generic [ref=f52e551]: models.dev
+                    - generic [ref=f52e552]: removes
+                    - generic [ref=f52e553]: a
+                    - generic [ref=f52e554]: provider,
+                    - generic [ref=f52e555]: it’ll
+                    - generic [ref=f52e556]: remain
+                    - generic [ref=f52e557]: in
+                    - generic [ref=f52e558]: our
+                    - generic [ref=f52e559]: catalog
+                    - generic [ref=f52e560]: forever
+                    - generic [ref=f52e561]: because
+                    - generic [ref=f52e562]: we
+                    - generic [ref=f52e563]: don’t
+                    - generic [ref=f52e564]: clean
+                    - generic [ref=f52e565]: up
+                    - generic [ref=f52e566]: missing
+                    - generic [ref=f52e567]: entries.
+                    - generic [ref=f52e568]: But
+                    - generic [ref=f52e569]: before
+                    - generic [ref=f52e570]: we
+                    - generic [ref=f52e571]: fix
+                    - generic [ref=f52e572]: this,
+                    - generic [ref=f52e573]: let’s
+                    - generic [ref=f52e574]: make
+                    - generic [ref=f52e575]: things
+                    - generic [ref=f52e576]: worse.
+              - article [ref=f52e577]:
+                - paragraph [ref=f52e580]:
+                  - generic [ref=f52e583]:
+                    - generic [ref=f52e584]: Here’s
+                    - generic [ref=f52e585]: another
+                    - generic [ref=f52e586]: plugin
+                    - generic [ref=f52e587]: that
+                    - generic [ref=f52e588]:
+                      - generic [ref=f52e589]: mod -
+                      - generic [ref=f52e590]: i -
+                      - text: fies
+                    - generic [ref=f52e591]: the
+                    - generic [ref=f52e592]: catalog.
+                    - generic [ref=f52e593]: This
+                    - generic [ref=f52e594]: one
+                    - generic [ref=f52e595]:
+                      - generic [ref=f52e596]:
+                        - text: dis
+                        - generic [aria-hidden] [ref=f52e597]: "-"
+                      - text: ables
+                    - generic [ref=f52e598]: models
+                    - generic [ref=f52e599]: from
+                    - generic [ref=f52e600]: certain
+                    - generic [ref=f52e601]: providers,
+                    - generic [ref=f52e602]: perhaps
+                    - generic [ref=f52e603]: to
+                    - generic [ref=f52e604]: align
+                    - generic [ref=f52e605]: with
+                    - generic [ref=f52e606]: some
+                    - generic [ref=f52e607]: boring
+                    - generic [ref=f52e608]:
+                      - generic [ref=f52e609]: cor -
+                      - generic [ref=f52e610]: po -
+                      - text: rate
+                    - generic [ref=f52e611]: policy.
+              - article [ref=f52e612]:
+                - figure "provider-policy.ts" [ref=f52e614]:
+                  - button "Show the Effect version of the code" [ref=f52e617] [cursor=pointer]
+                  - code [ref=f52e622]:
+                    - generic [ref=f52e623]: "export async function providerPolicy(ctx) {"
+                    - generic [ref=f52e624]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                    - generic [ref=f52e625]: "for (const provider of Object.values(ctx.catalog)) {"
+                    - generic [ref=f52e626]: if (!excludedProviders.has(provider.id)) continue
+                    - generic [ref=f52e627]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f52e628]: model.disabled = true
+                    - generic [ref=f52e629]: "}"
+                    - generic [ref=f52e630]: "}"
+                    - generic [ref=f52e631]: "}"
+              - article [ref=f52e632]:
+                - paragraph [ref=f52e635]:
+                  - generic [ref=f52e638]:
+                    - generic [ref=f52e639]: "On"
+                    - generic [ref=f52e640]: startup,
+                    - generic [ref=f52e641]: these
+                    - generic [ref=f52e642]: run
+                    - generic [ref=f52e643]: in
+                    - generic [ref=f52e644]: order.
+                    - generic [ref=f52e645]: First,
+                    - generic [ref=f52e646]: the
+                    - generic [ref=f52e647]: models.dev
+                    - generic [ref=f52e648]: plugin
+                    - generic [ref=f52e649]: fills
+                    - generic [ref=f52e650]: the
+                    - generic [ref=f52e651]: catalog;
+                    - generic [ref=f52e652]: then
+                    - generic [ref=f52e653]: our
+                    - generic [ref=f52e654]: policy
+                    - generic [ref=f52e655]: plugin
+                    - generic [ref=f52e656]:
+                      - generic [ref=f52e657]: dis -
+                      - text: ables
+                    - generic [ref=f52e658]: the
+                    - generic [ref=f52e659]: restricted
+                    - generic [ref=f52e660]: models.
+                    - generic [ref=f52e661]: So
+                    - generic [ref=f52e662]: far,
+                    - generic [ref=f52e663]: so
+                    - generic [ref=f52e664]: good.
+              - article [ref=f52e665]:
+                - paragraph [ref=f52e668]:
+                  - generic [ref=f52e671]:
+                    - generic [ref=f52e672]: However,
+                    - generic [ref=f52e673]: when
+                    - generic [ref=f52e674]: the
+                    - generic [ref=f52e675]: refresh
+                    - generic [ref=f52e676]: timer
+                    - generic [ref=f52e677]: fires,
+                    - generic [ref=f52e678]: the
+                    - generic [ref=f52e679]: models.dev
+                    - generic [ref=f52e680]: plugin
+                    - generic [ref=f52e681]:
+                      - generic [ref=f52e682]:
+                        - text: com
+                        - generic [aria-hidden] [ref=f52e683]: "-"
+                      - text: pletely
+                    - generic [ref=f52e684]: replaces
+                    - generic [ref=f52e685]: those
+                    - generic [ref=f52e686]: provider
+                    - generic [ref=f52e687]: records
+                    - generic [ref=f52e688]: with
+                    - generic [ref=f52e689]: fresh
+                    - generic [ref=f52e690]: values,
+                    - generic [ref=f52e691]:
+                      - generic [ref=f52e692]: inad -
+                      - generic [ref=f52e693]:
+                        - text: ver
+                        - generic [aria-hidden] [ref=f52e694]: "-"
+                      - text: tently
+                    - generic [ref=f52e695]: undoing
+                    - generic [ref=f52e696]:
+                      - generic [ref=f52e697]: every -
+                      - text: thing
+                    - generic [ref=f52e698]: our
+                    - generic [ref=f52e699]: policy
+                    - generic [ref=f52e700]: plugin
+                    - generic [ref=f52e701]: did.
+              - article:
+                - button "Play" [ref=f52e702] [cursor=pointer]
+              - article [ref=f52e705]:
+                - paragraph [ref=f52e708]:
+                  - generic [ref=f52e711]:
+                    - generic [ref=f52e712]: To
+                    - generic [ref=f52e713]: deal
+                    - generic [ref=f52e714]: with
+                    - generic [ref=f52e715]: this,
+                    - generic [ref=f52e716]: let’s
+                    - generic [ref=f52e717]: have
+                    - generic [ref=f52e718]: the
+                    - generic [ref=f52e719]: models.dev
+                    - generic [ref=f52e720]: plugin
+                    - generic [ref=f52e721]: announce
+                    - generic [ref=f52e722]: each
+                    - generic [ref=f52e723]: refresh,
+                    - generic [ref=f52e724]: and
+                    - generic [ref=f52e725]: have
+                    - generic [ref=f52e726]: our
+                    - generic [ref=f52e727]: policy
+                    - generic [ref=f52e728]: plugin
+                    - generic [ref=f52e729]: listen
+                    - generic [ref=f52e730]: for
+                    - generic [ref=f52e731]: that
+                    - generic [ref=f52e732]:
+                      - generic [ref=f52e733]: announce -
+                      - text: ment
+                    - generic [ref=f52e734]: and
+                    - generic [ref=f52e735]: disable
+                    - generic [ref=f52e736]: the
+                    - generic [ref=f52e737]: models
+                    - generic [ref=f52e738]: again
+                    - generic [ref=f52e739]: after
+                    - generic [ref=f52e740]: each
+                    - generic [ref=f52e741]: one.
+              - article [ref=f52e742]:
+                - figure "provider-policy.ts" [ref=f52e744]:
+                  - button "Show the Effect version of the code" [ref=f52e747] [cursor=pointer]
+                  - code [ref=f52e752]:
+                    - generic [ref=f52e753]: "export async function providerPolicy(ctx) {"
+                    - generic [ref=f52e754]: "await ctx.event.on(\"catalog.updated\", () => {"
+                    - generic [ref=f52e755]: disableProviders(ctx.catalog)
+                    - generic [ref=f52e756]: "})"
+                    - generic [ref=f52e757]: disableProviders(ctx.catalog)
+                    - generic [ref=f52e758]: "}"
+                    - generic [ref=f52e759]: "function disableProviders(catalog) {"
+                    - generic [ref=f52e760]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                    - generic [ref=f52e761]: "for (const provider of Object.values(catalog)) {"
+                    - generic [ref=f52e762]: if (!excludedProviders.has(provider.id)) continue
+                    - generic [ref=f52e763]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f52e764]: model.disabled = true
+                    - generic [ref=f52e765]: "}"
+                    - generic [ref=f52e766]: "}"
+                    - generic [ref=f52e767]: "}"
+              - article [ref=f52e768]:
+                - paragraph [ref=f52e771]:
+                  - generic [ref=f52e774]:
+                    - generic [ref=f52e775]: This
+                    - generic [ref=f52e776]: is
+                    - generic [ref=f52e777]: getting
+                    - generic [ref=f52e778]:
+                      - generic [ref=f52e779]: com -
+                      - generic [ref=f52e780]: pli -
+                      - text: cated.
+                    - generic [ref=f52e781]: We
+                    - generic [ref=f52e782]: now
+                    - generic [ref=f52e783]: have
+                    - generic [ref=f52e784]: a
+                    - generic [ref=f52e785]:
+                      - generic [ref=f52e786]: back -
+                      - text: ground
+                    - generic [ref=f52e787]: process
+                    - generic [ref=f52e788]:
+                      - generic [ref=f52e789]: chang -
+                      - text: ing
+                    - generic [ref=f52e790]: the
+                    - generic [ref=f52e791]: catalog
+                    - generic [ref=f52e792]: and
+                    - generic [ref=f52e793]: another
+                    - generic [ref=f52e794]: plugin
+                    - generic [ref=f52e795]:
+                      - generic [ref=f52e796]: respond -
+                      - text: ing
+                    - generic [ref=f52e797]: to
+                    - generic [ref=f52e798]: those
+                    - generic [ref=f52e799]: changes.
+                    - generic [ref=f52e800]: We
+                    - generic [ref=f52e801]: also
+                    - generic [ref=f52e802]: have
+                    - generic [ref=f52e803]: to
+                    - generic [ref=f52e804]: make
+                    - generic [ref=f52e805]: sure
+                    - generic [ref=f52e806]: nobody
+                    - generic [ref=f52e807]: reads
+                    - generic [ref=f52e808]: the
+                    - generic [ref=f52e809]: fresh
+                    - generic [ref=f52e810]: catalog
+                    - generic [ref=f52e811]: before
+                    - generic [ref=f52e812]: our
+                    - generic [ref=f52e813]: policy
+                    - generic [ref=f52e814]: has
+                    - generic [ref=f52e815]: run.
+            - generic [ref=f52e817]:
+              - article [ref=f52e818]:
+                - paragraph [ref=f52e821]:
+                  - generic [ref=f52e824]:
+                    - generic [ref=f52e825]: Even
+                    - generic [ref=f52e826]: if
+                    - generic [ref=f52e827]: we
+                    - generic [ref=f52e828]: sort
+                    - generic [ref=f52e829]: all
+                    - generic [ref=f52e830]: that
+                    - generic [ref=f52e831]: out,
+                    - generic [ref=f52e832]: we
+                    - generic [ref=f52e833]: only
+                    - generic [ref=f52e834]: got
+                    - generic [ref=f52e835]: away
+                    - generic [ref=f52e836]: with
+                    - generic [ref=f52e837]: re-running
+                    - generic [ref=f52e838]: our
+                    - generic [ref=f52e839]: policy
+                    - generic [ref=f52e840]: because
+                    - generic [ref=f52e841]:
+                      - generic [ref=f52e842]: dis -
+                      - text: abling
+                    - generic [ref=f52e843]: an
+                    - generic [ref=f52e844]: already-disabled
+                    - generic [ref=f52e845]: model
+                    - generic [ref=f52e846]: does
+                    - generic [ref=f52e847]: nothing.
+                    - generic [ref=f52e848]: It’s
+                    - button "Mark idempotent on your vocabulary bingo card" [ref=f52e849]:
+                      - generic [ref=f52e850]: idem -
+                      - generic [ref=f52e851]: po -
+                      - text: tent.
+                    - generic [ref=f52e852]:
+                      - generic [ref=f52e853]: Con -
+                      - text: sider
+                    - generic [ref=f52e854]: instead
+                    - generic [ref=f52e855]: a
+                    - generic [ref=f52e856]: plugin
+                    - generic [ref=f52e857]: which
+                    - emphasis [ref=f52e860]: halves
+                    - generic [ref=f52e861]: each
+                    - generic [ref=f52e862]: model’s
+                    - generic [ref=f52e863]: output
+                    - generic [ref=f52e864]: limit,
+                    - generic [ref=f52e865]: the
+                    - generic [ref=f52e866]: maximum
+                    - generic [ref=f52e867]: number
+                    - generic [ref=f52e868]: of
+                    - generic [ref=f52e869]: tokens
+                    - generic [ref=f52e870]: a
+                    - generic [ref=f52e871]: model
+                    - generic [ref=f52e872]: may
+                    - generic [ref=f52e873]: produce
+                    - generic [ref=f52e874]: in
+                    - generic [ref=f52e875]: one
+                    - generic [ref=f52e876]: reply.
+              - article [ref=f52e877]:
+                - figure "limits.ts" [ref=f52e879]:
+                  - button "Show the Effect version of the code" [ref=f52e882] [cursor=pointer]
+                  - code [ref=f52e887]:
+                    - generic [ref=f52e888]: "export async function limits(ctx) {"
+                    - generic [ref=f52e889]: "await ctx.event.on(\"catalog.updated\", () => {"
+                    - generic [ref=f52e890]: halveLimits(ctx.catalog)
+                    - generic [ref=f52e891]: "})"
+                    - generic [ref=f52e892]: halveLimits(ctx.catalog)
+                    - generic [ref=f52e893]: "}"
+                    - generic [ref=f52e894]: "function halveLimits(catalog) {"
+                    - generic [ref=f52e895]: "for (const provider of Object.values(catalog)) {"
+                    - generic [ref=f52e896]: "for (const model of Object.values(provider.models)) {"
+                    - generic [ref=f52e897]: model.limit.output /= 2
+                    - generic [ref=f52e898]: "}"
+                    - generic [ref=f52e899]: "}"
+                    - generic [ref=f52e900]: "}"
+              - article [ref=f52e901]:
+                - paragraph [ref=f52e904]:
+                  - generic [ref=f52e907]:
+                    - generic [ref=f52e908]: Suppose
+                    - generic [ref=f52e909]: another
+                    - generic [ref=f52e910]: plugin,
+                    - generic [ref=f52e912]:
+                      - code [ref=f52e913]: local-model.ts
+                      - text: ","
+                    - generic [ref=f52e914]: adds
+                    - generic [ref=f52e915]: a
+                    - generic [ref=f52e916]: couple
+                    - generic [ref=f52e917]: of
+                    - generic [ref=f52e918]: models
+                    - generic [ref=f52e919]: that
+                    - generic [ref=f52e920]: run
+                    - generic [ref=f52e921]: "on"
+                    - generic [ref=f52e922]: your
+                    - generic [ref=f52e923]: own
+                    - generic [ref=f52e924]: machine.
+                    - generic [ref=f52e925]:
+                      - generic [ref=f52e926]: Fol -
+                      - generic [ref=f52e927]: low -
+                      - text: ing
+                    - generic [ref=f52e928]: our
+                    - generic [ref=f52e929]: policy
+                    - generic [ref=f52e930]: plugin’s
+                    - generic [ref=f52e931]: lead,
+                    - generic [ref=f52e932]: we
+                    - generic [ref=f52e933]: re-run
+                    - code [ref=f52e936]: halveLimits
+                    - generic [ref=f52e937]: after
+                    - generic [ref=f52e938]: each
+                    - generic [ref=f52e939]: catalog
+                    - generic [ref=f52e940]: update
+                    - generic [ref=f52e941]: to
+                    - generic [ref=f52e942]: catch
+                    - generic [ref=f52e943]: the
+                    - generic [ref=f52e944]:
+                      - generic [ref=f52e945]:
+                        - text: addi
+                        - generic [aria-hidden] [ref=f52e946]: "-"
+                      - text: tions,
+                    - generic [ref=f52e947]: but
+                    - generic [ref=f52e948]: it
+                    - generic [ref=f52e949]: also
+                    - generic [ref=f52e950]: halves
+                    - generic [ref=f52e951]: the
+                    - generic [ref=f52e952]: models
+                    - generic [ref=f52e953]: we’ve
+                    - generic [ref=f52e954]: already
+                    - generic [ref=f52e955]: handled.
+                    - generic [ref=f52e956]: Their
+                    - generic [ref=f52e957]: limits
+                    - generic [ref=f52e958]: are
+                    - generic [ref=f52e959]: now
+                    - generic [ref=f52e960]: a
+                    - generic [ref=f52e961]: quarter
+                    - generic [ref=f52e962]: of
+                    - generic [ref=f52e963]: what
+                    - generic [ref=f52e964]: they
+                    - generic [ref=f52e965]: started
+                    - generic [ref=f52e966]: with.
+              - article:
+                - button "Play" [ref=f52e967] [cursor=pointer]
+              - article [ref=f52e970]:
+                - paragraph [ref=f52e973]:
+                  - generic [ref=f52e976]:
+                    - generic [ref=f52e977]: If
+                    - generic [ref=f52e978]: we
+                    - generic [ref=f52e979]:
+                      - generic [ref=f52e980]: con -
+                      - text: tinue
+                    - generic [ref=f52e981]: down
+                    - generic [ref=f52e982]: this
+                    - generic [ref=f52e983]: path,
+                    - generic [ref=f52e984]: every
+                    - generic [ref=f52e985]: plugin
+                    - generic [ref=f52e986]: has
+                    - generic [ref=f52e987]: to
+                    - generic [ref=f52e988]: keep
+                    - generic [ref=f52e989]: track
+                    - generic [ref=f52e990]: of
+                    - generic [ref=f52e991]: what
+                    - generic [ref=f52e992]: every
+                    - generic [ref=f52e993]: other
+                    - generic [ref=f52e994]: plugin
+                    - generic [ref=f52e995]: has
+                    - generic [ref=f52e996]: done.
+                    - generic [ref=f52e997]: It
+                    - generic [ref=f52e998]: would
+                    - generic [ref=f52e999]: become
+                    - generic [ref=f52e1000]: an
+                    - generic [ref=f52e1001]:
+                      - generic [ref=f52e1002]:
+                        - text: inex
+                        - generic [aria-hidden] [ref=f52e1003]: "-"
+                      - generic [ref=f52e1004]: tri -
+                      - generic [ref=f52e1005]: ca -
+                      - text: ble
+                    - generic [ref=f52e1006]:
+                      - generic [ref=f52e1007]: clus -
+                      - generic [ref=f52e1008]: ter -
+                      - text: fuck.
+              - article [ref=f52e1009]:
+                - paragraph [ref=f52e1012]:
+                  - generic [ref=f52e1015]:
+                    - generic [ref=f52e1016]: These
+                    - generic [ref=f52e1017]: bugs
+                    - generic [ref=f52e1018]: have
+                    - generic [ref=f52e1019]: the
+                    - generic [ref=f52e1020]: same
+                    - generic [ref=f52e1021]: cause.
+                    - generic [ref=f52e1022]: Plugins
+                    - generic [ref=f52e1023]: are
+                    - generic [ref=f52e1024]:
+                      - generic [ref=f52e1025]: mutat -
+                      - text: ing
+                    - generic [ref=f52e1026]: a
+                    - generic [ref=f52e1027]: shared
+                    - generic [ref=f52e1028]: catalog
+                    - generic [ref=f52e1029]: in
+                    - generic [ref=f52e1030]: place,
+                    - generic [ref=f52e1031]: so
+                    - generic [ref=f52e1032]: the
+                    - generic [ref=f52e1033]: result
+                    - generic [ref=f52e1034]: depends
+                    - generic [ref=f52e1035]: "on"
+                    - generic [ref=f52e1036]: how
+                    - generic [ref=f52e1037]: many
+                    - generic [ref=f52e1038]: times
+                    - generic [ref=f52e1039]: each
+                    - generic [ref=f52e1040]: one
+                    - generic [ref=f52e1041]: has
+                    - generic [ref=f52e1042]: run
+                    - generic [ref=f52e1043]: and
+                    - generic [ref=f52e1044]: in
+                    - generic [ref=f52e1045]: what
+                    - generic [ref=f52e1046]: order.
+                    - generic [ref=f52e1047]: Let’s
+                    - generic [ref=f52e1048]: see
+                    - generic [ref=f52e1049]: how
+                    - generic [ref=f52e1050]: we
+                    - generic [ref=f52e1051]: addressed
+                    - generic [ref=f52e1052]: that
+                    - generic [ref=f52e1053]: in
+                    - generic [ref=f52e1054]: OpenCode.
+          - generic [ref=f52e1058]:
+            - heading "The Solution" [level=2] [ref=f52e1060]
+            - article [ref=f52e1063]:
+              - paragraph [ref=f52e1066]:
+                - generic [ref=f52e1069]:
+                  - generic [ref=f52e1070]: Instead
+                  - generic [ref=f52e1071]: of
+                  - generic [ref=f52e1072]: wrestling
+                  - generic [ref=f52e1073]: with
+                  - generic [ref=f52e1074]: this
+                  - generic [ref=f52e1075]: tangled
+                  - generic [ref=f52e1076]: mass
+                  - generic [ref=f52e1077]: of
+                  - generic [ref=f52e1078]:
+                    - generic [ref=f52e1079]: imper -
+                    - generic [ref=f52e1080]: a -
+                    - generic [ref=f52e1081]: tiv -
+                    - text: ity,
+                  - generic [ref=f52e1082]: wouldn’t
+                  - generic [ref=f52e1083]: it
+                  - generic [ref=f52e1084]: be
+                  - generic [ref=f52e1085]: lovely
+                  - generic [ref=f52e1086]: if
+                  - generic [ref=f52e1087]: a
+                  - generic [ref=f52e1088]: plugin
+                  - generic [ref=f52e1089]: could
+                  - generic [ref=f52e1090]: describe
+                  - generic [ref=f52e1091]: its
+                  - generic [ref=f52e1092]: change,
+                  - generic [ref=f52e1093]: and
+                  - generic [ref=f52e1094]: let
+                  - generic [ref=f52e1095]: OpenCode
+                  - generic [ref=f52e1096]: decide
+                  - generic [ref=f52e1097]: when
+                  - generic [ref=f52e1098]: to
+                  - generic [ref=f52e1099]: apply
+                  - generic [ref=f52e1100]: it?
+            - article [ref=f52e1101]:
+              - paragraph [ref=f52e1104]:
+                - generic [ref=f52e1107]:
+                  - generic [ref=f52e1108]: That’s
+                  - generic [ref=f52e1109]: what
+                  - generic [ref=f52e1110]: we
+                  - generic [ref=f52e1111]: did.
+                  - generic [ref=f52e1112]: Each
+                  - generic [ref=f52e1113]: plugin
+                  - generic [ref=f52e1114]: hands
+                  - generic [ref=f52e1115]: OpenCode
+                  - generic [ref=f52e1116]: a
+                  - generic [ref=f52e1117]: catalog
+                  - generic [ref=f52e1118]:
+                    - generic [ref=f52e1119]:
+                      - text: trans
+                      - generic [aria-hidden] [ref=f52e1120]: "-"
+                    - generic [ref=f52e1121]: for -
+                    - generic [ref=f52e1122]: ma -
+                    - text: tion
+                  - generic [ref=f52e1123]:
+                    - generic [ref=f52e1124]: func -
+                    - text: tion;
+                  - generic [ref=f52e1125]: OpenCode
+                  - generic [ref=f52e1126]: keeps
+                  - generic [ref=f52e1127]: them
+                  - generic [ref=f52e1128]: in
+                  - generic [ref=f52e1129]: order
+                  - generic [ref=f52e1130]: and
+                  - generic [ref=f52e1131]: threads
+                  - generic [ref=f52e1132]: an
+                  - generic [ref=f52e1133]: empty
+                  - generic [ref=f52e1134]: catalog
+                  - generic [ref=f52e1135]: through
+                  - generic [ref=f52e1136]: each
+                  - generic [ref=f52e1137]: one
+                  - generic [ref=f52e1138]: in
+                  - generic [ref=f52e1139]: turn.
+            - article:
+              - button "Play" [ref=f52e1140] [cursor=pointer]
+            - article [ref=f52e1143]:
+              - paragraph [ref=f52e1146]:
+                - generic [ref=f52e1148]:
+                  - text: The catalog starts empty.
+                  - generic "Step 1" [ref=f52e1149]:
+                    - generic [aria-hidden] [ref=f52e1150]: "1"
+                    - text: "1"
+                  - code [ref=f52e1151]: models-dev.ts
+                  - text: fills in OpenAI and Sphinctral,
+                  - generic "Step 2" [ref=f52e1152]:
+                    - generic [aria-hidden] [ref=f52e1153]: "2"
+                    - text: "2"
+                  - code [ref=f52e1154]: local-model.ts
+                  - text: adds our two local models,
+                  - generic "Step 3" [ref=f52e1155]:
+                    - generic [aria-hidden] [ref=f52e1156]: "3"
+                    - text: "3"
+                  - code [ref=f52e1157]: provider-policy.ts
+                  - text: disables Sphinctral, and
+                  - generic "Step 4" [ref=f52e1158]:
+                    - generic [aria-hidden] [ref=f52e1159]: "4"
+                    - text: "4"
+                  - code [ref=f52e1160]: limits.ts
+                  - text: halves every output limit, 128K to 64K. And out pops the final catalog.
+            - article [ref=f52e1161]:
+              - paragraph [ref=f52e1164]:
+                - generic [ref=f52e1167]:
+                  - generic [ref=f52e1168]: Each
+                  - generic [ref=f52e1169]: plugin
+                  - generic [ref=f52e1170]: is
+                  - generic [ref=f52e1171]: now
+                  - generic [ref=f52e1172]: only
+                  - generic [ref=f52e1173]:
+                    - generic [ref=f52e1174]: respon -
+                    - generic [ref=f52e1175]: si -
+                    - text: ble
+                  - generic [ref=f52e1176]: for
+                  - generic [ref=f52e1177]: its
+                  - generic [ref=f52e1178]: own
+                  - generic [ref=f52e1179]: changes,
+                  - generic [ref=f52e1180]: while
+                  - generic [ref=f52e1181]: OpenCode
+                  - generic [ref=f52e1182]: takes
+                  - generic [ref=f52e1183]: care
+                  - generic [ref=f52e1184]: of
+                  - generic [ref=f52e1185]: when
+                  - generic [ref=f52e1186]: and
+                  - generic [ref=f52e1187]: in
+                  - generic [ref=f52e1188]: what
+                  - generic [ref=f52e1189]: order
+                  - generic [ref=f52e1190]: to
+                  - generic [ref=f52e1191]: run
+                  - generic [ref=f52e1192]: them.
+                  - generic [ref=f52e1193]: Here
+                  - generic [ref=f52e1194]: is
+                  - generic [ref=f52e1195]: the
+                  - generic [ref=f52e1196]: reworked
+                  - generic [ref=f52e1198]:
+                    - code [ref=f52e1199]: provider-policy.ts
+                    - text: .
+                  - generic [ref=f52e1200]: Notice
+                  - generic [ref=f52e1201]: that
+                  - code [ref=f52e1204]: ctx.catalog
+                  - generic [ref=f52e1205]: is
+                  - generic [ref=f52e1206]: "no"
+                  - generic [ref=f52e1207]: longer
+                  - generic [ref=f52e1208]: the
+                  - generic [ref=f52e1209]: catalog
+                  - generic [ref=f52e1210]: itself
+                  - generic [ref=f52e1211]: but
+                  - generic [ref=f52e1212]: a
+                  - generic [ref=f52e1213]: handle
+                  - generic [ref=f52e1214]: to
+                  - generic [ref=f52e1215]: it,
+                  - generic [ref=f52e1216]: and
+                  - generic [ref=f52e1217]: the
+                  - generic [ref=f52e1218]: plugin
+                  - generic [ref=f52e1219]:
+                    - generic [ref=f52e1220]: reg -
+                    - generic [ref=f52e1221]: is -
+                    - text: ters
+                  - generic [ref=f52e1222]: its
+                  - generic [ref=f52e1223]: model-disabling
+                  - generic [ref=f52e1224]:
+                    - generic [ref=f52e1225]: oper -
+                    - generic [ref=f52e1226]: a -
+                    - text: tion
+                  - generic [ref=f52e1227]: as
+                  - generic [ref=f52e1228]: a
+                  - generic [ref=f52e1229]:
+                    - generic [ref=f52e1230]: trans -
+                    - generic [ref=f52e1231]: for -
+                    - generic [ref=f52e1232]: ma -
+                    - text: "tion:"
+            - article [ref=f52e1233]:
+              - figure "provider-policy.ts" [ref=f52e1235]:
+                - button "Show the Effect version of the code" [ref=f52e1238] [cursor=pointer]
+                - code [ref=f52e1243]:
+                  - generic [ref=f52e1244]: "export async function providerPolicy(ctx) {"
+                  - generic [ref=f52e1245]: const excludedProviders = new Set(["perinium", "sphinctral"])
+                  - generic [ref=f52e1246]: "await ctx.catalog.transform(catalog => {"
+                  - generic [ref=f52e1247]: "for (const provider of Object.values(catalog)) {"
+                  - generic [ref=f52e1248]: if (!excludedProviders.has(provider.id)) continue
+                  - generic [ref=f52e1249]: "for (const model of Object.values(provider.models)) {"
+                  - generic [ref=f52e1250]: model.disabled = true
+                  - generic [ref=f52e1251]: "}"
+                  - generic [ref=f52e1252]: "}"
+                  - generic [ref=f52e1253]: "})"
+                  - generic [ref=f52e1254]: "}"
+          - generic [ref=f52e1258]:
+            - heading "Reloading" [level=2] [ref=f52e1260]
+            - article [ref=f52e1263]:
+              - paragraph [ref=f52e1266]:
+                - generic [ref=f52e1269]:
+                  - generic [ref=f52e1270]: Before,
+                  - generic [ref=f52e1271]: plugins
+                  - generic [ref=f52e1272]: had
+                  - generic [ref=f52e1273]: free
+                  - generic [ref=f52e1274]: rein
+                  - generic [ref=f52e1275]: to
+                  - generic [ref=f52e1276]: mutate
+                  - generic [ref=f52e1277]: the
+                  - generic [ref=f52e1278]: catalog
+                  - generic [ref=f52e1279]:
+                    - generic [ref=f52e1280]: when -
+                    - text: ever
+                  - generic [ref=f52e1281]: and
+                  - generic [ref=f52e1282]: however
+                  - generic [ref=f52e1283]: they
+                  - generic [ref=f52e1284]: pleased.
+                  - generic [ref=f52e1285]: Now
+                  - generic [ref=f52e1286]: they
+                  - generic [ref=f52e1287]:
+                    - generic [ref=f52e1288]: reg -
+                    - generic [ref=f52e1289]: is -
+                    - text: ter
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f52e1290]:
+                    - generic [ref=f52e1291]: trans -
+                    - generic [ref=f52e1292]: for -
+                    - generic [ref=f52e1293]: ma -
+                    - text: tions
+                  - generic [ref=f52e1294]: up
+                  - generic [ref=f52e1295]: front.
+                  - generic [ref=f52e1296]: But
+                  - generic [ref=f52e1297]: with
+                  - generic [ref=f52e1298]: this
+                  - generic [ref=f52e1299]:
+                    - generic [ref=f52e1300]: archi -
+                    - generic [ref=f52e1301]: tec -
+                    - text: ture,
+                  - generic [ref=f52e1302]: how
+                  - generic [ref=f52e1303]: would
+                  - generic [ref=f52e1304]: the
+                  - generic [ref=f52e1305]: models.dev
+                  - generic [ref=f52e1306]: plugin
+                  - generic [ref=f52e1307]: update
+                  - generic [ref=f52e1308]: the
+                  - generic [ref=f52e1309]: catalog
+                  - generic [ref=f52e1310]: "on"
+                  - generic [ref=f52e1311]: its
+                  - generic [ref=f52e1312]: hourly
+                  - generic [ref=f52e1313]: cadence?
+            - article [ref=f52e1314]:
+              - paragraph [ref=f52e1317]:
+                - generic [ref=f52e1319]:
+                  - text: It calls
+                  - code [ref=f52e1320]: ctx.catalog.reload()
+                  - text: ", which creates a new empty catalog, pipes it through the various"
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f52e1321]: transformations,
+                  - text: and then publishes the result. Behold
+                  - generic [aria-hidden] [ref=f52e1323] [cursor=pointer]
+            - article [ref=f52e1336]:
+              - figure "models-dev.ts" [ref=f52e1338]:
+                - button "Show the Effect version of the code" [ref=f52e1341] [cursor=pointer]
+                - code [ref=f52e1346]:
+                  - generic [ref=f52e1347]: "export async function modelsDev(ctx) {"
+                  - generic [ref=f52e1348]:
+                    - text: let providers = await fetchModelsDev()
+                    - generic "Step 1" [ref=f52e1349]:
+                      - generic [aria-hidden] [ref=f52e1350]: // 1
+                      - text: "1"
+                  - generic [ref=f52e1351]:
+                    - text: "await ctx.catalog.transform(catalog => {"
+                    - generic "Step 2" [ref=f52e1352]:
+                      - generic [aria-hidden] [ref=f52e1353]: // 2
+                      - text: "2"
+                  - generic [ref=f52e1354]: "for (const provider of Object.values(providers)) {"
+                  - generic [ref=f52e1355]: catalog[provider.id] = structuredClone(provider)
+                  - generic [ref=f52e1356]: "}"
+                  - generic [ref=f52e1357]: "})"
+                  - generic [ref=f52e1358]: "setInterval(async () => {"
+                  - generic [ref=f52e1359]:
+                    - text: providers = await fetchModelsDev()
+                    - generic "Step 3" [ref=f52e1360]:
+                      - generic [aria-hidden] [ref=f52e1361]: // 3
+                      - text: "3"
+                  - generic [ref=f52e1362]:
+                    - text: await ctx.catalog.reload()
+                    - generic "Step 4" [ref=f52e1363]:
+                      - generic [aria-hidden] [ref=f52e1364]: // 4
+                      - text: "4"
+                  - generic [ref=f52e1365]: "}, 60 * 60 * 1000)"
+                  - generic [ref=f52e1366]: "}"
+            - article [ref=f52e1367]:
+              - paragraph [ref=f52e1370]:
+                - generic [ref=f52e1372]:
+                  - text: The plugin fetches the provider data
+                  - generic "Step 1" [ref=f52e1373]:
+                    - generic [aria-hidden] [ref=f52e1374]: "1"
+                    - text: "1"
+                  - text: and registers a transformation that closes over it
+                  - generic "Step 2" [ref=f52e1375]:
+                    - generic [aria-hidden] [ref=f52e1376]: "2"
+                    - text: "2"
+                  - text: . Every hour it fetches again, replacing the variable
+                  - generic "Step 3" [ref=f52e1377]:
+                    - generic [aria-hidden] [ref=f52e1378]: "3"
+                    - text: "3"
+                  - text: ", and calls"
+                  - code [ref=f52e1379]: ctx.catalog.reload()
+                  - generic "Step 4" [ref=f52e1380]:
+                    - generic [aria-hidden] [ref=f52e1381]: "4"
+                    - text: "4"
+                  - text: . The transformation itself never changes, but it reads
+                  - code [ref=f52e1382]: providers
+                  - text: when it runs, so the next rebuild picks up whatever was fetched last.
+            - article:
+              - button "Play" [ref=f52e1383] [cursor=pointer]
+            - article [ref=f52e1386]:
+              - paragraph [ref=f52e1389]:
+                - generic [ref=f52e1392]:
+                  - generic [ref=f52e1393]: Because
+                  - generic [ref=f52e1394]: every
+                  - generic [ref=f52e1395]: rebuild
+                  - generic [ref=f52e1396]: starts
+                  - generic [ref=f52e1397]: from
+                  - generic [ref=f52e1398]: an
+                  - generic [ref=f52e1399]: empty
+                  - generic [ref=f52e1400]: catalog
+                  - generic [ref=f52e1401]: and
+                  - generic [ref=f52e1402]: runs
+                  - generic [ref=f52e1403]: every
+                  - generic [ref=f52e1404]:
+                    - generic [ref=f52e1405]: trans -
+                    - generic [ref=f52e1406]: for -
+                    - generic [ref=f52e1407]: ma -
+                    - text: tion
+                  - generic [ref=f52e1408]: exactly
+                  - generic [ref=f52e1409]: once,
+                  - generic [ref=f52e1410]: in
+                  - generic [ref=f52e1411]: order,
+                  - generic [ref=f52e1412]: the
+                  - generic [ref=f52e1413]: refresh
+                  - generic [ref=f52e1414]: can
+                  - generic [ref=f52e1415]: "no"
+                  - generic [ref=f52e1416]: longer
+                  - generic [ref=f52e1417]: undo
+                  - generic [ref=f52e1418]: the
+                  - generic [ref=f52e1419]: policy,
+                  - generic [ref=f52e1420]: a
+                  - generic [ref=f52e1421]: provider
+                  - generic [ref=f52e1422]: that
+                  - generic [ref=f52e1423]:
+                    - generic [ref=f52e1424]: dis -
+                    - generic [ref=f52e1425]: ap -
+                    - text: pears
+                  - generic [ref=f52e1426]: from
+                  - generic [ref=f52e1427]: models.dev
+                  - generic [ref=f52e1428]:
+                    - generic [ref=f52e1429]: dis -
+                    - generic [ref=f52e1430]: ap -
+                    - text: pears
+                  - generic [ref=f52e1431]: from
+                  - generic [ref=f52e1432]: the
+                  - generic [ref=f52e1433]: catalog
+                  - generic [ref=f52e1434]: with
+                  - generic [ref=f52e1435]: it,
+                  - generic [ref=f52e1436]: and
+                  - generic [ref=f52e1437]: halving
+                  - generic [ref=f52e1438]: a
+                  - generic [ref=f52e1439]: limit
+                  - generic [ref=f52e1440]: halves
+                  - generic [ref=f52e1441]: it
+                  - generic [ref=f52e1442]: once.
+          - complementary "State" [ref=f52e1445]:
+            - generic [ref=f52e1447]:
+              - heading "State" [level=3] [ref=f52e1448]
+              - article [ref=f52e1452]:
+                - paragraph [ref=f52e1455]:
+                  - generic [ref=f52e1458]:
+                    - generic [ref=f52e1459]: The
+                    - generic [ref=f52e1460]: catalog
+                    - generic [ref=f52e1461]: is
+                    - generic [ref=f52e1462]: not
+                    - generic [ref=f52e1463]: special.
+                    - generic [ref=f52e1464]: It
+                    - generic [ref=f52e1465]: is
+                    - generic [ref=f52e1466]: one
+                    - generic [ref=f52e1467]: instance
+                    - generic [ref=f52e1468]: of
+                    - generic [ref=f52e1469]: a
+                    - generic [ref=f52e1470]: small
+                    - code [ref=f52e1473]: State
+                    - generic [ref=f52e1474]:
+                      - generic [ref=f52e1475]: abstrac -
+                      - text: tion
+                    - generic [ref=f52e1476]: that
+                    - generic [ref=f52e1477]: every
+                    - generic [ref=f52e1478]:
+                      - generic [ref=f52e1479]: reg -
+                      - text: istry
+                    - generic [ref=f52e1480]: in
+                    - generic [ref=f52e1481]: OpenCode
+                    - generic [ref=f52e1482]: is
+                    - generic [ref=f52e1483]: built
+                    - generic [ref=f52e1484]: "on:"
+                    - generic [ref=f52e1485]: skills,
+                    - generic [ref=f52e1486]:
+                      - generic [ref=f52e1487]: com -
+                      - text: mands,
+                    - generic [ref=f52e1488]: agents,
+                    - generic [ref=f52e1489]: tools,
+                    - generic [ref=f52e1490]: MCP
+                    - generic [ref=f52e1491]: servers,
+                    - generic [ref=f52e1492]:
+                      - generic [ref=f52e1493]: for -
+                      - generic [ref=f52e1494]: mat -
+                      - text: ters.
+              - article [ref=f52e1495]:
+                - figure "state.ts" [ref=f52e1497]:
+                  - button "Show the Effect version of the code" [ref=f52e1500] [cursor=pointer]
+                  - code [ref=f52e1505]:
+                    - generic [ref=f52e1506]: "const skills = State.create({"
+                    - generic [ref=f52e1507]: "initial: () => new Map(),"
+                    - generic [ref=f52e1508]: "notify: () => bus.publish(Skill.Updated),"
+                    - generic [ref=f52e1509]: "})"
+                    - generic [ref=f52e1510]: await skills.transform(skills => skills.set(mySkill.id, mySkill)) // replayed on every rebuild
+                    - generic [ref=f52e1511]: await skills.reload() // rebuild now, notify every listener
+              - article [ref=f52e1512]:
+                - paragraph [ref=f52e1515]:
+                  - generic [ref=f52e1518]:
+                    - generic [ref=f52e1519]: A
+                    - code [ref=f52e1522]: State
+                    - generic [ref=f52e1523]: has
+                    - generic [ref=f52e1524]: two
+                    - generic [ref=f52e1525]: "methods:"
+                    - generic [ref=f52e1527]:
+                      - code [ref=f52e1528]: transform
+                      - text: ","
+                    - generic [ref=f52e1529]: which
+                    - generic [ref=f52e1530]:
+                      - generic [ref=f52e1531]: reg -
+                      - generic [ref=f52e1532]: is -
+                      - text: ters
+                    - generic [ref=f52e1533]: a
+                    - generic [ref=f52e1534]:
+                      - generic [ref=f52e1535]: trans -
+                      - generic [ref=f52e1536]: for -
+                      - generic [ref=f52e1537]: ma -
+                      - text: tion,
+                    - generic [ref=f52e1538]: and
+                    - generic [ref=f52e1540]:
+                      - code [ref=f52e1541]: reload
+                      - text: ","
+                    - generic [ref=f52e1542]: which
+                    - generic [ref=f52e1543]: rebuilds
+                    - generic [ref=f52e1544]: the
+                    - generic [ref=f52e1545]: value
+                    - generic [ref=f52e1546]: from
+                    - generic [ref=f52e1547]: scratch.
+          - generic [ref=f52e1551]:
+            - heading "Adding, editing and removing plugins" [level=2] [ref=f52e1553]
+            - article [ref=f52e1556]:
+              - paragraph [ref=f52e1559]:
+                - generic [ref=f52e1562]:
+                  - generic [ref=f52e1563]: Beyond
+                  - generic [ref=f52e1564]:
+                    - generic [ref=f52e1565]: reload -
+                    - text: ing
+                  - emphasis [ref=f52e1568]: within
+                  - generic [ref=f52e1569]: plugins,
+                  - generic [ref=f52e1570]: such
+                  - generic [ref=f52e1571]: as
+                  - generic [ref=f52e1572]: our
+                  - emphasis [ref=f52e1575]: catalog
+                  - emphasis [ref=f52e1578]: refresh
+                  - generic [ref=f52e1579]: example,
+                  - generic [ref=f52e1580]: we
+                  - generic [ref=f52e1581]: must
+                  - generic [ref=f52e1582]: also
+                  - generic [ref=f52e1583]: respond
+                  - generic [ref=f52e1584]:
+                    - generic [ref=f52e1585]: imme -
+                    - generic [ref=f52e1586]: di -
+                    - text: ately
+                  - generic [ref=f52e1587]: to
+                  - generic [ref=f52e1588]: plugin
+                  - generic [ref=f52e1589]: files
+                  - generic [ref=f52e1590]:
+                    - generic [ref=f52e1591]: them -
+                    - text: selves
+                  - generic [ref=f52e1592]: being
+                  - generic [ref=f52e1593]: created,
+                  - generic [ref=f52e1594]: edited,
+                  - generic [ref=f52e1595]: or
+                  - generic [ref=f52e1596]: deleted.
+                  - generic [ref=f52e1597]: This
+                  - generic [ref=f52e1598]: is
+                  - generic [ref=f52e1599]: but
+                  - generic [ref=f52e1600]: a
+                  - generic [ref=f52e1601]: thin
+                  - generic [ref=f52e1602]: layer
+                  - generic [ref=f52e1603]: atop
+                  - generic [ref=f52e1604]: the
+                  - code [ref=f52e1607]: State
+                  - generic [ref=f52e1608]:
+                    - generic [ref=f52e1609]: abstrac -
+                    - text: tion.
+            - article [ref=f52e1610]:
+              - paragraph [ref=f52e1613]:
+                - generic [ref=f52e1616]:
+                  - generic [ref=f52e1617]: When
+                  - generic [ref=f52e1618]: a
+                  - generic [ref=f52e1619]: new
+                  - generic [ref=f52e1620]: plugin
+                  - generic [ref=f52e1621]: is
+                  - generic [ref=f52e1622]: written
+                  - generic [ref=f52e1623]: to
+                  - generic [ref=f52e1624]: the
+                  - generic [ref=f52e1625]:
+                    - generic [ref=f52e1626]: filesys -
+                    - text: tem,
+                  - generic [ref=f52e1627]: OpenCode
+                  - generic [ref=f52e1628]: runs
+                  - generic [ref=f52e1629]: it
+                  - generic [ref=f52e1630]: and
+                  - generic [ref=f52e1631]: keeps
+                  - generic [ref=f52e1632]: track
+                  - generic [ref=f52e1633]: of
+                  - generic [ref=f52e1634]: each
+                  - generic [ref=f52e1635]:
+                    - generic [ref=f52e1636]: reg -
+                    - generic [ref=f52e1637]: is -
+                    - text: tered
+                  - generic [ref=f52e1638]:
+                    - generic [ref=f52e1639]: trans -
+                    - generic [ref=f52e1640]: for -
+                    - generic [ref=f52e1641]: ma -
+                    - text: tion,
+                  - generic [ref=f52e1642]:
+                    - generic [ref=f52e1643]: asso -
+                    - generic [ref=f52e1644]: ci -
+                    - generic [ref=f52e1645]: at -
+                    - text: ing
+                  - generic [ref=f52e1646]: it
+                  - generic [ref=f52e1647]: with
+                  - generic [ref=f52e1648]: that
+                  - generic [ref=f52e1649]: plugin.
+                  - generic [ref=f52e1650]: The
+                  - generic [ref=f52e1651]: file
+                  - generic [ref=f52e1652]:
+                    - generic [ref=f52e1653]: watch -
+                    - text: ing
+                  - generic [ref=f52e1654]: is
+                  - generic [ref=f52e1655]: done
+                  - generic [ref=f52e1656]: by
+                  - generic [ref=f52e1657]: another
+                  - generic [ref=f52e1658]: built-in
+                  - generic [ref=f52e1659]: plugin.
+            - article [ref=f52e1660]:
+              - paragraph [ref=f52e1663]:
+                - generic [ref=f52e1666]:
+                  - generic [ref=f52e1667]: Later,
+                  - generic [ref=f52e1668]: if
+                  - generic [ref=f52e1669]: that
+                  - generic [ref=f52e1670]: file
+                  - generic [ref=f52e1671]: is
+                  - generic [ref=f52e1672]: deleted,
+                  - generic [ref=f52e1673]:
+                    - generic [ref=f52e1674]: every -
+                    - text: thing
+                  - generic [ref=f52e1675]: it
+                  - generic [ref=f52e1676]:
+                    - generic [ref=f52e1677]: reg -
+                    - generic [ref=f52e1678]: is -
+                    - text: tered
+                  - generic [ref=f52e1679]: is
+                  - generic [ref=f52e1680]: dropped,
+                  - generic [ref=f52e1681]: and
+                  - generic [ref=f52e1682]: the
+                  - generic [ref=f52e1683]: affected
+                  - code [ref=f52e1686]: State
+                  - generic [ref=f52e1687]: is
+                  - generic [ref=f52e1688]: rebuilt
+                  - generic [ref=f52e1689]: without
+                  - generic [ref=f52e1690]: it.
+                  - generic [ref=f52e1691]: Editing
+                  - generic [ref=f52e1692]: a
+                  - generic [ref=f52e1693]: plugin
+                  - generic [ref=f52e1694]: is
+                  - generic [ref=f52e1695]:
+                    - generic [ref=f52e1696]:
+                      - text: dele
+                      - generic [aria-hidden] [ref=f52e1697]: "-"
+                    - text: tion
+                  - generic [ref=f52e1698]:
+                    - generic [ref=f52e1699]: fol -
+                    - text: lowed
+                  - generic [ref=f52e1700]: by
+                  - generic [ref=f52e1701]: a
+                  - generic [ref=f52e1702]: fresh
+                  - generic [ref=f52e1703]: "run:"
+                  - generic [ref=f52e1704]: the
+                  - generic [ref=f52e1705]: old
+                  - generic [ref=f52e1706]: version’s
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f52e1707]:
+                    - generic [ref=f52e1708]: trans -
+                    - generic [ref=f52e1709]: for -
+                    - generic [ref=f52e1710]: ma -
+                    - text: tions
+                  - generic [ref=f52e1711]: are
+                  - generic [ref=f52e1712]: dropped,
+                  - generic [ref=f52e1713]: the
+                  - generic [ref=f52e1714]: new
+                  - generic [ref=f52e1715]: version
+                  - generic [ref=f52e1716]: runs
+                  - generic [ref=f52e1717]: and
+                  - generic [ref=f52e1718]:
+                    - generic [ref=f52e1719]: reg -
+                    - generic [ref=f52e1720]: is -
+                    - text: ters
+                  - generic [ref=f52e1721]: its
+                  - generic [ref=f52e1722]: own,
+                  - generic [ref=f52e1723]: and
+                  - generic [ref=f52e1724]: the
+                  - generic [ref=f52e1725]: rebuild
+                  - generic [ref=f52e1726]: picks
+                  - generic [ref=f52e1727]: those
+                  - generic [ref=f52e1728]: up
+                  - generic [ref=f52e1729]: instead.
+                  - generic [ref=f52e1730]: Either
+                  - generic [ref=f52e1731]: way,
+                  - generic [ref=f52e1732]: every
+                  - generic [ref=f52e1733]: session
+                  - generic [ref=f52e1734]: sees
+                  - generic [ref=f52e1735]: the
+                  - generic [ref=f52e1736]: result.
+            - article:
+              - button "Play" [ref=f52e1737] [cursor=pointer]
+          - generic [ref=f52e1743]:
+            - heading "The End" [level=2] [ref=f52e1745]
+            - article [ref=f52e1748]:
+              - paragraph [ref=f52e1751]:
+                - generic [ref=f52e1754]:
+                  - generic [ref=f52e1755]: So,
+                  - generic [ref=f52e1756]: that’s
+                  - generic [ref=f52e1757]: it.
+                  - generic [ref=f52e1758]: The
+                  - generic [ref=f52e1759]: core
+                  - generic [ref=f52e1760]: idea
+                  - generic [ref=f52e1761]: is
+                  - generic [ref=f52e1762]: to
+                  - generic [ref=f52e1763]:
+                    - generic [ref=f52e1764]: reg -
+                    - generic [ref=f52e1765]: is -
+                    - text: ter
+                  - generic [ref=f52e1766]: and
+                  - generic [ref=f52e1767]: play
+                  - generic [ref=f52e1768]: back
+                  - generic [ref=f52e1769]:
+                    - generic [ref=f52e1770]: trans -
+                    - generic [ref=f52e1771]: for -
+                    - generic [ref=f52e1772]: ma -
+                    - text: tion
+                  - generic [ref=f52e1773]:
+                    - generic [ref=f52e1774]: func -
+                    - text: tions.
+                  - generic [ref=f52e1775]: It’s
+                  - generic [ref=f52e1776]: simple
+                  - generic [ref=f52e1777]: and
+                  - generic [ref=f52e1778]:
+                    - generic [ref=f52e1779]: reli -
+                    - text: able
+                  - generic [ref=f52e1780]: because,
+                  - generic [ref=f52e1781]: given
+                  - generic [ref=f52e1782]: the
+                  - generic [ref=f52e1783]: same
+                  - generic [ref=f52e1784]:
+                    - generic [ref=f52e1785]: start -
+                    - text: ing
+                  - generic [ref=f52e1786]: state
+                  - generic [ref=f52e1787]: and
+                  - generic [ref=f52e1788]: the
+                  - generic [ref=f52e1789]: same
+                  - generic [ref=f52e1790]: data,
+                  - generic [ref=f52e1791]: running
+                  - generic [ref=f52e1792]: the
+                  - generic [ref=f52e1793]: same
+                  - generic [ref=f52e1794]: sequence
+                  - generic [ref=f52e1795]: of
+                  - button "Mark transformations on your vocabulary bingo card" [ref=f52e1796]:
+                    - generic [ref=f52e1797]: trans -
+                    - generic [ref=f52e1798]: for -
+                    - generic [ref=f52e1799]:
+                      - text: ma
+                      - generic [aria-hidden] [ref=f52e1800]: "-"
+                    - text: tions
+                  - generic [ref=f52e1801]: always
+                  - generic [ref=f52e1802]:
+                    - generic [ref=f52e1803]: pro -
+                    - text: duces
+                  - generic [ref=f52e1804]: the
+                  - generic [ref=f52e1805]: same
+                  - generic [ref=f52e1806]: result.
+                  - generic [ref=f52e1807]: Config,
+                  - generic [ref=f52e1808]: MCP
+                  - generic [ref=f52e1809]: servers,
+                  - generic [ref=f52e1810]: and
+                  - generic [ref=f52e1811]: plugins
+                  - generic [ref=f52e1812]: all
+                  - generic [ref=f52e1813]: reload
+                  - generic [ref=f52e1814]: the
+                  - generic [ref=f52e1815]: same
+                  - generic [ref=f52e1816]: way,
+                  - generic [ref=f52e1817]: because
+                  - generic [ref=f52e1818]: they’re
+                  - generic [ref=f52e1819]: all
+                  - generic [ref=f52e1821]:
+                    - code [ref=f52e1822]: State
+                    - text: s.
+            - article [ref=f52e1823]:
+              - paragraph [ref=f52e1826]:
+                - generic [ref=f52e1828]:
+                  - text: That’s how it all works, with a few details elided. OpenCode is, of course, fully
+                  - link "open source" [ref=f52e1830] [cursor=pointer]:
+                    - /url: https://github.com/anomalyco/opencode
+                  - text: ", if you want the rest."
+          - complementary "Postscript" [ref=f52e1836]:
+            - generic [ref=f52e1838]:
+              - heading "Postscript" [level=3] [ref=f52e1839]
+              - article [ref=f52e1843]:
+                - paragraph [ref=f52e1846]:
+                  - generic [ref=f52e1849]:
+                    - generic [ref=f52e1850]: If
+                    - generic [ref=f52e1851]: you’ve
+                    - generic [ref=f52e1852]: made
+                    - generic [ref=f52e1853]: it
+                    - generic [ref=f52e1854]: this
+                    - generic [ref=f52e1855]: far,
+                    - generic [ref=f52e1856]: I’d
+                    - generic [ref=f52e1857]: like
+                    - generic [ref=f52e1858]: to
+                    - generic [ref=f52e1859]: get
+                    - generic [ref=f52e1860]:
+                      - generic [ref=f52e1861]: some -
+                      - text: thing
+                    - generic [ref=f52e1862]: "off"
+                    - generic [ref=f52e1863]: my
+                    - generic [ref=f52e1864]: chest.
+                    - generic [ref=f52e1865]: I
+                    - generic [ref=f52e1866]: have,
+                    - generic [ref=f52e1867]: for
+                    - generic [ref=f52e1868]: the
+                    - generic [ref=f52e1869]: most
+                    - generic [ref=f52e1870]: part,
+                    - generic [ref=f52e1871]: resisted
+                    - generic [ref=f52e1872]:
+                      - generic [ref=f52e1873]: func -
+                      - text: tional
+                    - generic [ref=f52e1874]:
+                      - generic [ref=f52e1875]: pro -
+                      - generic [ref=f52e1876]: gram -
+                      - text: ming
+                    - generic [ref=f52e1877]: terms
+                    - generic [ref=f52e1878]: in
+                    - generic [ref=f52e1879]: the
+                    - generic [ref=f52e1880]: course
+                    - generic [ref=f52e1881]: of
+                    - generic [ref=f52e1882]: this
+                    - generic [ref=f52e1883]: post.
+                    - generic [ref=f52e1884]: But
+                    - generic [ref=f52e1885]: it
+                    - generic [ref=f52e1886]: struck
+                    - generic [ref=f52e1887]: me,
+                    - generic [ref=f52e1888]: when
+                    - generic [ref=f52e1889]: we
+                    - generic [ref=f52e1890]: first
+                    - generic [ref=f52e1891]:
+                      - generic [ref=f52e1892]: con -
+                      - generic [ref=f52e1893]: sid -
+                      - text: ered
+                    - generic [ref=f52e1894]: this
+                    - generic [ref=f52e1895]: design,
+                    - generic [ref=f52e1896]: that
+                    - generic [ref=f52e1897]:
+                      - emphasis [ref=f52e1899]: endo -
+                      - emphasis [ref=f52e1901]: mor -
+                      - emphasis [ref=f52e1903]: phisms
+                    - emphasis [ref=f52e1906]: are
+                    - generic [ref=f52e1907]:
+                      - emphasis [ref=f52e1909]: inher -
+                      - emphasis [ref=f52e1911]: ently
+                    - generic [ref=f52e1913]:
+                      - emphasis [ref=f52e1914]: monoidal
+                      - text: .
+              - article [ref=f52e1915]:
+                - paragraph [ref=f52e1918]:
+                  - generic [ref=f52e1921]:
+                    - generic [ref=f52e1922]: In
+                    - generic [ref=f52e1923]: fact,
+                    - generic [ref=f52e1924]: I
+                    - generic [ref=f52e1925]: shouted
+                    - generic [ref=f52e1926]: this
+                    - generic [ref=f52e1927]: at
+                    - generic [ref=f52e1928]: anyone
+                    - generic [ref=f52e1929]: who
+                    - generic [ref=f52e1930]: would
+                    - generic [ref=f52e1931]: listen.
+                    - generic [ref=f52e1932]:
+                      - emphasis [ref=f52e1934]: Endo -
+                      - emphasis [ref=f52e1936]: mor -
+                      - emphasis [ref=f52e1938]: phisms
+                    - emphasis [ref=f52e1941]: are
+                    - generic [ref=f52e1942]:
+                      - emphasis [ref=f52e1944]: inher -
+                      - emphasis [ref=f52e1946]: ently
+                    - generic [ref=f52e1948]:
+                      - emphasis [ref=f52e1949]: monoidal
+                      - text: ","
+                    - generic [ref=f52e1950]: I
+                    - generic [ref=f52e1951]: would
+                    - generic [ref=f52e1952]: shriek,
+                    - generic [ref=f52e1953]: at
+                    - generic [ref=f52e1954]: the
+                    - generic [ref=f52e1955]: grocery
+                    - generic [ref=f52e1956]: store,
+                    - generic [ref=f52e1957]: to
+                    - generic [ref=f52e1958]: the
+                    - generic [ref=f52e1959]: cashier,
+                    - generic [ref=f52e1960]: to
+                    - generic [ref=f52e1961]: the
+                    - generic [ref=f52e1962]: dog
+                    - generic [ref=f52e1963]: tied
+                    - generic [ref=f52e1964]: up
+                    - generic [ref=f52e1965]: outside,
+                    - generic [ref=f52e1966]: to
+                    - generic [ref=f52e1967]: Dax
+                    - generic [ref=f52e1968]: in
+                    - generic [ref=f52e1969]: too
+                    - generic [ref=f52e1970]: many,
+                    - generic [ref=f52e1971]: too
+                    - generic [ref=f52e1972]: long
+                    - generic [ref=f52e1973]: huddles.
+                    - generic [ref=f52e1974]: And
+                    - generic [ref=f52e1975]: it’s
+                    - generic [ref=f52e1976]: so
+                    - generic [ref=f52e1977]: true,
+                    - generic [ref=f52e1978]: isn’t
+                    - generic [ref=f52e1979]: it?
+                    - generic [ref=f52e1980]: That
+                    - generic [ref=f52e1981]:
+                      - generic [ref=f52e1982]: endo -
+                      - generic [ref=f52e1983]: mor -
+                      - text: phisms
+                    - generic [ref=f52e1984]: are
+                    - generic [ref=f52e1985]:
+                      - generic [ref=f52e1986]: inher -
+                      - text: ently
+                    - generic [ref=f52e1987]: monoidal?
+            - generic "The postscript, continued" [ref=f52e1988]
+      - generic:
+        - status
+    - status
