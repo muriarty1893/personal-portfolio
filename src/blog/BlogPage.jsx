@@ -1,9 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useDeferredValue, useEffect, useState } from 'react';
 import EvilEyeButton from './EvilEyeButton';
 import { posts } from './posts';
 import './blog.css';
 
 const featuredPost = posts[0];
+
+function getSearchText(post) {
+  return [post.title, post.category, post.excerpt, post.tags.join(' '), post.body.join(' ')]
+    .join(' ')
+    .toLowerCase();
+}
+
+function getWordCount(post) {
+  const text = [post.excerpt, ...post.body].join(' ').trim();
+  return text ? text.split(/\s+/).length : 0;
+}
+
+function getReadingMeta(post) {
+  const words = getWordCount(post);
+  const minutes = Math.max(1, Math.ceil(words / 200));
+  return `${minutes} min read · ${words} words`;
+}
 
 function SunIcon() {
   return (
@@ -61,11 +78,51 @@ function NotesChrome({ children, article = false }) {
 }
 
 function NotesIndex() {
+  const [input, setInput] = useState(() => new URLSearchParams(window.location.search).get('q') || '');
+  const query = useDeferredValue(input.trim().toLowerCase());
+  const visiblePosts = query ? posts.filter((post) => getSearchText(post).includes(query)) : posts;
+
+  useEffect(() => {
+    const nextUrl = input.trim() ? `blog.html?q=${encodeURIComponent(input.trim())}` : 'blog.html';
+    window.history.replaceState(null, '', nextUrl);
+  }, [input]);
+
+  useEffect(() => {
+    const focusSearch = (event) => {
+      if (event.key !== '/' || ['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
+      event.preventDefault();
+      document.querySelector('.notes-search-input')?.focus();
+    };
+    window.addEventListener('keydown', focusSearch);
+    return () => window.removeEventListener('keydown', focusSearch);
+  }, []);
+
   return (
     <NotesChrome>
       <main className="notes-index notes-sheet" aria-label="All notes">
-        <ol className="note-index-list">
-          {posts.map((post) => {
+        <div className="notes-search-wrap">
+          <label className="sr-only" htmlFor="notes-search">Search notes</label>
+          <input
+            id="notes-search"
+            className="notes-search-input"
+            type="search"
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+            placeholder="Search notes / press /"
+            autoComplete="off"
+          />
+          {input ? (
+            <button className="notes-search-clear" type="button" onClick={() => setInput('')}>
+              Clear
+            </button>
+          ) : null}
+        </div>
+        <p className="notes-search-status" aria-live="polite">
+          {query ? `${visiblePosts.length} ${visiblePosts.length === 1 ? 'note' : 'notes'} found` : `${posts.length} notes`}
+        </p>
+        {visiblePosts.length ? (
+          <ol className="note-index-list">
+            {visiblePosts.map((post) => {
             const [head, tail] = splitTitle(post.title);
             return (
               <li key={post.id} className="note-index-item">
@@ -80,8 +137,11 @@ function NotesIndex() {
                 </a>
               </li>
             );
-          })}
-        </ol>
+            })}
+          </ol>
+        ) : (
+          <p className="notes-empty">No notes match "{input}".</p>
+        )}
       </main>
     </NotesChrome>
   );
@@ -153,7 +213,7 @@ function ArticleBody({ post }) {
         <div className="article-end">
           <a href="blog.html">← All notes</a>
           <span>
-            {post.dateLabel} / {post.readTime}
+            {post.dateLabel} / {getReadingMeta(post)}
           </span>
         </div>
       </div>
