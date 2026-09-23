@@ -7,13 +7,15 @@ import './blog.css';
 const featuredPost = posts[0];
 
 function getSearchText(post) {
-  return [post.title, post.category, post.excerpt, post.tags.join(' '), post.body.join(' ')]
+  const content = post.content?.map((block) => block.text).join(' ') || post.body.join(' ');
+  return [post.title, post.category, post.excerpt, post.tags.join(' '), content]
     .join(' ')
     .toLowerCase();
 }
 
 function getWordCount(post) {
-  const text = [post.excerpt, ...post.body].join(' ').trim();
+  const content = post.content?.map((block) => block.text).join(' ') || post.body.join(' ');
+  const text = [post.excerpt, content].join(' ').trim();
   return text ? text.split(/\s+/).length : 0;
 }
 
@@ -143,7 +145,7 @@ function NotesIndex() {
               <li key={post.id} className="note-index-item">
                 <a
                   className="note-index-entry"
-                  href={post.featured ? 'blog-post.html' : `blog-post.html?post=${post.id}`}
+                  href={post.id === featuredPost.id ? 'blog-post.html' : `blog-post.html?post=${post.id}`}
                 >
                   <div className="note-index-copy">
                     <h1 className="note-index-heading">
@@ -177,16 +179,43 @@ function TitleArt({ lines }) {
   );
 }
 
+function renderInlineText(text) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
+function ArticleContent({ post }) {
+  if (post.content) {
+    return post.content.map((block, index) => {
+      if (block.type === 'heading') {
+        return <h2 key={`${block.type}-${index}`}>{renderInlineText(block.text)}</h2>;
+      }
+
+      if (block.type === 'quote') {
+        return <blockquote key={`${block.type}-${index}`}>{renderInlineText(block.text)}</blockquote>;
+      }
+
+      return <p key={`${block.type}-${index}`}>{renderInlineText(block.text)}</p>;
+    });
+  }
+
+  return [
+    <p key="excerpt">{post.excerpt}</p>,
+    ...post.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>),
+  ];
+}
+
 function ArticleBody({ post }) {
   return (
     <article className="note-article notes-sheet">
       <TitleArt lines={post.art || [post.title.toUpperCase()]} />
 
       <div className="article-copy">
-        <p>{post.excerpt}</p>
-        {post.body.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
+        <ArticleContent post={post} />
 
         {post.featured ? (
           <>

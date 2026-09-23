@@ -1,5 +1,119 @@
 export const posts = [
   {
+    id: 'the-good-kind-of-lazy',
+    category: 'Programming',
+    date: '2026-09-23',
+    dateLabel: '23 Sep 2026',
+    title: 'The Good Kind of Lazy',
+    art: ['THE GOOD', 'KIND OF LAZY'],
+    excerpt: 'Being lazy is usually considered a bad thing.',
+    tags: ['Programming', 'Automation', 'Software Development'],
+    content: [
+      { type: 'paragraph', text: 'Being lazy is usually considered a bad thing.' },
+      {
+        type: 'paragraph',
+        text: 'But in software development, I think there is a different kind of laziness — one that can actually make you a better programmer.'
+      },
+      {
+        type: 'paragraph',
+        text: "I'm not talking about avoiding work or refusing to learn. I'm talking about refusing to do the same unnecessary work over and over again."
+      },
+      {
+        type: 'paragraph',
+        text: "If I have to run the same five commands every day, I don't want to memorize them. I want to write a script."
+      },
+      {
+        type: 'paragraph',
+        text: 'If I have to copy the same piece of code into ten different places, I probably want a function, a module, or an abstraction.'
+      },
+      {
+        type: 'paragraph',
+        text: 'If I have to manually test the same thing every time I change something, I want an automated test.'
+      },
+      {
+        type: 'paragraph',
+        text: 'If I have to answer the same question five times, I would rather write a README.'
+      },
+      { type: 'paragraph', text: 'This kind of laziness naturally leads to automation.' },
+      { type: 'heading', text: "Don't do it twice" },
+      {
+        type: 'paragraph',
+        text: 'One of the most useful questions a programmer can ask is:'
+      },
+      { type: 'quote', text: '"Why am I doing this manually?"' },
+      {
+        type: 'paragraph',
+        text: 'That question can turn a boring task into a useful tool.'
+      },
+      {
+        type: 'paragraph',
+        text: 'A few minutes of repetitive work might not seem important. But if you have to do that task every day for a year, suddenly it becomes a lot of wasted time.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is one of the reasons programmers build scripts, CLI tools, libraries, frameworks, CI/CD pipelines, and automation systems.'
+      },
+      { type: 'paragraph', text: 'Someone, somewhere, got tired of doing something manually.' },
+      { type: 'paragraph', text: 'And they wrote software instead.' },
+      { type: 'heading', text: 'Laziness encourages better design' },
+      {
+        type: 'paragraph',
+        text: 'There is another interesting side effect.'
+      },
+      {
+        type: 'paragraph',
+        text: "When you don't want to maintain the same thing in ten different places, you start looking for ways to keep it in one place."
+      },
+      { type: 'paragraph', text: 'You start thinking about reusable components.' },
+      { type: 'paragraph', text: 'You start noticing duplicated code.' },
+      {
+        type: 'paragraph',
+        text: 'You start asking whether a complicated solution could be simpler.'
+      },
+      {
+        type: 'paragraph',
+        text: 'In that sense, laziness can push you toward some of the principles that make software easier to maintain: automation, reuse, simplicity, and avoiding unnecessary repetition.'
+      },
+      {
+        type: 'paragraph',
+        text: "The goal isn't to write less code just for the sake of writing less code."
+      },
+      { type: 'paragraph', text: 'The goal is to create less unnecessary work.' },
+      { type: 'heading', text: 'The important distinction' },
+      {
+        type: 'paragraph',
+        text: 'There is a big difference between **being lazy** and **being careless**.'
+      },
+      { type: 'paragraph', text: 'A careless developer avoids work.' },
+      {
+        type: 'paragraph',
+        text: 'A productive lazy developer avoids **unnecessary** work.'
+      },
+      {
+        type: 'paragraph',
+        text: "They are still willing to spend hours understanding a difficult problem. They just don't want to spend those hours doing something a computer could do in seconds."
+      },
+      { type: 'paragraph', text: "That's probably one of the reasons I like programming." },
+      {
+        type: 'paragraph',
+        text: 'You can be lazy once, write a good tool, and let the computer be hardworking forever.'
+      },
+      {
+        type: 'paragraph',
+        text: "So maybe the real question isn't:"
+      },
+      { type: 'paragraph', text: '**"How can I work harder?"**' },
+      {
+        type: 'paragraph',
+        text: 'Maybe sometimes it should be:'
+      },
+      {
+        type: 'paragraph',
+        text: '**"How can I make sure I never have to do this again?"**'
+      }
+    ]
+  },
+  {
     id: 'search-is-a-systems-problem',
     category: 'Search',
     date: '2026-09-18',
