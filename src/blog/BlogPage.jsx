@@ -1,4 +1,5 @@
 import { useDeferredValue, useEffect, useState } from 'react';
+import { HyperText } from '../components/ui/HyperText';
 import EvilEyeButton from './EvilEyeButton';
 import { posts } from './posts';
 import './blog.css';
@@ -31,6 +32,20 @@ function SunIcon() {
   );
 }
 
+function ArrowIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none">
+      <path
+        d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function splitTitle(title) {
   const commaIndex = title.indexOf(',');
   if (commaIndex !== -1) {
@@ -57,7 +72,7 @@ function NotesChrome({ children, article = false }) {
           </a>
         ) : (
           <a className="notes-logo" href="index.html" aria-label="Back to Murat Eker portfolio">
-            Murat
+            Murat Eker
           </a>
         )}
         <div className="notes-controls">
@@ -130,10 +145,15 @@ function NotesIndex() {
                   className="note-index-entry"
                   href={post.featured ? 'blog-post.html' : `blog-post.html?post=${post.id}`}
                 >
-                  <h1 className="note-index-heading">
-                    {head} {tail ? <em>{tail}</em> : null}
-                  </h1>
-                  <time dateTime={post.date}>{post.dateLabel}</time>
+                  <div className="note-index-copy">
+                    <h1 className="note-index-heading">
+                      {head} {tail ? <em>{tail}</em> : null}
+                    </h1>
+                    <time dateTime={post.date}>{post.dateLabel}</time>
+                  </div>
+                  <span className="note-index-arrow" aria-hidden="true">
+                    <ArrowIcon />
+                  </span>
                 </a>
               </li>
             );
@@ -148,22 +168,11 @@ function NotesIndex() {
 }
 
 function TitleArt({ lines }) {
-  const renderLine = (line, key) => (
-    <span key={key}>
-      {Array.from(line).map((char, index) => (
-        <span
-          key={`${key}-${index}`}
-          className={/[Ø03#]/.test(char) ? 'boxed' : undefined}
-        >
-          {char === ' ' ? ' ' : char}
-        </span>
-      ))}
-    </span>
-  );
-
   return (
     <div className="article-title-art" aria-hidden="true">
-      {lines.map((line, index) => renderLine(line, `l${index}`))}
+      {lines.map((line) => (
+        <HyperText key={line} text={line} boxedCharacters="Ø03#" />
+      ))}
     </div>
   );
 }

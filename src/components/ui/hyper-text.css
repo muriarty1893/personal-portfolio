@@ -1,0 +1,23 @@
+.hyper-text {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.hyper-text__letter {
+  display: inline-block;
+  min-width: 0.02em;
+  will-change: transform, opacity;
+}
+
+.hyper-text__letter--space {
+  min-width: 0.28em;
+}
+
+.hyper-text__letter--boxed {
+  padding: 0 0.06em;
+  background: rgba(38, 37, 31, 0.1);
+}
+
+.notes-site.is-dark .hyper-text__letter--boxed {
+  background: rgba(236, 234, 228, 0.14);
+}
