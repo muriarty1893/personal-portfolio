@@ -13,3 +13,4 @@ AGENTS.md
 /designlang-output-base
 node_modules/
 dist/
+.playwright-mcp/

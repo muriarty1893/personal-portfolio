@@ -3,15 +3,11 @@
   <head>
     <title>Murat Eker - Portfolio</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Murat Eker ist Informatikingenieur mit Schwerpunkt auf KI, maschinellem Lernen, Backend-Entwicklung und serverseitigen Systemen."
     />
-
     <meta property="og:title" content="Murat Eker - Portfolio" />
     <meta property="og:description" content="Informatikingenieur mit Schwerpunkt auf KI, maschinellem Lernen, Backend-Entwicklung und serverseitigen Systemen." />
     <meta property="og:type" content="website" />
@@ -23,12 +19,12 @@
     <meta name="twitter:title" content="Murat Eker - Portfolio" />
     <meta name="twitter:description" content="Informatikingenieur mit Schwerpunkt auf KI, maschinellem Lernen, Backend-Entwicklung und serverseitigen Systemen." />
     <meta name="twitter:image" content="https://murateker.com.tr/images/og-image.jpg" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia+Sans+Condensed:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;600;700;900&family=Spline+Sans+Mono:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/animate.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <link rel="icon" href="images/favicon.ico" sizes="any" />
@@ -38,480 +34,547 @@
     <link rel="alternate" hreflang="tr" href="https://murateker.com.tr/index-tr.html" />
     <link rel="alternate" hreflang="de" href="https://murateker.com.tr/index-de.html" />
     <link rel="alternate" hreflang="x-default" href="https://murateker.com.tr/" />
-
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script>document.documentElement.classList.add('js');</script>
   </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body>
     <script src="js/preload.js"></script>
     <div id="loader">
       <canvas id="loader-canvas"></canvas>
       <div id="percentage-counter">0%</div>
     </div>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
-      id="ftco-navbar"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index-de.html">Murat Eker</a>
-        <button
-          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Navigation ein-/ausblenden"
-        >
-          <span class="oi oi-menu"></span> Menü
-        </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto nav-brackets">
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link"><span>Über mich</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-1" class="nav-link"><span>Ausbildung</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-2" class="nav-link"><span>Erfahrung</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-3" class="nav-link"><span>Fähigkeiten</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-4" class="nav-link"><span>Projekte</span></a>
-            </li>
-          </ul>
-          <div class="navbar-right-group">
-            <div class="lang-switcher" id="lang-switcher" aria-label="Sprache wählen">
-              <button class="lang-switcher__button" type="button" data-lang="en" aria-pressed="false">EN</button>
-              <button class="lang-switcher__button" type="button" data-lang="tr" aria-pressed="false">TR</button>
-              <button class="lang-switcher__button" type="button" data-lang="de" aria-pressed="true">DE</button>
-            </div>
-            <a href="#contact-section" class="nav-contact-btn">Kontakt <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
-          </div>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="index-de.html" aria-label="Murat Eker, Startseite"><span>Murat</span><span>Eker</span></a>
+      <nav class="site-nav" aria-label="Hauptmenü">
+        <ul>
+          <li><a href="#about"><span>Über mich</span></a></li>
+          <li><a href="#works"><span>Projekte</span></a></li>
+          <li><a href="#skills"><span>Fähigkeiten</span></a></li>
+          <li><a href="#connect"><span>Kontakt</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="lang-switcher" data-lang-switcher aria-label="Sprache wählen">
+          <button class="lang-switcher__button" type="button" data-lang="en">EN</button>
+          <button class="lang-switcher__button" type="button" data-lang="tr">TR</button>
+          <button class="lang-switcher__button" type="button" data-lang="de">DE</button>
         </div>
+        <a class="link-line header-contact" href="#connect">Schreib mir <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <button class="menu-toggle bracket" type="button" aria-expanded="false" aria-controls="mobile-menu" data-open-label="Menü" data-close-label="Schließen">Menü</button>
       </div>
-    </nav>
+    </header>
 
-    <section class="hero-wrap">
-      <div class="hero-editorial">
-        <div class="hero-meta">
-          <div class="hero-counter">1,018</div>
-        </div>
-        <h1 class="hero-title">
-          <span class="hero-title-line">INFORMATIK</span>
-          <span class="hero-title-line">INGENIEUR</span>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">Über mich</a>
+      <a href="#works">Projekte</a>
+      <a href="#skills">Fähigkeiten</a>
+      <a href="#connect">Kontakt</a>
+      <a href="blog.html">Blog</a>
+      <div class="lang-switcher" data-lang-switcher aria-label="Sprache wählen">
+        <button class="lang-switcher__button" type="button" data-lang="en">EN</button>
+        <button class="lang-switcher__button" type="button" data-lang="tr">TR</button>
+        <button class="lang-switcher__button" type="button" data-lang="de">DE</button>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- 1 / HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__counter">1,018</div>
+        <h1 class="hero__title display" id="hero-title" data-fit>
+          <span class="hero-title-line">Informatik</span>
+          <span class="hero-title-line">Ingenieur</span>
         </h1>
-        <div class="hero-location">IN DER TÜRKEI</div>
-        <div class="hero-showcase">
-          <div class="hero-specialties-card">
-            <ul class="hero-specialties">
-              <li>/ SOFTWAREENTWICKLUNG</li>
-              <li>/ BACKEND-ENTWICKLUNG</li>
-              <li>/ SERVERSEITIGE SYSTEME</li>
+        <p class="hero__location">In der Türkei</p>
+
+        <div class="hero__stage">
+          <div class="hero__panel">
+            <ul class="hero__specialties">
+              <li>/ Softwareentwicklung</li>
+              <li>/ Backend-Entwicklung</li>
+              <li>/ Serverseitige Systeme</li>
             </ul>
           </div>
-          <div class="hero-photo">
+          <figure class="hero__photo">
             <img src="images/cv_foto_nobg.webp" alt="Murat Eker" width="402" height="621" fetchpriority="high" />
             <div class="hero-photo-overlay"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-statement-section" aria-label="Kurzstatement über mich">
-      <div class="about-statement-marquee" aria-hidden="true">BACKEND ML SEARCH SYSTEMS BACKEND ML SEARCH SYSTEMS</div>
-      <div class="about-statement-inner">
-        <div class="about-statement-meta">
-          <span>02 / ÜBER MICH</span>
-          <span>SERVER-SIDE / ML</span>
-        </div>
-        <p class="about-statement-kicker">Über mich</p>
-        <h2 class="about-statement-title">
-          <span>Ich entwickle</span>
-          <span class="muted">serverseitige</span>
-          <span>performance-orientierte</span>
-          <span class="muted">Systeme.</span>
-        </h2>
-      </div>
-    </section>
-
-    <section class="ftco-section about-section" id="about-section">
-      <div class="container">
-        <div class="about-editorial">
-          <div class="about-content">
-            <div class="about-photo">
-              <img src="images/cv_foto_about_me.webp" alt="Murat Eker" width="242" height="297" loading="lazy" />
-            </div>
-
-            <div class="about-copy">
-              <p class="about-facts-text">
-                Ich bin frisch diplomierter Informatikingenieur mit Schwerpunkt auf Backend-Entwicklung,
-                Webanwendungen und serverseitigen Systemen. Erfahren in der Entwicklung von End-to-End-Projekten
-                mit Python und modernen Technologiestacks, mit Interesse an sauberer Architektur,
-                Suchmaschinenoptimierung und zuverlässigen Anwendungsabläufen. Versiert in Linux und dem
-                Open-Source-Ökosystem. Ich arbeite gerne an komplexen Projekten und lerne durch praktisches Umsetzen.
-              </p>
-
-              <a href="documents/Murat Eker CV.pdf" class="about-cv-link" download>
-                Lebenslauf herunterladen
-                <span class="arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21 21" fill="none">
-                    <path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <nav id="navi">
-              <ul>
-                <li><a href="#page-1">AUSBILDUNG</a></li>
-                <li><a href="#page-2">ERFAHRUNG</a></li>
-                <li><a href="#page-3">FÄHIGKEITEN</a></li>
-                <li><a href="#page-4">PROJEKTE</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-9">
-            <div id="page-1" class="page one">
-              <h2 class="heading">Ausbildung</h2>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-graduation-cap"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</h2>
-                  <span class="position">Fakultät für Informatik und Informationstechnologie</span>
-                  <p><strong>Informatik-Ingenieurwesen</strong></p>
-                  <p><a href="https://compeng.atu.edu.tr/#!/" target="_blank" rel="noopener noreferrer">https://compeng.atu.edu.tr</a></p>
-                  <p>Adana – Türkei</p>
-                  <span class="date">August 2021 – Februar 2026</span>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-2" class="page two">
-              <h2 class="heading">Erfahrung</h2>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Praktikant</h2>
-                  <span class="position">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
-                  <p>Berufsschule für Informationstechnologie</p>
-                  <p class="date">November 2025 – Februar 2026</p>
-                  <ul>
-                    <li>Serverseitige und netzwerkbezogene Einrichtungsaufgaben unterstützt, einschließlich Installation und Konfiguration von Abteilungsausrüstung.</li>
-                    <li>Praktische Erfahrung beim Erstellen von Ethernet-Cat-5-Kabeln und bei der Einrichtung von Access Points zur Erweiterung der WLAN-Abdeckung.</li>
-                    <li>Aktive Teilnahme an den Lehrveranstaltungen der Abteilung, um theoretisches Wissen mit praktischer Erfahrung zu verbinden.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Praktikant</h2>
-                  <span class="position">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
-                  <p>Zentrum für Karriereplanung, Anwendung und Forschung</p>
-                  <p class="date">März 2025 – Juli 2025</p>
-                  <ul>
-                    <li>Erstellung von Werbematerialien und Postern für Universitätsveranstaltungen und Konferenzen.</li>
-                    <li>Dokumentenverarbeitung und administrative Aufgaben für Karriereplanungsinitiativen.</li>
-                    <li>Mitarbeit bei der Konferenzvorbereitung und -koordination, einschließlich Logistik und Teilnehmerverwaltung.</li>
-                    <li>Unterstützung bei Forschungsaktivitäten und Datenerhebung für Karriereentwicklungsprogramme.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Softwareentwicklungs-Praktikant</h2>
-                  <span class="position">Teknology House Yazılım ve Bilişim, Adana</span>
-                  <p class="date">Juli 2024 – Oktober 2024</p>
-                  <ul>
-                    <li>Migration des Produktsuchsystems von SQL zu Elasticsearch.</li>
-                    <li>Prototyping mit Python und Integration mit C# .NET.</li>
-                    <li>Indexverwaltung und Datenvisualisierung mit Kibana.</li>
-                    <li>Deutliche Verbesserungen der Suchgeschwindigkeit und Optimierung der Serverlast.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Büromitarbeiter</h2>
-                  <span class="position">Yılsan İnşaat</span>
-                  <p class="date">2021 – 2024</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-3" class="page three">
-              <h2 class="heading">Sprachen und Werkzeuge</h2>
-              <div class="skills-grid ftco-animate">
-                <div class="skill-item">
-                  <img src="images/skills/python.webp" alt="Python" width="80" height="80" loading="lazy" />
-                  <span>Python</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/elasticsearch.webp" alt="Elasticsearch" width="80" height="80" loading="lazy" />
-                  <span>Elasticsearch</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/git.webp" alt="Git" width="80" height="80" loading="lazy" />
-                  <span>Git</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/kibana.webp" alt="Kibana" width="80" height="80" loading="lazy" />
-                  <span>Kibana</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/go.webp" alt="Go" width="80" height="80" loading="lazy" />
-                  <span>Go</span>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-4" class="page four">
-              <h2 class="heading">Projekte</h2>
-              <div class="proj-list">
-
-                <a href="https://github.com/muriarty1893/rottector" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">01</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Rottector</h3>
-                    <p class="proj-desc">KI-gestütztes Früchte-Erkennungssystem, das mithilfe eines Hybridmodells aus zwei Modellen Früchte als frisch oder faul klassifiziert. End-to-End-Lösung mit Python-Backend und Web-Interface.</p>
-                    <div class="proj-tech"><span>Python</span><span>YOLOv8</span><span>FastAPI</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/lavida" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">02</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Lavida</h3>
-                    <p class="proj-desc">Leichtgewichtiges, immer sichtbares Desktop-Widget zur Verwaltung gespeicherter Video-Links mit automatischer Titelerfassung und globalen Tastaturkürzeln.</p>
-                    <div class="proj-tech"><span>Python</span><span>PyQt6</span><span>SQLite</span><span>BeautifulSoup4</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/rag-tutorial-v2" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">03</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">RAG Tutorial v2</h3>
-                    <p class="proj-desc">Erweitertes RAG-System mit Gesprächsgedächtnis, PDF-Verarbeitung, mehrsprachiger Unterstützung und interaktivem Feedback.</p>
-                    <div class="proj-tech"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Llama 3.2</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/gopak.com.tr" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">04</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">GOPAK E-commerce</h3>
-                    <p class="proj-desc">Responsives E-Commerce-Webanwendung für die offizielle Gopak Corporation mit 3D-Modell-Viewer und Verwaltungspanel.</p>
-                    <div class="proj-tech"><span>PHP</span><span>MySQL</span><span>HTML5</span><span>JavaScript</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/Heart-Attack-Prediction-and-EDA" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">05</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Heart Attack Prediction &amp; EDA</h3>
-                    <p class="proj-desc">Umfassende explorative Datenanalyse und Machine-Learning-Modell zur Herzinfarkt-Vorhersage mit Datenvisualisierung.</p>
-                    <div class="proj-tech"><span>Python</span><span>Machine Learning</span><span>EDA</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/dataPull" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">06</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Modular Data Scraper</h3>
-                    <p class="proj-desc">Robustes CLI-basiertes Scraping-Tool mit modularer Architektur. Bietet automatische Leistungsverfolgung und strukturierten CSV-Export.</p>
-                    <div class="proj-tech"><span>Python</span><span>BeautifulSoup4</span><span>Pandas</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/JustZipIt" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">07</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">JustZipIt</h3>
-                    <p class="proj-desc">Dateikompressionsprogramm mit benutzerfreundlicher Oberfläche für effizientes Archivieren und Entpacken.</p>
-                    <div class="proj-tech"><span>Python</span><span>GUI</span><span>File Compression</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/circling_loader" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">08</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Circling Loader</h3>
-                    <p class="proj-desc">Leichtgewichtige und anpassbare Lade-Animation für Web-Anwendungen.</p>
-                    <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/the-elastic-project" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">09</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Elasticsearch Search Integration</h3>
-                    <p class="proj-desc">SQL-basierte Suche auf hochleistungsfähiges Elasticsearch migriert; Integration mit C# .NET und Indexverwaltung über Kibana.</p>
-                    <div class="proj-tech"><span>Elasticsearch</span><span>Python</span><span>C#</span><span>Kibana</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-4 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Kontakt</h2>
-          </div>
+          </figure>
         </div>
 
-        <div class="row d-flex justify-content-center contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-github"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">GitHub</h3>
-                <p><a href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">github.com/muriarty1893</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">E-Mail-Adresse</h3>
-                <p><a href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-linkedin-square"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">LinkedIn</h3>
-                <p><a href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">linkedin.com/in/murat-eker</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="hero__intro">
+          <p>Frisch diplomierter Informatikingenieur, der Webanwendungen und serverseitige Systeme mit Python und modernen Technologiestacks entwickelt.</p>
+          <p>Saubere Architektur. Zuverlässige Abläufe.</p>
         </div>
 
-        <div class="row justify-content-center pb-5">
-          <div class="col-12 d-flex justify-content-center">
-            <a href="mailto:ekermuratinfo@gmail.com" class="tilt-card" aria-label="E-Mail an Murat Eker senden">
-              <div class="tc-top">
-                <svg class="tc-logo" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <rect x="0.75" y="0.75" width="24.5" height="20.5" rx="2.25" stroke="currentColor" stroke-width="1.5"/>
-                  <path d="M1 3L13 11L25 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="tc-chip" width="26" height="26" viewBox="0 0 262 278" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M57.6541 65.6418C58.8281 64.8226 60.4465 65.2097 61.2647 66.3823C64.3285 70.7734 68.3982 73.8437 73.2472 75.6378L73.3016 75.6581L92.6744 82.6771C95.575 83.7281 97.8595 86.0054 98.9135 88.896L105.957 108.209L105.978 108.263C107.777 113.094 111.016 117.262 115.261 120.205C119.507 123.148 124.556 124.727 129.729 124.727C134.902 124.727 139.951 123.148 144.197 120.205C148.443 117.262 151.681 113.094 153.48 108.263L153.521 108.155L160.545 88.8977C161.599 86.0081 163.882 83.7316 166.782 82.6805C176.525 79.148 187.434 82.5762 193.381 91.039L223.505 133.91C223.516 133.925 223.524 133.942 223.534 133.957C228.045 140.476 226.441 149.411 219.921 153.96L117.032 225.751C111.613 229.533 110.798 237.692 115.213 243.976C119.63 250.261 127.604 252.292 133.024 248.51L239.241 174.706C245.791 170.156 254.802 171.748 259.381 178.266C263.973 184.801 262.368 193.81 255.801 198.374L149.632 272.144C132.954 283.78 108.421 277.536 94.8322 258.199C93.5324 256.349 92.381 254.445 91.3741 252.506C91.3172 252.396 91.1589 252.398 91.1049 252.509C91.055 252.612 90.9129 252.623 90.8473 252.53L3.77438 128.615C-2.83414 119.21 -0.539816 106.247 8.89813 99.6622L21.4057 90.9343C21.4336 90.9148 21.472 90.9217 21.4914 90.9496C21.513 90.9807 21.5574 90.985 21.5848 90.9588C21.9663 90.5947 22.3802 90.2545 22.8263 89.9432L57.6541 65.6418Z" fill="currentColor"/>
-                  <path d="M184.781 55.435C184.793 57.0601 184.298 58.6488 183.363 59.9801C182.428 61.3115 181.1 62.3194 179.564 62.8638L160.243 69.8673C152.51 72.6702 146.42 78.741 143.609 86.4472L136.586 105.703C136.021 107.22 135.004 108.528 133.672 109.451C132.34 110.375 130.756 110.87 129.133 110.87C127.51 110.87 125.926 110.375 124.594 109.451C123.262 108.528 122.245 107.22 121.68 105.703L114.657 86.4455C111.846 78.7374 105.754 72.6654 98.0192 69.8629L78.7019 62.8638C77.1805 62.3009 75.8684 61.2874 74.9418 59.9594C74.0152 58.6314 73.5186 57.0526 73.5186 55.435C73.5186 53.8174 74.0152 52.2386 74.9418 50.9106C75.8684 49.5826 77.1805 48.5691 78.7019 48.0062L98.0192 41.0071C105.754 38.2046 111.846 32.1326 114.657 24.4245L121.68 5.16662C122.245 3.65013 123.262 2.34224 124.594 1.41864C125.926 0.49505 127.51 0 129.133 0C130.756 0 132.34 0.49505 133.672 1.41864C135.004 2.34224 136.021 3.65013 136.586 5.16662L143.613 24.4281C146.424 32.1342 152.515 38.2044 160.248 41.0066L179.564 48.0062C181.1 48.5506 182.428 49.5585 183.363 50.8899C184.298 52.2213 184.793 53.8099 184.781 55.435Z" fill="currentColor"/>
-                </svg>
-              </div>
-              <div class="tc-middle">
-                <p class="tc-middle-text">Kontakt aufnehmen</p>
-              </div>
-              <div class="tc-bottom">
-                <div class="tc-info-left">
-                  <p class="tc-name"></p>
-                  <p class="tc-role">ekermuratinfo@gmail.com</p>
-                </div>
-                <div class="tc-info-right">
-                  <p class="tc-stat-label">Klicken und</p>
-                  <p class="tc-stat-value">Hallo sagen</p>
-                </div>
-              </div>
-            </a>
+        <div class="hero__foot">
+          <div>
+            <span class="hero__foot-label">Offen für neue Möglichkeiten <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span><br />
+            <a class="hero__mail" href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a>
           </div>
-        </div>
-
-        <div class="contact-blog-link ftco-animate">
-          <p>Notizen zu Backend-Entwicklung, Systemen und Lernen in der Praxis.</p>
-          <a href="blog.html" aria-label="Murat Ekers Blog lesen">
-            Blog lesen
-            <span class="arrow" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                <path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+          <a class="hero__recent" href="#works">
+            <span class="hero__foot-label">Aktuelles Projekt <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+            <span class="hero__recent-name">Rottector</span>
           </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright &copy;
-              <span id="current-year"></span>
-                | Liebevoll kodiert <i class="icon-heart color-danger" aria-hidden="true"></i> von <a href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">murat</a>
-            </p>
+      <!-- 2 / STATEMENT -->
+      <section class="statement section-dark" aria-label="Was ich mache" data-statement>
+        <div class="statement__sticky">
+          <div class="statement__meta">
+            <span class="statement__count">2/6</span>
+            <span class="label">Was ich mache</span>
+            <span class="statement__tag">SYS/2</span>
+          </div>
+          <h2 class="statement__title" data-scatter>
+            <span>Ich entwickle</span>
+            <span class="muted">serverseitige,</span>
+            <span class="muted">performance-</span>
+            <span>orientierte</span>
+            <span>Systeme.</span>
+          </h2>
+        </div>
+      </section>
+
+      <!-- 3 / WORKS -->
+      <section class="works section-dark" id="works" aria-labelledby="works-title">
+        <h2 class="works__title display" id="works-title"><span class="mask"><span>Ausgewählte Projekte</span></span></h2>
+
+        <ol class="works__list" data-works>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/rottector" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">01</span>
+              <span class="work__main">
+                <h3 class="work__name">Rottector</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">KI-gestütztes Früchte-Erkennungssystem, das mithilfe eines Hybridmodells aus zwei Modellen Früchte als frisch oder faul klassifiziert. End-to-End-Lösung mit Python-Backend und Web-Interface.</span>
+                    <span class="work__tech"><span>Python</span><span>YOLOv8</span><span>FastAPI</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">KI / Computer Vision</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/lavida" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">02</span>
+              <span class="work__main">
+                <h3 class="work__name">Lavida</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Leichtgewichtiges, immer sichtbares Desktop-Widget zur Verwaltung gespeicherter Video-Links mit automatischer Titelerfassung und globalen Tastaturkürzeln.</span>
+                    <span class="work__tech"><span>Python</span><span>PyQt6</span><span>SQLite</span><span>BeautifulSoup4</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Desktop-Tool</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/rag-tutorial-v2" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">03</span>
+              <span class="work__main">
+                <h3 class="work__name">RAG Tutorial v2</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Erweitertes RAG-System mit Gesprächsgedächtnis, PDF-Verarbeitung, mehrsprachiger Unterstützung und interaktivem Feedback.</span>
+                    <span class="work__tech"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Llama 3.2</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">LLM / Retrieval</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/gopak.com.tr" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">04</span>
+              <span class="work__main">
+                <h3 class="work__name">GOPAK E-commerce</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Responsives E-Commerce-Webanwendung für die offizielle Gopak Corporation mit 3D-Modell-Viewer und Verwaltungspanel.</span>
+                    <span class="work__tech"><span>PHP</span><span>MySQL</span><span>HTML5</span><span>JavaScript</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Webanwendung</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/Heart-Attack-Prediction-and-EDA" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">05</span>
+              <span class="work__main">
+                <h3 class="work__name">Heart Attack Prediction &amp; EDA</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Umfassende explorative Datenanalyse und Machine-Learning-Modell zur Herzinfarkt-Vorhersage mit Datenvisualisierung.</span>
+                    <span class="work__tech"><span>Python</span><span>Machine Learning</span><span>EDA</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Maschinelles Lernen</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/dataPull" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">06</span>
+              <span class="work__main">
+                <h3 class="work__name">Modular Data Scraper</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Robustes CLI-basiertes Scraping-Tool mit modularer Architektur. Bietet automatische Leistungsverfolgung und strukturierten CSV-Export.</span>
+                    <span class="work__tech"><span>Python</span><span>BeautifulSoup4</span><span>Pandas</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">CLI-Tool</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/JustZipIt" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">07</span>
+              <span class="work__main">
+                <h3 class="work__name">JustZipIt</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Dateikompressionsprogramm mit benutzerfreundlicher Oberfläche für effizientes Archivieren und Entpacken.</span>
+                    <span class="work__tech"><span>Python</span><span>GUI</span><span>File Compression</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Werkzeug</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/circling_loader" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">08</span>
+              <span class="work__main">
+                <h3 class="work__name">Circling Loader</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Leichtgewichtige und anpassbare Lade-Animation für Web-Anwendungen.</span>
+                    <span class="work__tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Frontend</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/the-elastic-project" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">09</span>
+              <span class="work__main">
+                <h3 class="work__name">Elasticsearch Search Integration</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">SQL-basierte Suche auf hochleistungsfähiges Elasticsearch migriert; Integration mit C# .NET und Indexverwaltung über Kibana.</span>
+                    <span class="work__tech"><span>Elasticsearch</span><span>Python</span><span>C#</span><span>Kibana</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Suche</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">Auf GitHub ansehen</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4 / ABOUT -->
+      <section class="about section-dark" id="about" aria-labelledby="about-title">
+        <h2 class="about__title display" id="about-title"><span class="mask"><span>Über mich</span></span></h2>
+
+        <div class="about__intro">
+          <p class="about__kicker">Über mich</p>
+          <div class="about__portrait" data-reveal>
+            <img src="images/cv_foto_about_me.webp" alt="Murat Eker" width="242" height="297" loading="lazy" />
+            <p class="about__hello">Hallo!<br />Ich bin Murat Eker</p>
+            <a class="label about__next" href="#experience">Meine Erfahrung <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
           </div>
         </div>
+
+        <p class="about__statement" data-reveal>Ich arbeite gerne an komplexen Projekten und lerne durch praktisches Umsetzen.</p>
+
+        <div class="about__blocks">
+          <div class="about-block about-block--a" data-reveal>
+            <p>Ich bin frisch diplomierter Informatikingenieur mit Schwerpunkt auf Backend-Entwicklung, Webanwendungen und serverseitigen Systemen.</p>
+            <p>Erfahren in der Entwicklung von End-to-End-Projekten mit Python und modernen Technologiestacks.</p>
+            <span class="label">Mein Fokus <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </div>
+
+          <div class="about-blocks__row">
+            <a class="link-line" href="documents/Murat Eker CV.pdf" download data-reveal>Lebenslauf herunterladen <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <div class="about-block about-block--b" data-reveal>
+              <p>Interesse an sauberer Architektur, Suchmaschinenoptimierung und zuverlässigen Anwendungsabläufen.</p>
+              <p>Versiert in Linux und dem Open-Source-Ökosystem.</p>
+              <span class="label">Aktuell <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+            </div>
+          </div>
+
+          <div class="about-blocks__row">
+            <div class="about-block about-block--c" data-reveal>
+              <p>Ab und zu probiere ich neue Linux-Distributionen aus und teste Open-Source-Tools, die ich online finde.</p>
+              <p>Derzeit lerne ich Go und wie man damit Tests schreibt.</p>
+            </div>
+          </div>
+
+          <div class="about__actions">
+            <a class="link-line" href="#connect" data-reveal>Vernetzen wir uns <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+        </div>
+
+        <div class="ledger" id="experience">
+          <div class="ledger__group">
+            <div class="ledger__head">
+              <p class="about__kicker">03 / Laufbahn</p>
+              <h3 class="ledger__title display"><span class="mask"><span>Erfahrung</span></span></h3>
+            </div>
+            <div class="ledger__list">
+              <details class="entry">
+                <summary class="entry__head">
+                  <span class="entry__role">Praktikant<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Berufsschule für Informationstechnologie</span></span>
+                  <span class="entry__date">Nov 2025 – Feb 2026</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Serverseitige und netzwerkbezogene Einrichtungsaufgaben unterstützt, einschließlich Installation und Konfiguration von Abteilungsausrüstung.</li>
+                  <li>Praktische Erfahrung beim Erstellen von Ethernet-Cat-5-Kabeln und bei der Einrichtung von Access Points zur Erweiterung der WLAN-Abdeckung.</li>
+                  <li>Aktive Teilnahme an den Lehrveranstaltungen der Abteilung, um theoretisches Wissen mit praktischer Erfahrung zu verbinden.</li>
+                </ul>
+              </details>
+              <details class="entry">
+                <summary class="entry__head">
+                  <span class="entry__role">Praktikant<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Zentrum für Karriereplanung, Anwendung und Forschung</span></span>
+                  <span class="entry__date">Mär 2025 – Jul 2025</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Erstellung von Werbematerialien und Postern für Universitätsveranstaltungen und Konferenzen.</li>
+                  <li>Dokumentenverarbeitung und administrative Aufgaben für Karriereplanungsinitiativen.</li>
+                  <li>Mitarbeit bei der Konferenzvorbereitung und -koordination, einschließlich Logistik und Teilnehmerverwaltung.</li>
+                  <li>Unterstützung bei Forschungsaktivitäten und Datenerhebung für Karriereentwicklungsprogramme.</li>
+                </ul>
+              </details>
+              <details class="entry" open>
+                <summary class="entry__head">
+                  <span class="entry__role">Softwareentwicklungs-Praktikant<span class="entry__org">Teknology House Yazılım ve Bilişim, Adana</span></span>
+                  <span class="entry__date">Jul 2024 – Okt 2024</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Migration des Produktsuchsystems von SQL zu Elasticsearch.</li>
+                  <li>Prototyping mit Python und Integration mit C# .NET.</li>
+                  <li>Indexverwaltung und Datenvisualisierung mit Kibana.</li>
+                  <li>Deutliche Verbesserungen der Suchgeschwindigkeit und Optimierung der Serverlast.</li>
+                </ul>
+              </details>
+              <div class="entry">
+                <div class="entry__head">
+                  <span class="entry__role">Büromitarbeiter<span class="entry__org">Yılsan İnşaat</span></span>
+                  <span class="entry__date">2021 – 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ledger__group">
+            <div class="ledger__head">
+              <p class="about__kicker">04 / Studium</p>
+              <h3 class="ledger__title display"><span class="mask"><span>Ausbildung</span></span></h3>
+            </div>
+            <div class="ledger__list">
+              <details class="entry" open>
+                <summary class="entry__head">
+                  <span class="entry__role">Informatik-Ingenieurwesen<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Fakultät für Informatik und Informationstechnologie</span></span>
+                  <span class="entry__date">Aug 2021 – Feb 2026</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Adana, Türkei</li>
+                  <li><a href="https://compeng.atu.edu.tr/#!/" target="_blank" rel="noopener noreferrer">compeng.atu.edu.tr</a></li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 / SKILLS -->
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="skills__title display" id="skills-title"><span class="mask"><span>Fähigkeiten</span></span></h2>
+        <div class="skills__grid" data-skills>
+          <div class="skill-col is-active" tabindex="0">
+            <span class="skill-col__idx">00-1</span>
+            <h3 class="skill-col__name">Backend</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Python</li><li>/ Go</li><li>/ C# .NET</li><li>/ FastAPI</li><li>/ PHP</li></ul>
+                <div class="skill-col__media"><img src="images/skills/python.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/go.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/csharp.png" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">End-to-End-Projekte mit Python und modernen Technologiestacks, von FastAPI-Services bis zu C#-.NET-Integrationen.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-2</span>
+            <h3 class="skill-col__name">Suche &amp; Daten</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Elasticsearch</li><li>/ Kibana</li><li>/ MySQL</li><li>/ SQLite</li><li>/ Pandas</li></ul>
+                <div class="skill-col__media"><img src="images/skills/elasticsearch.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/kibana.webp" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Produktsuche von SQL zu Elasticsearch migriert, Indizes in Kibana verwaltet und Suchzeit sowie Serverlast gesenkt.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-3</span>
+            <h3 class="skill-col__name">ML &amp; KI</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ YOLOv8</li><li>/ LangChain</li><li>/ ChromaDB</li><li>/ Llama 3.2</li><li>/ EDA</li></ul>
+                <div class="skill-col__media skill-col__media--empty" aria-hidden="true"></div>
+              </div>
+              <p class="skill-col__desc">Ein hybrider YOLOv8-Früchtedetektor, ein RAG-System mit Gesprächsgedächtnis und explorative Datenanalyse.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-4</span>
+            <h3 class="skill-col__name">Web</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ HTML5</li><li>/ CSS</li><li>/ JavaScript</li><li>/ PyQt6</li><li>/ BeautifulSoup4</li></ul>
+                <div class="skill-col__media"><img src="images/skills/html.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/css.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/javascript.png" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Ein responsiver Onlineshop mit 3D-Modell-Viewer, ein PyQt6-Desktop-Widget und modulare Scraper.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-5</span>
+            <h3 class="skill-col__name">Tools &amp; OS</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Linux</li><li>/ Git</li><li>/ Open Source</li></ul>
+                <div class="skill-col__media"><img src="images/skills/linux.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/git.webp" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Versiert in Linux und dem Open-Source-Ökosystem. Ab und zu probiere ich neue Distributionen aus.</p>
+            </div>
+          </div>
+        </div>
+        <span class="section-mark">SYS/5</span>
+      </section>
+
+      <!-- ELSEWHERE -->
+      <section class="elsewhere" aria-labelledby="elsewhere-title">
+        <div class="elsewhere__head">
+          <h2 class="elsewhere__title display" id="elsewhere-title"><span class="mask"><span>Anderswo</span></span></h2>
+          <p class="elsewhere__lead" data-reveal>Code, Notizen und CV<strong>auf diesen Plattformen</strong></p>
+          <p class="elsewhere__note" data-reveal><strong>Offen für Jobs</strong>(Stellen in der Türkei und in Deutschland)</p>
+        </div>
+        <ul class="profiles">
+          <li data-reveal><a class="profile" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer"><span class="profile__icon" aria-hidden="true">GH</span><span class="profile__name">GitHub<sup>(9)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="blog.html"><span class="profile__icon" aria-hidden="true">BL</span><span class="profile__name">Blog<sup>(16)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer"><span class="profile__icon" aria-hidden="true">IN</span><span class="profile__name">LinkedIn</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="documents/Murat Eker CV.pdf" download><span class="profile__icon" aria-hidden="true">CV</span><span class="profile__name">Lebenslauf<sup>(PDF)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="mailto:ekermuratinfo@gmail.com"><span class="profile__icon" aria-hidden="true">@</span><span class="profile__name">E-Mail</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+        </ul>
+        <p class="elsewhere__latest" data-reveal>Neuester Blogeintrag<br /><a href="blog-post.html">The Good Kind of Lazy</a></p>
+      </section>
+
+      <!-- 6 / CONNECT -->
+      <section class="contact" id="connect" aria-labelledby="contact-title">
+        <p class="contact__kicker" data-reveal>Kontakt aufnehmen</p>
+        <h2 id="contact-title">
+          <span class="contact__big"><span class="mask"><span>Vernetzen wir uns</span></span></span>
+          <span class="contact__spaced" data-reveal>oder besprechen</span>
+          <span class="contact__big"><span class="mask"><span>ein Projekt</span></span></span>
+        </h2>
+
+        <form class="contact-form" data-contact-form data-to="ekermuratinfo@gmail.com" data-subject="Portfolio-Kontakt" data-sending="Ihr E-Mail-Programm wird geöffnet…" data-invalid="Bitte Namen und E-Mail angeben." novalidate>
+          <label class="field"><span class="sr-only">Ihr Name</span><input type="text" name="name" placeholder="Ihr Name*" autocomplete="name" required /></label>
+          <label class="field"><span class="sr-only">Ihre E-Mail</span><input type="email" name="email" placeholder="Ihre E-Mail*" autocomplete="email" required /></label>
+          <label class="field"><span class="sr-only">Nachricht</span><textarea name="message" placeholder="Wie kann ich helfen?"></textarea></label>
+          <fieldset class="topic">
+            <legend>Anlass</legend>
+            <div class="topic__options">
+              <label><input type="radio" name="topic" value="Jobangebot" checked /><span>Jobangebot</span></label>
+              <label><input type="radio" name="topic" value="Projekt" /><span>Projekt</span></label>
+              <label><input type="radio" name="topic" value="Einfach hallo" /><span>Hallo sagen</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="topic topic--budget">
+            <legend>Projektbudget (USD)</legend>
+            <div class="topic__options">
+              <label><input type="radio" name="budget" value="Unter 1K" checked /><span>&lt; 1K</span></label>
+              <label><input type="radio" name="budget" value="1K–5K" /><span>1K–5K</span></label>
+              <label><input type="radio" name="budget" value="5K+" /><span>5K+</span></label>
+            </div>
+          </fieldset>
+          <div class="contact-form__submit">
+            <button class="link-line" type="submit">Nachricht senden <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+          </div>
+          <p class="contact-form__status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__top">
+        <ul class="footer__nav">
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#skills">Fähigkeiten</a></li>
+          <li><a href="#works">Projekte</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="footer__contact">
+          <a class="footer__mail" href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a>
+          <div class="footer__social">
+            <a class="link-line" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="link-line" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="link-line" href="blog.html">Blog <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <p class="footer__address">Standort:<br />Türkei<br />Offen für Türkei &amp; Deutschland</p>
+        </div>
+      </div>
+
+      <div class="footer__brackets">
+        <a class="bracket" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="bracket" href="documents/Murat Eker CV.pdf" download>Lebenslauf</a>
+        <a class="bracket" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+
+      <p class="footer__name" aria-hidden="true" data-footer-name data-fit>Murat Eker</p>
+
+      <div class="footer__bottom">
+        <span>Türkei: (GMT+3) <time data-clock>--:--</time></span>
+        <span>Gecodet von <a class="credit-roll" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer" aria-label="Murat Eker" data-credit-roll data-short="mir">Murat Eker</a></span>
+        <span>© <span data-year></span> Murat Eker. Alle Rechte vorbehalten.</span>
       </div>
     </footer>
 
-    <a class="mobile-sticky-cta" href="mailto:ekermuratinfo@gmail.com" aria-label="E-Mail an Murat Eker senden">
-      <span>Offen für neue Möglichkeiten</span>
-      <strong>E-Mail schreiben&nbsp; ↗</strong>
-    </a>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/site.js"></script>
     <script src="js/loader.js"></script>
   </body>
 </html>

@@ -3,15 +3,11 @@
   <head>
     <title>Murat Eker - Portfolyo</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
       content="Murat Eker, yapay zeka, makine öğrenmesi, arka uç geliştirme ve sunucu tarafı sistemlerine odaklanmış bir bilgisayar mühendisidir."
     />
-
     <meta property="og:title" content="Murat Eker - Portfolyo" />
     <meta property="og:description" content="Yapay zeka, makine öğrenmesi, arka uç geliştirme ve sunucu tarafı sistemlerine odaklanmış bilgisayar mühendisi." />
     <meta property="og:type" content="website" />
@@ -23,12 +19,12 @@
     <meta name="twitter:title" content="Murat Eker - Portfolyo" />
     <meta name="twitter:description" content="Yapay zeka, makine öğrenmesi, arka uç geliştirme ve sunucu tarafı sistemlerine odaklanmış bilgisayar mühendisi." />
     <meta name="twitter:image" content="https://murateker.com.tr/images/og-image.jpg" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sofia+Sans+Condensed:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;600;700;900&family=Spline+Sans+Mono:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/animate.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <link rel="icon" href="images/favicon.ico" sizes="any" />
@@ -38,480 +34,547 @@
     <link rel="alternate" hreflang="tr" href="https://murateker.com.tr/index-tr.html" />
     <link rel="alternate" hreflang="de" href="https://murateker.com.tr/index-de.html" />
     <link rel="alternate" hreflang="x-default" href="https://murateker.com.tr/" />
-
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script>document.documentElement.classList.add('js');</script>
   </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body>
     <script src="js/preload.js"></script>
     <div id="loader">
       <canvas id="loader-canvas"></canvas>
       <div id="percentage-counter">0%</div>
     </div>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
-      id="ftco-navbar"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index-tr.html">Murat Eker</a>
-        <button
-          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Navigasyonu aç/kapat"
-        >
-          <span class="oi oi-menu"></span> Menü
-        </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto nav-brackets">
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link"><span>Hakkımda</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-1" class="nav-link"><span>Eğitim</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-2" class="nav-link"><span>Deneyim</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-3" class="nav-link"><span>Beceriler</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#page-4" class="nav-link"><span>Projeler</span></a>
-            </li>
-          </ul>
-          <div class="navbar-right-group">
-            <div class="lang-switcher" id="lang-switcher" aria-label="Dil seçin">
-              <button class="lang-switcher__button" type="button" data-lang="en" aria-pressed="false">EN</button>
-              <button class="lang-switcher__button" type="button" data-lang="tr" aria-pressed="true">TR</button>
-              <button class="lang-switcher__button" type="button" data-lang="de" aria-pressed="false">DE</button>
-            </div>
-            <a href="#contact-section" class="nav-contact-btn">İletişim <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
-          </div>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="index-tr.html" aria-label="Murat Eker, ana sayfa"><span>Murat</span><span>Eker</span></a>
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="#about"><span>Hakkımda</span></a></li>
+          <li><a href="#works"><span>Projeler</span></a></li>
+          <li><a href="#skills"><span>Beceriler</span></a></li>
+          <li><a href="#connect"><span>İletişim</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="lang-switcher" data-lang-switcher aria-label="Dil seçin">
+          <button class="lang-switcher__button" type="button" data-lang="en">EN</button>
+          <button class="lang-switcher__button" type="button" data-lang="tr">TR</button>
+          <button class="lang-switcher__button" type="button" data-lang="de">DE</button>
         </div>
+        <a class="link-line header-contact" href="#connect">Bana yaz <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <button class="menu-toggle bracket" type="button" aria-expanded="false" aria-controls="mobile-menu" data-open-label="Menü" data-close-label="Kapat">Menü</button>
       </div>
-    </nav>
+    </header>
 
-    <section class="hero-wrap">
-      <div class="hero-editorial">
-        <div class="hero-meta">
-          <div class="hero-counter">1,018</div>
-        </div>
-        <h1 class="hero-title">
-          <span class="hero-title-line">BİLGİSAYAR</span>
-          <span class="hero-title-line">MÜHENDİSİ</span>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">Hakkımda</a>
+      <a href="#works">Projeler</a>
+      <a href="#skills">Beceriler</a>
+      <a href="#connect">İletişim</a>
+      <a href="blog.html">Blog</a>
+      <div class="lang-switcher" data-lang-switcher aria-label="Dil seçin">
+        <button class="lang-switcher__button" type="button" data-lang="en">EN</button>
+        <button class="lang-switcher__button" type="button" data-lang="tr">TR</button>
+        <button class="lang-switcher__button" type="button" data-lang="de">DE</button>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- 1 / HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__counter">1,018</div>
+        <h1 class="hero__title display" id="hero-title" data-fit>
+          <span class="hero-title-line">Bilgisayar</span>
+          <span class="hero-title-line">Mühendisi</span>
         </h1>
-        <div class="hero-location">TÜRKİYE'DEN</div>
-        <div class="hero-showcase">
-          <div class="hero-specialties-card">
-            <ul class="hero-specialties">
-              <li>/ YAZILIM GELİŞTİRME</li>
-              <li>/ ARKA UÇ GELİŞTİRME</li>
-              <li>/ SUNUCU TARAFI SİSTEMLERİ</li>
+        <p class="hero__location">Türkiye’den</p>
+
+        <div class="hero__stage">
+          <div class="hero__panel">
+            <ul class="hero__specialties">
+              <li>/ Yazılım geliştirme</li>
+              <li>/ Arka uç geliştirme</li>
+              <li>/ Sunucu tarafı sistemleri</li>
             </ul>
           </div>
-          <div class="hero-photo">
+          <figure class="hero__photo">
             <img src="images/cv_foto_nobg.webp" alt="Murat Eker" width="402" height="621" fetchpriority="high" />
             <div class="hero-photo-overlay"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-statement-section" aria-label="Hakkımda kısa ifade">
-      <div class="about-statement-marquee" aria-hidden="true">BACKEND ML SEARCH SYSTEMS BACKEND ML SEARCH SYSTEMS</div>
-      <div class="about-statement-inner">
-        <div class="about-statement-meta">
-          <span>02 / HAKKIMDA</span>
-          <span>SERVER-SIDE / ML</span>
-        </div>
-        <p class="about-statement-kicker">Hakkımda</p>
-        <h2 class="about-statement-title">
-          <span>Server-side</span>
-          <span class="muted">performans odaklı</span>
-          <span>sistemler</span>
-          <span class="muted">kuruyorum.</span>
-        </h2>
-      </div>
-    </section>
-
-    <section class="ftco-section about-section" id="about-section">
-      <div class="container">
-        <div class="about-editorial">
-          <div class="about-content">
-            <div class="about-photo">
-              <img src="images/cv_foto_about_me.webp" alt="Murat Eker" width="242" height="297" loading="lazy" />
-            </div>
-
-            <div class="about-copy">
-              <p class="about-facts-text">
-                Backend geliştirme, web uygulamaları ve sunucu tarafı sistemlere odaklanan yeni mezun bir
-                Bilgisayar Mühendisiyim. Python ve modern teknoloji yığınlarıyla uçtan uca projeler geliştirme
-                konusunda deneyimliyim. Temiz mimari, arama motoru optimizasyonu ve güvenilir uygulama iş akışları
-                ilgimi çekiyor. Linux ve Açık Kaynak ekosisteminde yetkinim. Karmaşık projeler üzerinde çalışmaktan
-                ve yaparak öğrenmekten keyif alıyorum.
-              </p>
-
-              <a href="documents/Murat Eker CV.pdf" class="about-cv-link" download>
-                CV'mi İndir
-                <span class="arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 21 21" fill="none">
-                    <path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <nav id="navi">
-              <ul>
-                <li><a href="#page-1">EĞİTİM</a></li>
-                <li><a href="#page-2">DENEYİM</a></li>
-                <li><a href="#page-3">BECERİLER</a></li>
-                <li><a href="#page-4">PROJELER</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-9">
-            <div id="page-1" class="page one">
-              <h2 class="heading">Eğitim</h2>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-graduation-cap"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</h2>
-                  <span class="position">Bilgisayar ve Bilişim Teknolojileri Fakültesi</span>
-                  <p><strong>Bilgisayar Mühendisliği</strong></p>
-                  <p><a href="https://compeng.atu.edu.tr/#!/" target="_blank" rel="noopener noreferrer">https://compeng.atu.edu.tr</a></p>
-                  <p>Adana - Türkiye</p>
-                  <span class="date">Ağustos 2021 - Şubat 2026</span>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-2" class="page two">
-              <h2 class="heading">Deneyim</h2>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Öğrenci Stajyeri</h2>
-                  <span class="position">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
-                  <p>Bilgi Teknolojileri Meslek Yüksekokulu</p>
-                  <p class="date">Kasım 2025 - Şubat 2026</p>
-                  <ul>
-                    <li>Sunucu tarafı ve ağ kurulum görevlerine destek verildi; bölüm ekipmanlarının kurulumu ve yapılandırılması gerçekleştirildi.</li>
-                    <li>Ethernet Cat 5 kablo oluşturma ve kablosuz kapsama alanını genişletmek için erişim noktası kurulumunda uygulamalı deneyim kazanıldı.</li>
-                    <li>Teorik bilgiyi pratikle pekiştirmek amacıyla bölüm derslerine aktif olarak katılım sağlandı.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Öğrenci Stajyeri</h2>
-                  <span class="position">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
-                  <p>Kariyer Planlama Uygulama ve Araştırma Merkezi</p>
-                  <p class="date">Mart 2025 - Temmuz 2025</p>
-                  <ul>
-                    <li>Üniversite etkinlikleri ve konferanslar için tanıtım materyalleri ve afişler tasarlandı.</li>
-                    <li>Kariyer planlama girişimlerine yönelik belge işleme ve idari görevler yürütüldü.</li>
-                    <li>Konferans hazırlık ve koordinasyonuna, lojistik ve katılımcı yönetimi dahil olmak üzere katkı sağlandı.</li>
-                    <li>Kariyer geliştirme programları için araştırma faaliyetleri ve veri toplama çalışmalarına destek verildi.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Yazılım Geliştirme Stajyeri</h2>
-                  <span class="position">Teknology House Yazılım ve Bilişim, Adana</span>
-                  <p class="date">Temmuz 2024 - Ekim 2024</p>
-                  <ul>
-                    <li>Ürün arama sistemi SQL'den Elasticsearch'e taşındı.</li>
-                    <li>Python ile prototipleme yapıldı ve C# .NET ile entegrasyon sağlandı.</li>
-                    <li>Kibana kullanılarak indeksler yönetildi ve veriler görselleştirildi.</li>
-                    <li>Arama hızında belirgin iyileştirmeler sağlandı ve sunucu yükü optimize edildi.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-suitcase"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Ofis Çalışanı</h2>
-                  <span class="position">Yılsan İnşaat</span>
-                  <p class="date">2021 - 2024</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-3" class="page three">
-              <h2 class="heading">Diller ve Araçlar</h2>
-              <div class="skills-grid ftco-animate">
-                <div class="skill-item">
-                  <img src="images/skills/python.webp" alt="Python" width="80" height="80" loading="lazy" />
-                  <span>Python</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/elasticsearch.webp" alt="Elasticsearch" width="80" height="80" loading="lazy" />
-                  <span>Elasticsearch</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/git.webp" alt="Git" width="80" height="80" loading="lazy" />
-                  <span>Git</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/kibana.webp" alt="Kibana" width="80" height="80" loading="lazy" />
-                  <span>Kibana</span>
-                </div>
-                <div class="skill-item">
-                  <img src="images/skills/go.webp" alt="Go" width="80" height="80" loading="lazy" />
-                  <span>Go</span>
-                </div>
-              </div>
-            </div>
-
-            <div id="page-4" class="page four">
-              <h2 class="heading">Projeler</h2>
-              <div class="proj-list">
-
-                <a href="https://github.com/muriarty1893/rottector" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">01</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Rottector</h3>
-                    <p class="proj-desc">İki modelin hibriti kullanılarak meyveleri taze veya çürük olarak sınıflandıran YZ destekli meyve tespit sistemi. Python backend ve web arayüzüyle uçtan uca çözüm.</p>
-                    <div class="proj-tech"><span>Python</span><span>YOLOv8</span><span>FastAPI</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/lavida" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">02</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Lavida</h3>
-                    <p class="proj-desc">Kaydedilmiş video bağlantılarını otomatik başlık çekme ve genel klavye kısayollarıyla yöneten hafif, her zaman üstte duran masaüstü widget uygulaması.</p>
-                    <div class="proj-tech"><span>Python</span><span>PyQt6</span><span>SQLite</span><span>BeautifulSoup4</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/rag-tutorial-v2" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">03</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">RAG Tutorial v2</h3>
-                    <p class="proj-desc">Konuşma belleği, PDF işleme, çok dilli destek ve etkileşimli geri bildirim içeren gelişmiş RAG sistemi.</p>
-                    <div class="proj-tech"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Llama 3.2</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/gopak.com.tr" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">04</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">GOPAK E-commerce</h3>
-                    <p class="proj-desc">Resmi Gopak Corporation için 3D model görüntüleyici ve yönetim paneline sahip duyarlı e-ticaret web uygulaması.</p>
-                    <div class="proj-tech"><span>PHP</span><span>MySQL</span><span>HTML5</span><span>JavaScript</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/Heart-Attack-Prediction-and-EDA" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">05</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Heart Attack Prediction &amp; EDA</h3>
-                    <p class="proj-desc">Veri görselleştirmeli kalp krizi tahminine yönelik kapsamlı keşifsel veri analizi ve makine öğrenmesi modeli.</p>
-                    <div class="proj-tech"><span>Python</span><span>Machine Learning</span><span>EDA</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/dataPull" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">06</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Modular Data Scraper</h3>
-                    <p class="proj-desc">Modüler mimariye sahip, sağlam CLI tabanlı kazıma aracı. Otomatik performans takibi ve yapılandırılmış CSV dışa aktarımı sunar.</p>
-                    <div class="proj-tech"><span>Python</span><span>BeautifulSoup4</span><span>Pandas</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/JustZipIt" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">07</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">JustZipIt</h3>
-                    <p class="proj-desc">Verimli arşivleme ve çıkarma için kullanıcı dostu arayüze sahip dosya sıkıştırma yardımcı programı.</p>
-                    <div class="proj-tech"><span>Python</span><span>GUI</span><span>File Compression</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/circling_loader" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">08</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Circling Loader</h3>
-                    <p class="proj-desc">Web uygulamaları için hafif ve özelleştirilebilir dönen yükleyici animasyonu.</p>
-                    <div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-                <a href="https://github.com/muriarty1893/the-elastic-project" target="_blank" rel="noopener noreferrer" class="proj-card ftco-animate">
-                  <span class="proj-idx">09</span>
-                  <div class="proj-body">
-                    <h3 class="proj-name">Elasticsearch Search Integration</h3>
-                    <p class="proj-desc">SQL tabanlı arama yüksek performanslı Elasticsearch'e taşındı; C# .NET ile entegrasyon sağlandı ve indeksler Kibana üzerinden yönetildi.</p>
-                    <div class="proj-tech"><span>Elasticsearch</span><span>Python</span><span>C#</span><span>Kibana</span></div>
-                  </div>
-                  <span class="proj-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-4 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">İletişim</h2>
-          </div>
+          </figure>
         </div>
 
-        <div class="row d-flex justify-content-center contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-github"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">GitHub</h3>
-                <p><a href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">github.com/muriarty1893</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">E-posta Adresi</h3>
-                <p><a href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-linkedin-square"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">LinkedIn</h3>
-                <p><a href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">linkedin.com/in/murat-eker</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="hero__intro">
+          <p>Python ve modern teknoloji yığınlarıyla web uygulamaları ve sunucu tarafı sistemler geliştiren yeni mezun bilgisayar mühendisi.</p>
+          <p>Temiz mimari. Güvenilir iş akışları.</p>
         </div>
 
-        <div class="row justify-content-center pb-5">
-          <div class="col-12 d-flex justify-content-center">
-            <a href="mailto:ekermuratinfo@gmail.com" class="tilt-card" aria-label="Murat Eker'e e-posta gönder">
-              <div class="tc-top">
-                <svg class="tc-logo" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <rect x="0.75" y="0.75" width="24.5" height="20.5" rx="2.25" stroke="currentColor" stroke-width="1.5"/>
-                  <path d="M1 3L13 11L25 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg class="tc-chip" width="26" height="26" viewBox="0 0 262 278" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M57.6541 65.6418C58.8281 64.8226 60.4465 65.2097 61.2647 66.3823C64.3285 70.7734 68.3982 73.8437 73.2472 75.6378L73.3016 75.6581L92.6744 82.6771C95.575 83.7281 97.8595 86.0054 98.9135 88.896L105.957 108.209L105.978 108.263C107.777 113.094 111.016 117.262 115.261 120.205C119.507 123.148 124.556 124.727 129.729 124.727C134.902 124.727 139.951 123.148 144.197 120.205C148.443 117.262 151.681 113.094 153.48 108.263L153.521 108.155L160.545 88.8977C161.599 86.0081 163.882 83.7316 166.782 82.6805C176.525 79.148 187.434 82.5762 193.381 91.039L223.505 133.91C223.516 133.925 223.524 133.942 223.534 133.957C228.045 140.476 226.441 149.411 219.921 153.96L117.032 225.751C111.613 229.533 110.798 237.692 115.213 243.976C119.63 250.261 127.604 252.292 133.024 248.51L239.241 174.706C245.791 170.156 254.802 171.748 259.381 178.266C263.973 184.801 262.368 193.81 255.801 198.374L149.632 272.144C132.954 283.78 108.421 277.536 94.8322 258.199C93.5324 256.349 92.381 254.445 91.3741 252.506C91.3172 252.396 91.1589 252.398 91.1049 252.509C91.055 252.612 90.9129 252.623 90.8473 252.53L3.77438 128.615C-2.83414 119.21 -0.539816 106.247 8.89813 99.6622L21.4057 90.9343C21.4336 90.9148 21.472 90.9217 21.4914 90.9496C21.513 90.9807 21.5574 90.985 21.5848 90.9588C21.9663 90.5947 22.3802 90.2545 22.8263 89.9432L57.6541 65.6418Z" fill="currentColor"/>
-                  <path d="M184.781 55.435C184.793 57.0601 184.298 58.6488 183.363 59.9801C182.428 61.3115 181.1 62.3194 179.564 62.8638L160.243 69.8673C152.51 72.6702 146.42 78.741 143.609 86.4472L136.586 105.703C136.021 107.22 135.004 108.528 133.672 109.451C132.34 110.375 130.756 110.87 129.133 110.87C127.51 110.87 125.926 110.375 124.594 109.451C123.262 108.528 122.245 107.22 121.68 105.703L114.657 86.4455C111.846 78.7374 105.754 72.6654 98.0192 69.8629L78.7019 62.8638C77.1805 62.3009 75.8684 61.2874 74.9418 59.9594C74.0152 58.6314 73.5186 57.0526 73.5186 55.435C73.5186 53.8174 74.0152 52.2386 74.9418 50.9106C75.8684 49.5826 77.1805 48.5691 78.7019 48.0062L98.0192 41.0071C105.754 38.2046 111.846 32.1326 114.657 24.4245L121.68 5.16662C122.245 3.65013 123.262 2.34224 124.594 1.41864C125.926 0.49505 127.51 0 129.133 0C130.756 0 132.34 0.49505 133.672 1.41864C135.004 2.34224 136.021 3.65013 136.586 5.16662L143.613 24.4281C146.424 32.1342 152.515 38.2044 160.248 41.0066L179.564 48.0062C181.1 48.5506 182.428 49.5585 183.363 50.8899C184.298 52.2213 184.793 53.8099 184.781 55.435Z" fill="currentColor"/>
-                </svg>
-              </div>
-              <div class="tc-middle">
-                <p class="tc-middle-text">İletişime geç</p>
-              </div>
-              <div class="tc-bottom">
-                <div class="tc-info-left">
-                  <p class="tc-name"></p>
-                  <p class="tc-role">ekermuratinfo@gmail.com</p>
-                </div>
-                <div class="tc-info-right">
-                  <p class="tc-stat-label">Tıkla ve</p>
-                  <p class="tc-stat-value">Merhaba De</p>
-                </div>
-              </div>
-            </a>
+        <div class="hero__foot">
+          <div>
+            <span class="hero__foot-label">Fırsatlara açığım <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span><br />
+            <a class="hero__mail" href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a>
           </div>
-        </div>
-
-        <div class="contact-blog-link ftco-animate">
-          <p>Arka uç geliştirme, sistemler ve öğrenme notları.</p>
-          <a href="blog.html" aria-label="Murat Eker'in blogunu oku">
-            Blogu oku
-            <span class="arrow" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                <path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+          <a class="hero__recent" href="#works">
+            <span class="hero__foot-label">Son proje <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+            <span class="hero__recent-name">Rottector</span>
           </a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Telif Hakkı &copy;
-              <span id="current-year"></span>
-                | Sevgiyle kodlandı <i class="icon-heart color-danger" aria-hidden="true"></i> <a href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">murat</a> tarafından
-            </p>
+      <!-- 2 / STATEMENT -->
+      <section class="statement section-dark" aria-label="Ne yapıyorum" data-statement>
+        <div class="statement__sticky">
+          <div class="statement__meta">
+            <span class="statement__count">2/6</span>
+            <span class="label">Ne yapıyorum</span>
+            <span class="statement__tag">SYS/2</span>
+          </div>
+          <h2 class="statement__title" data-scatter>
+            <span>Sunucu tarafında</span>
+            <span class="muted">performans</span>
+            <span class="muted">odaklı</span>
+            <span>sistemler</span>
+            <span>kuruyorum.</span>
+          </h2>
+        </div>
+      </section>
+
+      <!-- 3 / WORKS -->
+      <section class="works section-dark" id="works" aria-labelledby="works-title">
+        <h2 class="works__title display" id="works-title"><span class="mask"><span>Seçili projeler</span></span></h2>
+
+        <ol class="works__list" data-works>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/rottector" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">01</span>
+              <span class="work__main">
+                <h3 class="work__name">Rottector</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">İki modelin hibriti kullanılarak meyveleri taze veya çürük olarak sınıflandıran YZ destekli meyve tespit sistemi. Python backend ve web arayüzüyle uçtan uca çözüm.</span>
+                    <span class="work__tech"><span>Python</span><span>YOLOv8</span><span>FastAPI</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">YZ / Görüntü işleme</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/lavida" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">02</span>
+              <span class="work__main">
+                <h3 class="work__name">Lavida</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Kaydedilmiş video bağlantılarını otomatik başlık çekme ve genel klavye kısayollarıyla yöneten hafif, her zaman üstte duran masaüstü widget uygulaması.</span>
+                    <span class="work__tech"><span>Python</span><span>PyQt6</span><span>SQLite</span><span>BeautifulSoup4</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Masaüstü aracı</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/rag-tutorial-v2" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">03</span>
+              <span class="work__main">
+                <h3 class="work__name">RAG Tutorial v2</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Konuşma belleği, PDF işleme, çok dilli destek ve etkileşimli geri bildirim içeren gelişmiş RAG sistemi.</span>
+                    <span class="work__tech"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Llama 3.2</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">LLM / Bilgi erişimi</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/gopak.com.tr" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">04</span>
+              <span class="work__main">
+                <h3 class="work__name">GOPAK E-commerce</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Resmi Gopak Corporation için 3D model görüntüleyici ve yönetim paneline sahip duyarlı e-ticaret web uygulaması.</span>
+                    <span class="work__tech"><span>PHP</span><span>MySQL</span><span>HTML5</span><span>JavaScript</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Web uygulaması</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/Heart-Attack-Prediction-and-EDA" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">05</span>
+              <span class="work__main">
+                <h3 class="work__name">Heart Attack Prediction &amp; EDA</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Veri görselleştirmeli kalp krizi tahminine yönelik kapsamlı keşifsel veri analizi ve makine öğrenmesi modeli.</span>
+                    <span class="work__tech"><span>Python</span><span>Machine Learning</span><span>EDA</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Makine öğrenmesi</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/dataPull" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">06</span>
+              <span class="work__main">
+                <h3 class="work__name">Modular Data Scraper</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Modüler mimariye sahip, sağlam CLI tabanlı kazıma aracı. Otomatik performans takibi ve yapılandırılmış CSV dışa aktarımı sunar.</span>
+                    <span class="work__tech"><span>Python</span><span>BeautifulSoup4</span><span>Pandas</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">CLI aracı</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/JustZipIt" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">07</span>
+              <span class="work__main">
+                <h3 class="work__name">JustZipIt</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Verimli arşivleme ve çıkarma için kullanıcı dostu arayüze sahip dosya sıkıştırma yardımcı programı.</span>
+                    <span class="work__tech"><span>Python</span><span>GUI</span><span>File Compression</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Yardımcı araç</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/circling_loader" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">08</span>
+              <span class="work__main">
+                <h3 class="work__name">Circling Loader</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">Web uygulamaları için hafif ve özelleştirilebilir dönen yükleyici animasyonu.</span>
+                    <span class="work__tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Ön yüz</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+          <li class="work">
+            <a class="work__row" href="https://github.com/muriarty1893/the-elastic-project" target="_blank" rel="noopener noreferrer">
+              <span class="work__num">09</span>
+              <span class="work__main">
+                <h3 class="work__name">Elasticsearch Search Integration</h3>
+                <span class="work__more">
+                  <span class="work__more-inner">
+                    <span class="work__desc">SQL tabanlı arama yüksek performanslı Elasticsearch'e taşındı; C# .NET ile entegrasyon sağlandı ve indeksler Kibana üzerinden yönetildi.</span>
+                    <span class="work__tech"><span>Elasticsearch</span><span>Python</span><span>C#</span><span>Kibana</span></span>
+                  </span>
+                </span>
+              </span>
+              <span class="work__cat">Arama</span>
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="sr-only">GitHub’da gör</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4 / ABOUT -->
+      <section class="about section-dark" id="about" aria-labelledby="about-title">
+        <h2 class="about__title display" id="about-title"><span class="mask"><span>Hakkımda</span></span></h2>
+
+        <div class="about__intro">
+          <p class="about__kicker">Hakkımda</p>
+          <div class="about__portrait" data-reveal>
+            <img src="images/cv_foto_about_me.webp" alt="Murat Eker" width="242" height="297" loading="lazy" />
+            <p class="about__hello">Merhaba!<br />Ben Murat Eker</p>
+            <a class="label about__next" href="#experience">Deneyimim <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
           </div>
         </div>
+
+        <p class="about__statement" data-reveal>Karmaşık projeler üzerinde çalışmaktan ve yaparak öğrenmekten keyif alıyorum.</p>
+
+        <div class="about__blocks">
+          <div class="about-block about-block--a" data-reveal>
+            <p>Backend geliştirme, web uygulamaları ve sunucu tarafı sistemlere odaklanan yeni mezun bir bilgisayar mühendisiyim.</p>
+            <p>Python ve modern teknoloji yığınlarıyla uçtan uca projeler geliştirme konusunda deneyimliyim.</p>
+            <span class="label">Odak noktam <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </div>
+
+          <div class="about-blocks__row">
+            <a class="link-line" href="documents/Murat Eker CV.pdf" download data-reveal>CV’mi indir <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <div class="about-block about-block--b" data-reveal>
+              <p>Temiz mimari, arama motoru optimizasyonu ve güvenilir uygulama iş akışları ilgimi çekiyor.</p>
+              <p>Linux ve açık kaynak ekosisteminde yetkinim.</p>
+              <span class="label">Şu sıralar <span class="arrow arrow--down" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+            </div>
+          </div>
+
+          <div class="about-blocks__row">
+            <div class="about-block about-block--c" data-reveal>
+              <p>Ara sıra yeni Linux dağıtımları deniyor, internette bulduğum açık kaynak araçları inceliyorum.</p>
+              <p>Şu anda Go öğreniyor ve Go ile test yazmayı çalışıyorum.</p>
+            </div>
+          </div>
+
+          <div class="about__actions">
+            <a class="link-line" href="#connect" data-reveal>Bağlantı kuralım <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+        </div>
+
+        <div class="ledger" id="experience">
+          <div class="ledger__group">
+            <div class="ledger__head">
+              <p class="about__kicker">03 / Kariyer</p>
+              <h3 class="ledger__title display"><span class="mask"><span>Deneyim</span></span></h3>
+            </div>
+            <div class="ledger__list">
+              <details class="entry">
+                <summary class="entry__head">
+                  <span class="entry__role">Öğrenci Stajyeri<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Bilgi Teknolojileri Meslek Yüksekokulu</span></span>
+                  <span class="entry__date">Kas 2025 – Şub 2026</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Sunucu tarafı ve ağ kurulum görevlerine destek verildi; bölüm ekipmanlarının kurulumu ve yapılandırılması gerçekleştirildi.</li>
+                  <li>Ethernet Cat 5 kablo oluşturma ve kablosuz kapsama alanını genişletmek için erişim noktası kurulumunda uygulamalı deneyim kazanıldı.</li>
+                  <li>Teorik bilgiyi pratikle pekiştirmek amacıyla bölüm derslerine aktif olarak katılım sağlandı.</li>
+                </ul>
+              </details>
+              <details class="entry">
+                <summary class="entry__head">
+                  <span class="entry__role">Öğrenci Stajyeri<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Kariyer Planlama Uygulama ve Araştırma Merkezi</span></span>
+                  <span class="entry__date">Mar 2025 – Tem 2025</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Üniversite etkinlikleri ve konferanslar için tanıtım materyalleri ve afişler tasarlandı.</li>
+                  <li>Kariyer planlama girişimlerine yönelik belge işleme ve idari görevler yürütüldü.</li>
+                  <li>Konferans hazırlık ve koordinasyonuna, lojistik ve katılımcı yönetimi dahil olmak üzere katkı sağlandı.</li>
+                  <li>Kariyer geliştirme programları için araştırma faaliyetleri ve veri toplama çalışmalarına destek verildi.</li>
+                </ul>
+              </details>
+              <details class="entry" open>
+                <summary class="entry__head">
+                  <span class="entry__role">Yazılım Geliştirme Stajyeri<span class="entry__org">Teknology House Yazılım ve Bilişim, Adana</span></span>
+                  <span class="entry__date">Tem 2024 – Eki 2024</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Ürün arama sistemi SQL'den Elasticsearch'e taşındı.</li>
+                  <li>Python ile prototipleme yapıldı ve C# .NET ile entegrasyon sağlandı.</li>
+                  <li>Kibana kullanılarak indeksler yönetildi ve veriler görselleştirildi.</li>
+                  <li>Arama hızında belirgin iyileştirmeler sağlandı ve sunucu yükü optimize edildi.</li>
+                </ul>
+              </details>
+              <div class="entry">
+                <div class="entry__head">
+                  <span class="entry__role">Ofis Çalışanı<span class="entry__org">Yılsan İnşaat</span></span>
+                  <span class="entry__date">2021 – 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ledger__group">
+            <div class="ledger__head">
+              <p class="about__kicker">04 / Eğitim</p>
+              <h3 class="ledger__title display"><span class="mask"><span>Eğitim</span></span></h3>
+            </div>
+            <div class="ledger__list">
+              <details class="entry" open>
+                <summary class="entry__head">
+                  <span class="entry__role">Bilgisayar Mühendisliği<span class="entry__org">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi — Bilgisayar ve Bilişim Teknolojileri Fakültesi</span></span>
+                  <span class="entry__date">Ağu 2021 – Şub 2026</span>
+                  <span class="entry__toggle" aria-hidden="true"></span>
+                </summary>
+                <ul class="entry__body">
+                  <li>Adana, Türkiye</li>
+                  <li><a href="https://compeng.atu.edu.tr/#!/" target="_blank" rel="noopener noreferrer">compeng.atu.edu.tr</a></li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 / SKILLS -->
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="skills__title display" id="skills-title"><span class="mask"><span>Beceriler</span></span></h2>
+        <div class="skills__grid" data-skills>
+          <div class="skill-col is-active" tabindex="0">
+            <span class="skill-col__idx">00-1</span>
+            <h3 class="skill-col__name">Backend</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Python</li><li>/ Go</li><li>/ C# .NET</li><li>/ FastAPI</li><li>/ PHP</li></ul>
+                <div class="skill-col__media"><img src="images/skills/python.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/go.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/csharp.png" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Python ve modern teknoloji yığınlarıyla uçtan uca projeler; FastAPI servislerinden C# .NET entegrasyonlarına.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-2</span>
+            <h3 class="skill-col__name">Arama &amp; veri</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Elasticsearch</li><li>/ Kibana</li><li>/ MySQL</li><li>/ SQLite</li><li>/ Pandas</li></ul>
+                <div class="skill-col__media"><img src="images/skills/elasticsearch.webp" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/kibana.webp" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Ürün aramasını SQL’den Elasticsearch’e taşıdım, indeksleri Kibana’da yönettim; arama süresini ve sunucu yükünü azalttım.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-3</span>
+            <h3 class="skill-col__name">ML &amp; YZ</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ YOLOv8</li><li>/ LangChain</li><li>/ ChromaDB</li><li>/ Llama 3.2</li><li>/ EDA</li></ul>
+                <div class="skill-col__media skill-col__media--empty" aria-hidden="true"></div>
+              </div>
+              <p class="skill-col__desc">Hibrit YOLOv8 meyve dedektörü, konuşma belleğine sahip bir RAG sistemi ve keşifsel veri analizi.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-4</span>
+            <h3 class="skill-col__name">Web</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ HTML5</li><li>/ CSS</li><li>/ JavaScript</li><li>/ PyQt6</li><li>/ BeautifulSoup4</li></ul>
+                <div class="skill-col__media"><img src="images/skills/html.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/css.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/javascript.png" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">3D model görüntüleyicili duyarlı bir e-ticaret sitesi, PyQt6 masaüstü widget’ı ve modüler kazıyıcılar.</p>
+            </div>
+          </div>
+          <div class="skill-col" tabindex="0">
+            <span class="skill-col__idx">00-5</span>
+            <h3 class="skill-col__name">Araçlar &amp; OS</h3>
+            <div class="skill-col__body">
+              <div class="skill-col__mid">
+                <ul class="skill-col__list"><li>/ Linux</li><li>/ Git</li><li>/ Açık kaynak</li></ul>
+                <div class="skill-col__media"><img src="images/skills/linux.png" alt="" width="56" height="56" loading="lazy" /><img src="images/skills/git.webp" alt="" width="56" height="56" loading="lazy" /></div>
+              </div>
+              <p class="skill-col__desc">Linux ve açık kaynak ekosisteminde yetkinim. Ara sıra yeni dağıtımlar deniyorum.</p>
+            </div>
+          </div>
+        </div>
+        <span class="section-mark">SYS/5</span>
+      </section>
+
+      <!-- ELSEWHERE -->
+      <section class="elsewhere" aria-labelledby="elsewhere-title">
+        <div class="elsewhere__head">
+          <h2 class="elsewhere__title display" id="elsewhere-title"><span class="mask"><span>Bağlantılar</span></span></h2>
+          <p class="elsewhere__lead" data-reveal>Kod, notlar ve CV<strong>bu platformlarda</strong></p>
+          <p class="elsewhere__note" data-reveal><strong>İş fırsatlarına açığım</strong>(Türkiye ve Almanya genelinde)</p>
+        </div>
+        <ul class="profiles">
+          <li data-reveal><a class="profile" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer"><span class="profile__icon" aria-hidden="true">GH</span><span class="profile__name">GitHub<sup>(9)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="blog.html"><span class="profile__icon" aria-hidden="true">BL</span><span class="profile__name">Blog<sup>(16)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer"><span class="profile__icon" aria-hidden="true">IN</span><span class="profile__name">LinkedIn</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="documents/Murat Eker CV.pdf" download><span class="profile__icon" aria-hidden="true">CV</span><span class="profile__name">CV<sup>(PDF)</sup></span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+          <li data-reveal><a class="profile" href="mailto:ekermuratinfo@gmail.com"><span class="profile__icon" aria-hidden="true">@</span><span class="profile__name">E-posta</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+        </ul>
+        <p class="elsewhere__latest" data-reveal>Blogdaki son yazım<br /><a href="blog-post.html">The Good Kind of Lazy</a></p>
+      </section>
+
+      <!-- 6 / CONNECT -->
+      <section class="contact" id="connect" aria-labelledby="contact-title">
+        <p class="contact__kicker" data-reveal>İletişime geç</p>
+        <h2 id="contact-title">
+          <span class="contact__big"><span class="mask"><span>Bağlantı kuralım</span></span></span>
+          <span class="contact__spaced" data-reveal>ya da</span>
+          <span class="contact__big"><span class="mask"><span>Bir proje konuşalım</span></span></span>
+        </h2>
+
+        <form class="contact-form" data-contact-form data-to="ekermuratinfo@gmail.com" data-subject="Portfolyo iletişim" data-sending="E-posta uygulamanız açılıyor…" data-invalid="Lütfen adınızı ve e-postanızı girin." novalidate>
+          <label class="field"><span class="sr-only">Adınız</span><input type="text" name="name" placeholder="Adınız*" autocomplete="name" required /></label>
+          <label class="field"><span class="sr-only">E-postanız</span><input type="email" name="email" placeholder="E-postanız*" autocomplete="email" required /></label>
+          <label class="field"><span class="sr-only">Mesaj</span><textarea name="message" placeholder="Size nasıl yardımcı olabilirim?"></textarea></label>
+          <fieldset class="topic">
+            <legend>Konu</legend>
+            <div class="topic__options">
+              <label><input type="radio" name="topic" value="İş fırsatı" checked /><span>İş fırsatı</span></label>
+              <label><input type="radio" name="topic" value="Proje" /><span>Proje</span></label>
+              <label><input type="radio" name="topic" value="Merhaba" /><span>Merhaba de</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="topic topic--budget">
+            <legend>Proje bütçesi (USD)</legend>
+            <div class="topic__options">
+              <label><input type="radio" name="budget" value="1K altı" checked /><span>&lt; 1K</span></label>
+              <label><input type="radio" name="budget" value="1K–5K" /><span>1K–5K</span></label>
+              <label><input type="radio" name="budget" value="5K+" /><span>5K+</span></label>
+            </div>
+          </fieldset>
+          <div class="contact-form__submit">
+            <button class="link-line" type="submit">Mesaj gönder <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+          </div>
+          <p class="contact-form__status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__top">
+        <ul class="footer__nav">
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#skills">Beceriler</a></li>
+          <li><a href="#works">Projeler</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="footer__contact">
+          <a class="footer__mail" href="mailto:ekermuratinfo@gmail.com">ekermuratinfo@gmail.com</a>
+          <div class="footer__social">
+            <a class="link-line" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="link-line" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            <a class="link-line" href="blog.html">Blog <span class="arrow" aria-hidden="true"><svg viewBox="0 0 21 21" fill="none"><path d="M1.81213 19.1203L19.4395 1.43779M5.76584 1.24781L19.6484 1.2279L19.6922 15.1104" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <p class="footer__address">Konum:<br />Türkiye<br />Türkiye ve Almanya’ya açığım</p>
+        </div>
+      </div>
+
+      <div class="footer__brackets">
+        <a class="bracket" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="bracket" href="documents/Murat Eker CV.pdf" download>CV</a>
+        <a class="bracket" href="https://linkedin.com/in/murat-eker" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+
+      <p class="footer__name" aria-hidden="true" data-footer-name data-fit>Murat Eker</p>
+
+      <div class="footer__bottom">
+        <span>Türkiye: (GMT+3) <time data-clock>--:--</time></span>
+        <span>Kodlayan: <a class="credit-roll" href="https://github.com/muriarty1893" target="_blank" rel="noopener noreferrer" aria-label="Murat Eker" data-credit-roll data-short="Ben">Murat Eker</a></span>
+        <span>© <span data-year></span> Murat Eker. Tüm hakları saklıdır.</span>
       </div>
     </footer>
 
-    <a class="mobile-sticky-cta" href="mailto:ekermuratinfo@gmail.com" aria-label="Murat Eker'e e-posta gönder">
-      <span>Fırsatlara açığım</span>
-      <strong>E-posta gönder&nbsp; ↗</strong>
-    </a>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/site.js"></script>
     <script src="js/loader.js"></script>
   </body>
 </html>
