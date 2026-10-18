@@ -1316,27 +1316,17 @@ html[lang="de"] .hero__title {
 }
 
 .skill-col__media {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  gap: 24px;
+  margin: 0;
   aspect-ratio: 350 / 248;
-  padding: 24px;
+  overflow: hidden;
   background: var(--panel);
 }
 
 .skill-col__media img {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  filter: grayscale(1);
-}
-
-.skill-col__media--empty {
-  background:
-    repeating-linear-gradient(45deg, transparent 0 10px, rgba(16, 16, 16, 0.05) 10px 11px),
-    var(--panel);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .skill-col__desc {
