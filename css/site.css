@@ -1525,7 +1525,7 @@ html[lang="de"] .hero__title {
   font-size: clamp(12px, 1.04vw, 15px);
   font-weight: 500;
   letter-spacing: 1.6em;
-  margin-right: -1.6em;
+  padding-left: 1.6em;
   text-transform: uppercase;
 }
 
