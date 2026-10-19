@@ -1,5 +1,37 @@
 export const posts = [
   {
+    id: 'docktor-yard-time-is-a-number',
+    category: '3D',
+    date: '2026-10-19',
+    dateLabel: '19 Oct 2026',
+    title: 'Docktor Yard: a warehouse yard where time is just a number',
+    art: ['TIME IS', 'A NUMB3R'],
+    excerpt:
+      'Building a 3D twin of a logistics yard taught me to treat vehicle movement as data I can evaluate, not animation I have to babysit.',
+    tags: ['Three.js', 'React Three Fiber', 'TypeScript', 'Simulation'],
+    body: [
+      'Docktor Yard is a digital twin of a logistics yard: a game-like 3D view built with React Three Fiber, with an operations dashboard on top. Trucks check in at the gate, reverse into loading bays and leave again. Forklifts carry pallets up the ramp onto the raised hold space, workers walk their loops, and every cargo unit can carry its source documents: a bill, a CMR, a delivery note or an invoice.',
+      'The decision I like most is how movement works. Every route is a list of legs, either drive along a path or wait, and evaluating a route at a given time returns the full pose. Movement is a pure function of the simulation clock, so pausing, speeding up to 8× or holding a single vehicle costs almost nothing. It also made the motion testable: a unit test walks every scripted route and checks that nothing jumps or snaps its heading.',
+      'The yard itself is generated from one config file in meters, traced from a hand-drawn plan: walls, buildings, the ramp, loading bays and storage areas. The route builders read the same config, so when I move a bay, the traffic moves with it, and cargo placement stays clear of every route on its own. Keeping one source of truth for the geometry mattered more than any single model in the scene.'
+    ]
+  },
+  {
+    id: 'ciftci-destek-built-for-the-field',
+    category: 'Web',
+    date: '2026-10-15',
+    dateLabel: '15 Oct 2026',
+    title: 'Çiftçi Destek: a website for people who work in a field',
+    art: ['BUILT FOR', 'THE FI3LD'],
+    excerpt:
+      'A Turkish AI farming assistant needed a website before the app was ready, so the site had to show the product without pretending.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Three.js'],
+    body: [
+      'Çiftçi Destek, formerly Bereket AI, is a Turkish AI farming assistant that is still in development. I built its website with Next.js and Tailwind CSS: a landing page, a news section, a weather page for all 81 provinces, a waitlist and a partner page. Every visible word is Turkish, because the people it is for are farmers in Turkey.',
+      'Because the app is not finished, the demo is scripted. It runs on a 3D phone floating over a procedural meadow, but the screen itself is plain, clickable HTML that is warped onto the phone every frame, so it stays accessible. The scripted answers use the same shape a future live AI endpoint will have to return, so the demo will not need to change when the real model arrives. The agronomic text is marked for review by an agronomist before launch.',
+      'The parts I enjoyed most were practical. The weather page turns a forecast into simple hints, like frost risk or a good day for spraying. News articles are Markdown files, and the build fails with a Turkish message naming the file if one is invalid, so a broken article never goes live. Even the form rate limit is deliberately generous, because a cooperative meeting or a mobile carrier can put many real farmers behind one IP address.'
+    ]
+  },
+  {
     id: 'the-good-kind-of-lazy',
     category: 'Programming',
     date: '2026-09-23',
