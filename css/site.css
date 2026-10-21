@@ -1026,7 +1026,8 @@ html[lang="de"] .hero__title {
 .about__avatar {
   grid-column: 2;
   display: block;
-  width: clamp(180px, 18vw, 280px);
+  width: clamp(120px, 10vw, 160px);
+  height: auto;
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
@@ -1348,7 +1349,6 @@ html[lang="de"] .hero__title {
   margin: 0;
   aspect-ratio: 350 / 248;
   overflow: hidden;
-  background: var(--panel);
 }
 
 .skill-col__media img {
@@ -1617,6 +1617,24 @@ html[lang="de"] .hero__title {
   outline-offset: 4px;
 }
 
+/* Budget only opens when the "Project" reason is picked */
+.budget-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.5s var(--ease-link), opacity 0.35s ease;
+}
+
+.budget-reveal__inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.budget-reveal.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
 .contact-form__submit {
   display: flex;
   justify-content: center;
@@ -1749,14 +1767,16 @@ html[lang="de"] .hero__title {
 .footer__name .ch {
   display: inline-block;
   transform: none;
-  transition: transform 1.2s var(--ease-out), opacity 0.6s;
-  transition-delay: calc(var(--i) * 0.04s);
+  transform-origin: 50% 100%;
+  transition: transform 1.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s ease, filter 0.9s ease;
+  transition-delay: calc(var(--d) * 0.07s);
 }
 
-/* Letters start hidden just above the baseline, then drop into line. */
+/* Letters lie flat on the baseline, then flip up into line from the middle out. */
 .footer__name:not(.is-in) .ch {
   opacity: 0;
-  transform: translateY(-60%);
+  filter: blur(10px);
+  transform: perspective(700px) rotateX(-95deg) translateY(30%);
 }
 
 .footer__name .gap {
@@ -1947,7 +1967,7 @@ html[lang="de"] .hero__title {
   }
 
   .about__avatar {
-    width: min(56vw, 220px);
+    width: min(40vw, 150px);
   }
 
   .ledger__list {

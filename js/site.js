@@ -429,6 +429,21 @@
     var form = document.querySelector('[data-contact-form]');
     if (!form) return;
     var status = form.querySelector('.contact-form__status');
+    var budgetBox = form.querySelector('[data-budget]');
+    var budgetSet = budgetBox && budgetBox.querySelector('fieldset');
+    var projectRadio = form.querySelector('[data-shows-budget]');
+
+    function syncBudget() {
+      if (!budgetBox || !projectRadio) return;
+      var open = projectRadio.checked;
+      budgetBox.classList.toggle('is-open', open);
+      budgetBox.inert = !open;
+      budgetSet.disabled = !open;
+    }
+    form.addEventListener('change', function(event) {
+      if (event.target.name === 'topic') syncBudget();
+    });
+    syncBudget();
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
@@ -440,7 +455,7 @@
       }
       var topic = form.querySelector('input[name="topic"]:checked');
       var subject = form.dataset.subject + (topic ? ' — ' + topic.value : '');
-      var budget = form.querySelector('input[name="budget"]:checked');
+      var budget = projectRadio && projectRadio.checked && form.querySelector('input[name="budget"]:checked');
       var body = form.elements.message.value.trim()
         + (budget ? '\n\n' + form.querySelector('.topic--budget legend').textContent + ': ' + budget.value : '')
         + '\n\n— ' + name + ' (' + email + ')';
@@ -491,13 +506,19 @@
   }
 
 
+  // Footer name: letters flip up from the middle out (CSS, --d = distance from
+  // the centre letter).
+  function initFooterName(name) {
+    var chars = splitChars(name);
+    var mid = (chars.length - 1) / 2;
+    chars.forEach(function(ch, i) {
+      ch.style.setProperty('--d', Math.round(Math.abs(i - mid)));
+    });
+  }
+
   function initFooter() {
     var name = document.querySelector('[data-footer-name]');
-    if (name) {
-      splitChars(name).forEach(function(ch, i) {
-        ch.style.setProperty('--i', i);
-      });
-    }
+    if (name) initFooterName(name);
 
     var year = document.querySelector('[data-year]');
     if (year) year.textContent = new Date().getFullYear();
