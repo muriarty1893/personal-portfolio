@@ -1,5 +1,37 @@
 export const posts = [
   {
+    id: 'watch-later-manager-confirmed-changes',
+    category: 'Tools',
+    date: '2026-11-12',
+    dateLabel: '12 Nov 2026',
+    title: 'Watch Later Manager: nothing counts until YouTube says so',
+    art: ['WATCH', 'LAT3R'],
+    excerpt:
+      'A browser extension for a Watch Later list that had grown into thousands of videos, and why every change in it waits for a confirmation.',
+    tags: ['TypeScript', 'React', 'Browser Extension', 'WXT'],
+    body: [
+      'YouTube’s Watch Later page is a long scroll that loads slowly and removes one video at a time. Once a list grows into the thousands, it stops being a list you can actually use. Watch Later Manager is a browser extension that turns it into something you can search, filter, sort and clean up in bulk, on your real Watch Later, through the YouTube login you already have.',
+      'It ended up with more than I planned: a Home dashboard with how much watching time is waiting, one-by-one triage where a single key keeps, removes or files a video, notes and tags, bookmarks, and personal lists. The lists are kept as private YouTube playlists, so they also show up in the YouTube app on my phone instead of living only inside the extension.',
+      'The part I care about most is the safety model. The extension talks to YouTube’s internal web API, which is not public and can change, so every change goes through one queue and only counts as done once YouTube has confirmed it. Nothing is retried blindly: if a result is unclear, it checks the list before sending anything again, and when an answer looks wrong it stops and says so instead of guessing. A backup of the whole list is saved before every removal, and every change can be undone. When a tool can delete things that matter to someone, being boring and careful is the feature.'
+    ]
+  },
+  {
+    id: 'farmhouse-walkthrough-blind-critic',
+    category: '3D',
+    date: '2026-11-07',
+    dateLabel: '07 Nov 2026',
+    title: 'A farmhouse in Three.js, judged by a critic that only sees two pictures',
+    art: ['THE PHOTO', 'STILL WINS'],
+    excerpt:
+      'I used a 3D walkthrough of a farmhouse to test how far AI agents can take scene building when the only bar is the reference photo.',
+    tags: ['Three.js', 'AI Agents', 'Claude', '3D'],
+    body: [
+      'Farmhouse Walkthrough is a first-person Three.js model of one house, built to test scene creation with Claude Opus 5.5. The house is traced to scale from a floor plan, at 28.2 plan pixels per foot: 33 rooms, around 140 walls and about 55 doors and windows. The shared engine handles the shell, lighting, post-processing, walking with collision and headless screenshots, and separate builder agents each own one piece: the exterior, the great room, the master suite and the rest of the house.',
+      'The interesting part is how the work is judged. For each piece, a critic with fresh context gets two images in random order, our render and the reference photo, picks the better one and names the single biggest gap. That gap goes back to the builder, and the loop runs again. Every new round also has to beat or tie the previous one in a blind check, so a change that looks clever but makes the image worse gets rejected. So far the photo has won every blind comparison, which is exactly why the loop is useful: it never lets me call it done too early.',
+      'The lessons were not the ones I expected. Matching colours sampled from the photo lost more than once, because the room read dim and muddy even when the numbers matched; the photo looks bright and warm, and that is what the critic responds to. Critics also contradict each other on details, so I learned to trust complaints that repeat across rounds. And once, looking at a matched crop of an armchair myself found the cause of a complaint that had survived seven rounds. Automation is strong at iterating, but a human looking closely still decides where to aim it.'
+    ]
+  },
+  {
     id: 'docktor-yard-time-is-a-number',
     category: '3D',
     date: '2026-10-19',
