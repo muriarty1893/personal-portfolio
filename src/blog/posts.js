@@ -1,5 +1,21 @@
 export const posts = [
   {
+    id: 'dream-isles-rules-apart-from-the-table',
+    category: 'Games',
+    date: '2026-11-21',
+    dateLabel: '21 Nov 2026',
+    title: 'Dream Isles: a card game where the rules never look at the table',
+    art: ['SAME SEED', 'SAME GAM3'],
+    excerpt:
+      'A 3D lane card battler for my friends, built in Godot, and why keeping the rules away from the visuals made online play almost free.',
+    tags: ['Godot', 'GDScript', 'Cloudflare Workers', 'Game Design'],
+    body: [
+      'Dream Isles is a 3D card battler I built in Godot so my friends and I could play together. Each player has four lanes, puts creatures and buildings on them and attacks across the board. The world is my own: Mushroom Forest, Ember Flats, Candy Hills and Frostpeak, 88 original cards, and a cosy cottage room where the board lies on a wooden table with the rival seated across from you. It runs in the browser at dream-isles.vercel.app, against an AI on Easy, Medium or Hard, or online against a friend.',
+      'The first version played correctly but felt thin, so the rules grew in rounds. Magic now starts at 1 and grows to 8, and combat is Hearthstone-style: you can attack any enemy creature or the hero, and the defender hits back. I kept one thing from the start: every creature attack runs a timing bar, where the attacker aims for a critical hit and the defender tries to block. Later rounds added keywords, creature merging, field spells, tribes, level-ups and lanes that change with what you put on them. Every card is data, and its text is generated from that data, so a card cannot say one thing and do another.',
+      'The decision that paid off most was made on day one: the rules engine never touches the visuals. It takes a state and a move and returns a new state and a list of events, and the 3D view only plays those events back. That made it testable, and the project now has well over a thousand checks in headless tests, including whole AI-vs-AI matches. It also made online play much smaller than I feared. The server is a small Cloudflare Worker with Durable Objects that never runs the rules. It hands both players the same seed, numbers each move and passes it on. Both games apply the same moves in the same order, compare a checksum after each one, and the match ends cleanly if they ever disagree. The only live part is the block: when you attack, the defender plays the timing bar on their own screen.'
+    ]
+  },
+  {
     id: 'watch-later-manager-confirmed-changes',
     category: 'Tools',
     date: '2026-11-12',
