@@ -209,8 +209,11 @@ body.loading #loader {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1.5px;
+  /* Whole pixels + a permanent compositor layer: a 1.5px line was drawn 2px
+     thick while animating and snapped to 1px once the transition ended. */
+  height: 2px;
   background: currentColor;
+  will-change: transform;
   transition: transform 0.8s var(--ease-link);
 }
 
@@ -1134,8 +1137,10 @@ html[lang="de"] .hero__title {
   left: 0;
   top: 50%;
   width: 100%;
-  height: 1.5px;
+  height: 2px;
+  margin-top: -1px;
   background: currentColor;
+  will-change: transform;
   transition: transform 0.35s var(--ease-out);
 }
 
@@ -1223,9 +1228,10 @@ html[lang="de"] .hero__title {
   position: absolute;
   bottom: 0;
   width: 16px;
-  height: 1.5px;
+  height: 2px;
   background: var(--ink);
   opacity: 0;
+  will-change: opacity;
   transition: opacity 0.4s;
 }
 
