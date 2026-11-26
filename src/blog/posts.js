@@ -410,10 +410,10 @@ export const posts = [
     title: 'I graduated with a working notebook, not a finished identity',
     art: ['NEW GRAD', 'STILL BUILDING'],
     excerpt:
-      'Finishing Computer Science at ATU gave me a foundation, but the projects around it show where I want to keep going.',
+      'Finishing Computer Engineering at ATU gave me a foundation, but the projects around it show where I want to keep going.',
     tags: ['Career', 'Computer Engineering', 'Learning'],
     body: [
-      'I finished my Computer Science degree at Adana Alparslan Turkes Science and Technology University in February 2026. Graduation is a clear date, but it did not make my direction feel complete. It gave me a foundation and a better view of the questions I want to keep working on.',
+      'I finished my Computer Engineering degree at Adana Alparslan Turkes Science and Technology University in February 2026. Graduation is a clear date, but it did not make my direction feel complete. It gave me a foundation and a better view of the questions I want to keep working on.',
       'My projects move between search, backend systems, machine learning, small desktop tools, and data workflows. They are not all the same kind of application, but they share a curiosity about how an idea becomes a reliable workflow for someone else.',
       'I am treating this stage as a working notebook. I want to keep building, write down what I learn, and become more precise about the kind of engineer I am becoming instead of forcing a final label too early.'
     ]
