@@ -9,6 +9,21 @@
   will-change: transform, opacity;
 }
 
+.hyper-text__letter {
+  position: relative;
+}
+
+.hyper-text__ghost {
+  visibility: hidden;
+}
+
+.hyper-text__glyph {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .hyper-text__letter--space {
   min-width: 0.28em;
 }

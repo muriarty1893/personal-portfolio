@@ -72,7 +72,7 @@ export function HyperText({
       onMouseEnter={triggerAnimation}
       aria-label={text}
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {displayText.map((letter, index) => (
           <motion.span
             key={index}
@@ -84,7 +84,10 @@ export function HyperText({
             {...framerProps}
             aria-hidden="true"
           >
-            {letter}
+            {/* The real letter holds the width so the line doesn't jitter
+                while random glyphs of other widths cycle over it. */}
+            <span className="hyper-text__ghost">{text[index]}</span>
+            <span className="hyper-text__glyph">{letter}</span>
           </motion.span>
         ))}
       </AnimatePresence>
